@@ -1,0 +1,3 @@
+#
+set INDIR=../reformat_mechanism
+cat $INDIR/CB6_mechamism.sptoolInput.9oct2018.csv $INDIR/CB05_mechamism.sptoolInput.9oct2018.csv $INDIR/SAPRC07_mechamism.sptoolInput.9oct2018.csv $INDIR/CRI_mechamism.sptoolInput.9oct2018.csv > mechanism_forImport.9oct2018.csv

@@ -1,0 +1,183 @@
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_gas_profiles_2018_0905.txt...
+  1000 lines processed
+parse() failed on argument: "8863","Gasoline Headspace Vapor - 0% Ethanol (E0), 35% Aromatics","C","None",12/12/2011 0:00:00,"Repeat analysis for instrumental precision is more commonly performed wi
+th repeatability of 5% or better.  The concentration of ethanol was corrected for the reduced FID response due to the presence of an oxygen atom. For ethanol, the carbon atom attached",100.00,"VOC",
+"To prepare for testing, 25 ml aliquots were put into 50 ml Erlenmeyer flasks then placed into a constant water-temperature bath maintained at 25 C.  After a 20 min equilibration time, 100 µL aliquo
+ts of the headspace vapors were taken from the Erlenmeyer ","VOC","O",1,"2010",5.00,5.00,2.00,"United States",-99,"8884","1.0000000","Literature",1,"This project studied the composition of hydrocarb
+on emissions from gasoline, specifically the head space components above gasoline in an enclosed fuel tank. These profiles were used in EPA s proposed Tier 3 rule and anti-backsliding study. The pro
+files we","Hydrocarbon Composition of Gasoline Vapor Emissions from Enclosed Fuel Tanks, EPA-420-R-11-018, December 2011"
+
+Parse failed at record 1778
+ERROR: perl script failed for importing gas profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_gas_profiles_2018_0905.txt
+1. ===modify all micro (mu)L to "UL"
+
+Using transactions - import of data will abort on any error.
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_gas_profiles_2018_0905.txt...
+  1000 lines processed
+parse() failed on argument: "8934","Evaporative Emissions from Flexible-Fuel Gasoline Vehicles using 85% Ethanol","A","Tier 2",12/21/2012 0:00:00,"Composite profile based on two-day diurnal evaporat
+ive emissions tests on four 2007 model year flex-fueled vehicles, plus a repeat test on one vehicle for a total of five tests. ",100.00,"TOG","The Sealed Housing for Evaporative Determination (SHED)
+ technique involves placing the vehicle in a sealed enclosure and calculating the difference of the mass between the start and end of a time period. A California 2-day diurnal test (65-105-65ºF) mea
+su","TOG","C",1,"2009",5.00,5.00,4.00,"United States",-99,,"1.0014100","EPA",1,"Evaporative emissions profile for flex-fuel gasoline vehicles using an E85 fuel based on CRC-E-80 program, conducted i
+n 2008-2009. ","Exhaust and Evaporative Emissions Testing of Flexible-Fuel Vehicles. Final report. CRC Report CRC-E-80. Coordinating Research Council, Inc. August 2011.  Report and program data avai
+lable at http://www.crcao.org/publications/emissions/index.html"
+
+Parse failed at record 1835
+ERROR: perl script failed for importing gas profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_gas_profiles_2018_0905.txt
+2. === change degree symbol to "degF"
+
+parse() failed on argument: "95336","Oil and Gas Production - Untreated Natural Gas, Uinta Basin Operator 1","D","None",8/24/2015 0:00:00,"Raw gas from fugitive leaks, pneumatic controllers and pneumatic pumps at oil and gas production sites   Operator 1 is Axia Energy II, LLC; 1 unique profile",100.00,"TOG","Based on extended gas analysis sample, method of sampling/analysis is unavailable","Sum of species","O",1,"2013",3.00,5.00,1.00,"Uinta Basin, Utah",-99,,"4.2734790","Registration Data, EPA Region 8",1,"Data from the Federal Minor New Source Review Program in Indian Country in §49.160 re: Registration of minor sources. EPA Region 8 mined the paper copies of these submitted registrations where the operator provided extended gas analyses of untreated  raw ","EPA Tribal Minor Source Registration Data, Region 8 - Uintah & Ouray Indian Reservation "
+
+Parse failed at record 2068
+ERROR: perl script failed for importing gas profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_gas_profiles_2018_0905.txt
+3. === changed § to "Section"
+
+Error on datafile line 2180
+  line : "95505","2-stroke Small Off-road Engine Exhaust - MTBE Gasoline","C","None",4/8/2018 0:00:00,"Tested engines were leaf blowers and trimmers.",100.00,"TOG","Six gasoline off-road engines used in a variety of applications (backpack leaf blower, soil tiller, string lawn trimmer and lawnmower) were tested using California summertime MTBE gasoline.  Emissions were characterized with a dilution tunnel and a consta","Sum of species","SC",1,"2012",5.00,5.00,2.00,"California",-99,,"1.0231820","Literature",1,"Dilution and smog chamber experiments were performed to characterize the primary emissions and secondary organic aerosol (SOA) formation from gasoline small off-road engines (SOREs). These engines are high emitters of primary gas- and particle-phase pollu","Primary Gas- and Particle-Phase Emissions and Secondary Organic Aerosol Production from Gasoline and Diesel Off-Road Engines, Gordon et al., dx.doi.org/10.1021/es403556e, Environ. Sci. Technol. 2013, 47, 14137-14146"
+
+  sql  : INSERT INTO tbl_gas_profiles
+                                (profile_id, profile_name, quality, controls, date_added,
+                                notes, total, master_poll, test_method, norm_basis, composite,
+                                standard, test_year, j_rating, v_rating, d_rating,
+                                region, old_profile, sibling, voc_to_tog, data_origin,
+                                primary_prof, description, documentation )
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+  error: ERROR:  value too long for type character varying(1)
+  data :
+  0 : 95505
+  1 : 2-stroke Small Off-road Engine Exhaust - MTBE Gasoline
+  2 : C
+  3 : None
+  4 : 4/8/2018 0:00:00
+  5 : Tested engines were leaf blowers and trimmers.
+  6 : 100.00
+  7 : TOG
+  8 : Six gasoline off-road engines used in a variety of applications (backpack leaf blower, soil tiller, string lawn trimmer and lawnmower) were tested using California summertime MTBE gasoline.  Emissions were characterized with a dilution tunnel and a consta
+  9 : Sum of species
+  10 : SC
+  11 : 1
+  12 : 2012
+  13 : 5.00
+  14 : 5.00
+  15 : 2.00
+  16 : California
+  17 : -99
+  18 :
+  19 : 1.0231820
+  20 : Literature
+  21 : 1
+  22 : Dilution and smog chamber experiments were performed to characterize the primary emissions and secondary organic aerosol (SOA) formation from gasoline small off-road engines (SOREs). These engines are high emitters of primary gas- and particle-phase pollu
+  23 : Primary Gas- and Particle-Phase Emissions and Secondary Organic Aerosol Production from Gasoline and Diesel Off-Road Engines, Gordon et al., dx.doi.org/10.1021/es403556e, Environ. Sci. Technol. 2013, 47, 14137-14146
+ERROR: perl script failed for importing gas profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_gas_profiles_2018_0905.txt
+4. ===== field ORIG_COMP (field 10 in above list) was previously defined as field size =1 ==> latest version =2
+
+Importing PM profiles /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt
+ERRORS:  Terminating import.  Correct the formatting problem and rerun.
+
+Using transactions - import of data will abort on any error.
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt...
+  1000 lines processed
+  2000 lines processed
+  3000 lines processed
+parse() failed on argument: "95125","Gas-fired boiler exhaust","B","None",1/27/2014 0:00:00,"Fueled with refinery fuel gas; based on 10 runs; for species with uncertainty >100% - results may not be amenable to quantitative analysis",99.78,"PM","Dilution samplers were applied to collected samples from different gas-fired process heaters, an institutional boiler, and electricity generators selected over a range of EPA source classification code (SCC) numbers.  The sampling procedure followed the g","Sum of species","C",1,0,"2004",5.00,4.00,4.00,"United States",0.00,2.50,,"Literature",1,"This study focused on the development of fine particulate emission factors and speciation profiles for oil and gas-fired combustion systems.","England et al., 2007, Dilution-Based Emissions Sampling from Stationary Sources: Part 2Gas-Fired Combustors Compared with Other Fuel-Fired Systems, J. Air & Waste Manage. Assoc. 57:79 93",
+
+Parse failed at record 3676
+ERROR: perl script failed for importing PM profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt
+5. ===== hidden character after 'Part 2' <97> === lower case a
+
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt...
+  1000 lines processed
+  2000 lines processed
+  3000 lines processed
+Error on datafile line 3677
+  line : "95125a","Gas-fired boiler exhaust","B","None",2/8/2017 0:00:00,"AE6-ready profile modified from 95125. Fueled with refinery fuel gas; based on 10 runs; for species with uncertainty >100% - results may not be amenable to quantitative analysis",100.00,"PM","Dilution samplers were applied to collected samples from different gas-fired process heaters, an institutional boiler, and electricity generators selected over a range of EPA source classification code (SCC) numbers.  The sampling procedure followed the g","Sum of species","SC",1,0,"2004",5.00,4.00,4.00,"United States",0.00,2.50,,"Literature",1,"This study focused on the development of fine particulate emission factors and speciation profiles for oil and gas-fired combustion systems.","England et al., 2007, Dilution-Based Emissions Sampling from Stationary Sources: Part 2a Gas-Fired Combustors Compared with Other Fuel-Fired Systems, J. Air & Waste Manage. Assoc. 57:79 93","AE6"
+
+  sql  : INSERT INTO tbl_pm_profiles
+                                (profile_id, profile_name, quality, controls, date_added,
+                                notes, total, master_poll, test_method, norm_basis, composite,
+                                standard, incl_gas, test_year, j_rating, v_rating, d_rating,
+                                region, lower_size, upper_size, sibling, data_origin,
+                                primary_prof, description, documentation,type )
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+  error: ERROR:  value too long for type character varying(1)
+  data :
+  0 : 95125a
+  1 : Gas-fired boiler exhaust
+  2 : B
+  3 : None
+  4 : 2/8/2017 0:00:00
+  5 : AE6-ready profile modified from 95125. Fueled with refinery fuel gas; based on 10 runs; for species with uncertainty >100% - results may not be amenable to quantitative analysis
+  6 : 100.00
+  7 : PM
+  8 : Dilution samplers were applied to collected samples from different gas-fired process heaters, an institutional boiler, and electricity generators selected over a range of EPA source classification code (SCC) numbers.  The sampling procedure followed the g
+  9 : Sum of species
+  10 : SC
+  11 : 1
+  12 : 0
+  13 : 2004
+  14 : 5.00
+  15 : 4.00
+  16 : 4.00
+  17 : United States
+  18 : 0.00
+  19 : 2.50
+  20 :
+  21 : Literature
+  22 : 1
+  23 : This study focused on the development of fine particulate emission factors and speciation profiles for oil and gas-fired combustion systems.
+  24 : England et al., 2007, Dilution-Based Emissions Sampling from Stationary Sources: Part 2a Gas-Fired Combustors Compared with Other Fuel-Fired Systems, J. Air & Waste Manage. Assoc. 57:79 93
+  25 : AE6
+ERROR: perl script failed for importing PM profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt
+
+6. ==== composite field required to have field length changed from 1 to 2
+Using transactions - import of data will abort on any error.
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt...
+  1000 lines processed
+  2000 lines processed
+  3000 lines processed
+parse() failed on argument: "95183","Residential Wood Stove Combustion - White Oak","E","Honeycomb ceramic coated with a catalytic material",4/24/2014 0:00:00,"Total speciated % is the sum of EC, OC, and inorganics.  The total organic compound mass was estimated by multiplying the organic carbon content by a factor of 1.4 to account for the additional mass of primarily hydrogen and oxygen present in the molecule",70.77,"PM","A catalyst-equipped wood stove was selected for the source tests, and installed according to manufacturer specifications. The medium sized stove, with an approximately 2.7 ft3 (0.076 m3) firebox, includes a primary air control lever to regulate stove temp","Gravimetric Mass","O",1,0,"2004",5.00,4.00,1.00,"United States",0.00,2.50,,"Literature",1,"To fully characterize the fine particle emissions from wood stoves and compare the emissions profiles to those determined from previous fireplace experiments, a series of source tests were conducted on the burning of the most prevalent U.S. tree species i","Chemical Characterization of Fine Particle Emissions from the Wood Stove Combustion of Prevalent United States Tree Species, Environmental Engineering Science,  Volume 21, Number 6, 2004",
+
+Parse failed at record 3714
+7.=== Honeycomb surrounded by special characters - removed
+
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt...
+  1000 lines processed
+  2000 lines processed
+  3000 lines processed
+parse() failed on argument: "95465","Residential Wood Combustion  Noncatalytic Woodstove, Hardwood","C","None",9/7/2017 0:00:00,"Weight percent computed from mg/kg data in supporting document. Added PNCOM and MO using procedures in Reff, et. al., Environmental Science & Technology 2009 43 (15), 5790-5796; DOI: 10.1021/es802930x (Supplemental Information).",100.00,"PM","Wood combustion tests were conducted at Desert Research Institute (DRI) in Reno, NV, using wood samples obtained from Denver, CO. Fireplace tests were conducted in a Heatilator model E36 fireplace (with a model GR4 grate). Wood stove tests were conducted ","Sum of species","SC",1,0,"1997",5.00,3.00,3.00,,0.00,2.50,"G95469","Literature",1,"The objective of this study was to quantify emission rates of compounds that may further improve assessment of source apportionment relative to estimates developed from previous studies. The ultimate goal of this study was also to increase the knowledge b","McDonald, J.D., B. Zielinska, E.M. Fujita, J.C. Sagebiel, J.C. Chow, and J.G. Watson (2000). Fine Particle and Gaseous Emission Rates from Residential Wood Combustion. Environmental Science and Technology, vol. 34, no. 11, pp. 2080-2091.","AE6"
+
+Parse failed at record 3781
+ERROR: perl script failed for importing PM profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt
+8. === special character after removed
+
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt...
+  1000 lines processed
+  2000 lines processed
+  3000 lines processed
+parse() failed on argument: "95514","Coal Combustion - Prater Creek Coal","B","Baghouse",3/10/2018 0:00:00,"This profile is based on six repeated measurements performed on different days but under the same experimental conditions. Data for silicon are not reported because of interference problems with this element and ICP-MS analysis. Silicon is a major ash spe",100.00,"PM","A dilution sampler was used to characterize emissions both upstream and downstream of a bag house on a pilot-scale pulverized coal combustor. Filter samples of PM2.5 were collected at different dilution ratios and residence times for gravimetric and compo","PM2.5","SC",1,0,"2001",5.00,5.00,3.00,"US",0.00,2.50,,"Literature",1,"A dilution sampler was used to examine the effects of dilution ratio and residence time on fine-particle emissions from a pilot-scale pulverized coal combustor. Measurements include the particle size distribution from 0.003 to 2.5 µm, PM2.5 mass, and PM2.","Effects of Dilution Sampling on Fine Particle Emissions from Pulverized Coal Combustion,  Aerosol Science and Technology, 38:6, 574-587, 2004, DOI:10.1080/02786820490479851","AE6"
+
+Parse failed at record 3788
+ERROR: perl script failed for importing PM profiles file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_pm_profiles_2018_0905.txt
+9. special character (mu)m changed to Um
+
+ERRORS:  Terminating import.  Correct the formatting problem and rerun.
+
+Using transactions - import of data will abort on any error.
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_species_properties_2018_0905.txt...
+  1000 lines processed
+  2000 lines processed
+parse() failed on argument: 2916,"Umbelliferone (or 2H-1-Benzopyran-2-one, 7-hydroxy-; Coumarin, 7-hydroxy-; Hydrangin)","93-35-6
+
+Parse failed at record 2476
+ERROR: perl script failed for importing species properties file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_species_properties_2018_0905.txt
+Importing species properties /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_species_properties_2018_0905.txt
+ERRORS:  Terminating import.  Correct the formatting problem and rerun.
+
+Using transactions - import of data will abort on any error.
+Reading data from /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_species_properties_2018_0905.txt...
+  1000 lines processed
+  2000 lines processed
+parse() failed on argument: 2963,"1,2,3,4,6,7,8,9-Octachlorodibenzo-p-dioxin (or OCDD)","3268-87-9
+
+Parse failed at record 2523
+ERROR: perl script failed for importing species properties file /disk43/sptool/wa5_02.2018/import_data/speciate5.0_exports/export_species_properties_2018_0905.txt
+10.  A number of species properties fields had imbedded carriage returns which were manually removed.

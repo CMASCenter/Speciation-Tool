@@ -1,0 +1,88 @@
+#!/bin/csh -f
+#
+#=================================================================================================
+#=====                                                                                       =====
+#=====  Speciation Tool Version 4.5         Sep 2017                                        =====
+#=====                                                                                       =====
+#=====  Description:                                                                         =====
+#=====  This Assigns file defines the environment variables used by the Speciation Tool.     =====
+#=====                                                                                       =====
+#=====  Usage:                                                                               =====
+#=====  	source <AssignFile>                                                          =====
+#=====                                                                                       =====
+#=================================================================================================
+#
+# <SYSTEM INSTALLATION DEPENDENT>
+# <PostgreSQL>
+#
+# In order to access PostgreSQL you may need to set a pathname, username, and/or password.
+# This is installation dependent.  If you have database connection errors when running
+# the Speciation Tool see your system administrator for access to postgreSQL.
+#
+# POSTGRES_BIN can be set to override the default. The result of "which psql" will be used if 
+#              the environment variable is not set.  
+# setenv POSTGRES_BIN	/usr/local/pgsql		#  directory of postgreSQL execuatable
+
+# LD_LIBRARY_PATH may be required if PosrgreSQL is not installed in your path.
+# setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:fullpath_name
+
+# SPTOOL_USER is the PostreSQL user name.  This can be set to override the default. 
+#             The results of "whoami" will be used if the environment variable is not set. 
+#             (Not needed for a typical installation).
+# setenv SPTOOL_USER	userName			# Postgres user name
+
+# SPTOOL_PWD can be set if your PostgreSQL installation is password protected. 
+#            Only set if required on your system.
+# setenv SPTOOL_PWD	dbPWD				# PostgreSQL password
+
+#<Perl>
+#
+# PERL_BIN can be set to override the default.  The directory of "which perl" will be used if 
+#          the environment variable is not set.  (Not needed for a typical installation).
+# setenv PERL_BIN /usr/bin				# directory of Perl executable
+
+# PERL_DBI must be set.  This is the Perl database interface and is system dependent.
+#          Typical Postgres options include "PgPP" or "Pg" (case sensitive).
+
+setenv PERL_DBI Pg		# Perl/Postgres interface must be set !!!!!
+
+#=================================================================================================
+
+# <Speciation Tool INSTALLATION DEPENDENT>   
+#
+# SPTOOL_HOME must be set to the location of the Speciation Tool home directory. This is the
+#             full pathname of where the Speciation Tool will be installed.
+#             (The directory where init_sptooldb_v3.2.csh resides).
+setenv SPTOOL_HOME	/disk43/sptool/wa5_02.2018	# Speciation Tool top level directory
+
+setenv SPTOOL_SRC_HOME	$SPTOOL_HOME/src		# Speciation Tool source code directory
+
+setenv SPTOOL_DB	sptoolv5_0alpha			# Speciation Tool Database name 
+
+
+# <Speciation Tool 'shared' schema input directory and default data files>
+#
+setenv IDIR		$SPTOOL_HOME/import_data	# input data directory
+#
+setenv MECHANISM		$IDIR/mechanism_forImport.9oct2018.csv
+setenv MECHANISMPM		$IDIR/mech_pm_ae5_ae6.txt
+setenv MECHANISM_DESCRIPTION	$IDIR/mechanism_description.29sep2017.txt
+setenv CARBONS			$IDIR/carbons_all_mechanisms_29sep2017.csv
+setenv INVTABLE			$IDIR/invtable_hapcap_cb05soa_25may2011_v13.txt
+setenv PROFILES_STATIC		$IDIR/static_19aug07.csv
+setenv SPECIES_RENAME		$IDIR/aqm_poll_rename.csv
+setenv CAMX_FCRS                $IDIR/camx_fcrs.profile.lst
+setenv VBS_SVOC_FACTORS         $IDIR/vbs_svoc.profile.26sep2016.csv
+setenv VBS_IVOC_FACTORS         $IDIR/vbs_ivoc.profile.30aug2016.csv 
+setenv IVOC_SPECIES             $IDIR/ivoc_species.csv
+setenv ZERO_PH2O		$IDIR/PM_Profiles_wo_PH2O.csv		# added Sep 2018
+setenv PNCOM_FACS		$IDIR/PNCOM_multipliers.csv      	# added Sep 2018
+setenv O2M_RATIOS		$IDIR/oxygen_metal_Ratios.csv		# added Sep 2018
+
+# updated with SPECIATE 5.0
+setenv SPECIES_PROPERTIES	$IDIR/speciate5.0_exports/export_species_properties_2018_0910.txt
+setenv PROFILES_GAS		$IDIR/speciate5.0_exports/export_gas_profiles_2018_0910.txt
+setenv WEIGHTS_GAS		$IDIR/speciate5.0_exports/export_gas_species_2018_0910.txt
+setenv PROFILES_PM		$IDIR/speciate5.0_exports/export_pm_profiles_2018_0910.txt
+setenv WEIGHTS_PM		$IDIR/speciate5.0_exports/export_pm_species_2018_0910.txt
+

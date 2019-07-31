@@ -1,0 +1,6 @@
+mech_basis,CRIV2
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,/disk43/sptool/wa5_02.2018/outputs/gspro.CRIV2_criteria.CMAQ.2018Oct09.txt
+cnv_out,/disk43/sptool/wa5_02.2018/outputs/gscnv.CRIV2_criteria.CMAQ.2018Oct09.txt

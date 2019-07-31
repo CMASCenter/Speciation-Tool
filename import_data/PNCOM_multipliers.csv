@@ -1,0 +1,3810 @@
+0000010,Overall Composite,0.4
+000002.5,Overall Composite,0.4
+0000030,Overall Composite,0.4
+00000C,Overall Composite,0.4
+1120110,Coal-Fired Power Plant,0.4
+112012.5,Coal-Fired Power Plant,0.4
+1120130,Coal-Fired Power Plant,0.4
+11201C,Coal-Fired Power Plant,0.4
+1120210,Coal-Fired Power Plant,0.4
+112022.5,Coal-Fired Power Plant,0.4
+1120230,Coal-Fired Power Plant,0.4
+11202C,Coal-Fired Power Plant,0.4
+1120310,Coal-Fired Power Plant,0.4
+112032.5,Coal-Fired Power Plant,0.4
+1120330,Coal-Fired Power Plant,0.4
+11203C,Coal-Fired Power Plant,0.4
+1120410,Coal-Fired Power Plant,0.4
+112042.5,Coal-Fired Power Plant,0.4
+1120430,Coal-Fired Power Plant,0.4
+11204C,Coal-Fired Power Plant,0.4
+1120510,Coal-Fired Power Plant,0.4
+112052.5,Coal-Fired Power Plant,0.4
+1120530,Coal-Fired Power Plant,0.4
+11205C,Coal-Fired Power Plant,0.4
+1120610,Coal-Fired Power Plant,0.4
+112062.5,Coal-Fired Power Plant,0.4
+1120630,Coal-Fired Power Plant,0.4
+11206C,Coal-Fired Power Plant,0.4
+1120710,Coal-Fired Power Plant,0.4
+112072.5,Coal-Fired Power Plant,0.4
+1120730,Coal-Fired Power Plant,0.4
+11207C,Coal-Fired Power Plant,0.4
+1120810,Coal-Fired Power Plant,0.4
+112082.5,Coal-Fired Power Plant,0.4
+1120830,Coal-Fired Power Plant,0.4
+11208C,Coal-Fired Power Plant,0.4
+1120910,Coal-Fired Power Plant,0.4
+112092.5,Coal-Fired Power Plant,0.4
+1120930,Coal-Fired Power Plant,0.4
+11209C,Coal-Fired Power Plant,0.4
+1121010,Coal-Fired Power Plant,0.4
+112102.5,Coal-Fired Power Plant,0.4
+1121030,Coal-Fired Power Plant,0.4
+11210C,Coal-Fired Power Plant,0.4
+1121110,Coal-Fired Power Plant,0.4
+112112.5,Coal-Fired Power Plant,0.4
+1121130,Coal-Fired Power Plant,0.4
+11211C,Coal-Fired Power Plant,0.4
+1121210,Coal-Fired Power Plant,0.4
+112122.5,Coal-Fired Power Plant,0.4
+1121230,Coal-Fired Power Plant,0.4
+11212C,Coal-Fired Power Plant,0.4
+1121310,External Combustion - Coal-Fired Composite,0.4
+112132.5,External Combustion - Coal-Fired Composite,0.4
+1121330,External Combustion - Coal-Fired Composite,0.4
+11213C,External Combustion - Coal-Fired Composite,0.4
+1121410,Uncontrolled Coal-Fired Power Plant Composite,0.4
+112142.5,Uncontrolled Coal-Fired Power Plant Composite,0.4
+1121430,Uncontrolled Coal-Fired Power Plant Composite,0.4
+11214C,Uncontrolled Coal-Fired Power Plant Composite,0.4
+1121510,Coal-Fired Power Plant/esp Composite,0.4
+112152.5,Coal-Fired Power Plant/esp Composite,0.4
+1121530,Coal-Fired Power Plant/esp Composite,0.4
+11215C,Coal-Fired Power Plant/esp Composite,0.4
+1130110,Coal- And Refuse Derived Fuel (RDF)-Fired Power Plant,0.4
+113012.5,Coal- And Refuse Derived Fuel (RDF)-Fired Power Plant,0.4
+1130130,Coal- And Refuse Derived Fuel (RDF)-Fired Power Plant,0.4
+11301C,Coal- And Refuse Derived Fuel (RDF)-Fired Power Plant,0.4
+1150110,Oil-Fired Power Plant,0.4
+115012.5,Oil-Fired Power Plant,0.4
+1150130,Oil-Fired Power Plant,0.4
+11501C,Oil-Fired Power Plant,0.4
+1150210,Oil-Fired Power Plant,0.4
+115022.5,Oil-Fired Power Plant,0.4
+1150230,Oil-Fired Power Plant,0.4
+11502C,Oil-Fired Power Plant,0.4
+1150310,Oil-Fired Power Plant,0.4
+115032.5,Oil-Fired Power Plant,0.4
+1150330,Oil-Fired Power Plant,0.4
+11503C,Oil-Fired Power Plant,0.4
+1150410,Oil-Fired Power Plant,0.4
+115042.5,Oil-Fired Power Plant,0.4
+1150430,Oil-Fired Power Plant,0.4
+11504C,Oil-Fired Power Plant,0.4
+1150510,Oil-Fired Power Plant,0.4
+115052.5,Oil-Fired Power Plant,0.4
+1150530,Oil-Fired Power Plant,0.4
+11505C,Oil-Fired Power Plant,0.4
+1150610,Oil-Fired Power Plant,0.4
+115062.5,Oil-Fired Power Plant,0.4
+1150630,Oil-Fired Power Plant,0.4
+11506C,Oil-Fired Power Plant,0.4
+1150710,Oil-Fired Power Plant,0.4
+115072.5,Oil-Fired Power Plant,0.4
+1150730,Oil-Fired Power Plant,0.4
+11507C,Oil-Fired Power Plant,0.4
+1150810,Oil-Fired Power Plant,0.4
+115082.5,Oil-Fired Power Plant,0.4
+1150830,Oil-Fired Power Plant,0.4
+11508C,Oil-Fired Power Plant,0.4
+1150910,Oil-Fired Power Plant,0.4
+115092.5,Oil-Fired Power Plant,0.4
+1150930,Oil-Fired Power Plant,0.4
+11509C,Oil-Fired Power Plant,0.4
+1151010,Oil-Fired Power Plant Composite,0.4
+115102.5,Oil-Fired Power Plant Composite,0.4
+1151030,Oil-Fired Power Plant Composite,0.4
+11510C,Oil-Fired Power Plant Composite,0.4
+1180110,Wood-Fired Boiler,0.4
+118012.5,Wood-Fired Boiler,0.4
+1180130,Wood-Fired Boiler,0.4
+11801C,Wood-Fired Boiler,0.4
+1220110,External Combustion Boiler - Coal-Slurry Fired,0.4
+122012.5,External Combustion Boiler - Coal-Slurry Fired,0.4
+1220130,External Combustion Boiler - Coal-Slurry Fired,0.4
+12201C,External Combustion Boiler - Coal-Slurry Fired,0.4
+1230110,External Combustion - Kerosene-Fired Boiler Composite,0.4
+123012.5,External Combustion - Kerosene-Fired Boiler Composite,0.4
+1230130,External Combustion - Kerosene-Fired Boiler Composite,0.4
+12301C,External Combustion - Kerosene-Fired Boiler Composite,0.4
+1270410,Wood-Fired Boiler,0.4
+127042.5,Wood-Fired Boiler,0.4
+1270430,Wood-Fired Boiler,0.4
+12704C,Wood-Fired Boiler,0.4
+1270510,External Combustion - Wood-Fired Boiler Composite,0.4
+127052.5,External Combustion - Wood-Fired Boiler Composite,0.4
+1270530,External Combustion - Wood-Fired Boiler Composite,0.4
+12705C,External Combustion - Wood-Fired Boiler Composite,0.4
+1270610,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+127062.5,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+1270630,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+12706C,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+1270710,Hogged Fuel Boiler / Dutch Oven,0.4
+127072.5,Hogged Fuel Boiler / Dutch Oven,0.4
+1270730,Hogged Fuel Boiler / Dutch Oven,0.4
+12707C,Hogged Fuel Boiler / Dutch Oven,0.4
+1270810,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+127082.5,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+1270830,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+12708C,Hogged Fuel Boiler / Plywood Manufacturing,0.4
+1270910,Hogged Fuel Boiler / Stoker Boiler,0.4
+127092.5,Hogged Fuel Boiler / Stoker Boiler,0.4
+1270930,Hogged Fuel Boiler / Stoker Boiler,0.4
+12709C,Hogged Fuel Boiler / Stoker Boiler,0.4
+1271010,Boiler - #2 Fuel Oil Fired,0.4
+127102.5,Boiler - #2 Fuel Oil Fired,0.4
+1271030,Boiler - #2 Fuel Oil Fired,0.4
+12710C,Boiler - #2 Fuel Oil Fired,0.4
+1350110,Residual Oil Combustion,0.4
+135012.5,Residual Oil Combustion,0.4
+1350130,Residual Oil Combustion,0.4
+13501C,Residual Oil Combustion,0.4
+1350210,External Combustion - Heavy Oil-Fired Boiler Composite,0.4
+135022.5,External Combustion - Heavy Oil-Fired Boiler Composite,0.4
+1350230,External Combustion - Heavy Oil-Fired Boiler Composite,0.4
+13502C,External Combustion - Heavy Oil-Fired Boiler Composite,0.4
+1350310,External Combustion - Indonesian Oil-Fired Boiler Composite,0.4
+135032.5,External Combustion - Indonesian Oil-Fired Boiler Composite,0.4
+1350330,External Combustion - Indonesian Oil-Fired Boiler Composite,0.4
+13503C,External Combustion - Indonesian Oil-Fired Boiler Composite,0.4
+1350410,Oil-Fired Boiler,0.4
+135042.5,Oil-Fired Boiler,0.4
+1350430,Oil-Fired Boiler,0.4
+13504C,Oil-Fired Boiler,0.4
+1350510,Residual Oil-Fired Boiler / Petroleum Refinery,0.4
+135052.5,Residual Oil-Fired Boiler / Petroleum Refinery,0.4
+1350530,Residual Oil-Fired Boiler / Petroleum Refinery,0.4
+13505C,Residual Oil-Fired Boiler / Petroleum Refinery,0.4
+1410110,External Combustion - Waste Oil-Fired Boiler,0.4
+141012.5,External Combustion - Waste Oil-Fired Boiler,0.4
+1410130,External Combustion - Waste Oil-Fired Boiler,0.4
+14101C,External Combustion - Waste Oil-Fired Boiler,0.4
+1410210,External Combustion - Liquid Waste-Fired Boiler,0.4
+141022.5,External Combustion - Liquid Waste-Fired Boiler,0.4
+1410230,External Combustion - Liquid Waste-Fired Boiler,0.4
+14102C,External Combustion - Liquid Waste-Fired Boiler,0.4
+1510110,External Combustion - Solid Waste-Fired Boiler,0.4
+151012.5,External Combustion - Solid Waste-Fired Boiler,0.4
+1510130,External Combustion - Solid Waste-Fired Boiler,0.4
+15101C,External Combustion - Solid Waste-Fired Boiler,0.4
+1600010,Meat Cooking - Charbroiling,0.4
+160002.5,Meat Cooking - Charbroiling,0.4
+1600030,Meat Cooking - Charbroiling,0.4
+16000C,Meat Cooking - Charbroiling,0.4
+1600110,Meat Cooking - Frying,0.4
+160012.5,Meat Cooking - Frying,0.4
+1600130,Meat Cooking - Frying,0.4
+16001C,Meat Cooking - Frying,0.4
+1710510,Municipal Incinerator (Philadelphia),0.4
+171052.5,Municipal Incinerator (Philadelphia),0.4
+1710530,Municipal Incinerator (Philadelphia),0.4
+17105C,Municipal Incinerator (Philadelphia),0.4
+1710610,Municipal Incinerator Composite,0.4
+171062.5,Municipal Incinerator Composite,0.4
+1710630,Municipal Incinerator Composite,0.4
+17106C,Municipal Incinerator Composite,0.4
+1710710,"Municipal Incinerator (East Chicago, IN)",0.4
+171072.5,"Municipal Incinerator (East Chicago, IN)",0.4
+1710730,"Municipal Incinerator (East Chicago, IN)",0.4
+17107C,"Municipal Incinerator (East Chicago, IN)",0.4
+1710810,Municipal Incinerator (Philadelphia),0.4
+171082.5,Municipal Incinerator (Philadelphia),0.4
+1710830,Municipal Incinerator (Philadelphia),0.4
+17108C,Municipal Incinerator (Philadelphia),0.4
+1710910,Car Shredder,0.4
+171092.5,Car Shredder,0.4
+1710930,Car Shredder,0.4
+17109C,Car Shredder,0.4
+1712010,Sewage Sludge Incineration - Composite,0.4
+171202.5,Sewage Sludge Incineration - Composite,0.4
+1712030,Sewage Sludge Incineration - Composite,0.4
+17120C,Sewage Sludge Incineration - Composite,0.4
+1712110,Sewage Sludge Incineration,0.4
+171212.5,Sewage Sludge Incineration,0.4
+1712130,Sewage Sludge Incineration,0.4
+17121C,Sewage Sludge Incineration,0.4
+1712210,Sewage Sludge Incineration,0.4
+171222.5,Sewage Sludge Incineration,0.4
+1712230,Sewage Sludge Incineration,0.4
+17122C,Sewage Sludge Incineration,0.4
+1712310,Sewage Sludge Incineration,0.4
+171232.5,Sewage Sludge Incineration,0.4
+1712330,Sewage Sludge Incineration,0.4
+17123C,Sewage Sludge Incineration,0.4
+1712410,Sewage Sludge Incineration,0.4
+171242.5,Sewage Sludge Incineration,0.4
+1712430,Sewage Sludge Incineration,0.4
+17124C,Sewage Sludge Incineration,0.4
+1800010,Cigarette Smoke,0.4
+180002.5,Cigarette Smoke,0.4
+1800030,Cigarette Smoke,0.4
+18000C,Cigarette Smoke,0.4
+1910110,Scrap Copper Incinerator,0.4
+191012.5,Scrap Copper Incinerator,0.4
+1910130,Scrap Copper Incinerator,0.4
+19101C,Scrap Copper Incinerator,0.4
+2010110,Aluminum Foundry-Reverboratory Furnace,0.4
+201012.5,Aluminum Foundry-Reverboratory Furnace,0.4
+2010130,Aluminum Foundry-Reverboratory Furnace,0.4
+20101C,Aluminum Foundry-Reverboratory Furnace,0.4
+2010210,Secondary Aluminum Plant - Dross Recovery Furnace,0.4
+201022.5,Secondary Aluminum Plant - Dross Recovery Furnace,0.4
+2010230,Secondary Aluminum Plant - Dross Recovery Furnace,0.4
+20102C,Secondary Aluminum Plant - Dross Recovery Furnace,0.4
+2010310,Secondary Aluminum - Dross Recovery Furnace,0.4
+201032.5,Secondary Aluminum - Dross Recovery Furnace,0.4
+2010330,Secondary Aluminum - Dross Recovery Furnace,0.4
+20103C,Secondary Aluminum - Dross Recovery Furnace,0.4
+2040110,Secondary Lead Smelter - Blast Furnace,0.4
+204012.5,Secondary Lead Smelter - Blast Furnace,0.4
+2040130,Secondary Lead Smelter - Blast Furnace,0.4
+20401C,Secondary Lead Smelter - Blast Furnace,0.4
+2040210,Secondary Lead - Sanitary Baghouse,0.4
+204022.5,Secondary Lead - Sanitary Baghouse,0.4
+2040230,Secondary Lead - Sanitary Baghouse,0.4
+20402C,Secondary Lead - Sanitary Baghouse,0.4
+2040310,Secondary Lead - Reverberatory Furnace,0.4
+204032.5,Secondary Lead - Reverberatory Furnace,0.4
+2040330,Secondary Lead - Reverberatory Furnace,0.4
+20403C,Secondary Lead - Reverberatory Furnace,0.4
+2040410,Secondary Lead - Melting Pot Fugitives,0.4
+204042.5,Secondary Lead - Melting Pot Fugitives,0.4
+2040430,Secondary Lead - Melting Pot Fugitives,0.4
+20404C,Secondary Lead - Melting Pot Fugitives,0.4
+2040510,Secondary Lead - Melting Pot Stack,0.4
+204052.5,Secondary Lead - Melting Pot Stack,0.4
+2040530,Secondary Lead - Melting Pot Stack,0.4
+20405C,Secondary Lead - Melting Pot Stack,0.4
+2040610,Secondary Lead - Yard Dust,0.4
+204062.5,Secondary Lead - Yard Dust,0.4
+2040630,Secondary Lead - Yard Dust,0.4
+20406C,Secondary Lead - Yard Dust,0.4
+2050110,Zinc Oxide Kiln,0.4
+205012.5,Zinc Oxide Kiln,0.4
+2050130,Zinc Oxide Kiln,0.4
+20501C,Zinc Oxide Kiln,0.4
+2050210,Antimony Oxide Plant - Antimony Roasting,0.4
+205022.5,Antimony Oxide Plant - Antimony Roasting,0.4
+2050230,Antimony Oxide Plant - Antimony Roasting,0.4
+20502C,Antimony Oxide Plant - Antimony Roasting,0.4
+2050310,Antimony Oxide Plant - Antimony Roasting,0.4
+205032.5,Antimony Oxide Plant - Antimony Roasting,0.4
+2050330,Antimony Oxide Plant - Antimony Roasting,0.4
+20503C,Antimony Oxide Plant - Antimony Roasting,0.4
+2110110,Limestone Dust,0.4
+211012.5,Limestone Dust,0.4
+2110130,Limestone Dust,0.4
+21101C,Limestone Dust,0.4
+2110210,Primary Lead Smelting - Ore Concentrate,0.4
+211022.5,Primary Lead Smelting - Ore Concentrate,0.4
+2110230,Primary Lead Smelting - Ore Concentrate,0.4
+21102C,Primary Lead Smelting - Ore Concentrate,0.4
+2110310,Primary Lead Smelting - Ore Concentrate Composite,0.4
+211032.5,Primary Lead Smelting - Ore Concentrate Composite,0.4
+2110330,Primary Lead Smelting - Ore Concentrate Composite,0.4
+21103C,Primary Lead Smelting - Ore Concentrate Composite,0.4
+2115010,Primary Lead Smelting Materials Handling - Composite,0.4
+211502.5,Primary Lead Smelting Materials Handling - Composite,0.4
+2115030,Primary Lead Smelting Materials Handling - Composite,0.4
+21150C,Primary Lead Smelting Materials Handling - Composite,0.4
+2120310,Coke Dust,0.4
+212032.5,Coke Dust,0.4
+2120330,Coke Dust,0.4
+21203C,Coke Dust,0.4
+2120410,Coal Dust,0.4
+212042.5,Coal Dust,0.4
+2120430,Coal Dust,0.4
+21204C,Coal Dust,0.4
+2120510,Primary Lead Smelting - Speiss Fugitive Dust,0.4
+212052.5,Primary Lead Smelting - Speiss Fugitive Dust,0.4
+2120530,Primary Lead Smelting - Speiss Fugitive Dust,0.4
+21205C,Primary Lead Smelting - Speiss Fugitive Dust,0.4
+2120610,Primary Lead Smelting - Soda Flux Fugitive Dust,0.4
+212062.5,Primary Lead Smelting - Soda Flux Fugitive Dust,0.4
+2120630,Primary Lead Smelting - Soda Flux Fugitive Dust,0.4
+21206C,Primary Lead Smelting - Soda Flux Fugitive Dust,0.4
+2130110,Copper Ore Crushing,0.4
+213012.5,Copper Ore Crushing,0.4
+2130130,Copper Ore Crushing,0.4
+21301C,Copper Ore Crushing,0.4
+2130210,Copper Ore Mill Wastepile,0.4
+213022.5,Copper Ore Mill Wastepile,0.4
+2130230,Copper Ore Mill Wastepile,0.4
+21302C,Copper Ore Mill Wastepile,0.4
+2130310,Copper Ore Concentrate,0.4
+213032.5,Copper Ore Concentrate,0.4
+2130330,Copper Ore Concentrate,0.4
+21303C,Copper Ore Concentrate,0.4
+2130410,Copper Mining Waste,0.4
+213042.5,Copper Mining Waste,0.4
+2130430,Copper Mining Waste,0.4
+21304C,Copper Mining Waste,0.4
+2132010,Copper Ore - Composite,0.4
+213202.5,Copper Ore - Composite,0.4
+2132030,Copper Ore - Composite,0.4
+21320C,Copper Ore - Composite,0.4
+2134010,Composite Of Copper Ore Concentrate And Mining Waste,0.4
+213402.5,Composite Of Copper Ore Concentrate And Mining Waste,0.4
+2134030,Composite Of Copper Ore Concentrate And Mining Waste,0.4
+21340C,Composite Of Copper Ore Concentrate And Mining Waste,0.4
+2140110,Feed And Grain Handling Dust,0.4
+214012.5,Feed And Grain Handling Dust,0.4
+2140130,Feed And Grain Handling Dust,0.4
+21401C,Feed And Grain Handling Dust,0.4
+2150110,Primary Lead Smelting - Slag Dust,0.4
+215012.5,Primary Lead Smelting - Slag Dust,0.4
+2150130,Primary Lead Smelting - Slag Dust,0.4
+21501C,Primary Lead Smelting - Slag Dust,0.4
+2210110,Particle Board Dryer,0.4
+221012.5,Particle Board Dryer,0.4
+2210130,Particle Board Dryer,0.4
+22101C,Particle Board Dryer,0.4
+2210210,Particle Board Dryer,0.4
+221022.5,Particle Board Dryer,0.4
+2210230,Particle Board Dryer,0.4
+22102C,Particle Board Dryer,0.4
+2210310,Particleboard Dryer / Direct - Fired,0.4
+221032.5,Particleboard Dryer / Direct - Fired,0.4
+2210330,Particleboard Dryer / Direct - Fired,0.4
+22103C,Particleboard Dryer / Direct - Fired,0.4
+2220110,Wood Products - Sander dust,0.4
+222012.5,Wood Products - Sander dust,0.4
+2220130,Wood Products - Sander dust,0.4
+22201C,Wood Products - Sander dust,0.4
+2220210,Sawdust,0.4
+222022.5,Sawdust,0.4
+2220230,Sawdust,0.4
+22202C,Sawdust,0.4
+2220310,Wood Sander Dust,0.4
+222032.5,Wood Sander Dust,0.4
+2220330,Wood Sander Dust,0.4
+22203C,Wood Sander Dust,0.4
+2230110,Veneer Dryer,0.7
+223012.5,Veneer Dryer,0.7
+2230130,Veneer Dryer,0.7
+22301C,Veneer Dryer,0.7
+2230210,Veneer Dryer / Steam - Heated,0.7
+223022.5,Veneer Dryer / Steam - Heated,0.7
+2230230,Veneer Dryer / Steam - Heated,0.7
+22302C,Veneer Dryer / Steam - Heated,0.7
+2230310,Veneer Dryer / Wood - Fired,0.7
+223032.5,Veneer Dryer / Wood - Fired,0.7
+2230330,Veneer Dryer / Wood - Fired,0.7
+22303C,Veneer Dryer / Wood - Fired,0.7
+2310310,Kraft Recovery Furnace,0.4
+231032.5,Kraft Recovery Furnace,0.4
+2310330,Kraft Recovery Furnace,0.4
+23103C,Kraft Recovery Furnace,0.4
+2310410,Kraft Recovery Furnace,0.4
+231042.5,Kraft Recovery Furnace,0.4
+2310430,Kraft Recovery Furnace,0.4
+23104C,Kraft Recovery Furnace,0.4
+2320210,Lime Kiln,0.4
+232022.5,Lime Kiln,0.4
+2320230,Lime Kiln,0.4
+23202C,Lime Kiln,0.4
+2410110,Sulfite Recovery Boiler,0.4
+241012.5,Sulfite Recovery Boiler,0.4
+2410130,Sulfite Recovery Boiler,0.4
+24101C,Sulfite Recovery Boiler,0.4
+2520110,Calcium Carbide Furnace,0.4
+252012.5,Calcium Carbide Furnace,0.4
+2520130,Calcium Carbide Furnace,0.4
+25201C,Calcium Carbide Furnace,0.4
+2530210,Charcoal Manufacturing,0.4
+253022.5,Charcoal Manufacturing,0.4
+2530230,Charcoal Manufacturing,0.4
+25302C,Charcoal Manufacturing,0.4
+2540110,Silica Manufacturing,0.4
+254012.5,Silica Manufacturing,0.4
+2540130,Silica Manufacturing,0.4
+25401C,Silica Manufacturing,0.4
+2540210,Asphalt Roofing Manufacturing,0.4
+254022.5,Asphalt Roofing Manufacturing,0.4
+2540230,Asphalt Roofing Manufacturing,0.4
+25402C,Asphalt Roofing Manufacturing,0.4
+2540310,Paint Spray Booth,0.4
+254032.5,Paint Spray Booth,0.4
+2540330,Paint Spray Booth,0.4
+25403C,Paint Spray Booth,0.4
+2540410,Urea Fertilizer Production,0.4
+254042.5,Urea Fertilizer Production,0.4
+2540430,Urea Fertilizer Production,0.4
+25404C,Urea Fertilizer Production,0.4
+2540510,Boric Acid Manufacturing,0.4
+254052.5,Boric Acid Manufacturing,0.4
+2540530,Boric Acid Manufacturing,0.4
+25405C,Boric Acid Manufacturing,0.4
+2540610,Carborundum Manufacturing,0.4
+254062.5,Carborundum Manufacturing,0.4
+2540630,Carborundum Manufacturing,0.4
+25406C,Carborundum Manufacturing,0.4
+2540710,Phosphorous Plant Plume,0.4
+254072.5,Phosphorous Plant Plume,0.4
+2540730,Phosphorous Plant Plume,0.4
+25407C,Phosphorous Plant Plume,0.4
+2540810,Fertilizer Production - Phosphate Rock Dust,0.4
+254082.5,Fertilizer Production - Phosphate Rock Dust,0.4
+2540830,Fertilizer Production - Phosphate Rock Dust,0.4
+25408C,Fertilizer Production - Phosphate Rock Dust,0.4
+2540910,Ammonium Nitrate - Prill Tower,0.4
+254092.5,Ammonium Nitrate - Prill Tower,0.4
+2540930,Ammonium Nitrate - Prill Tower,0.4
+25409C,Ammonium Nitrate - Prill Tower,0.4
+2541010,Ammonium Sulfate Production,0.4
+254102.5,Ammonium Sulfate Production,0.4
+2541030,Ammonium Sulfate Production,0.4
+25410C,Ammonium Sulfate Production,0.4
+2541110,Diammonium Phosphate Plant,0.4
+254112.5,Diammonium Phosphate Plant,0.4
+2541130,Diammonium Phosphate Plant,0.4
+25411C,Diammonium Phosphate Plant,0.4
+2541210,Superphosphate Plant,0.4
+254122.5,Superphosphate Plant,0.4
+2541230,Superphosphate Plant,0.4
+25412C,Superphosphate Plant,0.4
+2541310,Superphosphate Granulation,0.4
+254132.5,Superphosphate Granulation,0.4
+2541330,Superphosphate Granulation,0.4
+25413C,Superphosphate Granulation,0.4
+2541410,Sodium Tripolyphosphate - Cyclone Dust,0.4
+254142.5,Sodium Tripolyphosphate - Cyclone Dust,0.4
+2541430,Sodium Tripolyphosphate - Cyclone Dust,0.4
+25414C,Sodium Tripolyphosphate - Cyclone Dust,0.4
+2541510,Npk Fertilizer,0.4
+254152.5,Npk Fertilizer,0.4
+2541530,Npk Fertilizer,0.4
+25415C,Npk Fertilizer,0.4
+2541610,Phosphoric Acid Plant,0.4
+254162.5,Phosphoric Acid Plant,0.4
+2541630,Phosphoric Acid Plant,0.4
+25416C,Phosphoric Acid Plant,0.4
+2541710,Monoammonium Phosphate Dryer,0.4
+254172.5,Monoammonium Phosphate Dryer,0.4
+2541730,Monoammonium Phosphate Dryer,0.4
+25417C,Monoammonium Phosphate Dryer,0.4
+2541810,Phosphate Fertilizer Calciner,0.4
+254182.5,Phosphate Fertilizer Calciner,0.4
+2541830,Phosphate Fertilizer Calciner,0.4
+25418C,Phosphate Fertilizer Calciner,0.4
+2541910,Triple Super Phosphate Stack,0.4
+254192.5,Triple Super Phosphate Stack,0.4
+2541930,Triple Super Phosphate Stack,0.4
+25419C,Triple Super Phosphate Stack,0.4
+2542010,Slag Loadout Fugitives - Elemental Phosphorus Plant,0.4
+254202.5,Slag Loadout Fugitives - Elemental Phosphorus Plant,0.4
+2542030,Slag Loadout Fugitives - Elemental Phosphorus Plant,0.4
+25420C,Slag Loadout Fugitives - Elemental Phosphorus Plant,0.4
+2542110,Calciner - Elemental Phosphorus Plant,0.4
+254212.5,Calciner - Elemental Phosphorus Plant,0.4
+2542130,Calciner - Elemental Phosphorus Plant,0.4
+25421C,Calciner - Elemental Phosphorus Plant,0.4
+2542210,Furnace Tapping - Elemental Phosphorus Plant,0.4
+254222.5,Furnace Tapping - Elemental Phosphorus Plant,0.4
+2542230,Furnace Tapping - Elemental Phosphorus Plant,0.4
+25422C,Furnace Tapping - Elemental Phosphorus Plant,0.4
+2550010,Tar Pot,0.4
+255002.5,Tar Pot,0.4
+2550030,Tar Pot,0.4
+25500C,Tar Pot,0.4
+2570110,Metal Fabrication - Galvanizing (ZnO),0.4
+257012.5,Metal Fabrication - Galvanizing (ZnO),0.4
+2570130,Metal Fabrication - Galvanizing (ZnO),0.4
+25701C,Metal Fabrication - Galvanizing (ZnO),0.4
+2570210,Metal Fabrication - Sandblasting,0.4
+257022.5,Metal Fabrication - Sandblasting,0.4
+2570230,Metal Fabrication - Sandblasting,0.4
+25702C,Metal Fabrication - Sandblasting,0.4
+2570310,Metal Fabrication - Welding,0.4
+257032.5,Metal Fabrication - Welding,0.4
+2570330,Metal Fabrication - Welding,0.4
+25703C,Metal Fabrication - Welding,0.4
+2610110,Refinery Process Heaters (Gas),0.4
+261012.5,Refinery Process Heaters (Gas),0.4
+2610130,Refinery Process Heaters (Gas),0.4
+26101C,Refinery Process Heaters (Gas),0.4
+2620210,Petroleum Refinery Catalytic Cracker,0.4
+262022.5,Petroleum Refinery Catalytic Cracker,0.4
+2620230,Petroleum Refinery Catalytic Cracker,0.4
+26202C,Petroleum Refinery Catalytic Cracker,0.4
+2620310,Petroleum Refinery Catalytic Cracker,0.4
+262032.5,Petroleum Refinery Catalytic Cracker,0.4
+2620330,Petroleum Refinery Catalytic Cracker,0.4
+26203C,Petroleum Refinery Catalytic Cracker,0.4
+2620410,Petroleum Refinery Catalytic Cracker,0.4
+262042.5,Petroleum Refinery Catalytic Cracker,0.4
+2620430,Petroleum Refinery Catalytic Cracker,0.4
+26204C,Petroleum Refinery Catalytic Cracker,0.4
+2620510,Petroleum Refinery Catalytic Cracker,0.4
+262052.5,Petroleum Refinery Catalytic Cracker,0.4
+2620530,Petroleum Refinery Catalytic Cracker,0.4
+26205C,Petroleum Refinery Catalytic Cracker,0.4
+2620610,Coke Calciner,0.4
+262062.5,Coke Calciner,0.4
+2620630,Coke Calciner,0.4
+26206C,Coke Calciner,0.4
+2620710,Green Coke Dust,0.4
+262072.5,Green Coke Dust,0.4
+2620730,Green Coke Dust,0.4
+26207C,Green Coke Dust,0.4
+2620810,Coke Cooler,0.4
+262082.5,Coke Cooler,0.4
+2620830,Coke Cooler,0.4
+26208C,Coke Cooler,0.4
+2620910,Catalytic Cracker Composite,0.4
+262092.5,Catalytic Cracker Composite,0.4
+2620930,Catalytic Cracker Composite,0.4
+26209C,Catalytic Cracker Composite,0.4
+2710210,Glass Furnace,0.4
+271022.5,Glass Furnace,0.4
+2710230,Glass Furnace,0.4
+27102C,Glass Furnace,0.4
+2720110,Cement Kiln (Gas-Fired),0.4
+272012.5,Cement Kiln (Gas-Fired),0.4
+2720130,Cement Kiln (Gas-Fired),0.4
+27201C,Cement Kiln (Gas-Fired),0.4
+2720310,Cement Kiln (Coal-Fired),0.4
+272032.5,Cement Kiln (Coal-Fired),0.4
+2720330,Cement Kiln (Coal-Fired),0.4
+27203C,Cement Kiln (Coal-Fired),0.4
+2720410,Portland Cement Dust,0.4
+272042.5,Portland Cement Dust,0.4
+2720430,Portland Cement Dust,0.4
+27204C,Portland Cement Dust,0.4
+2720510,Cement Ball Mill,0.4
+272052.5,Cement Ball Mill,0.4
+2720530,Cement Ball Mill,0.4
+27205C,Cement Ball Mill,0.4
+2750110,Gypsum Calciner,0.4
+275012.5,Gypsum Calciner,0.4
+2750130,Gypsum Calciner,0.4
+27501C,Gypsum Calciner,0.4
+2750210,Gypsum Handling,0.4
+275022.5,Gypsum Handling,0.4
+2750230,Gypsum Handling,0.4
+27502C,Gypsum Handling,0.4
+2750310,Gypsum Kiln,0.4
+275032.5,Gypsum Kiln,0.4
+2750330,Gypsum Kiln,0.4
+27503C,Gypsum Kiln,0.4
+2750410,Gypsum Pile Dust,0.4
+275042.5,Gypsum Pile Dust,0.4
+2750430,Gypsum Pile Dust,0.4
+27504C,Gypsum Pile Dust,0.4
+2760110,Lime Handling,0.4
+276012.5,Lime Handling,0.4
+2760130,Lime Handling,0.4
+27601C,Lime Handling,0.4
+2760210,Lime Kiln,0.4
+276022.5,Lime Kiln,0.4
+2760230,Lime Kiln,0.4
+27602C,Lime Kiln,0.4
+2820110,Cast Iron Induction Furnace,0.4
+282012.5,Cast Iron Induction Furnace,0.4
+2820130,Cast Iron Induction Furnace,0.4
+28201C,Cast Iron Induction Furnace,0.4
+2820210,Cast Iron Cupola,0.4
+282022.5,Cast Iron Cupola,0.4
+2820230,Cast Iron Cupola,0.4
+28202C,Cast Iron Cupola,0.4
+2830110,Steel Production - Steel Sinter Plant,0.4
+283012.5,Steel Production - Steel Sinter Plant,0.4
+2830130,Steel Production - Steel Sinter Plant,0.4
+28301C,Steel Production - Steel Sinter Plant,0.4
+2830210,Steel Production - Open Hearth Furnace,0.4
+283022.5,Steel Production - Open Hearth Furnace,0.4
+2830230,Steel Production - Open Hearth Furnace,0.4
+28302C,Steel Production - Open Hearth Furnace,0.4
+2830310,Steel Production - Basic Oxygen Furnace,0.4
+283032.5,Steel Production - Basic Oxygen Furnace,0.4
+2830330,Steel Production - Basic Oxygen Furnace,0.4
+28303C,Steel Production - Basic Oxygen Furnace,0.4
+2830410,Iron Ore Dust - Sinter,0.4
+283042.5,Iron Ore Dust - Sinter,0.4
+2830430,Iron Ore Dust - Sinter,0.4
+28304C,Iron Ore Dust - Sinter,0.4
+2830510,Steel Electric Arc Furnace,0.4
+283052.5,Steel Electric Arc Furnace,0.4
+2830530,Steel Electric Arc Furnace,0.4
+28305C,Steel Electric Arc Furnace,0.4
+2830610,Steel Desulfurization Baghouse Dust,0.4
+283062.5,Steel Desulfurization Baghouse Dust,0.4
+2830630,Steel Desulfurization Baghouse Dust,0.4
+28306C,Steel Desulfurization Baghouse Dust,0.4
+2830710,Steel Production - Basic Oxygen Furnace,0.4
+283072.5,Steel Production - Basic Oxygen Furnace,0.4
+2830730,Steel Production - Basic Oxygen Furnace,0.4
+28307C,Steel Production - Basic Oxygen Furnace,0.4
+2840110,Ferromanganese Furnace,0.4
+284012.5,Ferromanganese Furnace,0.4
+2840130,Ferromanganese Furnace,0.4
+28401C,Ferromanganese Furnace,0.4
+2860110,Steel Foundry - Steel Heat Treating (Salt Quench),0.4
+286012.5,Steel Foundry - Steel Heat Treating (Salt Quench),0.4
+2860130,Steel Foundry - Steel Heat Treating (Salt Quench),0.4
+28601C,Steel Foundry - Steel Heat Treating (Salt Quench),0.4
+2910110,Aluminum Processing,0.4
+291012.5,Aluminum Processing,0.4
+2910130,Aluminum Processing,0.4
+29101C,Aluminum Processing,0.4
+2910210,Aluminum Reduction Potline,0.4
+291022.5,Aluminum Reduction Potline,0.4
+2910230,Aluminum Reduction Potline,0.4
+29102C,Aluminum Reduction Potline,0.4
+2920110,Copper Oxide Kiln,0.4
+292012.5,Copper Oxide Kiln,0.4
+2920130,Copper Oxide Kiln,0.4
+29201C,Copper Oxide Kiln,0.4
+2920210,Primary Copper Smelter,0.4
+292022.5,Primary Copper Smelter,0.4
+2920230,Primary Copper Smelter,0.4
+29202C,Primary Copper Smelter,0.4
+2920310,Primary Copper Reverberatory Furnace - Slag Tap,0.4
+292032.5,Primary Copper Reverberatory Furnace - Slag Tap,0.4
+2920330,Primary Copper Reverberatory Furnace - Slag Tap,0.4
+29203C,Primary Copper Reverberatory Furnace - Slag Tap,0.4
+2920410,Primary Copper Reverberatory Furnace - Slag Skim & Pour,0.4
+292042.5,Primary Copper Reverberatory Furnace - Slag Skim & Pour,0.4
+2920430,Primary Copper Reverberatory Furnace - Slag Skim & Pour,0.4
+29204C,Primary Copper Reverberatory Furnace - Slag Skim & Pour,0.4
+2920510,Primary Copper Converter - Secondary Hood,0.4
+292052.5,Primary Copper Converter - Secondary Hood,0.4
+2920530,Primary Copper Converter - Secondary Hood,0.4
+29205C,Primary Copper Converter - Secondary Hood,0.4
+2920610,Primary Copper Converter - Secondary Hood,0.4
+292062.5,Primary Copper Converter - Secondary Hood,0.4
+2920630,Primary Copper Converter - Secondary Hood,0.4
+29206C,Primary Copper Converter - Secondary Hood,0.4
+2920710,Primary Copper Flash Furnace - Matte & Slag Tap,0.4
+292072.5,Primary Copper Flash Furnace - Matte & Slag Tap,0.4
+2920730,Primary Copper Flash Furnace - Matte & Slag Tap,0.4
+29207C,Primary Copper Flash Furnace - Matte & Slag Tap,0.4
+2920810,Primary Copper - Process Stack,0.4
+292082.5,Primary Copper - Process Stack,0.4
+2920830,Primary Copper - Process Stack,0.4
+29208C,Primary Copper - Process Stack,0.4
+2920910,Primary Copper Roaster,0.4
+292092.5,Primary Copper Roaster,0.4
+2920930,Primary Copper Roaster,0.4
+29209C,Primary Copper Roaster,0.4
+2921010,Primary Copper Reverberatory Furnace Fugitives Composite,0.4
+292102.5,Primary Copper Reverberatory Furnace Fugitives Composite,0.4
+2921030,Primary Copper Reverberatory Furnace Fugitives Composite,0.4
+29210C,Primary Copper Reverberatory Furnace Fugitives Composite,0.4
+2921110,Primary Copper Converter - Secondary Hood Composite,0.4
+292112.5,Primary Copper Converter - Secondary Hood Composite,0.4
+2921130,Primary Copper Converter - Secondary Hood Composite,0.4
+29211C,Primary Copper Converter - Secondary Hood Composite,0.4
+2930110,Primary Lead Smelting - Slag Pouring,0.4
+293012.5,Primary Lead Smelting - Slag Pouring,0.4
+2930130,Primary Lead Smelting - Slag Pouring,0.4
+29301C,Primary Lead Smelting - Slag Pouring,0.4
+2930210,Primary Lead Smelting - Blast Furnace,0.4
+293022.5,Primary Lead Smelting - Blast Furnace,0.4
+2930230,Primary Lead Smelting - Blast Furnace,0.4
+29302C,Primary Lead Smelting - Blast Furnace,0.4
+2930310,Primary Lead Smelting - Zinc Fuming,0.4
+293032.5,Primary Lead Smelting - Zinc Fuming,0.4
+2930330,Primary Lead Smelting - Zinc Fuming,0.4
+29303C,Primary Lead Smelting - Zinc Fuming,0.4
+2930410,Primary Lead Smelting - Sintering,0.4
+293042.5,Primary Lead Smelting - Sintering,0.4
+2930430,Primary Lead Smelting - Sintering,0.4
+29304C,Primary Lead Smelting - Sintering,0.4
+2930510,Primary Lead Smelting - Blast Furnace Upset,0.4
+293052.5,Primary Lead Smelting - Blast Furnace Upset,0.4
+2930530,Primary Lead Smelting - Blast Furnace Upset,0.4
+29305C,Primary Lead Smelting - Blast Furnace Upset,0.4
+2930610,Primary Lead Smelting-Zinc Baghouse,0.4
+293062.5,Primary Lead Smelting-Zinc Baghouse,0.4
+2930630,Primary Lead Smelting-Zinc Baghouse,0.4
+29306C,Primary Lead Smelting-Zinc Baghouse,0.4
+2930710,Primary Lead Smelting-Dross Reverberatory Furnace,0.4
+293072.5,Primary Lead Smelting-Dross Reverberatory Furnace,0.4
+2930730,Primary Lead Smelting-Dross Reverberatory Furnace,0.4
+29307C,Primary Lead Smelting-Dross Reverberatory Furnace,0.4
+2930910,Primary Lead Smelting-Sinter Production,0.4
+293092.5,Primary Lead Smelting-Sinter Production,0.4
+2930930,Primary Lead Smelting-Sinter Production,0.4
+29309C,Primary Lead Smelting-Sinter Production,0.4
+2931010,Primary Lead - Dross Building,0.4
+293102.5,Primary Lead - Dross Building,0.4
+2931030,Primary Lead - Dross Building,0.4
+29310C,Primary Lead - Dross Building,0.4
+2931110,Primary Lead - Slag Pour,0.4
+293112.5,Primary Lead - Slag Pour,0.4
+2931130,Primary Lead - Slag Pour,0.4
+29311C,Primary Lead - Slag Pour,0.4
+2933010,Primary Lead Smelting - Composite,0.4
+293302.5,Primary Lead Smelting - Composite,0.4
+2933030,Primary Lead Smelting - Composite,0.4
+29330C,Primary Lead Smelting - Composite,0.4
+2950110,Secondary Copper Pyrometal - Cathode Charge,0.4
+295012.5,Secondary Copper Pyrometal - Cathode Charge,0.4
+2950130,Secondary Copper Pyrometal - Cathode Charge,0.4
+29501C,Secondary Copper Pyrometal - Cathode Charge,0.4
+2950210,Secondary Copper Pyrometal - Regular Charge,0.4
+295022.5,Secondary Copper Pyrometal - Regular Charge,0.4
+2950230,Secondary Copper Pyrometal - Regular Charge,0.4
+29502C,Secondary Copper Pyrometal - Regular Charge,0.4
+3110110,Light Duty Vehicles-Leaded,0.25
+311012.5,Light Duty Vehicles-Leaded,0.25
+3110130,Light Duty Vehicles-Leaded,0.25
+31101C,Light Duty Vehicles-Leaded,0.25
+3110210,Heavy Duty Vehicles - Leaded,0.25
+311022.5,Heavy Duty Vehicles - Leaded,0.25
+3110230,Heavy Duty Vehicles - Leaded,0.25
+31102C,Heavy Duty Vehicles - Leaded,0.25
+3110310,Light Duty Vehicles - Leaded,0.25
+311032.5,Light Duty Vehicles - Leaded,0.25
+3110330,Light Duty Vehicles - Leaded,0.25
+31103C,Light Duty Vehicles - Leaded,0.25
+3110410,Light Duty Vehicles - Leaded,0.25
+311042.5,Light Duty Vehicles - Leaded,0.25
+3110430,Light Duty Vehicles - Leaded,0.25
+31104C,Light Duty Vehicles - Leaded,0.25
+3110510,Light Duty Vehicles - Leaded Composite,0.25
+311052.5,Light Duty Vehicles - Leaded Composite,0.25
+3110530,Light Duty Vehicles - Leaded Composite,0.25
+31105C,Light Duty Vehicles - Leaded Composite,0.25
+3110610,Light Duty Vehicle - Leaded,0.25
+311062.5,Light Duty Vehicle - Leaded,0.25
+3110630,Light Duty Vehicle - Leaded,0.25
+31106C,Light Duty Vehicle - Leaded,0.25
+3110710,Light Duty Vehicle - With Catalyst,0.25
+311072.5,Light Duty Vehicle - With Catalyst,0.25
+3110730,Light Duty Vehicle - With Catalyst,0.25
+31107C,Light Duty Vehicle - With Catalyst,0.25
+3110810,Light Duty Vehicle - Non-Catalyst,0.25
+311082.5,Light Duty Vehicle - Non-Catalyst,0.25
+3110830,Light Duty Vehicle - Non-Catalyst,0.25
+31108C,Light Duty Vehicle - Non-Catalyst,0.25
+3120110,Light Duty Vehicles - Unleaded,0.25
+312012.5,Light Duty Vehicles - Unleaded,0.25
+3120130,Light Duty Vehicles - Unleaded,0.25
+31201C,Light Duty Vehicles - Unleaded,0.25
+3120210,Light Duty Vehicles - Unleaded,0.25
+312022.5,Light Duty Vehicles - Unleaded,0.25
+3120230,Light Duty Vehicles - Unleaded,0.25
+31202C,Light Duty Vehicles - Unleaded,0.25
+3120310,Light Duty Vehicles - Unleaded,0.25
+312032.5,Light Duty Vehicles - Unleaded,0.25
+3120330,Light Duty Vehicles - Unleaded,0.25
+31203C,Light Duty Vehicles - Unleaded,0.25
+3123010,Light Duty Vehicles - Composite,0.25
+312302.5,Light Duty Vehicles - Composite,0.25
+3123030,Light Duty Vehicles - Composite,0.25
+31230C,Light Duty Vehicles - Composite,0.25
+3156,Tire Wear,0.4
+3157,Brake Wear,0.4
+3158,Motor Vehicle Exhaust - Gasoline,0.25
+3190,Coal Combustion,0.4
+3191,Coal Combustion,0.4
+3192,Coal Combustion,0.4
+3193,Coal Combustion,0.4
+3194,Coal Combustion,0.4
+3195,Gas Combustion,0.4
+3196,Agriculture Soil,0.4
+3197,Paved Road,0.4
+3198,Highway Road Dust,0.4
+3199,Highway Road Dust,0.4
+3200,Highway Road Dust,0.4
+3201,Paved Road Dust,0.4
+3202,Road Sanding,0.4
+3203,Paved Road Dust,0.4
+3204,Unpaved Road Dust,0.4
+3205,Motor Vehicle Exhaust,0.25
+3206,Motor Vehicle Exhaust,0.25
+3207,Motor Vehicle Exhaust,0.25
+3208,Motor Vehicle Exhaust,0.25
+3209,Motor Vehicle Exhaust,0.25
+3210,Motor Vehicle Exhaust,0.25
+3210110,Light Duty Vehicles - Diesel,0.25
+321012.5,Light Duty Vehicles - Diesel,0.25
+3210130,Light Duty Vehicles - Diesel,0.25
+32101C,Light Duty Vehicles - Diesel,0.25
+3210210,Light Duty Vehicles - Diesel,0.25
+321022.5,Light Duty Vehicles - Diesel,0.25
+3210230,Light Duty Vehicles - Diesel,0.25
+32102C,Light Duty Vehicles - Diesel,0.25
+3210310,Light Duty Vehicles - Diesel,0.25
+321032.5,Light Duty Vehicles - Diesel,0.25
+3210330,Light Duty Vehicles - Diesel,0.25
+32103C,Light Duty Vehicles - Diesel,0.25
+3210410,Light Duty Vehicles - Diesel Composite,0.25
+321042.5,Light Duty Vehicles - Diesel Composite,0.25
+3210430,Light Duty Vehicles - Diesel Composite,0.25
+32104C,Light Duty Vehicles - Diesel Composite,0.25
+3211,Motor Vehicle Exhaust,0.25
+3212,Motor Vehicle Exhaust,0.25
+3213,Gasoline Exhaust,0.25
+3214,Gasoline Exhaust,0.25
+3215,Gasoline Exhaust,0.25
+3216,Gasoline Exhaust,0.25
+3217,Gasoline Exhaust,0.25
+3218,Gasoline Exhaust,0.25
+3219,Diesel Exhaust,0.25
+3220,Diesel Exhaust,0.25
+3220210,Heavy Duty Diesel,0.25
+322022.5,Heavy Duty Diesel,0.25
+3220230,Heavy Duty Diesel,0.25
+32202C,Heavy Duty Diesel,0.25
+3220310,Heavy Duty Vehicles - Diesel,0.25
+322032.5,Heavy Duty Vehicles - Diesel,0.25
+3220330,Heavy Duty Vehicles - Diesel,0.25
+32203C,Heavy Duty Vehicles - Diesel,0.25
+3220410,Heavy Duty Vehicles - Diesel,0.25
+322042.5,Heavy Duty Vehicles - Diesel,0.25
+3220430,Heavy Duty Vehicles - Diesel,0.25
+32204C,Heavy Duty Vehicles - Diesel,0.25
+3220510,Diesel Vehicles - Las Vegas Valley (1987),0.25
+322052.5,Diesel Vehicles - Las Vegas Valley (1987),0.25
+3220530,Diesel Vehicles - Las Vegas Valley (1987),0.25
+32205C,Diesel Vehicles - Las Vegas Valley (1987),0.25
+3220610,Heavy Duty Vehicles - Diesel Composite,0.25
+322062.5,Heavy Duty Vehicles - Diesel Composite,0.25
+3220630,Heavy Duty Vehicles - Diesel Composite,0.25
+32206C,Heavy Duty Vehicles - Diesel Composite,0.25
+3220710,Heavy Duty Vehicles - Diesel,0.25
+322072.5,Heavy Duty Vehicles - Diesel,0.25
+3220730,Heavy Duty Vehicles - Diesel,0.25
+32207C,Heavy Duty Vehicles - Diesel,0.25
+3220810,Heavy Duty Diesel Trucks,0.25
+322082.5,Heavy Duty Diesel Trucks,0.25
+3220830,Heavy Duty Diesel Trucks,0.25
+32208C,Heavy Duty Diesel Trucks,0.25
+3221,Diesel Exhaust,0.25
+3222,Gasoline Exhaust - Unleaded,0.25
+3223,Gasoline Exhaust - Unleaded,0.25
+3224,Gasoline Exhaust - Unleaded,0.25
+3225,Gasoline Exhaust - Unleaded,0.25
+3226,Gasoline Exhaust - Unleaded,0.25
+3227,Gasoline Exhaust - Unleaded,0.25
+3228,Gasoline Exhaust - Unleaded,0.25
+3229,Gasoline Exhaust - Unleaded,0.25
+3230,Gasoline Exhaust - Unleaded,0.25
+3231,Refinery,0.4
+3232,Residential Wood Burning,0.7
+3233,Residential Wood Burning,0.7
+3234,Residential Wood Burning,0.7
+3235,Residential Wood Burning,0.7
+3236,Residential Wood Burning,0.7
+3237,Residential Wood Burning,0.7
+3238,Residential Wood Burning,0.7
+3239,Residential Wood Burning,0.7
+3240,Residential Wood Burning,0.7
+3241,Agriculture Vegetative Burning,0.7
+3242,Agriculture Vegetative Burning,0.7
+3243,Agriculture Vegetative Burning,0.7
+3244,Agriculture Vegetative Burning,0.7
+3245,Agriculture Vegetative Burning,0.7
+3246,Residential Wood Burning,0.7
+3247,Residential Wood Burning,0.7
+3248,Residential Wood Burning,0.7
+3249,Residential Wood Burning,0.7
+3250,Residential Wood Burning,0.7
+3251,Oil Combustion,0.4
+3252,Oil Combustion,0.4
+3253,Oil Combustion,0.4
+3254,Oil Combustion,0.4
+3255,Oil Combustion,0.4
+3256,Agriculture Vegetative Burning,0.7
+3257,Agriculture Vegetative Burning,0.7
+3258,Agriculture Vegetative Burning,0.7
+3259,Agriculture Vegetative Burning,0.7
+3260,Agriculture Vegetative Burning,0.7
+3261,Freeway Road Dust,0.4
+3262,Freeway Road Dust,0.4
+3263,Freeway Road Dust,0.4
+3264,Freeway Road Dust,0.4
+3265,Freeway Road Dust,0.4
+3266,Diesel Exhaust,0.25
+3267,Diesel Exhaust,0.25
+3268,Diesel Exhaust,0.25
+3270,Diesel Exhaust,0.25
+3271,Residential Wood Burning,0.7
+3272,Residential Wood Burning,0.7
+3273,Residential Wood Burning,0.7
+3275,Residential Wood Burning,0.7
+3276,Residential Wood Burning,0.7
+3277,Residential Wood Burning,0.7
+3278,Residential Wood Burning,0.7
+3280,Residential Wood Burning,0.7
+3281,Tire Burning,0.4
+3282,Tire Burning,0.4
+3283,Tire Burning,0.4
+3284,Tire Burning,0.4
+3285,Tire Burning,0.4
+3286,Incinerator,0.4
+3287,Incinerator,0.4
+3288,Incinerator,0.4
+3290,Incinerator,0.4
+3291,Oil Combustion,0.4
+3292,Oil Combustion,0.4
+3293,Oil Combustion,0.4
+3295,Oil Combustion,0.4
+3296,Agriculture Soil,0.4
+3297,Agriculture Soil,0.4
+3298,Agriculture Soil,0.4
+3299,Agriculture Soil,0.4
+3300,Agriculture Soil,0.4
+3300110,Leaded/unleaded Gasoline Composite - 1977,0.25
+330012.5,Leaded/unleaded Gasoline Composite - 1977,0.25
+3300130,Leaded/unleaded Gasoline Composite - 1977,0.25
+33001C,Leaded/unleaded Gasoline Composite - 1977,0.25
+3300210,"Transportation Composite - Medford, OR (1980)",0.25
+330022.5,"Transportation Composite - Medford, OR (1980)",0.25
+3300230,"Transportation Composite - Medford, OR (1980)",0.25
+33002C,"Transportation Composite - Medford, OR (1980)",0.25
+3300310,"Transportation Composite - Portland, OR (1979)",0.25
+330032.5,"Transportation Composite - Portland, OR (1979)",0.25
+3300330,"Transportation Composite - Portland, OR (1979)",0.25
+33003C,"Transportation Composite - Portland, OR (1979)",0.25
+3300410,Transportation Composite,0.25
+330042.5,Transportation Composite,0.25
+3300430,Transportation Composite,0.25
+33004C,Transportation Composite,0.25
+3300510,Transportation Composite,0.25
+330052.5,Transportation Composite,0.25
+3300530,Transportation Composite,0.25
+33005C,Transportation Composite,0.25
+3300610,Transportation Composite,0.25
+330062.5,Transportation Composite,0.25
+3300630,Transportation Composite,0.25
+33006C,Transportation Composite,0.25
+3300710,Transportation Composite,0.25
+330072.5,Transportation Composite,0.25
+3300730,Transportation Composite,0.25
+33007C,Transportation Composite,0.25
+3300810,Transportation Composite,0.25
+330082.5,Transportation Composite,0.25
+3300830,Transportation Composite,0.25
+33008C,Transportation Composite,0.25
+3300910,Transportation Composite,0.25
+330092.5,Transportation Composite,0.25
+3300930,Transportation Composite,0.25
+33009C,Transportation Composite,0.25
+3301,Agriculture Soil,0.4
+3301010,Gasoline Vehicles - Las Vegas Valley (1987),0.25
+330102.5,Gasoline Vehicles - Las Vegas Valley (1987),0.25
+3301030,Gasoline Vehicles - Las Vegas Valley (1987),0.25
+33010C,Gasoline Vehicles - Las Vegas Valley (1987),0.25
+3301110,Highway Vehicles - Composite,0.25
+330112.5,Highway Vehicles - Composite,0.25
+3301130,Highway Vehicles - Composite,0.25
+33011C,Highway Vehicles - Composite,0.25
+3302,Paved Road Dust,0.4
+3302010,Transportation - Composite,0.25
+330202.5,Transportation - Composite,0.25
+3302030,Transportation - Composite,0.25
+33020C,Transportation - Composite,0.25
+3303,Paved Road Dust,0.4
+3304,Paved Road Dust,0.4
+3305,Paved Road Dust,0.4
+3306,Agriculture Soil,0.4
+3307,Agriculture Soil,0.4
+3308,Agriculture Soil,0.4
+3309,Agriculture Soil,0.4
+3310,Agriculture Soil,0.4
+3311,Agriculture Soil,0.4
+3312,Agriculture Soil,0.4
+3313,Agriculture Soil,0.4
+3314,Agriculture Soil,0.4
+3315,Agriculture Soil,0.4
+3316,Sand and Gravel,0.4
+3317,Sand and Gravel,0.4
+3318,Sand and Gravel,0.4
+3319,Sand and Gravel,0.4
+3320,Sand and Gravel,0.4
+3321,Unpaved Road Dust,0.4
+3322,Unpaved Road Dust,0.4
+3323,Unpaved Road Dust,0.4
+3324,Unpaved Road Dust,0.4
+3325,Unpaved Road Dust,0.4
+3326,Paved Road Dust,0.4
+3327,Paved Road Dust,0.4
+3328,Paved Road Dust,0.4
+3329,Paved Road Dust,0.4
+3330,Paved Road Dust,0.4
+3331,Agriculture Soil,0.4
+3332,Agriculture Soil,0.4
+3333,Agriculture Soil,0.4
+3334,Agriculture Soil,0.4
+3335,Agriculture Soil,0.4
+3336,Agriculture Soil,0.4
+3337,Agriculture Soil,0.4
+3338,Agriculture Soil,0.4
+3339,Agriculture Soil,0.4
+3340,Agriculture Soil,0.4
+3341,Unpaved Road Dust,0.4
+3342,Unpaved Road Dust,0.4
+3343,Unpaved Road Dust,0.4
+3344,Unpaved Road Dust,0.4
+3345,Unpaved Road Dust,0.4
+3346,Paved Road Dust,0.4
+3347,Paved Road Dust,0.4
+3348,Paved Road Dust,0.4
+3349,Paved Road Dust,0.4
+3350,Paved Road Dust,0.4
+3351,Unpaved Road Dust,0.4
+3352,Unpaved Road Dust,0.4
+3353,Unpaved Road Dust,0.4
+3354,Unpaved Road Dust,0.4
+3355,Unpaved Road Dust,0.4
+3356,Agriculture Soil,0.4
+3357,Agriculture Soil,0.4
+3358,Agriculture Soil,0.4
+3359,Agriculture Soil,0.4
+3360,Agriculture Soil,0.4
+3361,Agriculture Soil,0.4
+3362,Agriculture Soil,0.4
+3363,Agriculture Soil,0.4
+3364,Agriculture Soil,0.4
+3365,Agriculture Soil,0.4
+3366,Unpaved Road Dust,0.4
+3367,Unpaved Road Dust,0.4
+3368,Unpaved Road Dust,0.4
+3369,Unpaved Road Dust,0.4
+3370,Unpaved Road Dust,0.4
+3371,Unpaved Road Dust,0.4
+3372,Unpaved Road Dust,0.4
+3373,Unpaved Road Dust,0.4
+3374,Unpaved Road Dust,0.4
+3375,Unpaved Road Dust,0.4
+3376,Unpaved Road Dust,0.4
+3377,Unpaved Road Dust,0.4
+3378,Unpaved Road Dust,0.4
+3379,Unpaved Road Dust,0.4
+3380,Unpaved Road Dust,0.4
+3381,Paved Road Dust,0.4
+3382,Paved Road Dust,0.4
+3383,Paved Road Dust,0.4
+3384,Paved Road Dust,0.4
+3385,Paved Road Dust,0.4
+3386,Paved Road Dust,0.4
+3387,Paved Road Dust,0.4
+3388,Paved Road Dust,0.4
+3389,Paved Road Dust,0.4
+3390,Paved Road Dust,0.4
+3391,Agriculture Soil,0.4
+3392,Agriculture Soil,0.4
+3393,Agriculture Soil,0.4
+3394,Agriculture Soil,0.4
+3395,Agriculture Soil,0.4
+3396,Desert Soil,0.4
+3397,Desert Soil,0.4
+3398,Desert Soil,0.4
+3399,Desert Soil,0.4
+3400,Desert Soil,0.4
+3400110,Jet Aircraft,0.25
+340012.5,Jet Aircraft,0.25
+3400130,Jet Aircraft,0.25
+34001C,Jet Aircraft,0.25
+3400210,Tire Wear,0.4
+340022.5,Tire Wear,0.4
+3400230,Tire Wear,0.4
+34002C,Tire Wear,0.4
+3400310,Tire Wear,0.4
+340032.5,Tire Wear,0.4
+3400330,Tire Wear,0.4
+34003C,Tire Wear,0.4
+3400410,"Brake Lining, Asbestos",0.4
+340042.5,"Brake Lining, Asbestos",0.4
+3400430,"Brake Lining, Asbestos",0.4
+34004C,"Brake Lining, Asbestos",0.4
+3400510,Motor Oil,0.4
+340052.5,Motor Oil,0.4
+3400530,Motor Oil,0.4
+34005C,Motor Oil,0.4
+3400610,Semimetal Disk Brake Pads,0.4
+340062.5,Semimetal Disk Brake Pads,0.4
+3400630,Semimetal Disk Brake Pads,0.4
+34006C,Semimetal Disk Brake Pads,0.4
+3400710,Organometallic Brake Dust,0.4
+340072.5,Organometallic Brake Dust,0.4
+3400730,Organometallic Brake Dust,0.4
+34007C,Organometallic Brake Dust,0.4
+3400810,Tire Wear,0.4
+340082.5,Tire Wear,0.4
+3400830,Tire Wear,0.4
+34008C,Tire Wear,0.4
+3401,Desert Soil,0.4
+3402,Desert Soil,0.4
+3403,Desert Soil,0.4
+3404,Desert Soil,0.4
+3405,Desert Soil,0.4
+3406,Desert Soil,0.4
+3407,Desert Soil,0.4
+3408,Desert Soil,0.4
+3409,Desert Soil,0.4
+3410,Desert Soil,0.4
+3411,Desert Soil,0.4
+3412,Desert Soil,0.4
+3413,Desert Soil,0.4
+3414,Desert Soil,0.4
+3415,Desert Soil,0.4
+3416,Volcanic Soil,0.4
+3417,Volcanic Soil,0.4
+3418,Volcanic Soil,0.4
+3419,Volcanic Soil,0.4
+3420,Volcanic Soil,0.4
+3421,Paved Road Dust,0.4
+3422,Paved Road Dust,0.4
+3423,Paved Road Dust,0.4
+3424,Paved Road Dust,0.4
+3425,Paved Road Dust,0.4
+3426,Agriculture Soil,0.4
+3427,Agriculture Soil,0.4
+3428,Agriculture Soil,0.4
+3429,Agriculture Soil,0.4
+3430,Agriculture Soil,0.4
+3431,Paved Road Dust,0.4
+3432,Paved Road Dust,0.4
+3433,Paved Road Dust,0.4
+3434,Paved Road Dust,0.4
+3435,Paved Road Dust,0.4
+3436,Unpaved Road Dust,0.4
+3437,Unpaved Road Dust,0.4
+3438,Unpaved Road Dust,0.4
+3439,Unpaved Road Dust,0.4
+3440,Unpaved Road Dust,0.4
+3441,Agriculture Soil,0.4
+3442,Agriculture Soil,0.4
+3443,Agriculture Soil,0.4
+3444,Agriculture Soil,0.4
+3445,Agriculture Soil,0.4
+3446,Agriculture Vegetative Burning,0.7
+3447,Agriculture Vegetative Burning,0.7
+3448,Agriculture Vegetative Burning,0.7
+3449,Agriculture Vegetative Burning,0.7
+3450,Agriculture Vegetative Burning,0.7
+3451,Agriculture Vegetative Burning,0.7
+3452,Agriculture Vegetative Burning,0.7
+3453,Agriculture Vegetative Burning,0.7
+3454,Agriculture Vegetative Burning,0.7
+3455,Agriculture Vegetative Burning,0.7
+3456,Dairy Soil,0.4
+3457,Dairy Soil,0.4
+3458,Dairy Soil,0.4
+3459,Dairy Soil,0.4
+3460,Dairy Soil,0.4
+3461,Diesel Exhaust,0.25
+3462,Diesel Exhaust,0.25
+3463,Diesel Exhaust,0.25
+3465,Diesel Exhaust,0.25
+3466,Gold Quarry Soil,0.4
+3467,Gold Quarry Soil,0.4
+3468,Gold Quarry Soil,0.4
+3469,Gold Quarry Soil,0.4
+3470,Gold Quarry Soil,0.4
+3471,Gold Quarry Soil,0.4
+3472,Gold Quarry Soil,0.4
+3473,Gold Quarry Soil,0.4
+3474,Gold Quarry Soil,0.4
+3475,Gold Quarry Soil,0.4
+3476,Local Soil,0.4
+3477,Local Soil,0.4
+3478,Local Soil,0.4
+3479,Local Soil,0.4
+3480,Local Soil,0.4
+3481,Paved Road Dust,0.4
+3482,Local Soil,0.4
+3483,Local Soil,0.4
+3484,Paved Road Dust,0.4
+3485,Local Soil,0.4
+3486,Local Soil,0.4
+3487,Agriculture Soil,0.4
+3488,Agriculture Soil,0.4
+3489,Agriculture Soil,0.4
+3490,Construction Dust,0.4
+3491,Construction Dust,0.4
+3492,Construction Dust,0.4
+3493,Desert Soil,0.4
+3494,Desert Soil,0.4
+3495,Desert Soil,0.4
+3496,Agriculture Soil,0.4
+3497,Agriculture Soil,0.4
+3498,Agriculture Soil,0.4
+3499,Paved Road Dust,0.4
+3500,Paved Road Dust,0.4
+3501,Paved Road Dust,0.4
+3502,Paved Road Dust,0.4
+3503,Paved Road Dust,0.4
+3504,Paved Road Dust,0.4
+3505,Unpaved Road Dust,0.4
+3506,Unpaved Road Dust,0.4
+3507,Unpaved Road Dust,0.4
+3508,Unpaved Road Dust,0.4
+3509,Unpaved Road Dust,0.4
+3510,Unpaved Road Dust,0.4
+3511,Desert Soil,0.4
+3512,Desert Soil,0.4
+3513,Desert Soil,0.4
+3514,Unpaved Road Dust,0.4
+3515,Unpaved Road Dust,0.4
+3516,Unpaved Road Dust,0.4
+3517,Gasoline Exhaust,0.25
+3518,Diesel Exhaust,0.25
+3519,Motor Vehicle Exhaust,0.25
+3520,Motor Vehicle Exhaust,0.25
+3521,Motor Vehicle Exhaust,0.25
+3522,Motor Vehicle Exhaust,0.25
+3523,Motor Vehicle Exhaust,0.25
+3524,Motor Vehicle Exhaust,0.25
+3525,Motor Vehicle Exhaust,0.25
+3526,Motor Vehicle Exhaust,0.25
+3527,Motor Vehicle Exhaust,0.25
+3528,Motor Vehicle Exhaust,0.25
+3529,Regional Background,0.4
+3530,Regional Background,0.4
+3531,Unpaved Road Dust,0.4
+3532,Unpaved Road Dust,0.4
+3533,Unpaved Road Dust,0.4
+3534,Unpaved Road Dust,0.4
+3535,Unpaved Road Dust,0.4
+3536,Unpaved Road Dust,0.4
+3537,Mill Soil,0.4
+3538,Mill Soil,0.4
+3539,Mill Soil,0.4
+3540,Paved Road Dust,0.4
+3541,Paved Road Dust,0.4
+3542,Paved Road Dust,0.4
+3543,Roof Dust,0.4
+3544,Roof Dust,0.4
+3545,Roof Dust,0.4
+3546,Industrial Soil,0.4
+3547,Industrial Soil,0.4
+3548,Industrial Soil,0.4
+3549,Local Soil,0.4
+3550,Local Soil,0.4
+3551,Local Soil,0.4
+3552,Local Soil,0.4
+3553,Local Soil,0.4
+3554,Local Soil,0.4
+3555,Local Soil,0.4
+3556,Local Soil,0.4
+3557,Local Soil,0.4
+3558,Paved Road Dust,0.4
+3559,Paved Road Dust,0.4
+3560,Local Soil,0.4
+3561,Paved Road Dust,0.4
+3562,Paved Road Dust,0.4
+3563,Local Soil,0.4
+3564,Local Soil,0.4
+3565,Paved Road Dust - Highway,0.4
+3566,Paved Road Dust - Highway,0.4
+3567,Paved Road Dust,0.4
+3568,Paved Road Dust,0.4
+3569,Local Soil,0.4
+3570,Local Soil,0.4
+3571,Local Soil,0.4
+3572,Local Soil,0.4
+3573,Paved Road Dust,0.4
+3574,Local Soil,0.4
+3575,Paved Road Dust,0.4
+3576,Local Soil,0.4
+3577,Local Soil,0.4
+3578,Local Soil,0.4
+3579,Local Soil,0.4
+3580,Local Soil,0.4
+3581,Local Soil,0.4
+3582,Local Soil,0.4
+3583,Motor Vehicle Exhaust,0.25
+3584,Motor Vehicle Exhaust,0.25
+3585,Motor Vehicle Exhaust,0.25
+3586,Motor Vehicle Exhaust,0.25
+3587,Motor Vehicle Exhaust,0.25
+3588,Motor Vehicle Exhaust,0.25
+3589,Motor Vehicle Exhaust,0.25
+3590,Motor Vehicle Exhaust,0.25
+3591,Motor Vehicle Exhaust,0.25
+3592,Motor Vehicle Exhaust,0.25
+3593,Motor Vehicle Exhaust,0.25
+3594,Motor Vehicle Exhaust,0.25
+3595,Motor Vehicle Exhaust,0.25
+3596,Motor Vehicle Exhaust,0.25
+3597,Motor Vehicle Exhaust,0.25
+3598,Motor Vehicle Exhaust,0.25
+3599,Motor Vehicle Exhaust,0.25
+3600,Motor Vehicle Exhaust,0.25
+3601,Motor Vehicle Exhaust,0.25
+3602,Motor Vehicle Exhaust,0.25
+3603,Motor Vehicle Exhaust,0.25
+3604,Motor Vehicle Exhaust,0.25
+3605,Motor Vehicle Exhaust,0.25
+3606,Motor Vehicle Exhaust,0.25
+3607,Motor Vehicle Exhaust,0.25
+3608,Motor Vehicle Exhaust,0.25
+3609,Motor Vehicle Exhaust,0.25
+3610,Motor Vehicle Exhaust,0.25
+3611,Motor Vehicle Exhaust,0.25
+3612,Motor Vehicle Exhaust,0.25
+3613,Motor Vehicle Exhaust,0.25
+3614,Motor Vehicle Exhaust,0.25
+3615,Motor Vehicle Exhaust,0.25
+3616,Motor Vehicle Exhaust,0.25
+3617,Motor Vehicle Exhaust,0.25
+3618,Motor Vehicle Exhaust,0.25
+3619,Motor Vehicle Exhaust,0.25
+3620,Motor Vehicle Exhaust,0.25
+3621,Motor Vehicle Exhaust,0.25
+3622,Motor Vehicle Exhaust,0.25
+3623,Motor Vehicle Exhaust,0.25
+3624,Motor Vehicle Exhaust,0.25
+3625,Agriculture Vegetative Burning,0.7
+3627,Agriculture Vegetative Burning,0.7
+3628,Agriculture Vegetative Burning,0.7
+3630,Agriculture Vegetative Burning,0.7
+3631,Agriculture Vegetative Burning,0.7
+3633,Agriculture Vegetative Burning,0.7
+3639,Agriculture Vegetative Burning,0.7
+3640,Agriculture Vegetative Burning,0.7
+3642,Agriculture Vegetative Burning,0.7
+3643,Cooking,0.4
+3644,Cooking,0.4
+3645,Manure Combustion,0.4
+3646,Manure Combustion,0.4
+3647,Manure Combustion,0.4
+3648,Manure Combustion,0.4
+3649,Manure Combustion,0.4
+3650,Fly Ash,0.4
+3651,Fly Ash,0.4
+3652,Oil Combustion,0.4
+3653,Fly Ash,0.4
+3654,Fly Ash,0.4
+3655,Fly Ash,0.4
+3656,Fly Ash,0.4
+3657,Fly Ash,0.4
+3658,Unpaved Road Dust,0.4
+3659,Local Soil,0.4
+3660,Local Soil,0.4
+3661,Paved Road Dust,0.4
+3662,Paved Road Dust,0.4
+3663,Fly Ash,0.4
+3664,Cement,0.4
+3665,Sand,0.4
+3666,Paved Road Dust,0.4
+3667,Paved Road Dust,0.4
+3668,Unpaved Road Dust,0.4
+3669,Unpaved Road Dust,0.4
+3670,Local Soil,0.4
+3671,Local Soil,0.4
+3672,Unpaved Road Dust,0.4
+3673,Unpaved Road Dust,0.4
+3674,Local Soil,0.4
+3675,Unpaved Road Dust,0.4
+3676,Unpaved Road Dust,0.4
+3677,Cement,0.4
+3678,Local Soil,0.4
+3679,Unpaved Road Dust,0.4
+3680,Paved Road Dust,0.4
+3681,Local Soil,0.4
+3682,Local Soil,0.4
+3683,Motor Vehicle Exhaust,0.25
+3684,Motor Vehicle Exhaust,0.25
+3685,Motor Vehicle Exhaust,0.25
+3686,Coal Combustion,0.4
+3687,Coal Combustion,0.4
+3688,Coal Combustion,0.4
+3689,Coal Combustion,0.4
+3690,Coal Combustion,0.4
+3691,Coal Combustion,0.4
+3692,Coal Combustion,0.4
+3693,Coal Combustion,0.4
+3694,Coal Combustion,0.4
+3695,Coal Combustion,0.4
+3696,Coal Combustion,0.4
+3697,Coal Combustion,0.4
+3698,Coal Combustion,0.4
+3699,Coal Combustion,0.4
+3700,Coal Combustion,0.4
+3701,Coal Combustion,0.4
+3702,Local Soil,0.4
+3703,Local Soil,0.4
+3704,Unpaved Road Dust,0.4
+3705,Paved Road Dust,0.4
+3706,Paved Road Dust,0.4
+3707,Paved Road Dust,0.4
+3708,Paved Road Dust,0.4
+3709,Local Soil,0.4
+3710,Local Soil,0.4
+3711,Unpaved Road Dust,0.4
+3712,Local Soil,0.4
+3713,Paved Road Dust,0.4
+3714,Paved Road Dust,0.4
+3715,Paved Road Dust,0.4
+3716,Paved Road Dust,0.4
+3717,Local Soil,0.4
+3718,Paved Road Dust,0.4
+3719,Unpaved Road Dust,0.4
+3720,Geothermal Background,0.4
+3721,Geothermal Background,0.4
+3722,Geothermal Background,0.4
+3723,Geothermal Background,0.4
+3724,Geothermal Background,0.4
+3725,Motor Vehicle Exhaust,0.25
+3726,Motor Vehicle Exhaust,0.25
+3727,Motor Vehicle Exhaust,0.25
+3728,Motor Vehicle Exhaust,0.25
+3729,Motor Vehicle Exhaust,0.25
+3730,Motor Vehicle Exhaust,0.25
+3731,Motor Vehicle Exhaust,0.25
+3732,Motor Vehicle Exhaust,0.25
+3733,Motor Vehicle Exhaust,0.25
+3734,Motor Vehicle Exhaust,0.25
+3735,Motor Vehicle Exhaust,0.25
+3736,Motor Vehicle Exhaust,0.25
+3737,Motor Vehicle Exhaust,0.25
+3738,Motor Vehicle Exhaust,0.25
+3739,Motor Vehicle Exhaust,0.25
+3740,Motor Vehicle Exhaust,0.25
+3741,Motor Vehicle Exhaust,0.25
+3742,Motor Vehicle Exhaust,0.25
+3754,Regional Background,0.4
+3755,Regional Background,0.4
+3756,Regional Background,0.4
+3757,Residential Coal Combustion,0.4
+3758,Residential Coal Combustion,0.4
+3759,Residential Coal Combustion,0.4
+3760,Residential Coal Combustion,0.4
+3761,Residential Coal Combustion,0.4
+3762,Forest Fire,0.7
+3763,Forest Fire,0.7
+3764,Forest Fire,0.7
+3765,Forest Fire,0.7
+3766,Forest Fire,0.7
+3767,Residential Wood Burning,0.7
+3768,Residential Wood Burning,0.7
+3769,Residential Wood Burning,0.7
+3770,Residential Wood Burning,0.7
+3771,Construction Dust,0.4
+3772,Construction Dust,0.4
+3773,Construction Dust,0.4
+3774,Construction Dust,0.4
+3775,Construction Dust,0.4
+3776,Construction Dust,0.4
+3777,Desert Soil,0.4
+3778,Local Soil,0.4
+3779,Paved Road Dust,0.4
+3780,Paved Road Dust,0.4
+3781,Paved Road Dust,0.4
+3782,Paved Road Dust,0.4
+3783,Paved Road Dust,0.4
+3784,Paved Road Dust,0.4
+3785,Paved Road Dust,0.4
+3786,Paved Road Dust,0.4
+3787,Paved Road Dust,0.4
+3788,Paved Road Dust,0.4
+3789,Paved Road Dust,0.4
+3790,Desert Soil,0.4
+3791,Desert Soil,0.4
+3792,Desert Soil,0.4
+3793,Desert Soil,0.4
+3794,Desert Soil,0.4
+3795,Desert Soil,0.4
+3796,Unpaved Road Dust,0.4
+3797,Unpaved Road Dust,0.4
+3798,Unpaved Road Dust,0.4
+3799,Motor Vehicle Exhaust,0.25
+3800,Motor Vehicle Exhaust,0.25
+3801,Motor Vehicle Exhaust,0.25
+3802,Motor Vehicle Exhaust,0.25
+3803,Motor Vehicle Exhaust,0.25
+3804,Motor Vehicle Exhaust,0.25
+3805,Motor Vehicle Exhaust,0.25
+3806,Motor Vehicle Exhaust,0.25
+3807,Motor Vehicle Exhaust,0.25
+3808,Motor Vehicle Exhaust,0.25
+3809,Motor Vehicle Exhaust,0.25
+3810,Motor Vehicle Exhaust,0.25
+3811,Motor Vehicle Exhaust,0.25
+3812,Motor Vehicle Exhaust,0.25
+3813,Motor Vehicle Exhaust,0.25
+3814,Motor Vehicle Exhaust,0.25
+3815,Motor Vehicle Exhaust,0.25
+3816,Motor Vehicle Exhaust,0.25
+3817,Motor Vehicle Exhaust,0.25
+3818,Motor Vehicle Exhaust,0.25
+3819,Motor Vehicle Exhaust,0.25
+3820,Motor Vehicle Exhaust,0.25
+3821,Motor Vehicle Exhaust,0.25
+3822,Motor Vehicle Exhaust,0.25
+3823,Motor Vehicle Exhaust,0.25
+3824,Motor Vehicle Exhaust,0.25
+3825,Motor Vehicle Exhaust,0.25
+3826,Residential Wood Burning,0.7
+3827,Residential Wood Burning,0.7
+3828,Residential Wood Burning,0.7
+3829,Residential Wood Burning,0.7
+3830,Residential Wood Burning,0.7
+3831,Residential Wood Burning,0.7
+3832,Residential Wood Burning,0.7
+3833,Residential Wood Burning,0.7
+3834,Residential Wood Burning,0.7
+3835,Residential Wood Burning,0.7
+3836,Residential Wood Burning,0.7
+3837,Residential Wood Burning,0.7
+3838,Residential Wood Burning,0.7
+3839,Residential Wood Burning,0.7
+3840,Residential Wood Burning,0.7
+3841,Residential Wood Burning,0.7
+3842,Residential Wood Burning,0.7
+3843,Residential Wood Burning,0.7
+3844,Residential Wood Burning,0.7
+3845,Residential Wood Burning,0.7
+3846,Residential Wood Burning,0.7
+3847,Residential Wood Burning,0.7
+3848,Residential Wood Burning,0.7
+3849,Residential Wood Burning,0.7
+3850,Residential Wood Burning,0.7
+3851,Residential Wood Burning,0.7
+3852,Residential Wood Burning,0.7
+3853,Residential Wood Burning,0.7
+3854,Residential Wood Burning,0.7
+3855,Residential Wood Burning,0.7
+3856,Residential Wood Burning,0.7
+3857,Gasoline Exhaust,0.25
+3858,Diesel Exhaust,0.25
+3859,Diesel Exhaust,0.25
+3860,Helicopter Exhaust,0.25
+3861,Aircraft Exhaust,0.25
+3862,Oil Combustion,0.4
+3863,Oil Combustion,0.4
+3864,Oil Combustion,0.4
+3865,Local Soil,0.4
+3866,"Gasoline Exhaust - Winter, non-smoker",0.25
+3867,"Gasoline Exhaust - Winter, non-smoker",0.25
+3868,"Gasoline Exhaust - Winter, non-smoker",0.25
+3869,"Gasoline Exhaust - Winter, non-smoker",0.25
+3870,"Gasoline Exhaust - Winter, non-smoker",0.25
+3871,"Gasoline Exhaust - Winter, non-smoker",0.25
+3872,"Gasoline Exhaust - Winter, non-smoker",0.25
+3873,"Gasoline Exhaust - Winter, non-smoker",0.25
+3874,"Gasoline Exhaust - Winter, non-smoker",0.25
+3875,"Gasoline Exhaust - Winter, smoker",0.25
+3876,"Gasoline Exhaust - Winter, smoker",0.25
+3877,"Gasoline Exhaust - Winter, smoker",0.25
+3878,Diesel Exhaust,0.25
+3879,Diesel Exhaust,0.25
+3880,Diesel Exhaust,0.25
+3881,"Gasoline Exhaust - Winter, low emitter",0.25
+3882,"Gasoline Exhaust - Winter, low emitter",0.25
+3883,"Gasoline Exhaust - Winter, low emitter",0.25
+3884,"Gasoline Exhaust - Winter, low emitter",0.25
+3885,"Gasoline Exhaust - Winter, low emitter",0.25
+3886,"Gasoline Exhaust - Winter, low emitter",0.25
+3887,"Gasoline Exhaust - Winter, low emitter",0.25
+3888,"Gasoline Exhaust - Winter, low emitter",0.25
+3889,"Gasoline Exhaust - Winter, high emitter",0.25
+3890,"Gasoline Exhaust - Winter, high emitter",0.25
+3891,"Gasoline Exhaust - Winter, high emitter",0.25
+3892,"Gasoline Exhaust - Winter, high emitter",0.25
+3893,"Gasoline Exhaust - Winter, high emitter",0.25
+3894,"Gasoline Exhaust - Winter, high emitter",0.25
+3895,"Gasoline Exhaust - Winter, high emitter",0.25
+3896,"Gasoline Exhaust - Winter, high emitter",0.25
+3897,"Gasoline Exhaust - Winter, non-smoker",0.25
+3898,"Gasoline Exhaust - Winter, non-smoker",0.25
+3899,"Gasoline Exhaust - Winter, non-smoker",0.25
+3900,"Gasoline Exhaust - Winter, non-smoker",0.25
+3901,"Gasoline Exhaust - Winter, smoker",0.25
+3902,"Gasoline Exhaust - Winter, smoker",0.25
+3903,"Gasoline Exhaust - Winter, smoker",0.25
+3904,"Gasoline Exhaust - Winter, smoker",0.25
+3905,"Gasoline Exhaust - Winter, smoker",0.25
+3906,"Gasoline Exhaust - Winter, smoker",0.25
+3907,"Gasoline Exhaust - Winter, smoker",0.25
+3908,"Gasoline Exhaust - Winter, smoker",0.25
+3909,Diesel Exhaust,0.25
+3910,Diesel Exhaust,0.25
+3911,Diesel Exhaust,0.25
+3912,Diesel Exhaust,0.25
+3913,Diesel Exhaust,0.25
+3914,Diesel Exhaust,0.25
+3915,Cooking,0.4
+3916,Cooking,0.4
+3917,Cooking,0.4
+3918,Cooking,0.4
+3919,Cooking,0.4
+3920,Residential Wood Burning,0.7
+3921,Residential Wood Burning,0.7
+3922,Residential Wood Burning,0.7
+3923,Residential Wood Burning,0.7
+3924,Residential Wood Burning,0.7
+3925,Residential Wood Burning,0.7
+3926,Residential Wood Burning,0.7
+3927,Residential Wood Burning,0.7
+3928,Residential Wood Burning,0.7
+3929,Residential Wood Burning,0.7
+3930,Residential Wood Burning,0.7
+3931,Residential Wood Burning,0.7
+3932,Residential Wood Burning,0.7
+3933,Residential Wood Burning,0.7
+3934,Residential Wood Burning,0.7
+3935,Residential Wood Burning,0.7
+3936,Residential Wood Burning,0.7
+3937,Residential Wood Burning,0.7
+3938,Paved Road Dust,0.4
+3939,Paved Road Dust,0.4
+3940,Paved Road Dust,0.4
+3941,Paved Road Dust,0.4
+3942,Paved Road Dust,0.4
+3943,Paved Road Dust,0.4
+3944,"Gasoline Exhaust - Summer, low-emitter",0.25
+3945,"Gasoline Exhaust - Summer, low-emitter",0.25
+3946,"Gasoline Exhaust - Summer, low-emitter",0.25
+3947,"Gasoline Exhaust - Summer, low-emitter",0.25
+3948,"Gasoline Exhaust - Summer, medium-emitter",0.25
+3949,"Gasoline Exhaust - Summer, medium-emitter",0.25
+3950,"Gasoline Exhaust - Summer, medium-emitter",0.25
+3951,"Gasoline Exhaust - Summer, medium-emitter",0.25
+3952,"Gasoline Exhaust - Summer, high-emitter",0.25
+3953,"Gasoline Exhaust - Summer, high-emitter",0.25
+3954,"Gasoline Exhaust - Summer, high-emitter",0.25
+3955,"Gasoline Exhaust - Summer, high-emitter",0.25
+3956,"Gasoline Exhaust - Summer, smoker",0.25
+3957,"Gasoline Exhaust - Summer, smoker",0.25
+3958,"Gasoline Exhaust - Summer, smoker",0.25
+3959,"Gasoline Exhaust - Summer, smoker",0.25
+3960,Diesel Exhaust,0.25
+3961,Diesel Exhaust,0.25
+3962,Diesel Exhaust,0.25
+3963,Diesel Exhaust,0.25
+3964,Oil Refinery Deposition,0.4
+3965,Oil Refinery Deposition,0.4
+3966,Unpaved Road Dust,0.4
+3967,Unpaved Road Dust,0.4
+3968,Unpaved Road Dust,0.4
+3969,Unpaved Road Dust,0.4
+3970,Paved Road Dust,0.4
+3971,Paved Road Dust,0.4
+3972,Local Soil,0.4
+3973,Local Soil,0.4
+3974,Paved Road Dust,0.4
+3975,Paved Road Dust,0.4
+3976,Paved Road Dust,0.4
+3977,Paved Road Dust,0.4
+3978,Industrial Dust,0.4
+3979,Industrial Dust,0.4
+3980,Salting Material,0.4
+3981,Salting Material,0.4
+3982,Forest Soil,0.4
+3984,Fly Ash,0.4
+3985,Fly Ash,0.4
+3986,Industrial Fly Ash,0.4
+3987,Industrial Fly Ash,0.4
+3988,Industrial Soil,0.4
+3989,Industrial Soil,0.4
+3990,Industrial Soil,0.4
+3991,Industrial Soil,0.4
+3992,Industrial Soil,0.4
+3993,Industrial Soil,0.4
+3994,Local Soil,0.4
+3995,Local Soil,0.4
+3996,Industrial Soil,0.4
+3997,Industrial Soil,0.4
+3998,Lime Kiln,0.4
+3999,Lime Kiln,0.4
+4000,Gasoline Exhaust - Leaded,0.25
+4001,Gasoline Exhaust - Leaded,0.25
+4002,Paper Waste Burning,0.4
+4003,Paper Waste Burning,0.4
+4004,Residential Coal Combustion,0.4
+4005,Residential Coal Combustion,0.4
+4006,Residential Coal Combustion,0.4
+4007,Residential Coal Combustion,0.4
+4008,Residential Coal Combustion,0.4
+4009,Residential Coal Combustion,0.4
+4010,Residential Coal Combustion,0.4
+4011,Residential Coal Combustion,0.4
+4012,Forest Fire,0.7
+4013,Forest Fire,0.7
+4014,Diesel Exhaust,0.25
+4015,Diesel Exhaust,0.25
+4016,Diesel Exhaust,0.25
+4017,Motor Vehicle Exhaust,0.25
+4018,Motor Vehicle Exhaust,0.25
+4019,Motor Vehicle Exhaust,0.25
+4020,Cooking,0.4
+4021,Motor Vehicle Exhaust,0.25
+4022,Motor Vehicle Exhaust,0.25
+4023,Motor Vehicle Exhaust,0.25
+4024,Motor Vehicle Exhaust,0.25
+4026,Motor Vehicle Exhaust,0.25
+4027,Motor Vehicle Exhaust,0.25
+4028,Motor Vehicle Exhaust,0.25
+4029,Motor Vehicle Exhaust,0.25
+4030,Motor Vehicle Exhaust,0.25
+4031,Motor Vehicle Exhaust,0.25
+4032,Motor Vehicle Exhaust,0.25
+4033,Motor Vehicle Exhaust,0.25
+4034,Motor Vehicle Exhaust,0.25
+4035,Motor Vehicle Exhaust,0.25
+4036,Motor Vehicle Exhaust,0.25
+4037,Motor Vehicle Exhaust,0.25
+4038,Motor Vehicle Exhaust,0.25
+4039,Motor Vehicle Exhaust,0.25
+4040,Motor Vehicle Exhaust,0.25
+4041,Motor Vehicle Exhaust,0.25
+4042,Motor Vehicle Exhaust,0.25
+4043,Motor Vehicle Exhaust,0.25
+4044,Motor Vehicle Exhaust,0.25
+4045,Motor Vehicle Exhaust,0.25
+4046,Motor Vehicle Exhaust,0.25
+4047,Motor Vehicle Exhaust,0.25
+4048,Cooking,0.4
+4049,Motor Vehicle Exhaust,0.25
+4050,Motor Vehicle Exhaust,0.25
+4051,Motor Vehicle Exhaust,0.25
+4052,Cooking,0.4
+4053,Diesel Exhaust,0.25
+4054,Diesel Exhaust,0.25
+4055,Diesel Exhaust,0.25
+4056,Diesel Exhaust,0.25
+4057,Diesel Exhaust,0.25
+4058,Diesel Exhaust,0.25
+4059,Diesel Exhaust,0.25
+4060,Diesel Exhaust,0.25
+4061,Diesel Exhaust,0.25
+4062,Diesel Exhaust,0.25
+4063,Motor Vehicle Exhaust,0.25
+4064,Motor Vehicle Exhaust,0.25
+4065,Motor Vehicle Exhaust,0.25
+4066,Paved Road Dust,0.4
+4067,Paved Road Dust,0.4
+4068,Unpaved Road Dust,0.4
+4069,Unpaved Road Dust,0.4
+4070,Agriculture Soil,0.4
+4071,Agriculture Soil,0.4
+4072,Farm Soil,0.4
+4073,Farm Soil,0.4
+4074,Local Soil,0.4
+4075,Local Soil,0.4
+4076,Marble,0.4
+4077,Marble,0.4
+4078,Fly Ash,0.4
+4079,Fly Ash,0.4
+4080,Landfill Material,0.4
+4081,Landfill Material,0.4
+4082,Asphalt,0.4
+4083,Asphalt,0.4
+4084,Cement,0.4
+4085,Cement,0.4
+4086,Cement,0.4
+4087,Cement,0.4
+4088,Volcanic Soil,0.4
+4089,Volcanic Soil,0.4
+4090,Unpaved Park Dust,0.4
+4091,Unpaved Park Dust,0.4
+4092,Unpaved Park Dust,0.4
+4093,Unpaved Park Dust,0.4
+4094,Unpaved Park Dust,0.4
+4095,Unpaved Park Dust,0.4
+4096,Unpaved Park Dust,0.4
+4097,Unpaved Park Dust,0.4
+4098,Unpaved Park Dust,0.4
+4099,Unpaved Park Dust,0.4
+4100,Paved Road Dust,0.4
+4101,Paved Road Dust,0.4
+4102,Paved Road Dust,0.4
+4103,Paved Road Dust,0.4
+4104,Paved Road Dust,0.4
+4105,Paved Road Dust,0.4
+4106,Road Dirt,0.4
+4107,Road Dirt,0.4
+4108,Cooking,0.4
+4109,Cooking,0.4
+4110,Cooking,0.4
+4110110,"Paved Road Dust Missoula, Montana",0.4
+411012.5,"Paved Road Dust Missoula, Montana",0.4
+4110130,"Paved Road Dust Missoula, Montana",0.4
+41101C,"Paved Road Dust Missoula, Montana",0.4
+4110210,"Paved Road Dust - Juneau, Alaska",0.4
+411022.5,"Paved Road Dust - Juneau, Alaska",0.4
+4110230,"Paved Road Dust - Juneau, Alaska",0.4
+41102C,"Paved Road Dust - Juneau, Alaska",0.4
+4110310,"Paved Road Dust - Lewiston, Idaho",0.4
+411032.5,"Paved Road Dust - Lewiston, Idaho",0.4
+4110330,"Paved Road Dust - Lewiston, Idaho",0.4
+41103C,"Paved Road Dust - Lewiston, Idaho",0.4
+4110410,"Paved Road Dust - Butte, Montana",0.4
+411042.5,"Paved Road Dust - Butte, Montana",0.4
+4110430,"Paved Road Dust - Butte, Montana",0.4
+41104C,"Paved Road Dust - Butte, Montana",0.4
+4110510,"Paved Road Dust - East Helena, Montana",0.4
+411052.5,"Paved Road Dust - East Helena, Montana",0.4
+4110530,"Paved Road Dust - East Helena, Montana",0.4
+41105C,"Paved Road Dust - East Helena, Montana",0.4
+4110610,Paved Road Dust - Medford Or,0.4
+411062.5,Paved Road Dust - Medford Or,0.4
+4110630,Paved Road Dust - Medford Or,0.4
+41106C,Paved Road Dust - Medford Or,0.4
+4110710,"Paved Road Dust - Portland, OR",0.4
+411072.5,"Paved Road Dust - Portland, OR",0.4
+4110730,"Paved Road Dust - Portland, OR",0.4
+41107C,"Paved Road Dust - Portland, OR",0.4
+4110910,Paved Road Dust - Alabama,0.4
+411092.5,Paved Road Dust - Alabama,0.4
+4110930,Paved Road Dust - Alabama,0.4
+41109C,Paved Road Dust - Alabama,0.4
+4111,Cooking,0.4
+4111010,"Paved Road Dust - Spokane, WA",0.4
+411102.5,"Paved Road Dust - Spokane, WA",0.4
+4111030,"Paved Road Dust - Spokane, WA",0.4
+41110C,"Paved Road Dust - Spokane, WA",0.4
+4111110,Paved Road Dust - Pasadena Freeway (CA),0.4
+411112.5,Paved Road Dust - Pasadena Freeway (CA),0.4
+4111130,Paved Road Dust - Pasadena Freeway (CA),0.4
+41111C,Paved Road Dust - Pasadena Freeway (CA),0.4
+4111210,Paved Road Dust - Artesia Freeway (CA),0.4
+411122.5,Paved Road Dust - Artesia Freeway (CA),0.4
+4111230,Paved Road Dust - Artesia Freeway (CA),0.4
+41112C,Paved Road Dust - Artesia Freeway (CA),0.4
+4111310,Paved Road Dust - Long Beach Blvd. (CA),0.4
+411132.5,Paved Road Dust - Long Beach Blvd. (CA),0.4
+4111330,Paved Road Dust - Long Beach Blvd. (CA),0.4
+41113C,Paved Road Dust - Long Beach Blvd. (CA),0.4
+4111410,"Paved Road Dust - Long Beach, CA",0.4
+411142.5,"Paved Road Dust - Long Beach, CA",0.4
+4111430,"Paved Road Dust - Long Beach, CA",0.4
+41114C,"Paved Road Dust - Long Beach, CA",0.4
+4111510,Paved Road Dust - La Cienega Blvd. (CA),0.4
+411152.5,Paved Road Dust - La Cienega Blvd. (CA),0.4
+4111530,Paved Road Dust - La Cienega Blvd. (CA),0.4
+41115C,Paved Road Dust - La Cienega Blvd. (CA),0.4
+4111610,"Paved Road Dust - Hawthorne, CA",0.4
+411162.5,"Paved Road Dust - Hawthorne, CA",0.4
+4111630,"Paved Road Dust - Hawthorne, CA",0.4
+41116C,"Paved Road Dust - Hawthorne, CA",0.4
+4111710,Paved Road Dust - Victory Blvd. (CA),0.4
+411172.5,Paved Road Dust - Victory Blvd. (CA),0.4
+4111730,Paved Road Dust - Victory Blvd. (CA),0.4
+41117C,Paved Road Dust - Victory Blvd. (CA),0.4
+4111810,"Paved Road Dust - Burbank, CA",0.4
+411182.5,"Paved Road Dust - Burbank, CA",0.4
+4111830,"Paved Road Dust - Burbank, CA",0.4
+41118C,"Paved Road Dust - Burbank, CA",0.4
+4111910,"Paved Road Dust - North Main St., Los Angeles, CA",0.4
+411192.5,"Paved Road Dust - North Main St., Los Angeles, CA",0.4
+4111930,"Paved Road Dust - North Main St., Los Angeles, CA",0.4
+41119C,"Paved Road Dust - North Main St., Los Angeles, CA",0.4
+4112,Agriculture Soil,0.4
+4112010,"Paved Road Dust - Los Angeles, CA",0.4
+411202.5,"Paved Road Dust - Los Angeles, CA",0.4
+4112030,"Paved Road Dust - Los Angeles, CA",0.4
+41120C,"Paved Road Dust - Los Angeles, CA",0.4
+4112110,"Paved Road Dust - South Harbor Blvd., Anaheim, CA",0.4
+411212.5,"Paved Road Dust - South Harbor Blvd., Anaheim, CA",0.4
+4112130,"Paved Road Dust - South Harbor Blvd., Anaheim, CA",0.4
+41121C,"Paved Road Dust - South Harbor Blvd., Anaheim, CA",0.4
+4112210,"Paved Road Dust - Anaheim, CA",0.4
+411222.5,"Paved Road Dust - Anaheim, CA",0.4
+4112230,"Paved Road Dust - Anaheim, CA",0.4
+41122C,"Paved Road Dust - Anaheim, CA",0.4
+4112310,"Paved Road Dust - Riverside, CA",0.4
+411232.5,"Paved Road Dust - Riverside, CA",0.4
+4112330,"Paved Road Dust - Riverside, CA",0.4
+41123C,"Paved Road Dust - Riverside, CA",0.4
+4112410,"Paved Road Dust - Sepulveda Tunnel, Los Angeles, CA",0.4
+411242.5,"Paved Road Dust - Sepulveda Tunnel, Los Angeles, CA",0.4
+4112430,"Paved Road Dust - Sepulveda Tunnel, Los Angeles, CA",0.4
+41124C,"Paved Road Dust - Sepulveda Tunnel, Los Angeles, CA",0.4
+4113,Agriculture Soil,0.4
+4113010,Paved Road Dust - Composite,0.4
+411302.5,Paved Road Dust - Composite,0.4
+4113030,Paved Road Dust - Composite,0.4
+41130C,Paved Road Dust - Composite,0.4
+4113110,Paved Road Dust - Freeway Composite,0.4
+411312.5,Paved Road Dust - Freeway Composite,0.4
+4113130,Paved Road Dust - Freeway Composite,0.4
+41131C,Paved Road Dust - Freeway Composite,0.4
+4113210,"Paved Road Dust - Composite-Long Beach, CA",0.4
+411322.5,"Paved Road Dust - Composite-Long Beach, CA",0.4
+4113230,"Paved Road Dust - Composite-Long Beach, CA",0.4
+41132C,"Paved Road Dust - Composite-Long Beach, CA",0.4
+4113310,Paved Road Dust - Hawthorne Composite,0.4
+411332.5,Paved Road Dust - Hawthorne Composite,0.4
+4113330,Paved Road Dust - Hawthorne Composite,0.4
+41133C,Paved Road Dust - Hawthorne Composite,0.4
+4113410,Paved Road Dust - Burbank Composite,0.4
+411342.5,Paved Road Dust - Burbank Composite,0.4
+4113430,Paved Road Dust - Burbank Composite,0.4
+41134C,Paved Road Dust - Burbank Composite,0.4
+4113510,Paved Road Dust - Los Angeles Composite,0.4
+411352.5,Paved Road Dust - Los Angeles Composite,0.4
+4113530,Paved Road Dust - Los Angeles Composite,0.4
+41135C,Paved Road Dust - Los Angeles Composite,0.4
+4113610,Paved Road Dust - Anaheim Composite,0.4
+411362.5,Paved Road Dust - Anaheim Composite,0.4
+4113630,Paved Road Dust - Anaheim Composite,0.4
+41136C,Paved Road Dust - Anaheim Composite,0.4
+4113710,Paved Road Dust - Scab Composite,0.4
+411372.5,Paved Road Dust - Scab Composite,0.4
+4113730,Paved Road Dust - Scab Composite,0.4
+41137C,Paved Road Dust - Scab Composite,0.4
+4113810,"Paved Road Dust - Pocatello, Idaho",0.4
+411382.5,"Paved Road Dust - Pocatello, Idaho",0.4
+4113830,"Paved Road Dust - Pocatello, Idaho",0.4
+41138C,"Paved Road Dust - Pocatello, Idaho",0.4
+4113910,"Paved Road Dust - Pocatello, Idaho",0.4
+411392.5,"Paved Road Dust - Pocatello, Idaho",0.4
+4113930,"Paved Road Dust - Pocatello, Idaho",0.4
+41139C,"Paved Road Dust - Pocatello, Idaho",0.4
+4114,Agriculture Soil,0.4
+4114010,"Paved Road Dust - Pocatello, Idaho",0.4
+411402.5,"Paved Road Dust - Pocatello, Idaho",0.4
+4114030,"Paved Road Dust - Pocatello, Idaho",0.4
+41140C,"Paved Road Dust - Pocatello, Idaho",0.4
+4114110,"Paved Road Dust - Pocatello, Idaho",0.4
+411412.5,"Paved Road Dust - Pocatello, Idaho",0.4
+4114130,"Paved Road Dust - Pocatello, Idaho",0.4
+41141C,"Paved Road Dust - Pocatello, Idaho",0.4
+4114210,Paved Road Dust - Pasadena CA,0.4
+411422.5,Paved Road Dust - Pasadena CA,0.4
+4114230,Paved Road Dust - Pasadena CA,0.4
+41142C,Paved Road Dust - Pasadena CA,0.4
+4115,Agriculture Soil,0.4
+4116,Agriculture Soil,0.4
+4117,Agriculture Soil,0.4
+4118,Agriculture Soil,0.4
+4119,Agriculture Soil,0.4
+4120,Agriculture Soil,0.4
+4120110,Unpaved Road Dust (Copper Mine),0.4
+412012.5,Unpaved Road Dust (Copper Mine),0.4
+4120130,Unpaved Road Dust (Copper Mine),0.4
+41201C,Unpaved Road Dust (Copper Mine),0.4
+4120310,Unpaved Road Dust - Haul Road,0.4
+412032.5,Unpaved Road Dust - Haul Road,0.4
+4120330,Unpaved Road Dust - Haul Road,0.4
+41203C,Unpaved Road Dust - Haul Road,0.4
+4120410,"Unpaved Road Dust - East Helena, Montana",0.4
+412042.5,"Unpaved Road Dust - East Helena, Montana",0.4
+4120430,"Unpaved Road Dust - East Helena, Montana",0.4
+41204C,"Unpaved Road Dust - East Helena, Montana",0.4
+4120510,"Unpaved Road Dust - Riverside, CA",0.4
+412052.5,"Unpaved Road Dust - Riverside, CA",0.4
+4120530,"Unpaved Road Dust - Riverside, CA",0.4
+41205C,"Unpaved Road Dust - Riverside, CA",0.4
+4120610,"Ore And Road Dust Fugitives - Pocatello, Idaho",0.4
+412062.5,"Ore And Road Dust Fugitives - Pocatello, Idaho",0.4
+4120630,"Ore And Road Dust Fugitives - Pocatello, Idaho",0.4
+41206C,"Ore And Road Dust Fugitives - Pocatello, Idaho",0.4
+4120710,"Unpaved Road Dust - Pocatello, Idaho",0.4
+412072.5,"Unpaved Road Dust - Pocatello, Idaho",0.4
+4120730,"Unpaved Road Dust - Pocatello, Idaho",0.4
+41207C,"Unpaved Road Dust - Pocatello, Idaho",0.4
+4121,Agriculture Soil,0.4
+4122,Agriculture Soil,0.4
+4122010,Unpaved Road Dust - Composite,0.4
+412202.5,Unpaved Road Dust - Composite,0.4
+4122030,Unpaved Road Dust - Composite,0.4
+41220C,Unpaved Road Dust - Composite,0.4
+4123,Agriculture Soil,0.4
+4124,Agriculture Soil,0.4
+4125,Agriculture Soil,0.4
+4126,Agriculture Soil,0.4
+4127,Agriculture Soil,0.4
+4128,Agriculture Soil,0.4
+4129,Agriculture Soil,0.4
+4130,Agriculture Soil,0.4
+4130110,"Soil Dust - Des Moines, IA",0.4
+413012.5,"Soil Dust - Des Moines, IA",0.4
+4130130,"Soil Dust - Des Moines, IA",0.4
+41301C,"Soil Dust - Des Moines, IA",0.4
+4130210,"Soil Dust - Seattle, WA",0.4
+413022.5,"Soil Dust - Seattle, WA",0.4
+4130230,"Soil Dust - Seattle, WA",0.4
+41302C,"Soil Dust - Seattle, WA",0.4
+4130310,"Soil Dust - Visalia, CA",0.4
+413032.5,"Soil Dust - Visalia, CA",0.4
+4130330,"Soil Dust - Visalia, CA",0.4
+41303C,"Soil Dust - Visalia, CA",0.4
+4130410,"Soil Dust - South Bend, Indiana",0.4
+413042.5,"Soil Dust - South Bend, Indiana",0.4
+4130430,"Soil Dust - South Bend, Indiana",0.4
+41304C,"Soil Dust - South Bend, Indiana",0.4
+4130510,"Soil Dust - Houston, TX",0.4
+413052.5,"Soil Dust - Houston, TX",0.4
+4130530,"Soil Dust - Houston, TX",0.4
+41305C,"Soil Dust - Houston, TX",0.4
+4130610,"Soil Dust - East Helena, Montana",0.4
+413062.5,"Soil Dust - East Helena, Montana",0.4
+4130630,"Soil Dust - East Helena, Montana",0.4
+41306C,"Soil Dust - East Helena, Montana",0.4
+4130710,Soil Dust - Idaho,0.4
+413072.5,Soil Dust - Idaho,0.4
+4130730,Soil Dust - Idaho,0.4
+41307C,Soil Dust - Idaho,0.4
+4130810,"Soil Dust - Creston, Iowa",0.4
+413082.5,"Soil Dust - Creston, Iowa",0.4
+4130830,"Soil Dust - Creston, Iowa",0.4
+41308C,"Soil Dust - Creston, Iowa",0.4
+4130910,"Soil Dust - Council Bluffs, Iowa",0.4
+413092.5,"Soil Dust - Council Bluffs, Iowa",0.4
+4130930,"Soil Dust - Council Bluffs, Iowa",0.4
+41309C,"Soil Dust - Council Bluffs, Iowa",0.4
+4131,Agriculture Soil,0.4
+4131010,"Soil Dust - Sioux City, Iowa",0.4
+413102.5,"Soil Dust - Sioux City, Iowa",0.4
+4131030,"Soil Dust - Sioux City, Iowa",0.4
+41310C,"Soil Dust - Sioux City, Iowa",0.4
+4131110,"Soil Dust - Cedar Rapids, Iowa",0.4
+413112.5,"Soil Dust - Cedar Rapids, Iowa",0.4
+4131130,"Soil Dust - Cedar Rapids, Iowa",0.4
+41311C,"Soil Dust - Cedar Rapids, Iowa",0.4
+4131210,"Soil Dust - Davenport, Iowa",0.4
+413122.5,"Soil Dust - Davenport, Iowa",0.4
+4131230,"Soil Dust - Davenport, Iowa",0.4
+41312C,"Soil Dust - Davenport, Iowa",0.4
+4131310,"Soil Dust - Spokane, WA",0.4
+413132.5,"Soil Dust - Spokane, WA",0.4
+4131330,"Soil Dust - Spokane, WA",0.4
+41313C,"Soil Dust - Spokane, WA",0.4
+4131410,"Soil Dust - Boise, Idaho",0.4
+413142.5,"Soil Dust - Boise, Idaho",0.4
+4131430,"Soil Dust - Boise, Idaho",0.4
+41314C,"Soil Dust - Boise, Idaho",0.4
+4131510,"Soil Dust - Bakersfield, CA",0.4
+413152.5,"Soil Dust - Bakersfield, CA",0.4
+4131530,"Soil Dust - Bakersfield, CA",0.4
+41315C,"Soil Dust - Bakersfield, CA",0.4
+4131610,"Soil Dust - Pasadena, CA",0.4
+413162.5,"Soil Dust - Pasadena, CA",0.4
+4131630,"Soil Dust - Pasadena, CA",0.4
+41316C,"Soil Dust - Pasadena, CA",0.4
+4131810,"Soil Dust - Medford, OR",0.4
+413182.5,"Soil Dust - Medford, OR",0.4
+4131830,"Soil Dust - Medford, OR",0.4
+41318C,"Soil Dust - Medford, OR",0.4
+4131910,Soil Dust - Portland OR,0.4
+413192.5,Soil Dust - Portland OR,0.4
+4131930,Soil Dust - Portland OR,0.4
+41319C,Soil Dust - Portland OR,0.4
+4132,Dairy Soil,0.4
+4132010,Soil Dust - Alabama,0.4
+413202.5,Soil Dust - Alabama,0.4
+4132030,Soil Dust - Alabama,0.4
+41320C,Soil Dust - Alabama,0.4
+4132110,Soil Dust - Laurel Md,0.4
+413212.5,Soil Dust - Laurel Md,0.4
+4132130,Soil Dust - Laurel Md,0.4
+41321C,Soil Dust - Laurel Md,0.4
+4132210,"Soil Dust - Washington, D.C. Area",0.4
+413222.5,"Soil Dust - Washington, D.C. Area",0.4
+4132230,"Soil Dust - Washington, D.C. Area",0.4
+41322C,"Soil Dust - Washington, D.C. Area",0.4
+4132310,"Soil Dust - Riverside, CA",0.4
+413232.5,"Soil Dust - Riverside, CA",0.4
+4132330,"Soil Dust - Riverside, CA",0.4
+41323C,"Soil Dust - Riverside, CA",0.4
+4132410,"Soil Dust - Hawthorne, CA",0.4
+413242.5,"Soil Dust - Hawthorne, CA",0.4
+4132430,"Soil Dust - Hawthorne, CA",0.4
+41324C,"Soil Dust - Hawthorne, CA",0.4
+4132510,"Soil Dust - Medford, Oregon",0.4
+413252.5,"Soil Dust - Medford, Oregon",0.4
+4132530,"Soil Dust - Medford, Oregon",0.4
+41325C,"Soil Dust - Medford, Oregon",0.4
+4132610,"Soil Dust - Bend, Oregon",0.4
+413262.5,"Soil Dust - Bend, Oregon",0.4
+4132630,"Soil Dust - Bend, Oregon",0.4
+41326C,"Soil Dust - Bend, Oregon",0.4
+4132710,"Soil Dust - Klamath Falls, Oregon",0.4
+413272.5,"Soil Dust - Klamath Falls, Oregon",0.4
+4132730,"Soil Dust - Klamath Falls, Oregon",0.4
+41327C,"Soil Dust - Klamath Falls, Oregon",0.4
+4132810,"Soil Dust - Grant's Pass, Oregon",0.4
+413282.5,"Soil Dust - Grant's Pass, Oregon",0.4
+4132830,"Soil Dust - Grant's Pass, Oregon",0.4
+41328C,"Soil Dust - Grant's Pass, Oregon",0.4
+4132910,"Soil Dust - Eugene, Oregon",0.4
+413292.5,"Soil Dust - Eugene, Oregon",0.4
+4132930,"Soil Dust - Eugene, Oregon",0.4
+41329C,"Soil Dust - Eugene, Oregon",0.4
+4133,Dairy Soil,0.4
+4133010,"Soil Dust - Lagrande, Oregon",0.4
+413302.5,"Soil Dust - Lagrande, Oregon",0.4
+4133030,"Soil Dust - Lagrande, Oregon",0.4
+41330C,"Soil Dust - Lagrande, Oregon",0.4
+4133110,"Soil Dust - Springfield, Oregon",0.4
+413312.5,"Soil Dust - Springfield, Oregon",0.4
+4133130,"Soil Dust - Springfield, Oregon",0.4
+41331C,"Soil Dust - Springfield, Oregon",0.4
+4134,Feedlot Soil,0.4
+4135,Feedlot Soil,0.4
+4135010,Soil Dust - Composite,0.4
+413502.5,Soil Dust - Composite,0.4
+4135030,Soil Dust - Composite,0.4
+41350C,Soil Dust - Composite,0.4
+4135110,Soil Dust - Scab Composite,0.4
+413512.5,Soil Dust - Scab Composite,0.4
+4135130,Soil Dust - Scab Composite,0.4
+41351C,Soil Dust - Scab Composite,0.4
+4135210,"Soil Dust - Pocatello, Idaho",0.4
+413522.5,"Soil Dust - Pocatello, Idaho",0.4
+4135230,"Soil Dust - Pocatello, Idaho",0.4
+41352C,"Soil Dust - Pocatello, Idaho",0.4
+4135310,Soil Dust - Oregon Composite,0.4
+413532.5,Soil Dust - Oregon Composite,0.4
+4135330,Soil Dust - Oregon Composite,0.4
+41353C,Soil Dust - Oregon Composite,0.4
+4136,Salting Material,0.4
+4137,Salting Material,0.4
+4138,Agriculture Soil,0.4
+4139,Agriculture Soil,0.4
+4140,Agriculture Soil,0.4
+4140110,Road Sand And Salt Mixture,0.4
+414012.5,Road Sand And Salt Mixture,0.4
+4140130,Road Sand And Salt Mixture,0.4
+41401C,Road Sand And Salt Mixture,0.4
+4141,Agriculture Soil,0.4
+4142,Agriculture Soil,0.4
+4143,Agriculture Soil,0.4
+4144,Agriculture Soil,0.4
+4145,Agriculture Soil,0.4
+4146,Agriculture Soil,0.4
+4147,Agriculture Soil,0.4
+4148,Agriculture Soil,0.4
+4149,Unpaved Road Dust,0.4
+4150,Unpaved Road Dust,0.4
+4150010,Vegetative Detritus,0.4
+415002.5,Vegetative Detritus,0.4
+4150030,Vegetative Detritus,0.4
+41500C,Vegetative Detritus,0.4
+4151,Unpaved Road Dust,0.4
+4152,Unpaved Road Dust,0.4
+4153,Unpaved Road Dust,0.4
+4154,Unpaved Road Dust,0.4
+4155,Paved Road Dust,0.4
+4156,Paved Road Dust,0.4
+4157,Paved Road Dust,0.4
+4158,Construction Dust,0.4
+4159,Construction Dust,0.4
+4160,Staging Area Soil,0.4
+4161,Agriculture Soil,0.4
+4162,Agriculture Soil,0.4
+4163,Agriculture Soil,0.4
+4164,Agriculture Soil,0.4
+4165,Agriculture Soil,0.4
+4166,Agriculture Soil,0.4
+4167,Agriculture Soil,0.4
+4168,Paved Road Dust,0.4
+4169,Unpaved Road Dust,0.4
+4170,Unpaved Road Dust,0.4
+4171,Agriculture Soil,0.4
+4172,Agriculture Soil,0.4
+4173,Agriculture Soil,0.4
+4174,Agriculture Soil,0.4
+4175,Agriculture Soil,0.4
+4176,Dairy Soil,0.4
+4177,Feedlot Soil,0.4
+4178,Paved Road Dust,0.4
+4179,Unpaved Road Dust,0.4
+4180,Agriculture Soil,0.4
+4181,Dairy Soil,0.4
+4182,Salting Material,0.4
+4183,Construction Dust,0.4
+4202,Motor Vehicle Exhaust,0.25
+4203,Diesel Exhaust,0.25
+4204,Paved Road Dust,0.4
+4205,Paved Road Dust,0.4
+4206,Paved Road Dust,0.4
+4207,Paved Road Dust,0.4
+4208,Paved Road Dust,0.4
+4209,Paved Road Dust,0.4
+4210,Paved Road Dust,0.4
+4210110,Wood Stoves - Pine Fuel,0.7
+421012.5,Wood Stoves - Pine Fuel,0.7
+4210130,Wood Stoves - Pine Fuel,0.7
+42101C,Wood Stoves - Pine Fuel,0.7
+4210210,"Wood Stoves - Average, All Fuels",0.7
+421022.5,"Wood Stoves - Average, All Fuels",0.7
+4210230,"Wood Stoves - Average, All Fuels",0.7
+42102C,"Wood Stoves - Average, All Fuels",0.7
+4210310,Wood Stoves - Oak Fuel,0.7
+421032.5,Wood Stoves - Oak Fuel,0.7
+4210330,Wood Stoves - Oak Fuel,0.7
+42103C,Wood Stoves - Oak Fuel,0.7
+4210410,"Residential Woodstove - Medford, Oregon",0.7
+421042.5,"Residential Woodstove - Medford, Oregon",0.7
+4210430,"Residential Woodstove - Medford, Oregon",0.7
+42104C,"Residential Woodstove - Medford, Oregon",0.7
+4210510,"Residential Woodstove - Pocatello, Idaho",0.7
+421052.5,"Residential Woodstove - Pocatello, Idaho",0.7
+4210530,"Residential Woodstove - Pocatello, Idaho",0.7
+42105C,"Residential Woodstove - Pocatello, Idaho",0.7
+4210610,Residential Woodstove - Portland / Seattle,0.7
+421062.5,Residential Woodstove - Portland / Seattle,0.7
+4210630,Residential Woodstove - Portland / Seattle,0.7
+42106C,Residential Woodstove - Portland / Seattle,0.7
+4210710,Natural Gas Home Appliances,0.4
+421072.5,Natural Gas Home Appliances,0.4
+4210730,Natural Gas Home Appliances,0.4
+42107C,Natural Gas Home Appliances,0.4
+4211,Paved Road Dust,0.4
+4212,Paved Road Dust,0.4
+4213,Paved Road Dust,0.4
+4214,Paved Road Dust,0.4
+4215,Paved Road Dust,0.4
+4216,Unpaved Road Dust,0.4
+4217,Unpaved Road Dust,0.4
+4218,Unpaved Road Dust,0.4
+4219,Unpaved Road Dust,0.4
+4220,Unpaved Road Dust,0.4
+4220110,Fireplaces - Softwoods,0.7
+422012.5,Fireplaces - Softwoods,0.7
+4220130,Fireplaces - Softwoods,0.7
+42201C,Fireplaces - Softwoods,0.7
+4220210,Fireplaces - Hardwoods,0.7
+422022.5,Fireplaces - Hardwoods,0.7
+4220230,Fireplaces - Hardwoods,0.7
+42202C,Fireplaces - Hardwoods,0.7
+4220310,Fireplaces - Softwoods,0.7
+422032.5,Fireplaces - Softwoods,0.7
+4220330,Fireplaces - Softwoods,0.7
+42203C,Fireplaces - Softwoods,0.7
+4220410,Fireplaces - Hardwoods,0.7
+422042.5,Fireplaces - Hardwoods,0.7
+4220430,Fireplaces - Hardwoods,0.7
+42204C,Fireplaces - Hardwoods,0.7
+4220510,Fireplaces - Synthetic Logs,0.7
+422052.5,Fireplaces - Synthetic Logs,0.7
+4220530,Fireplaces - Synthetic Logs,0.7
+42205C,Fireplaces - Synthetic Logs,0.7
+4221,Unpaved Road Dust,0.4
+4222,Local Soil,0.4
+4223,Local Soil,0.4
+4224,Local Soil,0.4
+4225,Local Soil,0.4
+4226,Local Soil,0.4
+4227,Local Soil,0.4
+4228,Local Soil,0.4
+4229,Local Soil,0.4
+4230,Local Soil,0.4
+4230110,Slash Burning,0.7
+423012.5,Slash Burning,0.7
+4230130,Slash Burning,0.7
+42301C,Slash Burning,0.7
+4230210,Slash Burning,0.7
+423022.5,Slash Burning,0.7
+4230230,Slash Burning,0.7
+42302C,Slash Burning,0.7
+4230310,Residential Wood Combustion - Composite,0.7
+423032.5,Residential Wood Combustion - Composite,0.7
+4230330,Residential Wood Combustion - Composite,0.7
+42303C,Residential Wood Combustion - Composite,0.7
+4230410,Agricultural Field Burning,0.7
+423042.5,Agricultural Field Burning,0.7
+4230430,Agricultural Field Burning,0.7
+42304C,Agricultural Field Burning,0.7
+4230510,Slash Burning (Conifer-Flaming Phase),0.7
+423052.5,Slash Burning (Conifer-Flaming Phase),0.7
+4230530,Slash Burning (Conifer-Flaming Phase),0.7
+42305C,Slash Burning (Conifer-Flaming Phase),0.7
+4230610,Slash Burning (Conifer-Smoldering Phase),0.7
+423062.5,Slash Burning (Conifer-Smoldering Phase),0.7
+4230630,Slash Burning (Conifer-Smoldering Phase),0.7
+42306C,Slash Burning (Conifer-Smoldering Phase),0.7
+4230710,Slash Burning (Hardwood-Flaming Phase),0.7
+423072.5,Slash Burning (Hardwood-Flaming Phase),0.7
+4230730,Slash Burning (Hardwood-Flaming Phase),0.7
+42307C,Slash Burning (Hardwood-Flaming Phase),0.7
+4230810,Slash Burning (Hardwood-Smoldering Phase),0.7
+423082.5,Slash Burning (Hardwood-Smoldering Phase),0.7
+4230830,Slash Burning (Hardwood-Smoldering Phase),0.7
+42308C,Slash Burning (Hardwood-Smoldering Phase),0.7
+4230910,Slash Burning (Ponderosa Pine-Flaming Phase),0.7
+423092.5,Slash Burning (Ponderosa Pine-Flaming Phase),0.7
+4230930,Slash Burning (Ponderosa Pine-Flaming Phase),0.7
+42309C,Slash Burning (Ponderosa Pine-Flaming Phase),0.7
+4231,Local Soil,0.4
+4231010,Slash Burning (Ponderosa Pine-Smoldering Phase),0.7
+423102.5,Slash Burning (Ponderosa Pine-Smoldering Phase),0.7
+4231030,Slash Burning (Ponderosa Pine-Smoldering Phase),0.7
+42310C,Slash Burning (Ponderosa Pine-Smoldering Phase),0.7
+4231110,Slash Burning (Tractor-Piled; Flaming Phase),0.7
+423112.5,Slash Burning (Tractor-Piled; Flaming Phase),0.7
+4231130,Slash Burning (Tractor-Piled; Flaming Phase),0.7
+42311C,Slash Burning (Tractor-Piled; Flaming Phase),0.7
+4231210,Slash Burning (Tractor-Piled; Smoldering Phase),0.7
+423122.5,Slash Burning (Tractor-Piled; Smoldering Phase),0.7
+4231230,Slash Burning (Tractor-Piled; Smoldering Phase),0.7
+42312C,Slash Burning (Tractor-Piled; Smoldering Phase),0.7
+4231310,Slash Burning (Crane-Piled; Flaming Phase),0.7
+423132.5,Slash Burning (Crane-Piled; Flaming Phase),0.7
+4231330,Slash Burning (Crane-Piled; Flaming Phase),0.7
+42313C,Slash Burning (Crane-Piled; Flaming Phase),0.7
+4231410,Slash Burning (Crane-Piled; Smoldering Phase),0.7
+423142.5,Slash Burning (Crane-Piled; Smoldering Phase),0.7
+4231430,Slash Burning (Crane-Piled; Smoldering Phase),0.7
+42314C,Slash Burning (Crane-Piled; Smoldering Phase),0.7
+4231510,Slash Burning (Chaparral; Flaming Phase),0.7
+423152.5,Slash Burning (Chaparral; Flaming Phase),0.7
+4231530,Slash Burning (Chaparral; Flaming Phase),0.7
+42315C,Slash Burning (Chaparral; Flaming Phase),0.7
+4231610,Slash Burning (Chaparral; Smoldering Phase),0.7
+423162.5,Slash Burning (Chaparral; Smoldering Phase),0.7
+4231630,Slash Burning (Chaparral; Smoldering Phase),0.7
+42316C,Slash Burning (Chaparral; Smoldering Phase),0.7
+4231710,Wood Combustion - Las Vegas Valley (1987),0.7
+423172.5,Wood Combustion - Las Vegas Valley (1987),0.7
+4231730,Wood Combustion - Las Vegas Valley (1987),0.7
+42317C,Wood Combustion - Las Vegas Valley (1987),0.7
+4231810,Residential Wood Combustion,0.7
+423182.5,Residential Wood Combustion,0.7
+4231830,Residential Wood Combustion,0.7
+42318C,Residential Wood Combustion,0.7
+4231910,Residential Wood Combustion Composite,0.7
+423192.5,Residential Wood Combustion Composite,0.7
+4231930,Residential Wood Combustion Composite,0.7
+42319C,Residential Wood Combustion Composite,0.7
+4232,Local Soil,0.4
+4232010,Field Burning - Composite,0.7
+423202.5,Field Burning - Composite,0.7
+4232030,Field Burning - Composite,0.7
+42320C,Field Burning - Composite,0.7
+4232110,Forest Prescribed Burning - Broadcast Conifer,0.7
+423212.5,Forest Prescribed Burning - Broadcast Conifer,0.7
+4232130,Forest Prescribed Burning - Broadcast Conifer,0.7
+42321C,Forest Prescribed Burning - Broadcast Conifer,0.7
+4232210,Field Burning - Annual Rye Grass,0.7
+423222.5,Field Burning - Annual Rye Grass,0.7
+4232230,Field Burning - Annual Rye Grass,0.7
+42322C,Field Burning - Annual Rye Grass,0.7
+4232310,Field Burning - Perenial Rye Grass,0.7
+423232.5,Field Burning - Perenial Rye Grass,0.7
+4232330,Field Burning - Perenial Rye Grass,0.7
+42323C,Field Burning - Perenial Rye Grass,0.7
+4232410,Field Burning - Fescue,0.7
+423242.5,Field Burning - Fescue,0.7
+4232430,Field Burning - Fescue,0.7
+42324C,Field Burning - Fescue,0.7
+4233,Local Soil,0.4
+4233010,Composite of Residential Wood Burning Sources,0.7
+423302.5,Composite of Residential Wood Burning Sources,0.7
+4233030,Composite of Residential Wood Burning Sources,0.7
+42330C,Composite of Residential Wood Burning Sources,0.7
+4233110,Residential Woodstove Composite,0.7
+423312.5,Residential Woodstove Composite,0.7
+4233130,Residential Woodstove Composite,0.7
+42331C,Residential Woodstove Composite,0.7
+4234,Motor Vehicle Exhaust,0.25
+4235,Motor Vehicle Exhaust,0.25
+4236,Motor Vehicle Exhaust,0.25
+4237,Motor Vehicle Exhaust,0.25
+4238,Motor Vehicle Exhaust,0.25
+4239,Motor Vehicle Exhaust,0.25
+4240,Motor Vehicle Exhaust,0.25
+4241,Motor Vehicle Exhaust,0.25
+4242,Motor Vehicle Exhaust,0.25
+4243,Motor Vehicle Exhaust,0.25
+4244,Motor Vehicle Exhaust,0.25
+4245,Motor Vehicle Exhaust,0.25
+4246,Motor Vehicle Exhaust,0.25
+4247,Motor Vehicle Exhaust,0.25
+4248,Motor Vehicle Exhaust,0.25
+4249,Motor Vehicle Exhaust,0.25
+4250,Motor Vehicle Exhaust,0.25
+4251,Motor Vehicle Exhaust,0.25
+4252,Motor Vehicle Exhaust,0.25
+4253,Motor Vehicle Exhaust,0.25
+4254,Motor Vehicle Exhaust,0.25
+4255,Motor Vehicle Exhaust,0.25
+4256,Motor Vehicle Exhaust,0.25
+4257,Motor Vehicle Exhaust,0.25
+4258,Motor Vehicle Exhaust,0.25
+4259,Motor Vehicle Exhaust,0.25
+4260,Motor Vehicle Exhaust,0.25
+4261,Motor Vehicle Exhaust,0.25
+4262,Motor Vehicle Exhaust,0.25
+4263,Motor Vehicle Exhaust,0.25
+4264,Motor Vehicle Exhaust,0.25
+4265,Motor Vehicle Exhaust,0.25
+4266,Motor Vehicle Exhaust,0.25
+4267,Motor Vehicle Exhaust,0.25
+4268,Vegetative Burning,0.7
+4269,Vegetative Burning,0.7
+4270,Vegetative Burning,0.7
+4271,Vegetative Burning,0.7
+4272,Vegetative Burning,0.7
+4273,Vegetative Burning,0.7
+4274,Vegetative Burning,0.7
+4275,Vegetative Burning,0.7
+4276,Vegetative Burning,0.7
+4277,Vegetative Burning,0.7
+4278,Vegetative Burning,0.7
+4279,Vegetative Burning,0.7
+4280,Vegetative Burning,0.7
+4281,Vegetative Burning,0.7
+4282,Vegetative Burning,0.7
+4283,Vegetative Burning,0.7
+4284,Vegetative Burning,0.7
+4285,Vegetative Burning,0.7
+4287,Vegetative Burning,0.7
+4288,Vegetative Burning,0.7
+4289,Coal Combustion,0.4
+4290,Coal Combustion,0.4
+4291,Coal Combustion,0.4
+4292,Coal Combustion,0.4
+4293,Coal Combustion,0.4
+4294,Coal Combustion,0.4
+4295,Coal Combustion,0.4
+4296,Coal Combustion,0.4
+4297,Coal Combustion,0.4
+4298,Coal Combustion,0.4
+4299,Coal Combustion,0.4
+4300,Coal Combustion,0.4
+4301,Coal Combustion,0.4
+4302,Coal Combustion,0.4
+4303,Coal Combustion,0.4
+4304,Coal Combustion,0.4
+4305,Coal Combustion,0.4
+4306,Coal Combustion,0.4
+4307,Coal Combustion,0.4
+4308,Coal Combustion,0.4
+4309,Coal Combustion,0.4
+4310,Coal Combustion,0.4
+4310110,Marine Aerosol,0.4
+431012.5,Marine Aerosol,0.4
+4310130,Marine Aerosol,0.4
+43101C,Marine Aerosol,0.4
+4311,Coal Combustion,0.4
+4312,Coal Combustion,0.4
+4313,Coal Combustion,0.4
+4314,Coal Combustion,0.4
+4315,Fly Ash,0.4
+4316,Fly Ash,0.4
+4317,Fly Ash,0.4
+4318,Oil Catalytic Cracker,0.4
+4319,Oil Catalytic Cracker,0.4
+4320,Oil Catalytic Cracker,0.4
+4320110,Residential Space Heating - Coal,0.4
+432012.5,Residential Space Heating - Coal,0.4
+4320130,Residential Space Heating - Coal,0.4
+43201C,Residential Space Heating - Coal,0.4
+4321,Oil Catalytic Cracker,0.4
+4322,Oil Catalytic Cracker,0.4
+4323,Cement Kiln,0.4
+4324,Cement Kiln,0.4
+4325,Cement Kiln,0.4
+4326,Cement Kiln,0.4
+4327,Cement Kiln,0.4
+4328,Cement Kiln,0.4
+4329,Cement Kiln,0.4
+4330,Cement Kiln,0.4
+4330110,Volcanic Ash,0.4
+433012.5,Volcanic Ash,0.4
+4330130,Volcanic Ash,0.4
+43301C,Volcanic Ash,0.4
+4330210,Orchard Heating - Smudge Pots,0.4
+433022.5,Orchard Heating - Smudge Pots,0.4
+4330230,Orchard Heating - Smudge Pots,0.4
+43302C,Orchard Heating - Smudge Pots,0.4
+4330310,Coal-Fired Power Utility Fly Ash (Srm 1633),0.4
+433032.5,Coal-Fired Power Utility Fly Ash (Srm 1633),0.4
+4330330,Coal-Fired Power Utility Fly Ash (Srm 1633),0.4
+43303C,Coal-Fired Power Utility Fly Ash (Srm 1633),0.4
+4330410,"Limestone, Crustal",0.4
+433042.5,"Limestone, Crustal",0.4
+4330430,"Limestone, Crustal",0.4
+43304C,"Limestone, Crustal",0.4
+4330510,"Shale, Crustal",0.4
+433052.5,"Shale, Crustal",0.4
+4330530,"Shale, Crustal",0.4
+43305C,"Shale, Crustal",0.4
+4330610,"Sandstone, Crustal",0.4
+433062.5,"Sandstone, Crustal",0.4
+4330630,"Sandstone, Crustal",0.4
+43306C,"Sandstone, Crustal",0.4
+4330710,"Sediment, Crustal",0.4
+433072.5,"Sediment, Crustal",0.4
+4330730,"Sediment, Crustal",0.4
+43307C,"Sediment, Crustal",0.4
+4330810,Igneous Rock,0.4
+433082.5,Igneous Rock,0.4
+4330830,Igneous Rock,0.4
+43308C,Igneous Rock,0.4
+4330910,Earth's Crust,0.4
+433092.5,Earth's Crust,0.4
+4330930,Earth's Crust,0.4
+43309C,Earth's Crust,0.4
+4331,Cement Kiln,0.4
+4332,Cement Kiln,0.4
+4333,Cement Kiln,0.4
+4334,Cooking,0.4
+4335,Cooking,0.4
+4336,Cooking,0.4
+4337,Cooking,0.4
+4338,Cooking,0.4
+4339,Cooking,0.4
+4340,Cooking,0.4
+4341,Cooking,0.4
+4342,Cooking,0.4
+4343,Cooking,0.4
+4344,Cooking,0.4
+4345,Cooking,0.4
+4346,Paved Road Dust,0.4
+4347,Paved Road Dust,0.4
+4348,Unpaved Road Dust,0.4
+4349,Unpaved Road Dust,0.4
+4350,Local Soil,0.4
+4351,Local Soil,0.4
+4352,Local Soil,0.4
+4353,Local Soil,0.4
+4354,Motor Vehicle Exhaust,0.25
+4355,Motor Vehicle Exhaust,0.25
+4356,Motor Vehicle Exhaust,0.25
+4357,Motor Vehicle Exhaust,0.25
+4358,Motor Vehicle Exhaust,0.25
+4359,Vegetative Burning,0.7
+4360,Vegetative Burning,0.7
+4361,Vegetative Burning,0.7
+4362,Vegetative Burning,0.7
+4363,Vegetative Burning,0.7
+4364,Vegetative Burning,0.7
+4365,Vegetative Burning,0.7
+4366,Vegetative Burning,0.7
+4367,Coal Combustion,0.4
+4368,Coal Combustion,0.4
+4369,Coal Combustion,0.4
+4370,Coal Combustion,0.4
+4371,Coal Combustion,0.4
+4373,Coal Combustion,0.4
+4374,Fly Ash,0.4
+4375,Oil Catalytic Cracker,0.4
+4376,Cement Kiln,0.4
+4377,Cement Kiln,0.4
+4378,Cement Kiln,0.4
+4379,Cooking,0.4
+4380,Cooking,0.4
+4381,Cooking,0.4
+4382,Cooking,0.4
+4383,Cooking,0.4
+4384,Residential Wood Burning,0.7
+4385,Residential Wood Burning,0.7
+4386,Residential Wood Burning,0.7
+4387,Residential Wood Burning,0.7
+4388,Residential Wood Burning,0.7
+4389,Residential Wood Burning,0.7
+4390,Residential Vegetative Burning,0.7
+4391,Residential Vegetative Burning,0.7
+4392,Residential Vegetative Burning,0.7
+4393,Residential Wood Burning,0.7
+4394,Oil Refinery,0.4
+4395,Oil Refinery,0.4
+4396,Oil Refinery,0.4
+4397,Oil Refinery,0.4
+4398,Oil Refinery,0.4
+4399,Oil Refinery,0.4
+4400,Oil Refinery,0.4
+4401,Oil Refinery,0.4
+4402,Oil Refinery,0.4
+4403,Oil Refinery,0.4
+4404,Oil Refinery,0.4
+4405,Oil Refinery,0.4
+4406,Oil Refinery,0.4
+4407,Oil Refinery,0.4
+4408,Oil Refinery,0.4
+4409,Oil Refinery,0.4
+4410,Oil Refinery,0.4
+4410110,"Excavation - El Segundo, CA",0.4
+441012.5,"Excavation - El Segundo, CA",0.4
+4410130,"Excavation - El Segundo, CA",0.4
+44101C,"Excavation - El Segundo, CA",0.4
+4410210,Excavation - Haul Road,0.4
+441022.5,Excavation - Haul Road,0.4
+4410230,Excavation - Haul Road,0.4
+44102C,Excavation - Haul Road,0.4
+4410310,Excavation - Rock Crushing,0.4
+441032.5,Excavation - Rock Crushing,0.4
+4410330,Excavation - Rock Crushing,0.4
+44103C,Excavation - Rock Crushing,0.4
+4410410,Soil Dust - Sandblasting & Plastering,0.4
+441042.5,Soil Dust - Sandblasting & Plastering,0.4
+4410430,Soil Dust - Sandblasting & Plastering,0.4
+44104C,Soil Dust - Sandblasting & Plastering,0.4
+4411,Oil Refinery,0.4
+4412,Oil Refinery,0.4
+4413,Oil Refinery,0.4
+4414,Oil Refinery,0.4
+4415,Oil Refinery,0.4
+4463,Forest Fire,0.7
+4464,Forest Fire,0.7
+4465,Forest Fire,0.7
+4466,Forest Fire,0.7
+4467,Forest Fire,0.7
+4468,Forest Fire,0.7
+4554,Meat charbroiling emissions,0.4
+4558,Vehicle exhaust - gasoline - Catalyst ,0.25
+4559,Vehicle exhaust - gasoline - Noncatalyst ,0.25
+4643,Residential Wood Combustion,0.7
+4644,Residential Wood Combustion,0.7
+4645,Residential Wood Combustion,0.7
+4653,Cooking vegetables - Stir frying in soybean oil,0.4
+4654,Cooking vegetables - Stir frying in canola oil,0.4
+4655,Cooking potatoes - Deep frying in hydrogenated oil,0.4
+4656,Paved road dust fine particulate matters - Long Beach,0.4
+4657,Paved road dust fine particulate matters - Central Los Angel,0.4
+4658,Paved road dust fine particulate matters - Roubidoux,0.4
+4660,Cigarette Smoke,0.4
+4663,Industrial surface coating operations - water based,0.4
+4664,Industrial surface coating operations - oil based,0.4
+4675,Medium duty trucks - diesel,0.25
+4704,Wood-fired Industrial Boiler - NWWAS,0.4
+4705,Wood-fired Industrial Boiler - sampled without denuder,0.4
+4706,Food & Ag - Drying (Rice Dryer),0.4
+4707,Steel Abrasive Blasting,0.4
+4708,Fiberglass Manufacture,0.4
+4709,Wood Operation - Resawing,0.4
+4718,Iron and Steel Manufacturing,0.4
+4719,Iron and Steel Manufacturing,0.4
+4720,Iron and Steel Manufacturing,0.4
+4721,Iron and Steel Manufacturing,0.4
+4722,Iron and Steel Manufacturing,0.4
+4733,External Combustion - Pulp and Paper Mills Kraft Precess Recovery Boiler,0.4
+4734,External Combustion - Pulp and Paper Mills Kraft Process Recovery Boiler,0.4
+4735,External Combustion - Pulp and Paper Mills Kraft Process Recovery Boiler,0.4
+4736,Distillate Oil Combustion,0.4
+4737,Residual Oil Combustion,0.4
+4746,"Diesel Exhaust - Bus at -10 oC, 4-stroke, oxidation catalyst",0.25
+4747,"Diesel Exhaust - Bus at 20 oC, 4-stroke, oxidation catalyst",0.25
+4748,"Diesel Exhaust - Bus at -10 oC, 2-stroke",0.25
+4749,"Diesel Exhaust - Bus at 20 oC, 2-stroke",0.25
+4750,"Diesel Exhaust - Bus at -10 oC, 2-stroke, oxidation catalyst",0.25
+4751,"Diesel Exhaust - Bus at 20 oC, 2-stroke, oxidation catalyst",0.25
+4840,Agricultural Burning - Rice Straw,0.7
+4841,Agricultural Burning - Wheat Straw,0.7
+4842,Diesel Exhaust,0.25
+4843,Diesel Exhaust,0.25
+4844,Diesel Exhaust,0.25
+4845,Diesel Exhaust,0.25
+4846,Diesel Exhaust,0.25
+4847,Diesel Exhaust,0.25
+4848,Diesel Exhaust,0.25
+4849,Diesel Exhaust,0.25
+4850,Diesel Exhaust,0.25
+4851,Diesel Exhaust,0.25
+4852,Diesel Exhaust,0.25
+4853,Diesel Exhaust,0.25
+4854,Diesel Exhaust,0.25
+4855,Diesel Exhaust,0.25
+4856,Diesel Exhaust,0.25
+4857,Diesel Exhaust,0.25
+4858,Diesel Exhaust,0.25
+4859,Diesel Exhaust - Transit Bus,0.25
+4860,Diesel Exhaust - Transit Bus,0.25
+4861,Diesel Exhaust,0.25
+4862,Diesel Exhaust,0.25
+4863,Diesel Exhaust,0.25
+4864,Diesel Exhaust,0.25
+4865,Diesel Exhaust,0.25
+4866,Diesel Exhaust,0.25
+4867,Diesel Exhaust,0.25
+4868,Diesel Exhaust,0.25
+4869,Diesel Exhaust,0.25
+4870,Diesel Exhaust,0.25
+4871,Diesel Exhaust,0.25
+4872,Diesel Exhaust,0.25
+4873,Diesel Exhaust,0.25
+4874,Diesel Exhaust,0.25
+4875,Diesel Exhaust,0.25
+4876,Diesel Exhaust,0.25
+4877,Diesel Exhaust,0.25
+4878,Diesel Exhaust,0.25
+4879,Diesel Exhaust,0.25
+4880,Diesel Exhaust,0.25
+4881,Diesel Exhaust,0.25
+4882,Diesel Exhaust,0.25
+4883,Diesel Exhaust,0.25
+4884,Diesel Exhaust,0.25
+4885,Diesel Exhaust,0.25
+4886,Diesel Exhaust,0.25
+4887,Diesel Exhaust,0.25
+4888,Diesel Exhaust,0.25
+4889,Diesel Exhaust,0.25
+4890,Diesel Exhaust,0.25
+4891,Diesel Exhaust,0.25
+4892,Diesel Exhaust - Transit Bus,0.25
+4893,Diesel Exhaust - Transit Bus,0.25
+4894,Diesel Exhaust,0.25
+4895,Light Duty Vehicle Exhaust - Gasoline,0.25
+4896,Light Duty Vehicle Exhaust - Gasoline,0.25
+4897,Light Duty Vehicle Exhaust - Gasoline,0.25
+4898,Light Duty Vehicle Exhaust - Gasoline,0.25
+4899,Light Duty Vehicle Exhaust - Gasoline,0.25
+4900,Light Duty Vehicle Exhaust - Gasoline,0.25
+4901,Light Duty Vehicle Exhaust - Gasoline,0.25
+4902,Light Duty Vehicle Exhaust - Gasoline,0.25
+4903,Light Duty Vehicle Exhaust - Gasoline,0.25
+4904,Light Duty Vehicle Exhaust - Gasoline,0.25
+4905,Light Duty Vehicle Exhaust - Gasoline,0.25
+4906,Light Duty Vehicle Exhaust - Gasoline,0.25
+4907,Light Duty Vehicle Exhaust - Gasoline,0.25
+4908,Light Duty Vehicle Exhaust - Gasoline,0.25
+4909,Light Duty Vehicle Exhaust - Gasoline,0.25
+4910,Light Duty Vehicle Exhaust - Gasoline,0.25
+4911,Light Duty Vehicle Exhaust - Gasoline,0.25
+4912,Light Duty Vehicle Exhaust - Gasoline,0.25
+4913,Light Duty Vehicle Exhaust - Gasoline,0.25
+4914,Light Duty Vehicle Exhaust - Gasoline,0.25
+4915,Light Duty Vehicle Exhaust - Gasoline,0.25
+4916,Light Duty Vehicle Exhaust - Gasoline,0.25
+4917,Light Duty Vehicle Exhaust - Gasoline,0.25
+4918,Light Duty Vehicle Exhaust - Gasoline,0.25
+4919,Light Duty Vehicle Exhaust - Gasoline,0.25
+4920,Light Duty Vehicle Exhaust - Gasoline,0.25
+4921,Light Duty Vehicle Exhaust - Gasoline,0.25
+4922,Light Duty Vehicle Exhaust - Gasoline,0.25
+4923,Light Duty Vehicle Exhaust - Gasoline,0.25
+4924,Light Duty Vehicle Exhaust - Gasoline,0.25
+4925,Light Duty Vehicle Exhaust - Gasoline,0.25
+4926,Light Duty Vehicle Exhaust - Gasoline,0.25
+4927,Light Duty Vehicle Exhaust - Gasoline,0.25
+4928,Light Duty Vehicle Exhaust - Gasoline,0.25
+4929,Light Duty Vehicle Exhaust - Gasoline,0.25
+4930,Light Duty Vehicle Exhaust - Gasoline,0.25
+4931,Light Duty Vehicle Exhaust - Gasoline,0.25
+4932,Light Duty Vehicle Exhaust - Gasoline,0.25
+4933,Light Duty Vehicle Exhaust - Gasoline; intermittent smoker,0.25
+4934,Light Duty Vehicle Exhaust - Gasoline; light smoker,0.25
+4935,Light Duty Vehicle Exhaust - Gasoline; intermittent smoker,0.25
+4936,Light Duty Vehicle Exhaust - Gasoline; light smoker,0.25
+4937,Light Duty Vehicle Exhaust - Gasoline; heavy smoker,0.25
+4938,Light Duty Vehicle Exhaust - Gasoline; intermittent smoker,0.25
+4939,Light Duty Vehicle Exhaust - Gasoline; light smoker,0.25
+4940,Light Duty Vehicle Exhaust - Gasoline; intermittent smoker,0.25
+4941,Light Duty Vehicle Exhaust - Gasoline; light smoker,0.25
+4942,Light Duty Vehicle Exhaust - Gasoline; heavy smoker,0.25
+4943,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4944,Diesel Exhaust - Heavy-heavy duty truck - CARB CREEP,0.25
+4945,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+4946,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4947,Diesel Exhaust - Heavy-heavy duty truck - CARB LONG IDLE,0.25
+4948,Diesel Exhaust - Heavy-heavy duty truck - CARB LONG CREEP,0.25
+4949,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4950,Diesel Exhaust - Heavy-heavy duty truck - CARB CREEP,0.25
+4951,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+4952,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4953,Diesel Exhaust - Heavy-heavy duty truck - CARB Urban Driving Dynamometer Schedule,0.25
+4954,Diesel Exhaust - Heavy-heavy duty truck - CARB Urban Driving Dynamometer Schedule,0.25
+4955,Diesel Exhaust - Heavy-heavy duty truck - CARB Urban Driving Dynamometer Schedule,0.25
+4956,Diesel Exhaust - Heavy-heavy duty truck - CARB Urban Driving Dynamometer Schedule,0.25
+4957,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+4958,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4959,Diesel Exhaust - Heavy-heavy duty truck - CARB EXTENDED IDLE,0.25
+4960,Diesel Exhaust - Heavy-heavy duty truck - CARB EXTENDED CREEP,0.25
+4961,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+4962,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4963,Diesel Exhaust - Heavy-heavy duty truck - CARB EXTENDED IDLE,0.25
+4964,Diesel Exhaust - Heavy-heavy duty truck - CARB CREEP,0.25
+4965,Diesel Exhaust - Heavy-heavy duty truck - CARB UDDS,0.25
+4966,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+4967,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4968,Diesel Exhaust - Heavy-heavy duty truck - CARB EXTENDED CREEP,0.25
+4969,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+4970,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4971,Diesel Exhaust - Heavy-heavy duty truck - CARB EXTENDED CREEP,0.25
+4972,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4973,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4974,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4975,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4976,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4977,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4978,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4979,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4980,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4981,Diesel Exhaust - Heavy-heavy duty truck - CARB CRUISE,0.25
+4982,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4983,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4984,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4985,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4986,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4987,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4988,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4989,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4990,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4991,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4992,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4993,Diesel Exhaust - Heavy-heavy duty truck - CARB IDLE,0.25
+4994,Diesel Exhaust - Medium-heavy duty truck - CARB TRANSIENT,0.25
+4995,Diesel Exhaust - Medium-heavy duty truck - CARB TRANSIENT,0.25
+4996,Diesel Exhaust - Medium-heavy duty truck - CARB CRUISE,0.25
+4997,Diesel Exhaust - Medium-heavy duty truck - CARB CRUISE,0.25
+4998,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+4999,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5000,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5001,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5002,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5003,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5004,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5005,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5006,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5007,Diesel Exhaust - Heavy-heavy duty truck - CARB TRANSIENT,0.25
+5008,Brake Wear - semimetallic (steel fiber),0.4
+5009,"Brake Wear - potassium titanate, aramid, and copper fiber",0.4
+5010,"Brake Wear - aramid, mineral, and copper fiber",0.4
+5011,"Brake Wear - semimetallic, (steel fiber)",0.4
+5012,"Brake Wear - semimetallic, (steel fiber)",0.4
+5013,"Brake Wear - potassium titanate, aramid, and copper fiber",0.4
+5014,Brake Wear - non-asbestos organic,0.4
+5015,Brake Wear - semimetallic,0.4
+5016,Brake Wear -  low metallic,0.4
+5017,Hazardous Waste Incineration - Incinerator,0.4
+5018,Hazardous Waste Incineration - Incinerator,0.4
+5019,Hazardous Waste Incineration - Cement Kiln,0.4
+5020,Hazardous Waste Incineration - Cement Kiln,0.4
+5021,Hazardous Waste Incineration - Cement Kiln,0.4
+5022,Hazardous Waste Incineration - Cement Kiln,0.4
+5023,Hazardous Waste Incineration - Cement Kiln,0.4
+5024,Hazardous Waste Incineration - Cement Kiln,0.4
+5025,Hazardous Waste Incineration - Incinerator,0.4
+5026,Hazardous Waste Incineration - Incinerator,0.4
+5027,Hazardous Waste Incineration - Incinerator,0.4
+5028,Hazardous Waste Incineration - Incinerator,0.4
+5029,Hazardous Waste Incineration - Cement Kiln,0.4
+5030,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5031,Hazardous Waste Incineration - Cement Kiln,0.4
+5032,Hazardous Waste Incineration - Cement Kiln,0.4
+5033,Hazardous Waste Incineration - Cement Kiln,0.4
+5034,Hazardous Waste Incineration - Light Weight Aggregate Kiln,0.4
+5035,Hazardous Waste Incineration - Light Weight Aggregate Kiln,0.4
+5036,Hazardous Waste Incineration - Light Weight Aggregate Kiln,0.4
+5037,Hazardous Waste Incineration - Light Weight Aggregate Kiln,0.4
+5038,Hazardous Waste Incineration - Light Weight Aggregate Kiln,0.4
+5039,Hazardous Waste Incineration - Cement Kiln,0.4
+5040,Hazardous Waste Incineration - Cement Kiln,0.4
+5041,Hazardous Waste Incineration - Cement Kiln,0.4
+5042,Hazardous Waste Incineration - Cement Kiln,0.4
+5043,Hazardous Waste Incineration - Incinerator,0.4
+5045,Hazardous Waste Incineration - Incinerator,0.4
+5046,Hazardous Waste Incineration - Light Weight Aggregate Kiln,0.4
+5047,Hazardous Waste Incineration - Incinerator,0.4
+5048,Hazardous Waste Incineration - Incinerator,0.4
+5049,Hazardous Waste Incineration - Incinerator,0.4
+5050,Hazardous Waste Incineration - Incinerator,0.4
+5051,Hazardous Waste Incineration - Incinerator,0.4
+5052,Hazardous Waste Incineration - Incinerator,0.4
+5053,Hazardous Waste Incineration - Incinerator,0.4
+5055,Hazardous Waste Incineration - Cement Kiln,0.4
+5056,Hazardous Waste Incineration - Cement Kiln,0.4
+5057,Hazardous Waste Incineration - Incinerator,0.4
+5058,Hazardous Waste Incineration - Incinerator,0.4
+5059,Hazardous Waste Incineration - Incinerator,0.4
+5060,Hazardous Waste Incineration - Incinerator,0.4
+5061,Hazardous Waste Incineration - Incinerator,0.4
+5062,Hazardous Waste Incineration - Incinerator,0.4
+5063,Hazardous Waste Incineration - Cement Kiln,0.4
+5064,Hazardous Waste Incineration - Incinerator,0.4
+5065,Hazardous Waste Incineration - Incinerator,0.4
+5066,Hazardous Waste Incineration - Light Weight Aggregate Kiln,0.4
+5067,Hazardous Waste Incineration - Incinerator,0.4
+5068,Hazardous Waste Incineration - Incinerator,0.4
+5069,Hazardous Waste Incineration - Incinerator,0.4
+5070,Hazardous Waste Incineration - Incinerator,0.4
+5071,Hazardous Waste Incineration - Incinerator,0.4
+5072,Hazardous Waste Incineration - Cement Kiln,0.4
+5073,Hazardous Waste Incineration - Incinerator,0.4
+5074,Hazardous Waste Incineration - Incinerator,0.4
+5075,Hazardous Waste Incineration - Incinerator,0.4
+5077,Hazardous Waste Incineration - Incinerator,0.4
+5078,Hazardous Waste Incineration - Incinerator,0.4
+5079,Hazardous Waste Incineration - Incinerator,0.4
+5081,Hazardous Waste Incineration - Incinerator,0.4
+5082,Hazardous Waste Incineration - Incinerator,0.4
+5083,Hazardous Waste Incineration - Incinerator,0.4
+5084,Hazardous Waste Incineration - Incinerator,0.4
+5085,Hazardous Waste Incineration - Incinerator,0.4
+5086,Hazardous Waste Incineration - Incinerator,0.4
+5087,Hazardous Waste Incineration - Incinerator,0.4
+5088,Hazardous Waste Incineration - Cement Kiln,0.4
+5089,Hazardous Waste Incineration - Cement Kiln,0.4
+5090,Hazardous Waste Incineration - Incinerator,0.4
+5091,Hazardous Waste Incineration - Incinerator,0.4
+5092,Hazardous Waste Incineration - Incinerator,0.4
+5093,Hazardous Waste Incineration - Incinerator,0.4
+5094,Hazardous Waste Incineration - Incinerator,0.4
+5095,Hazardous Waste Incineration - Incinerator,0.4
+5096,Hazardous Waste Incineration - Incinerator,0.4
+5097,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5098,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5099,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5100,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5101,Hazardous Waste Incineration - Incinerator,0.4
+5102,Hazardous Waste Incineration - Incinerator,0.4
+5103,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5104,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5105,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5106,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5107,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5108,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5109,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5110,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5111,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5112,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5113,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5114,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5115,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5116,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5117,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5118,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5119,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5120,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5121,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5122,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5123,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5124,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5125,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5126,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5127,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5128,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5129,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5130,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5131,Hazardous Waste Incineration - Incinerator,0.4
+5132,Hazardous Waste Incineration - Incinerator,0.4
+5133,Hazardous Waste Incineration - Incinerator,0.4
+5135,Hazardous Waste Incineration - Incinerator,0.4
+5136,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5137,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5138,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5139,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5140,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5141,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5142,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5143,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5144,Hazardous Waste Incineration - Incinerator,0.4
+5145,Hazardous Waste Incineration - Incinerator,0.4
+5146,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5147,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5148,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5149,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5150,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5151,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5152,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5153,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5154,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5155,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5156,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5157,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5159,Hazardous Waste Incineration - Incinerator,0.4
+5160,Hazardous Waste Incineration - Incinerator,0.4
+5161,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5162,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5163,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5164,Hazardous Waste Incineration - Incinerator,0.4
+5165,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5166,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5167,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5168,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5169,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5170,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5171,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5172,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5173,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5174,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5175,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5176,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5177,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5178,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5180,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5181,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5182,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5183,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5184,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5185,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5186,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5187,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5188,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5189,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5190,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5191,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5192,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5193,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5194,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5195,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5196,Hazardous Waste Incineration - HCl Production Furnace,0.4
+5197,Hazardous Waste Incineration - Incinerator,0.4
+5198,Hazardous Waste Incineration - Incinerator,0.4
+5199,Hazardous Waste Incineration - Incinerator,0.4
+5200,Hazardous Waste Incineration - Incinerator,0.4
+5201,Hazardous Waste Incineration - Incinerator,0.4
+5202,Hazardous Waste Incineration - Incinerator,0.4
+5203,Hazardous Waste Incineration - Incinerator,0.4
+5204,Hazardous Waste Incineration - Incinerator,0.4
+5206,Hazardous Waste Incineration - Incinerator,0.4
+5207,Hazardous Waste Incineration - Incinerator,0.4
+5208,Hazardous Waste Incineration - Incinerator,0.4
+5209,Hazardous Waste Incineration - Incinerator,0.4
+5210,Hazardous Waste Incineration - Incinerator,0.4
+5211,Hazardous Waste Incineration - Incinerator,0.4
+5212,Hazardous Waste Incineration - Incinerator,0.4
+5213,Hazardous Waste Incineration - Incinerator,0.4
+5214,Hazardous Waste Incineration - Incinerator,0.4
+5215,Hazardous Waste Incineration - Incinerator,0.4
+5216,Hazardous Waste Incineration - Incinerator,0.4
+5217,Hazardous Waste Incineration - Incinerator,0.4
+5218,Hazardous Waste Incineration - Incinerator,0.4
+5219,Hazardous Waste Incineration - Incinerator,0.4
+5220,Hazardous Waste Incineration - Incinerator,0.4
+5221,Hazardous Waste Incineration - Cement Kiln,0.4
+5222,Hazardous Waste Incineration - Cement Kiln,0.4
+5223,Hazardous Waste Incineration - Cement Kiln,0.4
+5224,Hazardous Waste Incineration - Incinerator,0.4
+5225,Hazardous Waste Incineration - Incinerator,0.4
+5226,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5227,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5228,Hazardous Waste Incineration - Incinerator,0.4
+5229,Hazardous Waste Incineration - Incinerator,0.4
+5230,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5231,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5232,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5233,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5234,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5235,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5236,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5237,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5238,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5239,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5240,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5241,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5242,Hazardous Waste Incineration - Incinerator,0.4
+5243,Hazardous Waste Incineration - Cement Kiln,0.4
+5244,Hazardous Waste Incineration - Incinerator,0.4
+5245,Hazardous Waste Incineration - Incinerator,0.4
+5246,Hazardous Waste Incineration - Cement Kiln,0.4
+5247,Hazardous Waste Incineration - Incinerator,0.4
+5248,Hazardous Waste Incineration - Solid Fuel Boiler,0.4
+5249,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5250,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5251,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5252,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5253,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5254,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5255,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5256,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5257,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5258,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5259,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5260,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5261,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5262,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5263,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5264,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5265,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5266,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5267,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5268,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5269,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5270,Hazardous Waste Incineration - Liquid Fuel Boiler,0.4
+5292,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - Low Sulfur Diesel,0.25
+5293,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - California Reformulated Diesel 2,0.25
+5294,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - Low Sulfur Diesel - Diesel PM Filter,0.25
+5298,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2/ 20% WorldEnergy Biodiesel,0.25
+5299,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% SoyGold Biodiesel,0.25
+5300,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% OxyG Biodiesel,0.25
+5301,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - Low Sulfur Diesel (EC-D),0.25
+5302,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - California Reformulated Diesel 2,0.25
+5303,Diesel Exhaust - Light-heavy-duty Diesel Van - 80% California Reformulated Diesel 2/ 20% WorldEnergy Biodiesel,0.25
+5304,Diesel Exhaust - Light-heavy-duty Diesel Van - 80% California Reformulated Diesel 2 / 20% SoyGold Biodiesel,0.25
+5305,Diesel Exhaust - Light-heavy-duty Diesel Van - 80% California Reformulated Diesel 2 / 20% OxyG Biodiesel,0.25
+5306,Diesel Exhaust - Light-heavy-duty Diesel Van - Low Sulfur Diesel (EC-D),0.25
+5307,Diesel Exhaust - Light-heavy-duty Diesel Van - California Reformulated Diesel 2,0.25
+5308,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2/ 20% WorldEnergy Biodiesel,0.25
+5309,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% SoyGold Biodiesel,0.25
+5310,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% OxyG Biodiesel,0.25
+5311,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - Low Sulfur Diesel (EC-D),0.25
+5312,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - California Reformulated Diesel 2,0.25
+5313,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2/ 20% WorldEnergy Biodiesel,0.25
+5314,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% SoyGold Biodiesel,0.25
+5315,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% OxyG Biodiesel,0.25
+5316,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - Low Sulfur Diesel (EC-D),0.25
+5317,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - California Reformulated Diesel 2,0.25
+5318,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2/ 20% WorldEnergy Biodiesel,0.25
+5319,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% SoyGold Biodiesel,0.25
+5320,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - 80% California Reformulated Diesel 2 / 20% OxyG Biodiesel,0.25
+5321,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - Low Sulfur Diesel (EC-D),0.25
+5322,Diesel Exhaust - Light-heavy-duty Diesel Pickup Truck - California Reformulated Diesel 2,0.25
+5323,Aircraft Exhaust,0.25
+5324,Aircraft Exhaust,0.25
+5325,Aircraft Exhaust,0.25
+5326,Aircraft Exhaust,0.25
+5327,Aircraft Exhaust,0.25
+5566,Light Duty Vehicle Exhaust - Gasoline - Test ID: S1-1,0.25
+5567,Light Duty Vehicle Exhaust - Gasoline - Test ID: S1-2,0.25
+5568,Light Duty Vehicle Exhaust - Gasoline - Test ID: S2-1,0.25
+5569,Light Duty Vehicle Exhaust - Gasoline - Test ID: S2-2,0.25
+5570,Light Duty Vehicle Exhaust - Gasoline - Test ID: S2-3,0.25
+5571,Light Duty Vehicle Exhaust - Gasoline - Test ID: S2-4,0.25
+5572,Light Duty Vehicle Exhaust - Gasoline - Test ID: S3-1,0.25
+5573,Light Duty Vehicle Exhaust - Gasoline - Test ID: S3-2,0.25
+5574,Light Duty Vehicle Exhaust - Gasoline - Test ID: S4-1,0.25
+5575,Light Duty Vehicle Exhaust - Gasoline - Test ID: S4-2,0.25
+5576,Light Duty Vehicle Exhaust - Gasoline - Test ID: S5-1,0.25
+5577,Light Duty Vehicle Exhaust - Gasoline - Test ID: S5-2,0.25
+5578,Light Duty Vehicle Exhaust - Gasoline - Test ID: S5-3,0.25
+5579,Light Duty Vehicle Exhaust - Gasoline - Test ID: S5-4,0.25
+5580,Light Duty Vehicle Exhaust - Gasoline - Test ID: S5-5,0.25
+5581,Light Duty Vehicle Exhaust - Gasoline - Test ID: S6-1,0.25
+5582,Light Duty Vehicle Exhaust - Gasoline - Test ID: S6-2,0.25
+5583,Light Duty Vehicle Exhaust - Gasoline - Test ID: S6-3,0.25
+5584,Light Duty Vehicle Exhaust - Gasoline - Test ID: S6-4,0.25
+5585,Light Duty Vehicle Exhaust - Gasoline - Test ID: S7-1,0.25
+5586,Light Duty Vehicle Exhaust - Gasoline - Test ID: S7-2,0.25
+5587,Light Duty Vehicle Exhaust - Gasoline - Test ID: S7-3,0.25
+5588,Light Duty Vehicle Exhaust - Gasoline - Test ID: S7-4,0.25
+5589,Light Duty Vehicle Exhaust - Gasoline - Test ID: S8-1,0.25
+5590,Light Duty Vehicle Exhaust - Gasoline - Test ID: S8-2,0.25
+5591,Light Duty Vehicle Exhaust - Gasoline - Test ID: S8-3,0.25
+5592,Light Duty Vehicle Exhaust - Gasoline - Test ID: W1-1,0.25
+5593,Light Duty Vehicle Exhaust - Gasoline - Test ID: W1-2,0.25
+5594,Light Duty Vehicle Exhaust - Gasoline - Test ID: W1-3,0.25
+5595,Light Duty Vehicle Exhaust - Gasoline - Test ID: W2-1,0.25
+5596,Light Duty Vehicle Exhaust - Gasoline - Test ID: W2-2,0.25
+5597,Light Duty Vehicle Exhaust - Gasoline - Test ID: W2-3,0.25
+5598,Light Duty Vehicle Exhaust - Gasoline - Test ID: W3-1,0.25
+5599,Light Duty Vehicle Exhaust - Gasoline - Test ID: W3-2,0.25
+5600,Light Duty Vehicle Exhaust - Gasoline - Test ID: W3-3,0.25
+5601,Light Duty Vehicle Exhaust - Gasoline - Test ID: W4-1,0.25
+5602,Light Duty Vehicle Exhaust - Gasoline - Test ID: W4-2,0.25
+5603,Light Duty Vehicle Exhaust - Gasoline - Test ID: W4-3,0.25
+5604,Light Duty Vehicle Exhaust - Gasoline - Test ID: W5-1,0.25
+5605,Light Duty Vehicle Exhaust - Gasoline - Test ID: W5-2,0.25
+5606,Light Duty Vehicle Exhaust - Gasoline - Test ID: W5-3,0.25
+5607,Light Duty Vehicle Exhaust - Gasoline - Test ID: W6-1,0.25
+5608,Light Duty Vehicle Exhaust - Gasoline - Test ID: W6-2,0.25
+5609,Light Duty Vehicle Exhaust - Gasoline - Test ID: W6-3,0.25
+5610,Light Duty Vehicle Exhaust - Gasoline - Test ID: W6-4,0.25
+5611,Light Duty Vehicle Exhaust - Gasoline - Test ID: W7-1,0.25
+5612,Light Duty Vehicle Exhaust - Gasoline - Test ID: W7-2,0.25
+5613,Light Duty Vehicle Exhaust - Gasoline - Test ID: W7-3,0.25
+5614,Light Duty Vehicle Exhaust - Gasoline - Test ID: W7-4,0.25
+5615,Light Duty Vehicle Exhaust - Gasoline - Test ID: W8-1,0.25
+5616,Light Duty Vehicle Exhaust - Gasoline - Test ID: W8-2,0.25
+5617,Light Duty Vehicle Exhaust - Gasoline - Test ID: W8-3,0.25
+5644,Residential Oil Boilers,0.4
+5646,Residual Oil-Fired Power Plant,0.4
+5648,Kraft Process Recovery Boiler,0.4
+5669,Gas-Fired Boilers,0.4
+5670,Gas-Fired Process Heaters,0.4
+5671,Gas-Fired Combined Cycle and Cogeneration Plants,0.4
+5672,Oil-Fired Boilers,0.4
+5673,Diesel Engines,0.25
+5674,Marine Vessel - Main Engine - Heavy Fuel Oil,0.25
+5675,Marine Vessel - Auxiliary Engine - Marine Gas Oil,0.25
+5675AE6,Marine Vessel - Auxiliary Engine - Marine Gas Oil - with AE6 species added,0.25
+5676,Marine Vessel - Auxiliary Boiler - Heavy Fuel Oil,0.25
+5679,Diesel Exhaust - Heavy-heavy duty truck - 2007 model year,0.25
+5680,Diesel Exhaust - Heavy-heavy duty truck - 2007 model year,0.25
+5681,Marine Vessel - Main Propulsion Engine - Heavy Fuel Oil,0.25
+5682,Bituminous Coal-Fired Power Plant,0.4
+5683,Construction Dust,0.4
+8821,Pulp and Paper Mills - Kraft DCE Recovery Furnaces,0.4
+8822,Pulp and Paper Mills - Kraft NDCE Recovery Furnaces,0.4
+8823,Pulp and Paper Mills - Sulfite Recovery Furnaces,0.4
+8824,Pulp and Paper Mills - Kraft Lime Kilns with ESPs,0.4
+8825,Pulp and Paper Mills - Kraft Lime Kilns with Wet Scrubbers,0.4
+8826,Pulp and Paper Mills - Kraft Smelt Dissolving Tanks,0.4
+8873,Aircraft Exhaust,0.25
+8874,Aircraft Exhaust,0.25
+8875,Aircraft Exhaust,0.25
+8898,Outdoor Wood-fired Boiler - Red Oak,0.4
+8899,Outdoor Wood-fired Boiler - Pine,0.4
+8900,Outdoor Wood-fired Boiler - Red Oak with Supplementary Refuse,0.4
+8901,Outdoor Wood-fired Boiler - Red Oak,0.4
+8902,Outdoor Wood-fired Boiler - Hardwood Pellets from Sawdust,0.4
+8903,Outdoor Wood-fired Boiler - Red Oak,0.4
+8928,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1),0.25
+8929,Gasoline Exhaust SVOC - LA92 UDC cycle hot stabilized running (Phase 2),0.25
+8930,Gasoline Exhaust SVOC - LA92 UDC cycle warm start (phase 3),0.25
+8931,"Gasoline Exhaust SVOC - LA92 UDC cycle, summer condition",0.25
+8932,"Gasoline Exhaust SVOC - LA92 UDC cycle, winter condition",0.25
+8938,Coal Combustion - Fly Ash - Subbituminous Coal - Ultrafine,0.4
+8939,Coal Combustion - Fly Ash - Subbituminous Coal - Fine,0.4
+8940,Coal Combustion - Fly Ash - Subbituminous Coal - Coarse,0.4
+8941,Coal Combustion - Fly Ash - Bituminous Coal - Fine,0.4
+8942,Coal Combustion - Fly Ash - Bituminous Coal - Coarse,0.4
+8943,Agricultural Burning - Rice Straw - Thailand,0.7
+8944,Agricultural Burning - Rice Straw - Thailand,0.7
+8945,Iron and steel facility - Coke Making,0.4
+8946,Iron and steel facility - Sintering,0.4
+8947,Iron and steel facility - Cold Forming,0.4
+8948,Iron and steel facility - Hot Forming,0.4
+8992,Light-duty Gasoline Vehicles Exhaust - Start,0.25
+8993,Light-duty Gasoline Vehicles Exhaust - Hot Stabilized Running,0.25
+8994,Conventional Diesel Exhaust - Idle Cycle,0.25
+8995,Conventional Diesel Exhaust - Transient Cycle,0.25
+8996,Diesel Exhaust - Heavy-heavy duty truck - 2007 model year with NCOM,0.25
+9000110,Solid Waste  - Average,0.4
+900012.5,Solid Waste  - Average,0.4
+9000130,Solid Waste  - Average,0.4
+90001C,Solid Waste  - Average,0.4
+9000210,Chemical Manufacturing - Average,0.4
+900022.5,Chemical Manufacturing - Average,0.4
+9000230,Chemical Manufacturing - Average,0.4
+90002C,Chemical Manufacturing - Average,0.4
+9000310,Food And Agriculture - Average,0.4
+900032.5,Food And Agriculture - Average,0.4
+9000330,Food And Agriculture - Average,0.4
+90003C,Food And Agriculture - Average,0.4
+9000410,Steel Production - Average,0.4
+900042.5,Steel Production - Average,0.4
+9000430,Steel Production - Average,0.4
+90004C,Steel Production - Average,0.4
+9000510,Lead Smelters - Average,0.4
+900052.5,Lead Smelters - Average,0.4
+9000530,Lead Smelters - Average,0.4
+90005C,Lead Smelters - Average,0.4
+9000610,Metal Mining - General Processes - Average,0.4
+900062.5,Metal Mining - General Processes - Average,0.4
+9000630,Metal Mining - General Processes - Average,0.4
+90006C,Metal Mining - General Processes - Average,0.4
+9000710,Primary Metal Production - Average,0.4
+900072.5,Primary Metal Production - Average,0.4
+9000730,Primary Metal Production - Average,0.4
+90007C,Primary Metal Production - Average,0.4
+9000810,Secondary Metal Production - Average,0.4
+900082.5,Secondary Metal Production - Average,0.4
+9000830,Secondary Metal Production - Average,0.4
+90008C,Secondary Metal Production - Average,0.4
+9000910,Secondary Aluminum - Average,0.4
+900092.5,Secondary Aluminum - Average,0.4
+9000930,Secondary Aluminum - Average,0.4
+90009C,Secondary Aluminum - Average,0.4
+9001010,Gray Iron Foundries - Average,0.4
+900102.5,Gray Iron Foundries - Average,0.4
+9001030,Gray Iron Foundries - Average,0.4
+90010C,Gray Iron Foundries - Average,0.4
+9001110,Steel Foundry - General,0.4
+900112.5,Steel Foundry - General,0.4
+9001130,Steel Foundry - General,0.4
+90011C,Steel Foundry - General,0.4
+9001210,Clay And Fly Ash Sintering - Average,0.4
+900122.5,Clay And Fly Ash Sintering - Average,0.4
+9001230,Clay And Fly Ash Sintering - Average,0.4
+90012C,Clay And Fly Ash Sintering - Average,0.4
+9001310,Mineral Products - Average,0.4
+900132.5,Mineral Products - Average,0.4
+9001330,Mineral Products - Average,0.4
+90013C,Mineral Products - Average,0.4
+9001410,Petroleum Industry - Average,0.4
+900142.5,Petroleum Industry - Average,0.4
+9001430,Petroleum Industry - Average,0.4
+90014C,Petroleum Industry - Average,0.4
+9001510,Pulp And Paper Industry,0.4
+900152.5,Pulp And Paper Industry,0.4
+9001530,Pulp And Paper Industry,0.4
+90015C,Pulp And Paper Industry,0.4
+9001610,Industrial Manufacturing - Average,0.4
+900162.5,Industrial Manufacturing - Average,0.4
+9001630,Industrial Manufacturing - Average,0.4
+90016C,Industrial Manufacturing - Average,0.4
+91000,Draft Agricultural Burning - Composite,0.7
+91001,Draft Agricultural Soil - Composite,0.4
+91002,Draft Brake Lining Dust - Composite,0.4
+91003,Draft Catalytic Cracking - Composite,0.4
+91004,Draft Cement Production - Composite,0.4
+91005,Draft Charbroiling - Composite,0.4
+91006,Draft Cigarette Smoke - Composite,0.4
+91007,Draft Construction Dust - Composite,0.4
+91008,Draft Copper Production - Composite,0.4
+91009,Draft Crustal Material - Composite,0.4
+91011,Draft Electric Arc Furnace - Composite,0.4
+91012,Draft Ferromanganese Furnace - Composite,0.4
+91013,Draft Fly Ash - Composite,0.4
+91014,Draft Food & Ag - Handling - Composite,0.4
+91015,Draft Industrial Soil - Composite,0.4
+91016,Draft Inorganic Fertilizer - Composite,0.4
+91017,Draft LDDV Exhaust - Composite,0.25
+91018,Draft Lime Kiln - Composite,0.4
+91019,Draft Limestone Dust - Composite,0.4
+91020,Draft Natural Gas Combustion - Composite,0.4
+91021,Draft Non-catalyst Gasoline Exhaust - Composite,0.25
+91022,Draft Onroad Gasoline Exhaust - Composite,0.25
+91023,Draft Paved Road Dust - Composite,0.4
+91024,Draft Phosphate Manuf - Composite,0.4
+91025,Draft PMSO2ControlledLigniteCombustion - Composite,0.4
+91026,Draft Prescribed Burning - Composite,0.7
+91027,Draft Process Gas Combustion - Composite,0.4
+91028,Draft Residential Coal Combustion - Composite,0.4
+91029,Draft Residential Wood Combustion: Eucalyptus - Composite,0.7
+91030,Draft Residential Wood Combustion: Hard - Composite,0.7
+91031,Draft Residential Wood Combustion: HardSoft - Composite,0.7
+91032,Draft Residential Wood Combustion: HardSoftN/A - Composite,0.7
+91033,Draft Residential Wood Combustion: Soft - Composite,0.7
+91035,Draft Sand & Gravel - Composite,0.4
+91036,Draft Sandblast - Composite,0.4
+91037,Draft Secondary Aluminum - Composite,0.4
+91038,Draft Sintering Furnace - Composite,0.4
+91039,Draft Slash Burning - Composite,0.7
+91040,Draft Solid Waste Combustion - Composite,0.4
+91041,Draft SubBituminousCombustion - Composite,0.4
+91042,Draft Surface Coating - Composite,0.4
+91043,Draft Tire Dust - Composite,0.4
+91044,Draft Unpaved Road Dust - Composite,0.4
+91045,Draft Wildfires - Composite,0.7
+91046,Draft Wood Product Drying - Composite,0.4
+91047,Draft Wood Product Sawing - Composite,0.4
+91048,Draft Bituminous Coal Combustion - Composite,0.4
+91100,Unpaved Road Dust - Composite,0.4
+91101,Agricultural Soil - Composite,0.4
+91102,Wildfires - Composite,0.7
+91103,Agricultural Burning - Composite,0.7
+91104,Bituminous Combustion - Composite,0.4
+91105,Residential Wood Combustion - Composite,0.7
+91106,HDDV Exhaust - Composite,0.25
+91107,Construction Dust - Composite,0.4
+91108,Paved Road Dust - Composite,0.4
+91109,Prescribed Burning - Composite,0.7
+91110,Sub-Bituminous Combustion - Composite,0.4
+91111,Sand & Gravel - Composite,0.4
+91112,Natural Gas Combustion - Composite,0.4
+91113,Nonroad Gasoline Exhaust - Composite,0.25
+91114,Wood Fired Boiler - Composite,0.4
+91115,Distillate Oil Combustion - Composite,0.4
+91116,Charbroiling - Composite,0.4
+91117,Residual Oil Combustion - Composite,0.4
+91118,Dairy Soil - Composite,0.4
+91119,Kraft Recovery Furnace - Composite,0.4
+91120,Mineral Products - Avg - Composite,0.4
+91121,Industrial Manufacturing - Avg - Composite,0.4
+91122,Onroad Gasoline Exhaust - Composite,0.25
+91123,Heat Treating - Composite,0.4
+91124,Chemical Manufacturing - Avg - Composite,0.4
+91125,Lignite Combustion - Composite,0.4
+91126,Solid Waste Combustion - Composite,0.4
+91127,Cement Production - Composite,0.4
+91128,Wood Products - Drying - Composite,0.4
+91129,Surface Coating - Composite,0.4
+91130,Food & Ag - Handling - Composite,0.4
+91131,Wood Products-Sawing - Composite,0.4
+91132,Aluminum Processing - Composite,0.4
+91133,Open Hearth Furnace - Composite,0.4
+91134,Brake Lining Dust - Composite,0.4
+91135,Meat Frying - Composite,0.4
+91136,Process Gas Combustion - Composite,0.4
+91137,Aluminum Production - Composite,0.4
+91138,Lime Kiln - Composite,0.4
+91139,Sintering Furnace - Composite,0.4
+91140,Charcoal Manufacturing - Composite,0.4
+91141,Catalytic Cracking - Composite,0.4
+91142,Fiberglass Manufacturing - Composite,0.4
+91143,Glass Furnace - Composite,0.4
+91144,Pulp & Paper Mills - Composite,0.4
+91145,Petroleum Industry - Avg - Composite,0.4
+91146,Slash Burning - Composite,0.7
+91147,Misc. Sources - Composite,0.4
+91148,Asphalt Roofing - Composite,0.4
+91149,Inorganic Chemical Manufacturing - Composite,0.4
+91150,Tire Dust - Composite,0.4
+91151,Ferromanganese Furnace - Composite,0.4
+91152,Wood Products - Sanding - Composite,0.4
+91153,Electric Arc Furnace - Composite,0.4
+91154,Food & Ag-Drying - Composite,0.4
+91155,Residential Coal Combustion - Composite,0.4
+91156,Residential Natural Gas Combustion - Composite,0.4
+91157,Cast Iron Cupola - Composite,0.4
+91158,Copper Processing - Composite,0.4
+91159,Asphalt Manufacturing - Composite,0.4
+91160,Fly Ash - Composite,0.4
+91161,Sandblast - Composite,0.4
+91162,LDDV Exhaust - Composite,0.25
+91163,Ammonium Nitrate Production - Composite,0.4
+91164,Limestone Dust - Composite,0.4
+91165,Phosphate Manufacturing - Composite,0.4
+91166,Gypsum Manufacturing - Composite,0.4
+91167,Urea Fertilizer - Composite,0.4
+91168,Lead Processing - Composite,0.4
+91169,Crustal Material - Composite,0.4
+91170,Copper Production - Composite,0.4
+91171,Brick Grinding and Screening - Composite,0.4
+91172,Calcium Carbide Furnace - Composite,0.4
+91173,Coke Calciner - Composite,0.4
+91174,Industrial Soil - Composite,0.4
+91175,Potato Deep Frying - Composite,0.4
+91176,Sea Salt - Composite,0.4
+91177,Sludge Combustion - Composite,0.4
+91178,Lead Production - Composite,0.4
+91179,Steel Desulfurization - Composite,0.4
+91180,Auto Body Shredding - Composite,0.4
+91181,Ammonium Sulfate Production - Composite,0.4
+91182,Inorganic Fertilizer - Composite,0.4
+91183,Boric Acid Manufacturing - Composite,0.4
+92000,Draft Agricultural Burning - Simplified,0.7
+92001,Draft Agricultural Soil - Simplified,0.4
+92002,Draft Aluminum Production - Simplified,0.4
+92003,Draft Ammonium Nitrate Production - Simplified,0.4
+92004,Draft Ammonium Sulfate Production - Simplified,0.4
+92005,Draft Asphalt Manufacturing - Simplified,0.4
+92006,Draft Asphalt Roofing - Simplified,0.4
+92007,Draft Auto Body Shredding - Simplified,0.4
+92008,Draft Boric Acid Manufacturing - Simplified,0.4
+92009,Draft Brake Lining Dust - Simplified,0.4
+92010,Draft Brick Grinding and Screening - Simplified,0.4
+92011,Draft Calcium Carbide Furnace - Simplified,0.4
+92012,Draft Cast Iron Cupola - Simplified,0.4
+92013,Draft Catalytic Cracking - Simplified,0.4
+92014,Draft Cement Production - Simplified,0.4
+92015,Draft Charbroiling - Simplified,0.4
+92016,Draft Charcoal Manufacturing - Simplified,0.4
+92017,Draft Chem Manuf - Avg - Simplified,0.4
+92018,Draft Cigarette Smoke - Simplified,0.4
+92019,Draft Coke Calciner - Simplified,0.4
+92020,Draft Construction Dust - Simplified,0.4
+92021,Draft Copper Production - Simplified,0.4
+92022,Draft Crustal Material - Simplified,0.4
+92023,Draft Dairy Soil - Simplified,0.4
+92025,Draft Distillate Oil Combustion - Simplified,0.4
+92026,Draft Electric Arc Furnace - Simplified,0.4
+92027,Draft Ferromanganese Furnace - Simplified,0.4
+92028,Draft Fiberglass Manufacture - Simplified,0.4
+92029,Draft Fly Ash - Simplified,0.4
+92030,Draft Food & Ag - Handling - Simplified,0.4
+92031,Draft Food & Ag - Drying - Simplified,0.4
+92032,Draft Geothermal Background - Simplified,0.4
+92033,Draft Glass Furnace - Simplified,0.4
+92034,Draft Gypsum Manufacture - Simplified,0.4
+92035,Draft HDDV Exhaust - Simplified,0.25
+92036,Draft Heat Treating - Simplified,0.4
+92037,Draft Ind Manuf - Avg. - Simplified,0.4
+92038,Draft Industrial Soil - Simplified,0.4
+92039,Draft Inorganic Chemical Manufacture - Simplified,0.4
+92040,Draft Inorganic Fertilizer - Simplified,0.4
+92041,Draft Kraft Recovery Furnace - Simplified,0.4
+92042,Draft LDDV Exhaust - Simplified,0.25
+92043,Draft Lead Production - Simplified,0.4
+92044,Draft Lime Kiln - Simplified,0.4
+92045,Draft Limestone Dust - Simplified,0.4
+92046,Draft Meat Frying - Simplified,0.4
+92047,Draft Mineral Products - Avg - Simplified,0.4
+92048,Draft Natural Gas Combustion - Simplified,0.4
+92049,Draft Non-catalyst Gasoline Exhaust - Simplified,0.25
+92050,Draft Onroad Gasoline Exhaust - Simplified,0.25
+92051,Draft Open Hearth Furnace - Simplified,0.4
+92052,Draft Overall Average/Default - Simplified,0.4
+92053,Draft Paved Road Dust - Simplified,0.4
+92054,Draft Petroleum Ind - Avg - Simplified,0.4
+92055,Draft Phosphate Manuf - Simplified,0.4
+92056,Draft PMControlledLigniteCombustion - Simplified,0.4
+92057,Draft PMSO2ControlledLigniteCombustion - Simplified,0.4
+92058,Draft Potato Deep-Frying - Simplified,0.4
+92059,Draft Prescribed Burning - Simplified,0.7
+92060,Draft Process Gas Combustion - Simplified,0.4
+92061,Draft Pulp & Paper -Avg. - Simplified,0.4
+92062,Draft Residential Coal Combustion - Simplified,0.4
+92063,Draft Residential Natural Gas Combustion - Simplified,0.4
+92064,Draft Residential Wood Combustion: Almond - Simplified,0.7
+92065,Draft Residential Wood Combustion: Cedar - Simplified,0.7
+92066,Draft Residential Wood Combustion: Eucalyptus - Simplified,0.7
+92067,Draft Residential Wood Combustion: Hard - Simplified,0.7
+92068,Draft Residential Wood Combustion: HardSoft - Simplified,0.7
+92069,Draft Residential Wood Combustion: HardSoftN/A - Simplified,0.7
+92070,Draft Residential Wood Combustion: Soft - Simplified,0.7
+92071,Draft Residential Wood Combustion: Synthetic - Simplified,0.7
+92072,Draft Residual Oil Combustion - Simplified,0.4
+92073,Draft Sand & Gravel - Simplified,0.4
+92074,Draft Sandblast - Simplified,0.4
+92075,Draft Sea Salt - Simplified,0.4
+92076,Draft Secondary Aluminum - Simplified,0.4
+92077,Draft Secondary Copper - Simplified,0.4
+92078,Draft Secondary Lead - Simplified,0.4
+92079,Draft Sintering Furnace - Simplified,0.4
+92080,Draft Slash Burning - Simplified,0.7
+92081,Draft Sludge Combustion - Simplified,0.4
+92082,Draft Solid Waste Combustion - Simplified,0.4
+92083,Draft Steel Desulfurization - Simplified,0.4
+92084,Draft SubBituminousCombustion - Simplified,0.4
+92085,Draft Surface Coating - Simplified,0.4
+92086,Draft Tire Burning - Simplified,0.4
+92087,Draft Tire Dust - Simplified,0.4
+92088,Draft Unpaved Road Dust - Simplified,0.4
+92089,Draft Urea Fertilizer - Simplified,0.4
+92090,Draft Wildfires - Simplified,0.7
+92091,Draft Wood Fired Boiler - Simplified,0.4
+92092,Draft Wood Product Drying - Simplified,0.4
+92093,Draft Wood Product Sanding - Simplified,0.4
+92094,Draft Wood Product Sawing - Simplified,0.4
+92095,Draft Bituminous Coal Combustion - Simplified,0.4
+92100,Unpaved Road Dust - Simplified,0.4
+92101,Agricultural Soil - Simplified,0.4
+92102,Wildfires - Simplified,0.7
+92103,Agricultural Burning - Simplified,0.7
+92104,Bituminous Coal Combustion - Simplified,0.4
+92105,Residential Wood Combustion - Simplified,0.7
+92106,HDDV Exhaust - Simplified,0.25
+92107,Construction Dust - Simplified,0.4
+92108,Paved Road Dust - Simplified,0.4
+92109,Prescribed Burning - Simplified,0.7
+92110,Sub-Bituminous Combustion - Simplified,0.4
+92111,Sand & Gravel - Simplified,0.4
+92112,Natural Gas Combustion - Simplified,0.4
+92113,Nonroad Gasoline Exhaust - Simplified,0.25
+92114,Wood Fired Boiler - Simplified,0.4
+92115,Distillate Oil Combustion - Simplified,0.4
+92116,Charbroiling - Simplified,0.4
+92117,Residual Oil Combustion - Simplified,0.4
+92118,Dairy Soil - Simplified,0.4
+92119,Kraft Recovery Furnace - Simplified,0.4
+92120,Mineral Products - Avg - Simplified,0.4
+92121,Industrial Manufacturing - Avg - Simplified,0.4
+92122,Onroad Gasoline Exhaust - Simplified,0.25
+92123,Heat Treating - Simplified,0.4
+92124,Chemical Manufacturing - Avg - Simplified,0.4
+92125,Lignite Combustion - Simplified,0.4
+92126,Solid Waste Combustion - Simplified,0.4
+92127,Cement Production - Simplified,0.4
+92128,Wood Products - Drying - Simplified,0.4
+92129,Surface Coating - Simplified,0.4
+92130,Food & Ag - Handling - Simplified,0.4
+92131,Wood Products - Sawing - Simplified,0.4
+92132,Aluminum Processing - Simplified,0.4
+92133,Open Hearth Furnace - Simplified,0.4
+92134,Brake Lining Dust - Simplified,0.4
+92135,Meat Frying - Simplified,0.4
+92136,Process Gas Combustion - Simplified,0.4
+92137,Aluminum Production - Simplified,0.4
+92138,Lime Kiln - Simplified,0.4
+92139,Sintering Furnace - Simplified,0.4
+92140,Charcoal Manufacturing - Simplified,0.4
+92141,Catalytic Cracking - Simplified,0.4
+92142,Fiberglass Manufacturing - Simplified,0.4
+92143,Glass Furnace - Simplified,0.4
+92144,Pulp & Paper Mills - Simplified,0.4
+92145,Petroleum Industry - Avg - Simplified,0.4
+92146,Slash Burning - Simplified,0.7
+92147,Misc. Sources - Simplified,0.4
+92148,Asphalt Roofing - Simplified,0.4
+92149,Inorganic Chemical Manufacturing - Simplified,0.4
+92150,Tire Dust - Simplified,0.4
+92151,Ferromanganese Furnace - Simplified,0.4
+92152,Wood Products - Sanding - Simplified,0.4
+92153,Electric Arc Furnace - Simplified,0.4
+92154,Food & Ag-Drying - Simplified,0.4
+92155,Residential Coal Combustion - Simplified,0.4
+92156,Residential Natural Gas Combustion - Simplified,0.4
+92157,Cast Iron Cupola - Simplified,0.4
+92158,Copper Processing - Simplified,0.4
+92159,Asphalt Manufacturing - Simplified,0.4
+92160,Fly Ash - Simplified,0.4
+92161,Sandblast - Simplified,0.4
+92162,LDDV Exhaust - Simplified,0.25
+92163,Ammonium Nitrate Production - Simplified,0.4
+92164,Limestone Dust - Simplified,0.4
+92165,Phosphate Manufacturing - Simplified,0.4
+92166,Gypsum Manufacturing - Simplified,0.4
+92167,Urea Fertilizer - Simplified,0.4
+92168,Lead Processing - Simplified,0.4
+92169,Crustal Material - Simplified,0.4
+92170,Copper Production - Simplified,0.4
+92171,Brick Grinding and Screening - Simplified,0.4
+92172,Calcium Carbide Furnace - Simplified,0.4
+92173,Coke Calciner - Simplified,0.4
+92174,Industrial Soil - Simplified,0.4
+92175,Potato Deep Frying - Simplified,0.4
+92176,Sea Salt - Simplified,0.4
+92177,Sludge Combustion - Simplified,0.4
+92178,Lead Production - Simplified,0.4
+92179,Steel Desulfurization - Simplified,0.4
+92180,Auto Body Shredding - Simplified,0.4
+92181,Ammonium Sulfate Production - Simplified,0.4
+92182,Inorganic Fertilizer - Simplified,0.4
+92183,Boric Acid Manufacturing - Simplified,0.4
+92200,Marine Vessel - Main Engine - Heavy Fuel Oil - Simplified,0.25
+95000,Indoor Open Wood Cooking Fire,0.7
+95001,Indoor Open Wood Cooking Fire,0.7
+95002,Indoor Open Wood Cooking Fire,0.7
+95003,Indoor Open Wood Cooking Fire,0.7
+95004,Indoor Open Wood Cooking Fire,0.7
+95005,Garbage Burning,0.4
+95006,Garbage Burning,0.4
+95007,Garbage Burning,0.4
+95008,Brick Making Kiln,0.4
+95009,Brick Making Kiln,0.4
+95010,Charcoal Making Kiln,0.4
+95011,Charcoal Making Kiln,0.4
+95012,Barley Stubble Field Burning,0.7
+95013,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E0 gasoline - (-7 oC),0.25
+95014,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E0 gasoline - (-7 oC),0.25
+95015,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E0 gasoline - (-7 oC),0.25
+95016,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E0 gasoline - (-7 oC),0.25
+95017,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E10 gasoline - (-7 oC),0.25
+95018,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E10 gasoline - (-7 oC),0.25
+95019,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E10 gasoline - (-7 oC),0.25
+95020,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E10 gasoline - (-7 oC),0.25
+95021,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E85 gasoline - (-7 oC),0.25
+95022,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E85 gasoline - (-7 oC),0.25
+95023,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E85 gasoline - (-7 oC),0.25
+95024,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E85 gasoline - (-7 oC),0.25
+95025,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E0 gasoline - (24 oC),0.25
+95026,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E0 gasoline - (24 oC),0.25
+95027,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E0 gasoline - (24 oC),0.25
+95028,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E0 gasoline - (24 oC),0.25
+95029,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E10 gasoline - (24 oC),0.25
+95030,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E10 gasoline - (24 oC),0.25
+95031,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E10 gasoline - (24 oC),0.25
+95032,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E10 gasoline - (24 oC),0.25
+95033,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E85 gasoline - (24 oC),0.25
+95034,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E85 gasoline - (24 oC),0.25
+95035,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E85 gasoline - (24 oC),0.25
+95036,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E85 gasoline - (24 oC),0.25
+95037,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E0 gasoline - (-7 oC),0.25
+95038,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E0 gasoline - (-7 oC),0.25
+95039,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E0 gasoline - (-7 oC),0.25
+95040,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E0 gasoline - (-7 oC),0.25
+95041,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E10 gasoline - (-7 oC),0.25
+95042,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E10 gasoline - (-7 oC),0.25
+95043,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E10 gasoline - (-7 oC),0.25
+95044,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E10 gasoline - (-7 oC),0.25
+95045,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E85 gasoline - (-7 oC),0.25
+95046,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E85 gasoline - (-7 oC),0.25
+95047,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E85 gasoline - (-7 oC),0.25
+95048,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E85 gasoline - (-7 oC),0.25
+95049,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E0 gasoline - (24 oC),0.25
+95050,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E0 gasoline - (24 oC),0.25
+95051,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E0 gasoline - (24 oC),0.25
+95052,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E0 gasoline - (24 oC),0.25
+95053,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E10 gasoline - (24 oC),0.25
+95054,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E10 gasoline - (24 oC),0.25
+95055,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E10 gasoline - (24 oC),0.25
+95056,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E10 gasoline - (24 oC),0.25
+95057,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E85 gasoline - (24 oC),0.25
+95058,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E85 gasoline - (24 oC),0.25
+95059,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E85 gasoline - (24 oC),0.25
+95060,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E85 gasoline - (24 oC),0.25
+95061,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E0 gasoline - (-7 oC),0.25
+95062,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E0 gasoline - (-7 oC),0.25
+95063,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E0 gasoline - (-7 oC),0.25
+95064,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E0 gasoline - (-7 oC),0.25
+95065,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E10 gasoline - (-7 oC),0.25
+95066,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E10 gasoline - (-7 oC),0.25
+95067,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E10 gasoline - (-7 oC),0.25
+95068,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E10 gasoline - (-7 oC),0.25
+95069,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E0 gasoline - (24 oC),0.25
+95072,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E0 gasoline - (24 oC),0.25
+95073,Gasoline Exhaust SVOC - LA92 UDC cycle cold start (phase 1) - E10 gasoline - (24 oC),0.25
+95074,Gasoline Exhaust SVOC - LA92 UDC cycle hot-stabilized phase (phase 2) - E10 gasoline - (24 oC),0.25
+95075,Gasoline Exhaust SVOC - LA92 UDC cycle warm-start transient phase combined with hot-stabilized phase (phase 34) - E10 gasoline - (24 oC),0.25
+95076,Gasoline Exhaust SVOC - LA92 UDC cycle (phase 1234) - E10 gasoline - (24 oC),0.25
+95125,Gas-fired boiler exhaust,0.25
+95125a,Gas-fired boiler exhaust,0.25
+95126,Gas-fired process heater exhaust,0.25
+95126a,Gas-fired process heater exhaust,0.25
+95127,Gas-fired internal combustion combined cycle/cogeneration plant exhaust,0.25
+95127a,Gas-fired internal combustion combined cycle/cogeneration plant exhaust,0.25
+95128,Institutional boiler exhaust fueled with No. 6 oil,0.25
+95128a,Institutional boiler exhaust fueled with No. 6 fuel oil,0.25
+95147,Biomass Burning - ponderosa pine wood,0.7
+95148,Biomass Burning - ponderosa pine needles,0.7
+95149,Biomass Burning - white pine needles,0.7
+95150,Biomass Burning - sagebrush,0.7
+95151,Biomass Burning - excelsior,0.7
+95152,Biomass Burning - Dambo grass,0.7
+95153,Biomass Burning - Montana grass,0.7
+95154,Biomass Burning - tundra core,0.7
+95155,Kerosene combustion soot,0.4
+95162,Prescribed Burning,0.7
+95163,Coal Combustion - Fluidized-Bed Incinerator - Flying Product,0.4
+95164,Coal Combustion - Fluidized-Bed Incinerator - Cyclonic Product,0.4
+95165,Coal Combustion - Fluidized-Bed Incinerator - Fluidized-Bed Product,0.4
+95166,Welding Fume - High Heat - UONI 13/45 Electrode,0.4
+95167,Welding Fume - High Heat - UONI 13/45 Electrode,0.4
+95168,Welding Fume - High Heat - UONI 13/45 Electrode,0.4
+95169,Welding Fume - Low Heat - UONI 13/45 Electrode,0.4
+95170,Welding Fume - High Heat - ANO-4 Electrode,0.4
+95171,Welding Fume - High Heat - ANO-4 Electrode,0.4
+95172,Welding Fume - High Heat - ANO-4 Electrode,0.4
+95173,Welding Fume - Low Heat - ANO-4 Electrode,0.4
+95174,Welding Fume - High Heat - ANO-4i Electrode,0.4
+95175,Welding Fume - High Heat - ANO-4i Electrode,0.4
+95176,Welding Fume - High Heat - ANO-4i Electrode,0.4
+95177,Welding Fume - Low Heat - ANO-4i Electrode,0.4
+95178,Coal Combustion - Fly Ash - Anthracite Coal,0.4
+95179,Coal Combustion - Fly Ash - Anthracite Coal,0.4
+95180,Coal Combustion - Fly Ash - Anthracite Coal,0.4
+95181,Coal Combustion - Fly Ash - Anthracite Coal,0.4
+95182,Residential Wood Stove Combustion - White Oak,0.7
+95183,Residential Wood Stove Combustion - White Oak,0.7
+95184,Residential Wood Stove Combustion - Red Maple,0.7
+95185,Residential Wood Stove Combustion - Sugar Maple,0.7
+95186,Residential Wood Stove Combustion - Douglas Fir,0.7
+95187,Residential Wood Stove Combustion - Douglas Fir,0.7
+95188,Residential Wood Stove Combustion - Loblolly Pine,0.7
+95189,Fireplace Wood Combustion - White Oak,0.7
+95190,Fireplace Wood Combustion - Sugar Maple,0.7
+95191,Fireplace Wood Combustion - Black Oak,0.7
+95192,Fireplace Wood Combustion - American Beech,0.7
+95193,Fireplace Wood Combustion - Black Cherry,0.7
+95194,Fireplace Wood Combustion - Quaking Aspen,0.7
+95195,Fireplace Wood Combustion - White Spruce,0.7
+95196,Fireplace Wood Combustion - Douglas Fir,0.7
+95197,Fireplace Wood Combustion - Ponderosa Pine,0.7
+95198,Fireplace Wood Combustion - Pinyon Pine,0.7
+95199,Fireplace Wood Combustion - Red Maple,0.7
+95200,Fireplace Wood Combustion - Northern Red Oak,0.7
+95201,Fireplace Wood Combustion - Paper Birch,0.7
+95202,Fireplace Wood Combustion - Eastern White Pine,0.7
+95203,Fireplace Wood Combustion - Eastern Hemlock,0.7
+95204,Fireplace Wood Combustion - Balsam Fir,0.7
+95205,Fireplace Wood Combustion - Yellow Poplar,0.7
+95206,Fireplace Wood Combustion - White Ash,0.7
+95207,Fireplace Wood Combustion - Sweetgum,0.7
+95208,Fireplace Wood Combustion - Mockernut Hickory,0.7
+95209,Fireplace Wood Combustion - Loblolly Pine,0.7
+95210,Fireplace Wood Combustion - Slash Pine,0.7
+95219,CNG Transit Bus Exhaust,0.25
+95220,CNG Transit Bus Exhaust,0.25
+95334,Composite Profile - Diesel Exhaust - Heavy-heavy duty truck - 2011 model year,0.25
+95429,Automated charbroiler - Hamburger,0.4
+95430,Underfired charbroiler - Hamburger,0.4
+95431,Underfired charbroiler - Steak,0.4
+95432,Underfired charbroiler - Chicken,0.4
+95433,Tire Dust ,0.4
+95434,Tire Dust ,0.4
+95435,Tire Dust ,0.4
+95436,Tire Dust ,0.4
+95437,Tire Dust ,0.4
+95438,Tire Dust ,0.4
+95439,Brake Wear,0.4
+95440,Brake Wear,0.4
+95441,Brake Wear,0.4
+95442,Brake Wear,0.4
+95443,Brake Wear,0.4
+95444,Brake Wear,0.4
+95445,Brake Wear,0.4
+95446,Brake Wear,0.4
+95447,Brake Wear,0.4
+95448,Brake Wear,0.4
+95449,Brake Wear,0.4
+95450,Brake Wear,0.4
+95451,Brake Wear,0.4
+95452,Brake Wear,0.4
+95453,Brake Wear,0.4
+95454,Brake Wear,0.4
+95455,Brake Wear,0.4
+95456,Brake Wear,0.4
+95457,Brake Wear,0.4
+95458,Brake Wear,0.4
+95459,Composite - Tire Dust,0.4
+95460,Composite - Tire Dust,0.4
+95461,Composite - Brake Wear,0.4
+95462,Composite - Brake Wear,0.4
+95463,"Residential Wood Combustion - Fireplace, Softwood",0.7
+95464,"Residential Wood Combustion - Fireplace, Hardwood",0.7
+95465,"Residential Wood Combustion  Noncatalytic Woodstove, Hardwood",0.7
+95466,"Residential Wood Combustion - Fireplace, Synthetic",0.7
+95475,Composite -Refinery Fuel Gas and Natural Gas Combustion,0.4
+95501,Agricultural Burning - Wheat Straw - China,0.7
+95502,Agricultural Burning - Rice Straw - China,0.7
+95503,Agricultural Burning - Corn Stalk - China,0.7
+95504,"Agricultural Burning Composite - Wheat Straw, Rice Straw and Corn Stalk - China",0.7
+95514,Coal Combustion - Prater Creek Coal,0.4
+95515,Coal Combustion - Prater Creek w/biomass,0.4
+95516,Coal Combustion - Black Thunder Coal,0.4
+95517,Coal Combustion - Bailey Mine Coal,0.4
+95518,Coal Combustion - Western Canadian lignite,0.4
+95519,Unpaved Road Dust - Detroit,0.4
+95520,Urban Soil - Detroit,0.4
+95521,Agricultural Soil - Detroit,0.4
+95522,Paved Road Dust - Cleveland,0.4
+95523,Unpaved Road Dust - Cleveland,0.4
+95524,Urban Soil - Cleveland,0.4
+95525,Agricultural Soil - Cleveland,0.4
+95526,Paved Road Dust - Saint Louis,0.4
+95527,Unpaved Road Dust - Saint Louis,0.4
+95528,Urban Soil - Saint Louis,0.4
+95529,Paved Road Dust - Chicago,0.4
+95530,Unpaved Road Dust - Chicago,0.4
+95531,Construction Soil - Chicago,0.4
+95532,Agricultural Soil - Cincinnati,0.4
+95533,Paved Road Dust - San Joaquin Valley,0.4
+95534,Paved Road Dust - Los Angeles,0.4
+95535,Paved Road Dust - California,0.4

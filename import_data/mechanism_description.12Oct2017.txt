@@ -1,0 +1,4 @@
+CB05,"Carbon Bond version 5",Y," ENVIRON exported the assingments from Spec4Asn-8-10-06.xls sent by Marc Houyoux in Spec4Asn-8-10-06(from Carter).zip These assingments matches with Emitdb database released on 08/10/2006. The data were exported with 12 decimals to support the max accuracy in Speciation Tool","","Corrections made feb 2015 by ENVIRON"
+CB6,"Carbon Bond version 6",Y,"ENVIRON Greg Yarwood provided mechanism per spreadsheet sptool_cb6_cb05.xlsx on 14Feb2011","","Corrections made feb 2015 by ENVIRON"
+SAPRC07,"SAPRC07 (12/31 version - CARB)",Y,"Created from emitdb.xls on 12/15/2011.  Mechanism added 2/2008","",""
+CRIV2,"Common Representative Intermediates (CRI) mechanism, version 2",Y,"A condensed mechanism developed from the Master Chemical Mechanism (MCM). Mechanism added 9/29/2017","",""
