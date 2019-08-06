@@ -1,0 +1,28 @@
+Running run_sptool.pl
+Dropping cmaq_ae6 schema
+
+
+Created cmaq_ae6 schema in sptoolv4_0 database
+Granted permissions on cmaq_ae6 schema
+Set path successfully to cmaq_ae6 schema
+Input tables created in cmaq_ae6 schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = AE6
+control variables: RUN_TYPE = CRITERIA
+control variables: AQM = CMAQ
+control variables: OUTPUT = PM
+control variables: SPLITS_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gspro.AE6.CMAQ.2017Jan11.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in cmaq_ae6 schema
+
+Completed PM splits calculations
+
+
+Completed output preparations
+SUMMARY:  Number of profiles generated in run cmaq_ae6 is 125 
+
+Completed writing the output files for run cmaq_ae6 
+Finished run_sptool.pl
+

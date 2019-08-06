@@ -1,0 +1,28 @@
+Running run_sptool.pl
+Dropping camx_pm schema
+
+
+Created camx_pm schema in sptoolv4_0 database
+Granted permissions on camx_pm schema
+Set path successfully to camx_pm schema
+Input tables created in camx_pm schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = AE6
+control variables: RUN_TYPE = CRITERIA
+control variables: AQM = CAMX
+control variables: OUTPUT = PM
+control variables: SPLITS_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gspro.AE6.CAMx.2017Jan11.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in camx_pm schema
+
+Completed PM splits calculations
+
+
+Completed output preparations
+SUMMARY:  Number of profiles generated in run camx_pm is 125 
+
+Completed writing the output files for run camx_pm 
+Finished run_sptool.pl
+

@@ -1,0 +1,28 @@
+Running run_sptool.pl
+Dropping cmaq_ae6_vbs_svoc schema
+
+
+Created cmaq_ae6_vbs_svoc schema in sptoolv4_0 database
+Granted permissions on cmaq_ae6_vbs_svoc schema
+Set path successfully to cmaq_ae6_vbs_svoc schema
+Input tables created in cmaq_ae6_vbs_svoc schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = AE6
+control variables: RUN_TYPE = VBS
+control variables: AQM = CMAQ
+control variables: OUTPUT = PM
+control variables: SPLITS_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gspro.AE6_CMAQ.VBS_SVOC.2017Jan11.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in cmaq_ae6_vbs_svoc schema
+
+Completed PM splits calculations
+
+
+Completed output preparations
+SUMMARY:  Number of profiles generated in run cmaq_ae6_vbs_svoc is 125 
+
+Completed writing the output files for run cmaq_ae6_vbs_svoc 
+Finished run_sptool.pl
+

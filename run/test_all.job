@@ -1,0 +1,167 @@
+#!/bin/csh -f
+
+# Run the Speciation Tool
+# Perl input arguements:
+# 	SPTOOL_DB - Postgres database name
+# 	Scenario Name
+# 	Run control file
+
+set TODAY = `date +%Y%b%d`
+set OUTDIR = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs
+setenv PERLBIN  /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/perl-5.24.0/bin
+setenv PERL5LIB /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/perl-5.24.0
+
+mkdir -p $OUTDIR
+
+echo " "
+echo "==================================================================================="
+printf "              CAMx CB6 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6
+run_type,CRITERIA
+AQM,CAMX
+output,VOC
+splits_out,$OUTDIR/gspro.CB6_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6_criteria.CAMx.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb6_criteria RUNCTL >& log.CAMx.CB6_criteria.$TODAY
+date
+
+echo "==================================================================================="
+printf "              CMAQ CB6 criteria"
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.CB6_criteria.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6_criteria.CMAQ.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_cb6_criteria RUNCTL >& log.CMAQ.CB6_criteria.$TODAY
+date
+
+
+echo " "
+echo "==================================================================================="
+printf "              CAMx AE6 "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,AE6
+run_type,CRITERIA
+AQM,CAMX
+output, PM
+splits_out,$OUTDIR/gspro.AE6.CAMx.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_pm RUNCTL >& log.CAMx.PM_AE6.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ AE6 "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,AE6
+run_type,CRITERIA
+AQM,CMAQ
+output, PM
+splits_out,$OUTDIR/gspro.AE6.CMAQ.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae6 RUNCTL >& log.CMAQ.AE6.$TODAY
+date
+
+
+echo " "
+echo "==================================================================================="
+printf "              CAMx VBS SVOC "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,AE6
+run_type,VBS
+AQM,CAMX
+output, PM
+splits_out,$OUTDIR/gspro.AE6_CAMX.VBS_SVOC.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_pm_vbs_svoc RUNCTL >& log.CAMx.PM_AE6.VBS_SVOC.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ VBS SVOC "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,AE6
+run_type,VBS
+AQM,CMAQ
+output, PM
+splits_out,$OUTDIR/gspro.AE6_CMAQ.VBS_SVOC.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae6_vbs_svoc RUNCTL >& log.CMAQ.AE6.VBS_SVOC.$TODAY
+date
+
+
+echo " "
+echo "==================================================================================="
+printf "              CAMx CB6 VBS IVOC "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6
+run_type,VBS
+AQM,CAMX
+output,VOC
+splits_out,$OUTDIR/gspro.CB6.VBS_IVOC.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6.VBS_IVOC.CAMx.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_vbs_ivoc RUNCTL >& log.CAMx.VBS_IVOC.$TODAY
+date
+
+
+
+echo "==================================================================================="
+printf "              CMAQ CB6 VBS IVOC "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6
+run_type,VBS
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.CB6.VBS_IVOC.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6.VBS_IVOC.CMAQ.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_vbs_ivoc RUNCTL >& log.CMAQ.VBS_IVOC.$TODAY
+date
+
+
+echo " "
+echo "==================================================================================="
+printf "              CAMx CB6 SOA "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,SOA_CB6CAMX6P2
+run_type,CRITERIA
+AQM,CAMX
+output, VOC
+splits_out,$OUTDIR/gspro.SOA_CB6.CAMx6p2.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.SOA_CB6.CAMx6p2.$TODAY.txt
+IEOF
+
+$PERLBIN/perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx6p2_soa_cb6 RUNCTL >& log.CAMX.SOA_CB6CAMx6p2.$TODAY
+date

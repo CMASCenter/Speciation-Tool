@@ -1,0 +1,28 @@
+Running run_sptool.pl
+Dropping cmaq_cb6_criteria schema
+
+
+Created cmaq_cb6_criteria schema in sptoolv4_0 database
+Granted permissions on cmaq_cb6_criteria schema
+Set path successfully to cmaq_cb6_criteria schema
+Input tables created in cmaq_cb6_criteria schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = CB6
+control variables: RUN_TYPE = CRITERIA
+control variables: AQM = CMAQ
+control variables: OUTPUT = VOC
+control variables: SPLITS_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gspro.CB6_criteria.CMAQ.2017Jan11.txt
+control variables: CNV_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gscnv.CB6_criteria.CMAQ.2017Jan11.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in cmaq_cb6_criteria schema
+Completed splits calculations
+
+
+Completed output preparations
+SUMMARY:  Number of profiles generated in run cmaq_cb6_criteria is 2170 
+
+Completed writing the output files for run cmaq_cb6_criteria 
+Finished run_sptool.pl
+

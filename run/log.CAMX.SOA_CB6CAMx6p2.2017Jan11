@@ -1,0 +1,28 @@
+Running run_sptool.pl
+Dropping camx6p2_soa_cb6 schema
+
+
+Created camx6p2_soa_cb6 schema in sptoolv4_0 database
+Granted permissions on camx6p2_soa_cb6 schema
+Set path successfully to camx6p2_soa_cb6 schema
+Input tables created in camx6p2_soa_cb6 schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = SOA_CB6CAMX6P2
+control variables: RUN_TYPE = CRITERIA
+control variables: AQM = CAMX
+control variables: OUTPUT = VOC
+control variables: SPLITS_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gspro.SOA_CB6.CAMx6p2.2017Jan11.txt
+control variables: CNV_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gscnv.SOA_CB6.CAMx6p2.2017Jan11.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in camx6p2_soa_cb6 schema
+Completed splits calculations
+
+
+Completed output preparations
+SUMMARY:  Number of profiles generated in run camx6p2_soa_cb6 is 1865 
+
+Completed writing the output files for run camx6p2_soa_cb6 
+Finished run_sptool.pl
+

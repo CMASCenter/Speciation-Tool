@@ -1,0 +1,6 @@
+mech_basis,SOA_CB6CAMX6P2
+run_type,CRITERIA
+AQM,CAMX
+output, VOC
+splits_out,/proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gspro.SOA_CB6.CAMx6p2.2017Jan11.txt
+cnv_out,/proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gscnv.SOA_CB6.CAMx6p2.2017Jan11.txt

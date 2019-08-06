@@ -1,0 +1,769 @@
+# Mstrum removed extraneous characters (parts of descriptions) after column 190 using "cut -c1-190  oldfile > newfile"
+# Mstrum HAP/CAP INVTABLE for the 2002 NEI created from June 2006 Access file of pollutant names from Anne Pope
+# Mstrum Changed from what we provided to Environ (previously dated July 10) to make the names
+# of three MODE HAPs shorter to allow their names to be less than 16 in the no-integrate case
+# NAPHTHLNE = NAPHTH, BUTADIENE= BUTADIE, ACROLEIN=ACROLEI
+# M strum November 1, 2006 changes:
+#  1.   added fire activities (cut and pasted records)from the October 6 INVTABLE that
+# Marc created to test fires (which we're using as the CAPonly INVTABLE)
+# 2.  added RFL__pollutant for the seven HAPs that are in nonroad refueling:
+#  224trimethylpentane, benzene, ethylbenzene, hexane, MTBE, toluene, xylenes (O and M added separately using onroad speciation of xylenes)
+#  Note that this will require us to remove ALL refueling HAPs from the onroad inventories since this emission source
+# (onroad refueling) is covered in the nonpt sector.  nonroad refueling stays in the nonroad inventory since it is covered
+# in the nonroad sector.
+# Feb 2, 2007.  Change by M. Strum.  cleaned up descriptions of some exh haps (mang and chromium) to avoid Smkinven warnings
+# M. Strum 2/26/2007 add NONHAPVOC for all modes, add PM2_5 for all modes and remove PR
+# june 27, 2007:  added species=y to all HGSUM
+# Sep 14 2007: C. Allen reordered the CAS numbers within each metal so that the first one listed for each metal has factor=1. This was done so that Cntlmat/Grwinven would export those CAS numbers in new inventories.
+# Sep 17 2007: C. Allen repeated the Sep 14 procedure for HGSUM
+# Nov 4 2007: C. Allen repeated the Sep 14 procedure for HGIIGAS
+# Jan 4, 2008; A. Beidler added HAP pollutants for Calif. onroad
+# Aug 5, 2008: C. Allen modified for 2005ag_tox. Two changes:
+#      1) Removed the 'V' flag for all species, EXCEPT Benzene, Formald, Acetald, and Methanol. For 2005ag_tox, only these four HAPs
+#         will be integrated.
+#      2) Set Keep='N' for all HAP VOCs that are not model species. These were previously kept for integration, but they are no longer
+#         being integrated, so there is no reason to keep them. This will help reduce the size of SMOKE intermediate files.
+# Sep 9, 2008: C. Allen added no-mode OXYL (CAS=95476), which was missing for some reason, and is needed for at least one sector (probably several) in 2005ag_tox
+# Sep 10, 2008: C. Allen changed RFL__[M|O|P]XYL to match other xylene modes, because nonroad inventory has RFL__XYLS already separated into M, O, and P
+# Sep 12, 2008: C. Allen added pollutant code for NONHAPVOC, required by 2005ag_tox ptfire since it's pre-calculated in the inventory
+#REV_HISTORY 06/27/2007 Madeleine Strum.    What:  Species = Y for HGSUM and added CAS descriptions for HGSUM    Why:  HGSUM is speciated into model species
+#REV_HISTORY 05/11/2007 Madeleine Strum.    What:  added EXH for mercury and arsenic (93, 200, 201, 202)    Why:  these pollutants coming from NMIM for both onroad and nonroad
+#REV_HISTORY 02/26/2007 Madeleine Strum.    What:  removed PRI records    Why:  No PRI in ORL files
+#REV_HISTORY 02/26/2007 Madeleine Strum.    What:  added tire wear description to PM2_5 tire wear    Why:  was missing
+#REV_HISTORY 02/26/2007 Madeleine Strum.    What:  When changing EXH__PM25-PRI  added underscore PM2_5    Why:  PM2_5 needs the underscore
+#REV_HISTORY 02/26/2007 Madeleine Strum.    What:  added RFL NONHAPVOC and BIO NONHAPVOC added EXH, TIR, BRK __PM25 and PM10    Why:  need all modes of NONHAPVOC in INVTABLE for integrate case and changed name of PM2.25 and PM10 in ORL files
+#REV_HISTORY 02/02/2007 Madeleine Strum.    What:  changed description of some chrom and mang records    Why:  need descriptions to be the same for same data name
+#REV_HISTORY 01/22/2007 Madeleine Strum.    What:  Changed name of 7 HAPs (NAME column)    Why:   to agree with names in the GSPRO for toxics that is output from the Speciation Tool (version of Sept 2006)
+#REV_HISTORY 01/04/2008 Allan Beidler.    What:  Removed EXH and EVP 1330207    Why:  Not needed
+#REV_HISTORY 01/04/2008 Allan Beidler.    What:  Added HAP pollutants for California onroad		    Why:  New in California onroad emissions
+#REV_HISTORY 01/03/2008 Allan Beidler.    What:  Add mode PXYL, MXYL, and OXYL    Why:  for Calif
+#REV_HISTORY 11/08/2007 Chris Allen.    What:  Reordered HGIIGAS entries    Why:  So that first HGIIGAS entry has factor=1
+#REV_HISTORY 09/17/2007 Chris Allen.    What:  Reordered HGSUM entries so 7439976 (factor=1) was first    Why:  Necessary for creation of future-year inventories
+#REV_HISTORY 09/14/2007 Chris Allen.    What:  .    Why:  .
+#REV_HISTORY 09/14/2007 Chris Allen.    What:  Reordered the CAS numbers within each metal so that the first CAS number that appears has a factor of 1    Why:  When creating new inventories with Cntlmat/Grwinven, the CAS number with factor=1 needs to be listed first for each metal
+#EXPORT_DATE=Fri Oct 14 09:48:55 EDT 2011
+#EXPORT_VERSION_NAME=tier3 new modes EBAFM
+#EXPORT_VERSION_NUMBER=13
+#REV_HISTORY v1(09/09/2008)  Chris Allen.   Added no-mode OXYL  It was missing for some reason, and is needed for various HAP/CAP sectors
+#REV_HISTORY v2(09/10/2008)  Chris Allen.   Changed RFL xylenes (M,O,P) to match other modes of xylenes  2005ag_tox nonroad inventory does not have RFL__1330207 (RFL__XYLS), it has xylenes already separated into RFL__MXYL, etc.
+#REV_HISTORY v3(09/12/2008)  Chris Allen.   Added CAS (inventory pollutant code) for NONHAPVOC  Required for 2005ag_tox ptfire, since NONHAPVOC is pre-calculated in the inventory
+#REV_HISTORY v4(09/26/2008)  Madeleine Strum.   Added PM species that will be in MOVES generated ORL  Need to model these species
+#REV_HISTORY v5(09/26/2008)  Madeleine Strum.   spelling of PSO4 and PNO3   make sure the O is a letter and not the number zero
+#REV_HISTORY v6(10/06/2008)  Madeleine Strum.   Added 91203_72 as CAS and assigned to NAPHTH_72  naphthalene exhaust emissions from MOVES need to be temperature adjusted
+#REV_HISTORY v6(10/22/2008)  Allan Beidler.   added naphth_72 as a CAS	  for MOVES inventory
+#REV_HISTORY v9(11/17/2009)  Allan Beidler.   added VOC_INV  was not included
+#REV_HISTORY v9(11/17/2009)  Rich Mason.   added POC, PEC and PMFINE for non-temperature adjusted diesel SCCs  MOVES for diesel SCCs
+#REV_HISTORY v9(11/19/2009)  Allan Beidler.   Set KEEP=N for non MP-lite emisssions  not needed for CMAQ MP-lite
+#REV_HISTORY v9(11/19/2009)  Allan Beidler.   added EVP__VOC_INV  not in invtable
+#REV_HISTORY v9(11/19/2009)  Allan Beidler.   added EXH__VOC_INV and RFL__VOC_INV  not in Invtable
+#REV_HISTORY v9(11/19/2009)  Allan Beidler.   removed duplicate VOC_INV  duplicates
+#REV_HISTORY v10(02/11/2011)  Rich Mason.   see notes.  In short, added NO, NO2, HONO, set Keep=Y for naph, keep=N for non-Canada xylenes, toluene, ethyl benzene.  Added canada VOC species (pass through)  HDGHG using CMAQ v4.7 MP-lite version N1e:  NOT same as Tier 3 which uses VOC speciation for xylene's, ethyl benz, toluene, etc...
+#REV_HISTORY v10(02/11/2011)  Rich Mason.   added Canada VOC species, set xylenes, toluene to N, add NO, NO2, HONO  HDGHG not Tier3
+#REV_HISTORY v11(05/13/2011)  Alexis Zubrow.   ETOH is now integrated, ie. VOCTOG = V, Explicit = Y, Species = Y  Integrating Ethanol from MOVES (refueling and PFC in nonpt, and all onroad sector)
+#REV_HISTORY v11(05/13/2011)  Alexis Zubrow.   changed description to include MOVES  info
+#REV_HISTORY v11(05/13/2011)  Alexis Zubrow.   Added the permeation mode EPM to VOC, NONHAPTOG, NONHAPVOC, VOC_INV  needed for onroad gasoline vehicles in tier3
+#REV_HISTORY v12(05/13/2011)  Alexis Zubrow.   Changed ethanol back to not integrated  needed for non-E profiles
+#REV_HISTORY v12(05/13/2011)  Alexis Zubrow.   Added speciate 4 ID to Ethanol, 442  Needed for speciation tool when doing EBAFM
+#REV_HISTORY v12(05/16/2011)  Alexis Zubrow.   Added SMOKE-MOVES CAS names and modes for the following:  TOG, PSO4, PNO3, PMFINE, PM2_5, FORMALD, ACETALD, ACROLEI, BUTADIE, BENZENE, NAPHTH, ETOH, PM10, PEC  Support running SMOKE-MOVES for onroad sector
+#REV_HISTORY v12(05/17/2011)  Alexis Zubrow.   removed CAS = FORMALD, ACETALD, ACROLEI, BUTADIE, BENZENE, NAPHTH.  Note this was the non-mode specific entries  smkinven crashed when there was two cas's going to the same name, when one of the case was equal to the name.  E.g. CAS 71432 goes to BENZENE and CAS BENZENE goes to BENZENE
+#REV_HISTORY v12(05/18/2011)  Chris Allen.   Lots of changes for SMOKE-MOVES, including addition of VMT/SPEED/VPOP, and removal of some records  VMT/SPEED/VPOP needed for SMOKE-MOVES. Also, some records were being treated as duplicates and had to be removed.
+#REV_HISTORY v12(05/18/2011)  Chris Allen.   Added modes (EXH and EVP) for many pollutants, including CO, SO2, NH3, and PM species  for SMOKE-MOVES
+#REV_HISTORY v12(05/18/2011)  Chris Allen.   For PM25BRAKE, PM25TIRE, changed "NAME" column from "PM2_5" to PM25BRAKE and PM25TIRE, respectively. Same for PM10  for SMOKE-MOVES
+#REV_HISTORY v12(05/18/2011)  Alexis Zubrow.   Added refueling mode to ETOH, NONHAPTOG  Needed to differentiate refueling VOC components from refueling inventory in nonpt for ethanol integration and GSPRO_COMBO
+#REV_HISTORY v13(05/18/2011)  Alexis Zubrow.   Changed columns VOCTOG, SPECIES, EXPLICIT for ETOH all modes  integrating ethanol, ie. EBAFM
+#REV_HISTORY v13(05/23/2011)  Chris Allen.   filled in mode column for EXH__NOX  needed for SMOKE-MOVES
+#REV_HISTORY v13(05/25/2011)  Chris Allen.   Added RFL__NAPHTH  present in 2005ct RFL inventories
+VMT             VMT                      Y    1.0      Y     miles/yr         Vehicle miles travelled                                                         
+SPEED           SPEED                    Y    1.0      Y     miles/hr         Averaged speed                                                                  
+VPOP            POP                      Y    1.0      Y     null/yr          Vehicle population                                                              
+NO              NO                       Y    1.0      N     tons/yr          Nitrogen oxide                                                                  !Added for MOVES2010 processing
+NO          EXH EXH__NO                  Y    1.0      N     tons/yr          Nitrogen oxide                                                                  !Added for MOVES2010 processing
+NO          EVP EVP__NO                  Y    1.0      N     tons/yr          Nitrogen oxide                                                                  
+NO2             NO2                      Y    1.0      N     tons/yr          Nitrogen dioxide                                                                !Added for MOVES2010 processing
+NO2         EXH EXH__NO2                 Y    1.0      N     tons/yr          Nitrogen dioxide                                                                !Added for MOVES2010 processing
+NO2         EVP EVP__NO2                 Y    1.0      N     tons/yr          Nitrogen dioxide                                                                
+HONO            HONO                     Y    1.0      N     tons/yr          Nitrous acid                                                                    !Added for MOVES2010 processing
+HONO        EXH EXH__HONO                Y    1.0      N     tons/yr          Nitrous acid                                                                    !Added for MOVES2010 processing
+HONO        EVP EVP__HONO                Y    1.0      N     tons/yr          Nitrous acid                                                                    
+FUEL_LOAD       FUEL_LOAD                Y                   null/yr                                                                                          
+ACRESBURNED     ACRESBURNED              Y                   null/yr                                                                                          
+HEATCONTENT     HEATCONTENT              Y                   null/yr                                                                                          
+HFLUX           HFLUX                    Y                   null/yr                                                                                          
+ENDHOUR         ENDHOUR                  Y                   null/yr                                                                                          
+BEGHOUR         BEGHOUR                  Y                   null/yr                                                                                          
+HGSUM       EXH EXH__7439976             N    1.0  Y   N     tons/yr          Mercury, unspeciated                                                            !Keep set to N for MP-lite
+HGSUM           7439976                  N    1.0  Y   N     tons/yr          Mercury, Unspeciated                    Mercury                                 !Keep set to N for MP-lite
+HGSUM           593748                   N 0.8696  Y   N     tons/yr          Mercury, Unspeciated                    Methyl Mercury                          !Keep set to N for MP-lite
+HGSUM           22967926                 N    1.0  Y   N     tons/yr          Mercury, Unspeciated                    Mercury (Organic)                       !Keep set to N for MP-lite
+HGSUM           62384                    N 0.5957  Y   N     tons/yr          Mercury, Unspeciated                    Mercury Acetato Phen                    !Keep set to N for MP-lite
+PHGI            202                      N    1.0      N     tons/yr          Mercury, Particulate Divalent Mercury                                           !Keep set to N for MP-lite
+PHGI            EXH__202                 N    1.0      N     tons/yr          Mercury, Particulate Divalent Mercury                                           !Keep set to N for MP-lite
+HGIIGAS         201                      N    1.0      N     tons/yr          Mercury, Gaseous Divalent Mercury                                               !Keep set to N for MP-lite
+HGIIGAS         EXH__201                 N    1.0      N     tons/yr          Mercury, Gaseous Divalent Mercury                                               !Keep set to N for MP-lite
+HGIIGAS         7487947                  N 0.7388      N     tons/yr          Mercury, Gaseous Divalent Mercury                                               !Keep set to N for MP-lite
+HG              200                      N    1.0      N     tons/yr          Mercury, Elemental Gaseous Mercury                                              !Keep set to N for MP-lite
+HG              EXH__200                 N    1.0      N     tons/yr          Mercury, Elemental Gaseous Mercury                                              !Keep set to N for MP-lite)
+HGSUM           199                      N    1.0  Y   N     tons/yr          Mercury, Unspeciated                    Mercury and Compounds                   !Keep set to N for MP-lite
+CO              CO                       Y    1.0      N     tons/yr          Carbon Monoxide                                                                 
+CO          EXH EXH__CO                  Y    1.0      N     tons/yr          Carbon Monoxide                                                                 
+CO          EVP EVP__CO                  Y    1.0      N     tons/yr          Carbon Monoxide                                                                 
+NOX             NOX                      Y    1.0      N     tons/yr          Nitrogen oxides                                                                 
+NOX         EXH EXH__NOX                 Y    1.0      N     tons/yr          Nitrogen oxides                                                                 
+THC             THC                      Y    1.0      N     tons/yr          Total hydrocarbons                                                              !Keep set to N for MP-lite
+VOC             VOC                      Y    1.0      N     tons/yr          Volatile organic compounds                                                      
+TOG             TOG                      Y    1.0      N     tons/yr          Total organic compounds                                                         
+TOG         EXH EXH__TOG                 Y    1.0      N     tons/yr          Total organic compounds exhaust                                                 ! SMOKE-MOVES TOG
+TOG         EVP EVP__TOG                 Y    1.0      N     tons/yr          Total organic compounds evaporative                                             ! SMOKE-MOVES TOG
+TOG         EPM EPM__TOG                 Y    1.0      N     tons/yr          Total organic compounds Evap Permeation                                         ! SMOKE-MOVES TOG
+NH3             NH3                      Y    1.0      N     tons/yr          Ammonia                                                                         
+NH3         EXH EXH__NH3                 Y    1.0      N     tons/yr          Ammonia                                                                         
+NH3         EVP EVP__NH3                 Y    1.0      N     tons/yr          Ammonia                                                                         
+SO2             SO2                      Y    1.0      N     tons/yr          Sulfur Dioxide                                                                  
+SO2         EXH EXH__SO2                 Y    1.0      N     tons/yr          Sulfur Dioxide                                                                  
+SO4             SO4                      Y    1.0      N     tons/yr          Sulfate                                                                         
+SO2         EVP EVP__SO2                 Y    1.0      N     tons/yr          Sulfur Dioxide                                                                  
+SOX             SOX                      Y    1.0      N     tons/yr          Sulfur oxides                                                                   
+PM10            PM10                     Y    1.0      N     tons/yr          Particulate matter, 10 microns and less                                         
+PM2_5           PM2_5                    Y    1.0      N     tons/yr          Particulate matter, 2.5 microns and less                                        
+PMC             PMC                      Y    1.0      N     tons/yr          Particulate matter, coarse                                                      
+NOX         BIO BIO__NOX                 Y    1.0      N     tons/yr          Biogenic NOX needed for Smkmerge                                                
+NVOL            NVOL                     Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+VOC         BIO BIO__VOC                 Y    1.0      N     tons/yr          Biogenic VOC needed for Smkmerge                                                
+VOC         EVP EVP__VOC                 Y    1.0      N     tons/yr          VOC EVAP                                                                        
+VOC         EXH EXH__VOC                 Y    1.0      N     tons/yr          VOC EXHAUST                                                                     
+VOC         RFL RFL__VOC                 Y    1.0      N     tons/yr          VOC REFUEL from Nonroad                                                         
+VOC         EPM EPM__VOC                 Y    1.0      N     tons/yr          VOC Evaporative Permeation                                                      
+PM10        EXH EXH__PM10                Y    1.0      N     tons/yr          PM10 EXHAUST                                                                    
+PM10        BRK BRK__PM10                Y    1.0      N     tons/yr          PM10 Brake WEAR                                                                 
+PM10        TIR TIR__PM10                Y    1.0      N     tons/yr          PM10 TIRE WEAR                                                                  
+PM10BRAKE   BRK BRK__PM10BRAKE           Y    1.0      N     tons/yr          PM10 Brake wear                                                                 ! SMOKE-MOVES PM10 brake wear
+PM10TIRE    TIR TIR__PM10TIRE            Y    1.0      N     tons/yr          PM10 tire wear                                                                  ! SMOKE-MOVES PM10 tire wear
+PM2_5       EXH EXH__PM2_5               Y    1.0      N     tons/yr          PM25 EXHAUST                                                                    
+PM2_5       BRK BRK__PM2_5               Y    1.0      N     tons/yr          PM2.5 BRAKEWEAR                                                                 
+PM2_5       TIR TIR__PM2_5               Y    1.0      N     tons/yr          PM2.5 TIRE WEAR                                                                 
+PM25BRAKE   BRK BRK__PM25BRAKE           Y    1.0      N     tons/yr          PM2.5 Brake wear                                                                ! SMOKE-MOVES PM2.5 brake wear
+PSO4            PSO4                     Y    1.0  Y   N     tons/yr          sulfate from MOVES                                                              
+PSO4        EXH EXH__PSO4                Y    1.0  Y   N     tons/yr          sulfate from MOVES Exhaust                                                      ! SMOKE-MOVES sulfate
+PNO3            PNO3                     Y    1.0  Y   N     tons/yr          nitrate from MOVES                                                              
+PNO3        EXH EXH__PNO3                Y    1.0  Y   N     tons/yr          nitrate from MOVES exhaust                                                      ! SMOKE-MOVES nitrate
+PMFINE_72       PMFINE_72                Y    1.0  Y   N     tons/yr          pmfine at 72 from MOVES                                                         
+PMFINE          PMFINE                   Y    1.0  Y   N     tons/yr          pmfine from MOVES for diesel                                                    
+PMFINE      EXH EXH__PMFINE              Y    1.0  Y   N     tons/yr          pmfine exhaust  from MOVES for diesel                                           ! SMOKE-MOVES pmfine Exhaust
+OTHER           OTHER                    Y    1.0  Y   N     tons/yr          the metal and NH4 part of PMFINE                                                
+PMC_72          PMC_72                   Y    1.0  Y   N     tons/yr          coarse pm at 72 from MOVES                                                      
+PM25TIRE    TIR TIR__PM25TIRE            Y    1.0      N     tons/yr          PM2.5 Tire wear                                                                 ! SMOKE-MOVES PM2.5 tire wear
+PMC         EXH EXH__PMC                 Y    1.0      N     tons/yr          PMC EXHAUST                                                                     
+PMC         BRK BRK__PMC                 Y    1.0      N     tons/yr          PMC Brake Wear                                                                  
+PMC         TIR TIR__PMC                 Y    1.0      N     tons/yr          PMC Tire Wear                                                                   
+POC             POC                      Y    1.0  Y   N     tons/yr          organic carbon from MOVES for diesel                                            
+POC         EXH EXH__POC                 Y    1.0  Y   N     tons/yr          organic carbon from MOVES Exhaust                                               
+PEC             PEC                      Y    1.0  Y   N     tons/yr          elemental carbon from MOVES for diesel                                          
+PEC         EXH EXH__PEC                 Y    1.0  Y   N     tons/yr          elemental carbon from MOVES Exhaust                                             ! SMOKE-MOVES Elemental Carbon
+PEC_72          PEC_72                   Y    1.0  Y   N     tons/yr          elemental carbon at 72 F from MOVES                                             
+POC_72          POC_72                   Y    1.0  Y   N     tons/yr          organic carbon at 72 F from MOVES                                               
+MEOH            MEOH                     Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+METHANOL        67561              531   Y    1.0V Y Y N     tons/yr          Methanol                                                                        
+FORM            FORM                     Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+FORMALD     EXH EXH__50000         465   Y    1.0V Y Y N     tons/yr          Formaldehyde                                                                    
+FORMALD         50000              465   Y    1.0V Y Y N     tons/yr          Formaldehyde                                                                    
+ACETALD     EXH EXH__75070         279   Y    1.0V Y Y N     tons/yr          Acetaldehyde                                                                    
+ACETALD         75070              279   Y    1.0V Y Y N     tons/yr          Acetaldehyde                                                                    
+ACROLEI     EXH EXH__107028        283   Y    1.0  Y   N     tons/yr          Acrolein                                                                        
+ACROLEI         107028             283   Y    1.0  Y   N     tons/yr          Acrolein                                                                        
+BUTADIE         106990              46   Y    1.0  Y   N     tons/yr          Butadiene, 1,3-                                                                 
+BUTADIE     EXH EXH__106990         46   Y    1.0  Y   N     tons/yr          Butadiene, 1,3-                                                                 
+BENZENE     EVP EVP__71432         302   Y    1.0V Y   N     tons/yr          Benzene                                                                         
+BENZENE         71432              302   Y    1.0V Y   N     tons/yr          Benzene                                                                         
+BENZENE     EXH EXH__71432         302   Y    1.0V Y   N     tons/yr          Benzene EXHAUST                                                                 
+BENZENE     RFL RFL__71432         302   Y    1.0V Y   N     tons/yr          Benzene REFUEL                                                                  
+BENZENE     EPM EPM__BENZENE       302   Y    1.0V Y   N     tons/yr          Benzene Evap Permeation                                                         ! SMOKE-MOVES Benzene
+NAPHTH          91203              611   Y    1.0  Y   N     tons/yr          Naphthalene                                                                     !Keep set to N for MP-lite v4.71 (N3c)=LDGHG, but to Y for V4.7 N1e=HDGHG
+NAPHTH      EVP EVP__91203         611   Y    1.0  Y   N     tons/yr          Naphthalene                                                                     !Keep set to N for MP-lite v4.71 (N3c)=LDGHG, but to Y for V4.7 N1e=HDGHG
+NAPHTH      EXH EXH__91203         611   Y    1.0  Y   N     tons/yr          Naphthalene                                                                     !Keep set to N for MP-lite v4.71 (N3c)=LDGHG, but to Y for V4.7 N1e=HDGHG
+NAPHTH      RFL RFL__91203         611   Y    1.0  Y   N     tons/yr          Naphthalene                                                                     !Keep set to N for MP-lite v4.71 (N3c)=LDGHG, but to Y for V4.7 N1e=HDGHG
+NAPHTH      EPM EPM__NAPHTH        611   Y    1.0  Y   N     tons/yr          Naphthalene Evap Permeation                                                     ! SMOKE-MOVES Naphthalene
+PERC            127184             661   N    1.0  Y   N     tons/yr          Tetrachloroethylene (Perchloroethylene)                                         !Keep set to N for MP-lite
+TRIETHLAMN      121448             751   N    1.0  Y   N     tons/yr          Triethylamine                                                                   !Keep set to N for MP-lite
+HEXAMTHLE       822060                   N    1.0  Y   N     tons/yr          Hexamethylene-1,6-diisocyanate, gas                                             !Keep set to N for MP-lite
+CHCL3           67663              343   N    1.0  Y   N     tons/yr          Chloroform                                                                      !Keep set to N for MP-lite
+UNR             UNR                      Y    1.0      N     tons/yr          pre-speciated in 2006 Canada                                                    
+VINYCHLRI       75014              769   N    1.0  Y   N     tons/yr          Vinyl chloride                                                                  !Keep set to N for MP-lite
+TTCLE1122       79345                5   N    1.0  Y   N     tons/yr          Tetrachloroethane, 1,1,2,2-                                                     !Keep set to N for MP-lite
+ETOX            75218              459   N    1.0  Y   N     tons/yr          Ethylene oxide                                                                  !Keep set to N for MP-lite
+QUINOLINE       91225             1812   N    1.0  Y   N     tons/yr          Quinoline                                                                       !Keep set to N for MP-lite
+ACRYNITRL       107131             285   N    1.0  Y   N     tons/yr          Acrylonitrile                                                                   !Keep set to N for MP-lite
+CL2_C2_12       107062             454   N    1.0  Y   N     tons/yr          Ethylene dichloride (1,2-Dichloroethane)                                        !Keep set to N for MP-lite
+ETH             ETH                      Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+ETOH            ETOH               442   Y    1.0V Y Y N     tons/yr          Canada prespeciated VOC                                                         
+ETOH        EVP EVP__ETOH          442   Y    1.0V Y Y N     tons/yr          Ethanol MOVES and Canada prespec VOC                                            ! SMOKE-MOVES Ethanol Evaporative
+ETOH        EPM EPM__ETOH          442   Y    1.0V Y Y N     tons/yr          Ethanol MOVES and Canada prespec VOC                                            ! SMOKE-MOVES Ethanol Evap Permeation
+ETOH        EXH EXH__ETOH          442   Y    1.0V Y Y N     tons/yr          Ethanol MOVES and Canada prespec VOC                                            ! SMOKE-MOVES Ethanol Exhaust
+ETOH        RFL RFL__ETOH          442   Y    1.0V Y Y N     tons/yr          Ethanol MOVES and Canada prespec VOC                                            ! SMOKE-MOVES Ethanol refueling
+ETHDIBROM       106934             453   N    1.0  Y   N     tons/yr          Ethylene dibromide (Dibromoethane)                                              !Keep set to N for MP-lite
+HYDRAZINE       302012                   N    1.0  Y   N     tons/yr          Hydrazine                                                                       !Keep set to N for MP-lite
+CARBONTET       56235              333   N    1.0  Y   N     tons/yr          Carbon tetrachloride                                                            !Keep set to N for MP-lite
+DICLPRO13       542756              50   N    1.0  Y   N     tons/yr          Dichloropropene, 1,3-                                                           !Keep set to N for MP-lite
+PROPDICLR       78875               34   N    1.0  Y   N     tons/yr          Propylene dichloride                                                            !Keep set to N for MP-lite
+MALANHYD        108316            2140   N    1.0  Y   N     tons/yr          Maleic anhydride                                                                !Keep set to N for MP-lite
+DICHLRBNZN      106467             647   N    1.0  Y   N     tons/yr          Dichlorobenzene,p 1,4-                                                          !Keep set to N for MP-lite
+TOL_DIIS        584849             154   N    1.0  Y   N     tons/yr          Toluene diisocyanate, 2,4-                                                      !Keep set to N for MP-lite
+MECL            75092              401   N    1.0  Y   N     tons/yr          Methylene chloride (Dichloromethane)                                            !Keep set to N for MP-lite
+CL3_ETHE        79016              747   N    1.0  Y   N     tons/yr          Trichloroethylene                                                               !Keep set to N for MP-lite
+CHLORINE        7782505            339   Y    1.0  Y   N     tons/yr          Chlorine                                                                        
+HCL             7647010                  Y    1.0  Y   N     tons/yr          Hydrochloric acid (Hydrogen chloride)                                           
+CHROMHEX        18540299                 N    1.0  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7788989                  N  0.342  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        10294403                 N 0.2053  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        18454121                 N 0.0952  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        10588019                 N  0.397  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        14977618                 N 0.3357  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        14018952                 N 0.1835  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7788967                  N 0.4263  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        13765190                 N 0.3332  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7738945                  N 0.4406  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7758976                  N 0.1609  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        13530659                 N 0.2867  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        10034829                 N 0.2203  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        14307336                 N  0.403  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7789095                  N 0.4125  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7789006                  N 0.2677  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        13530682                 N  0.477  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7775113                  N 0.4406  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7789120                  N 0.3467  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        1333820                  N   0.52  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7778509                  N 0.3535  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        7789062                  N 0.2554  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        14307358                 N 0.4003  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        11103869                 N  0.218  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMHEX        EXH__18540299            N    1.0  Y   N     tons/yr          Chromium VI, PM                                                                 !Keep set to N for MP-lite
+CHROMTRI        16065831                 N    1.0  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        50922297                 N 0.2803  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        1308141                  N 0.5048  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        10025737                 N 0.3284  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        21679312                 N 0.1489  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        1308389                  N 0.6842  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        10060125                 N 0.3283  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        10049055                 N 0.4231  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        10101538                 N 0.2611  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        12018018                 N  0.619  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        12018198                 N 0.3899  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROMTRI        EXH__16065831            N    1.0  Y   N     tons/yr          Chromium III, PM                                                                !Keep set to N for MP-lite
+CHROM           136                      N    1.0  Y   N     tons/yr          Chromium, PM                                                                    !Keep set to N for MP-lite
+CHROM       EXH EXH__7440473             N    1.0  Y   N     tons/yr          Chromium, PM                                                                    !Keep set to N for MP-lite
+CHROM           7440473                  N    1.0  Y   N     tons/yr          Chromium, PM                                                                    !Keep set to N for MP-lite
+NICKEL          7440020                  N    1.0  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          1271289                  N 0.3108  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          3333673                  N 0.4862  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          373024                   N 0.3321  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          12710360                 N 0.9362  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          12054487                 N 0.6333  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          226                      N    1.0  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          7786814                  N 0.3794  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          7718549                  N  0.453  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          13138459                 N 0.3213  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          14336700                 N    1.0  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          13770893                 N  0.234  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          10101970                 N 0.2234  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          6018899                  N 0.2359  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          1314063                  N  0.786  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          1313991                  N 0.7412  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          12035722                 N 0.7331  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          13462889                 N 0.2687  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          13463393                 N 0.3439  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          14220178                 N 0.2436  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          604                      N    1.0  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+NICKEL          EXH__7440020             N    1.0  Y   N     tons/yr          Nickel, PM                                                                      !Keep set to N for MP-lite
+BERYLLIUM       7440417                  N    1.0  Y   N     tons/yr          Beryllium, PM                                                                   !Keep set to N for MP-lite
+BERYLLIUM       7787475                  N 0.1127  Y   N     tons/yr          Beryllium, PM                                                                   !Keep set to N for MP-lite
+BERYLLIUM       7787497                  N 0.1917  Y   N     tons/yr          Beryllium, PM                                                                   !Keep set to N for MP-lite
+BERYLLIUM       13597994                 N 0.0667  Y   N     tons/yr          Beryllium, PM                                                                   !Keep set to N for MP-lite
+BERYLLIUM       13510491                 N 0.0841  Y   N     tons/yr          Beryllium, PM                                                                   !Keep set to N for MP-lite
+BERYLLIUM       109                      N    1.0  Y   N     tons/yr          Beryllium, PM                                                                   !Keep set to N for MP-lite
+BERYLLIUM       1304569                  N 0.3603  Y   N     tons/yr          Beryllium, PM                                                                   !Keep set to N for MP-lite
+CADMIUM         7440439                  N    1.0  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         10124364                 N  0.534  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         7789426                  N 0.4129  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         1306190                  N 0.8753  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         7790809                  N 0.3069  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         1306236                  N  0.778  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         125                      N    1.0  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         543908                   N 0.4834  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         10108642                 N 0.6132  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         10325947                 N 0.4714  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+CADMIUM         2223930                  N  0.165  Y   N     tons/yr          Cadmium, PM                                                                     !Keep set to N for MP-lite
+LEAD            195                      N    1.0  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            7446277                  N 0.5076  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            7758976                  N 0.6411  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            7446142                  N 0.6788  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            7784409                  N 0.5935  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            13814965                 N 0.5441  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            1335326                  N 0.7696  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            1335257                  N 0.9283  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            27253287                 N 0.3769  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            598630                   N 0.7754  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            1317368                  N 0.9283  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            603                      N    1.0  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            18454121                 N 0.7584  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            78002                    N 0.6407  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            10031137                 N 0.5299  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            1314416                  N 0.3022  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            10099748                 N 0.6218  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            1309600                  N 0.8662  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            88                       N    1.0  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            61790145                 N 0.3732  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            12626812                 N 0.5255  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            12060003                 N 0.6836  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            7428480                  N 0.4218  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            7439921                  N    1.0  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            301042                   N  0.637  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+LEAD            602                      N    1.0  Y   N     tons/yr          Lead, PM                                                                        !Keep set to N for MP-lite
+MANGANESE       7439965                  N    1.0  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       198                      N    1.0  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       1336932                  N 0.1776  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       1317346                  N 0.6955  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       1313139                  N 0.6319  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       12079651                 N 0.2692  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       1317357                  N 0.7203  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       7722647                  N 0.3474  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       7785877                  N 0.3638  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       8030704                  N   0.01  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       10377669                 N 0.3036  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       7783166                  N 0.2706  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       10101505                 N 0.3841  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+MANGANESE       EXH__7439965             N    1.0  Y   N     tons/yr          Manganese, PM                                                                   !Keep set to N for MP-lite
+OXYL        EVP EVP__95476         620   N    1.0  Y   N     tons/yr          O-xylene                                                                        !not kept for HDGHG
+OXYL        RFL RFL__95476         620   N    1.0  Y   N     tons/yr          O-xylene RFL                                                                    !not kept for HDGHG
+OXYL        EXH EXH__95476         620   N    1.0  Y   N     tons/yr          O-xylene                                                                        !not kept for HDGHG
+OXYL            95476              620   N    1.0  Y   N     tons/yr          O-xylene                                                                        !not kept for HDGHG
+MXYL        EXH EXH__108383        524   N    1.0  Y   N     tons/yr          M-xylene                                                                        !not kept for HDGHG
+PXYL        EVP EVP__106423        648   N    1.0  Y   N     tons/yr          Xylenes (mixed isomers)                                                         !not kept for HDGHG
+PXYL            106423             648   N    1.0  Y   N     tons/yr          Xylenes (mixed isomers)                                                         !not kept for HDGHG
+PXYL        EXH EXH__106423        648   N    1.0  Y   N     tons/yr          Xylenes (mixed isomers)                                                         !not kept for HDGHG
+PXYL        RFL RFL__106423        648   N    1.0  Y   N     tons/yr          P-xylene RFL                                                                    !not kept for HDGHG
+MXYL        EVP EVP__108383        524   N    1.0  Y   N     tons/yr          M-xylene                                                                        !not kept for HDGHG
+MXYL        RFL RFL__108383        524   N    1.0  Y   N     tons/yr          M-xylene RFL                                                                    !not kept for HDGHG
+MXYL            108383             524   N    1.0  Y   N     tons/yr          Xylenes (mixed isomers)                                                         !not kept for HDGHG
+XYL             XYL                      Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+XYLS            1330207            507   N    1.0  Y   N     tons/yr          Xylenes (mixed isomers)                                                         !not kept for HDGHG
+TOL             TOL                      Y    1.0      N     tons/yr          pre-speciated in 2006 Canada                                                    
+TOLUENE         108883             717   N    1.0  Y   N     tons/yr          Toluene                                                                         !not kept for HDGHG
+TOLUENE     EXH EXH__108883        717   N    1.0  Y   N     tons/yr          Toluene                                                                         !not kept for HDGHG
+TOLUENE     EVP EVP__108883        717   N    1.0  Y   N     tons/yr          Toluene                                                                         !not kept for HDGHG
+TOLUENE     RFL RFL__108883        717   N    1.0  Y   N     tons/yr          Toluene refuel (nonroad)                                                        !not kept for HDGHG
+CARBNDISULF     75150              332   N    1.0  N   N     tons/yr          Carbon disulfide                                                                
+PERYLENE        198550             901   N    1.0  N   N     tons/yr          Perylene                                                                        
+CUMENE          98828              514   N    1.0  N   N     tons/yr          Cumene                                                                          
+MTHYLCHLRD      74873              535   N    1.0  N   N     tons/yr          Methyl chloride (Chloromethane)                                                 
+PROPIONAL       123386             673   N    1.0  N   N     tons/yr          Propionaldehyde                                                                 
+PROPIONAL   EXH EXH__123386        673   N    1.0  N   N     tons/yr          Propionaldehyde                                                                 
+TRMEPN224       540841             118   N    1.0  N   N     tons/yr          Trimethylpentane, 2,2,4-                                                        
+TRMEPN224   EVP EVP__540841        118   N    1.0  N   N     tons/yr          Trimethylpentane, 2,2,4-                                                        
+TRMEPN224   RFL RFL__540841        118   N    1.0  N   N     tons/yr          Trimethylpentane, 2,2,4- rfl(nonroad)                                           
+TRMEPN224   EXH EXH__540841        118   N    1.0  N   N     tons/yr          Trimethylpentane, 2,2,4-                                                        
+INDENO123   EXH EXH__193395        884   N    1.0  N   N     tons/yr          Indeno[1,2,3-c,d]Pyrene Exhaust                                                 
+INDENO123       193395             884   N    1.0  N   N     tons/yr          Indeno[1,2,3-c,d]Pyrene                                                         
+IOLE            IOLE                     Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+ISOP            ISOP                     Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+BNZOGHIFLUR     203123            1172   N    1.0  N   N     tons/yr          Benzo(g,h,i)Fluoranthene                                                        
+FLUORANTH       206440             882   N    1.0  N   N     tons/yr          Fluoranthene                                                                    
+FLUORANTH   EXH EXH__206440        882   N    1.0  N   N     tons/yr          Fluoranthene Exhaust                                                            
+DIBENZAHA   EXH EXH__53703        1848   N    1.0  N   N     tons/yr          Dibenzo[a,h]Anthracene                                                          
+DIBENZAHA       53703             1848   N    1.0  N   N     tons/yr          Dibenzo[a,h]Anthracene                                                          
+ANTHRACEN       120127             852   N    1.0  N   N     tons/yr          Anthracene                                                                      
+ANTHRACEN   EXH EXH__120127        852   N    1.0  N   N     tons/yr          Anthracene                                                                      
+PYRENE          129000             904   N    1.0  N   N     tons/yr          Pyrene                                                                          
+PYRENE      EXH EXH__129000        904   N    1.0  N   N     tons/yr          Pyrene Exhaust                                                                  
+CHRYSENE    EXH EXH__218019        867   N    1.0  N   N     tons/yr          Chrysene Exhaust                                                                
+CHRYSENE        218019             867   N    1.0  N   N     tons/yr          Chrysene                                                                        
+BENZOAPYR       50328              855   N    1.0  N   N     tons/yr          Benzo[a]Pyrene                                                                  
+BENZOAPYR   EXH EXH__50328         855   N    1.0  N   N     tons/yr          Benzo[a]Pyrene Exhaust                                                          
+ACENAPENE       83329              846   N    1.0  N   N     tons/yr          Acenaphthene                                                                    
+ACENAPENE   EXH EXH__83329         846   N    1.0  N   N     tons/yr          Acenaphthene                                                                    
+FLUORENE        86737              883   N    1.0  N   N     tons/yr          Fluorene                                                                        
+FLUORENE    EXH EXH__86737         883   N    1.0  N   N     tons/yr          Fluorene Exhaust                                                                
+BENZOKFLU       207089            1610   N    1.0  N   N     tons/yr          Benzo[k]Fluoranthene                                                            
+BENZOKFLU   EXH EXH__207089       1610   N    1.0  N   N     tons/yr          Benzo[k]Fluoranthene Exhaust                                                    
+BENZOGHIP   EXH EXH__191242        858   N    1.0  N   N     tons/yr          Benzo[g,h,i,]Perylene Exhaust                                                   
+BENZOGHIP       191242             858   N    1.0  N   N     tons/yr          Benzo[g,h,i,]Perylene                                                           
+PHENANTHR   EXH EXH__85018         902   N    1.0  N   N     tons/yr          Phenanthrene                                                                    
+PHENANTHR       85018              902   N    1.0  N   N     tons/yr          Phenanthrene                                                                    
+ACENAPHTY   EXH EXH__208968        847   N    1.0  N   N     tons/yr          Acenaphthylene                                                                  
+ACENAPHTY       208968             847   N    1.0  N   N     tons/yr          Acenaphthylene                                                                  
+BENZOBFLU       205992            1171   N    1.0  N   N     tons/yr          Benzo[b]Fluoranthene                                                            
+BENZOBFLU   EXH EXH__205992       1171   N    1.0  N   N     tons/yr          Benzo[b]Fluoranthene                                                            
+PCRESOL         106445             646   N    1.0  N   N     tons/yr          Cresol/Cresylic acid (mixed isomers), PM                                        
+OCRESOL         95487              618   N    1.0  N   N     tons/yr          o-Cresol                                                                        
+OLE             OLE                      Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+MCRESOL         108394             523   N    1.0  N   N     tons/yr          m-Cresol                                                                        
+CRESOL          1319773            381   N    1.0  N   N     tons/yr          Cresol/Cresylic acid (mixed isomers), PM                                        
+STYRENE     EXH EXH__100425        698   N    1.0  N   N     tons/yr          Styrene                                                                         
+STYRENE         100425             698   N    1.0  N   N     tons/yr          Styrene                                                                         
+DIMTHYLPHTH     131113             419   N    1.0  N   N     tons/yr          Dimethyl phthalate                                                              
+ACETOPHEN       98862              976   N    1.0  N   N     tons/yr          Acetophenone                                                                    
+ETHGLYCOL       107211             455   N    1.0  N   N     tons/yr          Ethylene glycol                                                                 
+MTBE            1634044            548   N    1.0  N   N     tons/yr          Methyl tert butyl ether                                                         
+MTBE        EVP EVP__1634044       548   N    1.0  N   N     tons/yr          Methyl tert butyl ether                                                         
+MTBE        EXH EXH__1634044       548   N    1.0  N   N     tons/yr          Methyl tert butyl ether EXHAUST                                                 
+MTBE        RFL RFL__1634044       548   N    1.0  N   N     tons/yr          Methyl tert butyl ether RFL                                                     
+ETHYLBENZ   EVP EVP__100414        449   N    1.0  N   N     tons/yr          Ethylbenzene Evap                                                               
+ETHYLBENZ   RFL RFL__100414        449   N    1.0  N   N     tons/yr          Ethylbenzene Refuel                                                             
+ETHYLBENZ       100414             449   N    1.0  N   N     tons/yr          Ethylbenzene                                                                    
+ETHYLBENZ   EXH EXH__100414        449   N    1.0  N   N     tons/yr          Ethylbenzene                                                                    
+ETHYLCHLRD      75003              443   N    1.0  N   N     tons/yr          Ethyl Chloride (Chloroethane)                                                   
+BENZAANTH       56553              854   N    1.0  N   N     tons/yr          Benz[a]Anthracene                                                               
+BENZAANTH   EXH EXH__56553         854   N    1.0  N   N     tons/yr          Benz[a]Anthracene                                                               
+PROPYLENEOX     75569              687   N    1.0  N   N     tons/yr          Propylene oxide                                                                 
+HEXANE          110543             601   N    1.0  N   N     tons/yr          Hexane                                                                          
+HEXANE      EXH EXH__110543        601   N    1.0  N   N     tons/yr          Hexane                                                                          
+HEXANE      EVP EVP__110543        601   N    1.0  N   N     tons/yr          Hexane EVP                                                                      
+HEXANE      RFL RFL__110543        601   N    1.0  N   N     tons/yr          Hexane RFL(nonroad)                                                             
+BENZOEPYRNE     192972             857   N    1.0  N   N     tons/yr          Benzo[e]Pyrene                                                                  
+MMA             80626              541   N    1.0  N   N     tons/yr          Methyl methacrylate                                                             
+VINYLACET       108054             768   N    1.0  N   N     tons/yr          Vinyl acetate                                                                   
+DEHP            117817             394   N    1.0  N   N     tons/yr          Bis(2-ethylhexyl)phthalate (DEHP), gas                                          
+BIPHENYL        92524              860   N    1.0  N   N     tons/yr          Biphenyl                                                                        
+MIBK            108101             539   N    1.0  N   N     tons/yr          Methyl isobutyl ketone (Hexone)                                                 
+DIMTHYFORM      68122              418   N    1.0  N   N     tons/yr          Dimethyl formamide                                                              
+PHENOL          108952             663   N    1.0  N   N     tons/yr          Phenol                                                                          
+CHLROBZNE       108907             340   N    1.0  N   N     tons/yr          Chlorobenzene                                                                   
+MEK             78933              536   N    1.0  N   N     tons/yr          Methyl ethyl ketone (2-Butanone)                                                
+DIBUTYLPHTH     84742              398   N    1.0  N   N     tons/yr          Dibutylphthalate, gas                                                           
+NONHAPTOG                                Y    1.0      N     tons/yr          NONHAPTOG                                                                       
+NONHAPVOC       NONHAPVOC                Y    1.0      N     tons/yr          NONHAPVOC                                                                       
+NONHAPTOG   EVP                          Y    1.0      N     tons/yr          NONHAPTOG                                                                       
+NONHAPTOG   EXH                          Y    1.0      N     tons/yr          NONHAPTOG                                                                       
+NONHAPTOG   EPM                          Y    1.0      N     tons/yr          NONHAPTOG Evap Permeation                                                       
+NONHAPTOG   RFL                          Y    1.0      N     tons/yr          NONHAPTOG refueling                                                             
+NONHAPVOC   EXH                          Y    1.0      N     tons/yr          NONHAPVOC                                                                       
+NONHAPVOC   EVP                          Y    1.0      N     tons/yr          NONHAPVOC                                                                       
+NONHAPVOC   BIO                          Y    1.0      N     tons/yr          NONHAPVOC                                                                       
+VOC_INV         VOC                      Y    1.0      N     tons/yr                                                                                          !added for HDGHG to match TR1
+VOC_INV     EVP EVP__VOC                 Y    1.0      N     tons/yr                                                                                          !removed _INV suffix for HDGHG, matches TR1
+VOC_INV     EXH EXH__VOC                 Y    1.0      N     tons/yr                                                                                          !removed _INV suffix for HDGHG, matches TR1
+VOC_INV     RFL RFL__VOC                 Y    1.0      N     tons/yr                                                                                          !removed _INV suffix for HDGHG, matches TR1
+VOC_INV     EPM EPM__VOC                 Y    1.0      N     tons/yr          VOC Evap Permeation                                                             
+NONHAPVOC   RFL                          Y    1.0      N     tons/yr                                                                                          
+ANTIMONY        1345046                  N 0.7618  N   N     tons/yr          Antimony, PM                                                                    
+NONHAPVOC   EPM                          Y    1.0      N     tons/yr          NONHAPVOC Evap Permeation                                                       
+ANTIMONY        92                       N    1.0  N   N     tons/yr          Antimony, PM                                                                    
+ANTIMONY        1327339                  N 0.7933  N   N     tons/yr          Antimony, PM                                                                    
+ANTIMONY        10025919                 N 0.5337  N   N     tons/yr          Antimony, PM                                                                    
+ANTIMONY        7440360            296   N    1.0  N   N     tons/yr          Antimony, PM                                                                    
+ANTIMONY        7783702                  N 0.5618  N   N     tons/yr          Antimony, PM                                                                    
+ANTIMONY        16925250                 N 0.4706  N   N     tons/yr          Antimony, PM                                                                    
+ANTIMONY        1309644                  N 0.8353  N   N     tons/yr          Antimony, PM                                                                    
+ARSENIC     EXH EXH__7440382             N    1.0  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         7440382            298   N    1.0  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         7784409                  N 0.2146  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         7778394                  N 0.5278  N   N     tons/yr          Arsenic, PM                                                                     
+ARSINE          7784421                  N    1.0  N   N     tons/yr          Arsine                                                                          
+ARSENIC         1327533                  N 0.7574  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         3141126                  N 0.3566  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         10031137                 N 0.3832  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         93                       N    1.0  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         EXH__93                  N    1.0  N   N     tons/yr          Arsenic, PM                                                                     
+ARSENIC         1303282                  N 0.6519  N   N     tons/yr          Arsenic, PM                                                                     
+GLYCOLETHR      3775857                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112492                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      111762             310   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      16672392                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      1589497                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      23436193                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      4206615                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      171                      N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      10137969                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      111773             534   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      20706256                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      764487                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      1002671                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      27310210                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      2807309            458   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112356                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112152                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      18912806                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112254                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      3121617                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHN      112276            2261   N    1.0  N   N     tons/yr          Glycol ethers, nonHAP                                                           
+GLYCOLETHR      112345                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      7529273                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112367                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112072             456   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      10215335                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      4439241                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      110714                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      110496             457   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      120558                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      109864             180   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      10143530                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      7795917                  N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      10143563                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      110805             172   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      693210                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      929373                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      122996             664   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      124174             407   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      622082                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      67425                    N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      10143541                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      10137981                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      111966                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112505                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      112594                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      140056                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      23495127                 N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      629141                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      143226            2262   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      764998                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      111104                   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      111159             173   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+GLYCOLETHR      111900             331   N    1.0  N   N     tons/yr          Glycol ethers, gas                                                              
+HEPTACHLOR      76448                    N    1.0  N   N     tons/yr          Heptachlor, gas                                                                 
+BENZOBKFLUR     102                      N    1.0  N   N     tons/yr          Benzo[b+k]Fluoranthene                                                          
+SELENIUM        7488564                  N 0.5518  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        7782492            693   N    1.0  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        253                      N    1.0  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        7446084                  N 0.7116  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        7446346                  N 0.7114  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        7783791                  N 0.4092  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        7783008                  N 0.6122  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        12640890                 N 0.8315  N   N     tons/yr          Selenium, PM                                                                    
+SELENIUM        7783075                  N 0.9751  N   N     tons/yr          Selenium, PM                                                                    
+CYANIDEC        151508                   N  0.415  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        144                      N    1.0  N   N     tons/yr          Cyanide Compounds, gas                                                          
+CYANIDEC        143339                   N 0.5516  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        140294                   N 0.2307  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        13967505                 N 0.0938  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        13943583                 N 0.4402  N   N     tons/yr          Cyanide Compounds, gas                                                          
+CYANIDEC        14220178                 N 0.4486  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        506649                   N 0.2018  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        37187647                 N 0.1212  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        78820                    N 0.3911  N   N     tons/yr          Cyanide Compounds, gas                                                          
+CYANIDEC        544923                   N 0.3021  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        57125                    N    1.0  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        557211                   N 0.4601  N   N     tons/yr          Cyanide Compounds, PM                                                           
+CYANIDEC        74908                    N    1.0  N   N     tons/yr          Cyanide Compounds, gas                                                          
+RADIONUCS       606                      N    1.0  N   N     tons/yr          Radionuclides (including radon), gas                                            
+RADIONUCS       7440611            765   N    1.0  N   N     tons/yr          Radionuclides (Including Radon), gas                                            
+RADIONUCS       10043660                 N    1.0  N   N     tons/yr          Radionuclides (including radon), gas                                            
+RADIONUCS       400                      N    1.0  N   N     tons/yr          Radionuclides (including radon), gas                                            
+RADIONUCS       605                      N    1.0  N   N     tons/yr          Radionuclides (including radon), gas                                            
+COBALT          139                      N    1.0  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          1317426                  N 0.6477  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          7542098                  N 0.4873  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          1307966                  N 0.7865  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          1308061                  N 0.2447  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          16842038                 N 0.3471  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          13586828                 N 0.2056  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          1345160                  N 0.3332  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          7440484            379   N    1.0  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          136527                   N 0.2056  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          61789513                 N 0.1448  N   N     tons/yr          Cobalt , PM                                                                     
+COBALT          10124433                 N 0.3753  N   N     tons/yr          Cobalt , PM                                                                     
+DIOXINFURAN     72918219                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     51207319                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     70648269                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     41903575                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     600                      N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     626                      N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     55684941                 N    1.0  N   N     tons/yr          Dioxins/Furans (total, non TEQ)                                                 
+DIOXINFURAN     57653857                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     67562394                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     55673897                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     136677106                N    1.0  N   N     tons/yr          Dioxins/Furans (total, non TEQ)                                                 
+DIOXINFURAN     136677093                N    1.0  N   N     tons/yr          Dioxins/Furans (total, non TEQ)                                                 
+DIOXINFURAN     57117449                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     57117314                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     627                      N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     34465468                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     19408743                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     3268879                  N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     30402154                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     30402143                 N    1.0  N   N     tons/yr          Dioxins/Furans (total, non TEQ)                                                 
+DIOXINFURAN     155                      N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     262124                   N    1.0  N   N     tons/yr          Dioxins/Furans (total, non TEQ)                                                 
+DIOXINFURAN     1746016                  N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     57117416                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     40321764                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     60851345                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     39227286                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     35822469                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     38998753                 N    1.0  N   N     tons/yr          Dioxins/Furans (total, non TEQ)                                                 
+DIOXINFURAN     37871004                 N    1.0  N   N     tons/yr          Dioxins/Furans (total, non TEQ)                                                 
+DIOXINFURAN     36088229                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     39001020                 N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__57117314            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__55673897            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__40321764            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__57117416            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__57117449            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__57653857            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__60851345            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__67562394            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__70648269            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__72918219            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__19408743            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__51207319            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__3268879             N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__35822469            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__39001020            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__39227286            N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+DIOXINFURAN     EXH__1746016             N    1.0  N   N     tons/yr          Dioxins/Furans as 2,3,7,8TCCD TEQ                                               
+COKEOVEN        142                      N    1.0  N   N     tons/yr          Coke Oven Emissions, PM                                                         
+COKEOVEN        140                      N    1.0  N   N     tons/yr          Coke Oven Emissions, PM                                                         
+COKEOVEN        141                      N    1.0  N   N     tons/yr          Coke Oven Emissions, PM                                                         
+COALTAR         8007452           2031   N    1.0  N   N     tons/yr          Coal Tar                                                                        
+TITATETRA       7550450                  N    1.0  N   N     tons/yr          Titanium tetrachloride                                                          
+PROPOXUR        114261             166   N    1.0  N   N     tons/yr          Propoxur (Baygon), gas                                                          
+NITROCHRYS6     7496028            927   N    1.0  N   N     tons/yr          6-Nitrochrysene                                                                 
+PAH7            75                       N    1.0  N   N     tons/yr          7-PAH                                                                           
+ACETONIT        75058             1902   N    1.0  N   N     tons/yr          Acetonitrile                                                                    
+BROMOFORM       75252                    N    1.0  N   N     tons/yr          Bromoform                                                                       
+ETHIDDICHLD     75343               16   N    1.0  N   N     tons/yr          Ethylidene dichloride                                                           
+ACRYLMID        79061              284   N    1.0  N   N     tons/yr          Acrylamide                                                                      
+TRICLA112       79005                7   N    1.0  N   N     tons/yr          Trichloroethane, 1,1,2-                                                         
+DICHLBZD33P     91941                    N    1.0  N   N     tons/yr          Dichlorobenzidene, 3,3'- , gas                                                  
+VINYLIDCL       75354               17   N    1.0  N   N     tons/yr          Vinylidene chloride                                                             
+PHOSGENE        75445                    N    1.0  N   N     tons/yr          Phosgene                                                                        
+HEXCHLPNTD      77474                    N    1.0  N   N     tons/yr          Hexachlorocyclopentadiene                                                       
+ISOPHORONE      78591              510   N    1.0  N   N     tons/yr          Isophorone                                                                      
+PHOSPHINE       7803512                  N    1.0  N   N     tons/yr          Phosphine                                                                       
+MTHYLANTHC9     779022             895   N    1.0  N   N     tons/yr          9-Methyl Anthracene                                                             
+HSNONHAP        7783064            831   N    1.0  N   N     tons/yr          Hydrogen Sulfide                                                                
+PROPYLENIMI     75558                    N    1.0  N   N     tons/yr          Propylenimine (2-Methylaziridine), 1,2-                                         
+DIETHNLAMIN     111422             402   N    1.0  N   N     tons/yr          Diethanolamine                                                                  
+PROPNESLT13     1120714                  N    1.0  N   N     tons/yr          Propanesultone,1,3-                                                             
+DICHLROETET     111444                   N    1.0  N   N     tons/yr          Dichloroethyl ether                                                             
+HF              7664393                  N    1.0  N   N     tons/yr          Hydrogen fluoride (Hydrofluoric acid)                                           
+DIMTHYLSULF     77781                    N    1.0  N   N     tons/yr          Dimethyl sulfate                                                                
+PHOSPHORS       7723140            666   N    1.0  N   N     tons/yr          Phosphorus                                                                      
+ACRYLCACID      79107             1903   N    1.0  N   N     tons/yr          Acrylic acid                                                                    
+MTHYDIAN44P     101779            1896   N    1.0  N   N     tons/yr          Methylenedianiline, 4,4'- , gas                                                 
+QUINONE         106514                   N    1.0  N   N     tons/yr          Quinone                                                                         
+BENZIDINE       92875                    N    1.0  N   N     tons/yr          Benzidine, gas                                                                  
+NITROBIPHL4     92933              924   N    1.0  N   N     tons/yr          Nitrobiphenyl, 4-                                                               
+D24SALTS        94757                    N    1.0  N   N     tons/yr          D, 2,4- (including salts and esters),                                           
+TOLUIDINE       95534                    N    1.0  N   N     tons/yr          Toluidine, o-                                                                   
+BZANTCHRYSN     103                      N    1.0  N   N     tons/yr          Benz(a)Anthracene/Chrysene                                                      
+TOLDIAM24       95807                    N    1.0  N   N     tons/yr          Toluene diamine-2,4                                                             
+NNITROSDIM      62759                    N    1.0  N   N     tons/yr          N-Nitrosodimethylamine                                                          
+STYROXIDE       96093                    N    1.0  N   N     tons/yr          Styrene oxide                                                                   
+PHNYLNDIAMI     106503                   N    1.0  N   N     tons/yr          Phenylenediamine, p-                                                            
+MTHYLDPNLDS     101688             554   N    1.0  N   N     tons/yr          Methylenediphenyl diisocyanate                                                  
+DIBRM3CHLPR     96128                    N    1.0  N   N     tons/yr          Dibromo-3-chloropropane, 1,2-                                                   
+ETHTHUREA       96457                    N    1.0  N   N     tons/yr          Ethylene thiourea                                                               
+BENZOTRICHL     98077                    N    1.0  N   N     tons/yr          Benzotrichloride                                                                
+NITROBNZNE      98953             2206   N    1.0  N   N     tons/yr          Nitrobenzene                                                                    
+MTHLNBS2CHL     101144                   N    1.0  N   N     tons/yr          Methylenebis(2-chloroaniline), 4,4'-                                            
+BENZYLCHLO      100447            1909   N    1.0  N   N     tons/yr          Benzyl chloride                                                                 
+TRICPH245       95954              144   N    1.0  N   N     tons/yr          Trichlorophenol, 2,4,5-                                                         
+TRICPH246       88062                    N    1.0  N   N     tons/yr          Trichlorophenol, 2,4,6-                                                         
+DIMTHYCARB      79447                    N    1.0  N   N     tons/yr          Dimethyl carbamoyl chloride                                                     
+NITROPROPA2     79469                    N    1.0  N   N     tons/yr          Nitropropane, 2-                                                                
+TOXPHENE        8001352                  N    1.0  N   N     tons/yr          Toxaphene                                                                       
+PNTCHLNBZ       82688             2219   N    1.0  N   N     tons/yr          Pentachloronitrobenzene                                                         
+MTHYLPHNAN1     832699             886   N    1.0  N   N     tons/yr          1-Methylphenanthrene                                                            
+PHTHANHYDR      85449             2228   N    1.0  N   N     tons/yr          Phthalic anhydride                                                              
+HEXCHLRBT       87683                    N    1.0  N   N     tons/yr          Hexachlorobutadiene                                                             
+AMINOBIPH       92671                    N    1.0  N   N     tons/yr          Aminobiphenyl, 4-                                                               
+PNTCHLPH        87865                    N    1.0  N   N     tons/yr          Pentachlorophenol, gas                                                          
+CHLACETACD      79118                    N    1.0  N   N     tons/yr          Chloroacetic acid                                                               
+ANISIDINE       90040                    N    1.0  N   N     tons/yr          Anisidine, o-                                                                   
+ALLYLCHL        107051                   N    1.0  N   N     tons/yr          Allyl chloride                                                                  
+MTHYLNAPTLE     90120              105   N    1.0  N   N     tons/yr          1-Methylnaphthalene                                                             
+MTHYLNAP2       91576              196   N    1.0  N   N     tons/yr          2-Methylnaphthalene                                                             
+CHLRONAPTL2     91587                    N    1.0  N   N     tons/yr          2-Chloronaphthalene                                                             
+EPICHLORO       106898            2083   N    1.0  N   N     tons/yr          Epichlorohydrin                                                                 
+EPOXYBUTA12     106887              41   N    1.0  N   N     tons/yr          Epoxybutane, 1,2-                                                               
+CHLROMME        107302                   N    1.0  N   N     tons/yr          Chloromethyl methyl ether                                                       
+TERP            TERP                     Y    1.0      N     tons/yr          pre-speciated in 2006 Canada                                                    
+TERBTYLAC       540885             702   N    1.0  N   N     tons/yr          Tert-butyl Acetate                                                              
+DINITOPYR16     42397648           913   N    1.0  N   N     tons/yr          1,6-Dinitropyrene                                                               
+DINITPYRN18     42397659           915   N    1.0  N   N     tons/yr          1,8-Dinitropyrenea                                                              
+CARBNYLSUL      463581             335   N    1.0  N   N     tons/yr          Carbonyl sulfide                                                                
+CHLROBZLAT      510156                   N    1.0  N   N     tons/yr          Chlorobenzilate, fine PM                                                        
+DINITROPH24     51285                    N    1.0  N   N     tons/yr          Dinitrophenol, 2,4- , gas                                                       
+ETHYLCARBA      51796                    N    1.0  N   N     tons/yr          Ethyl carbamate (Urethane)                                                      
+ETHYLACRYL      140885             441   N    1.0  N   N     tons/yr          Ethyl acrylate                                                                  
+CHLACETPH2      532274                   N    1.0  N   N     tons/yr          Chloroacetophenone, 2-                                                          
+DIMTYLHYD11     57147                    N    1.0  N   N     tons/yr          Dimethyl hydrazine, 1,1-                                                        
+ACTYALFLUR2     53963                    N    1.0  N   N     tons/yr          Acetylaminofluorene, 2- , fine PM                                               
+ALD2            ALD2                     Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+ALDX            ALDX                     Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+CALCIUMCYA      156627                   N    1.0  N   N     tons/yr          Calcium Cyanamide                                                               
+BISCHLROME      542881                   N    1.0  N   N     tons/yr          Bis(chloromethyl) ether                                                         
+NITROPYREN1     5522430            917   N    1.0  N   N     tons/yr          1-Nitropyrene                                                                   
+NITROPHENL4     100027                   N    1.0  N   N     tons/yr          Nitrophenol, 4-                                                                 
+PAR             PAR                      Y    1.0      N     tons/yr          pre-speciated VOC in 2006 Canada                                                
+PARATHION       56382                    N    1.0  N   N     tons/yr          Parathion, gas                                                                  
+MTHYLCHOLA3     56495                    N    1.0  N   N     tons/yr          3-Methylcholanthrene                                                            
+BNZOFLURANS     56832736          1174   N    1.0  N   N     tons/yr          Benzofluoranthenes                                                              
+CHLORMBEN       133904                   N    1.0  N   N     tons/yr          Chloramben                                                                      
+CHLROPRENE      126998            2027   N    1.0  N   N     tons/yr          Chloroprene                                                                     
+DINITROCRES     534521                   N    1.0  N   N     tons/yr          Dinitro-o-cresol, 4,6- , gas                                                    
+DIAZOMTHNE      334883                   N    1.0  N   N     tons/yr          Diazomethane                                                                    
+MTHYLBZAAN9     2381160                  N    1.0  N   N     tons/yr          9-Methylbenz(a)Anthracene                                                       
+METHYLPYRE1     2381217            887   N    1.0  N   N     tons/yr          1-Methylpyrene                                                                  
+MTHYLBZAA12     2422799                  N    1.0  N   N     tons/yr          12-Methylbenz(a)Anthracene                                                      
+POM             246                      N    1.0  N   N     tons/yr          Polycyclic Organic Matter                                                       
+BJFLUORANTH     205823            1722   N    1.0  N   N     tons/yr          B[j]Fluoranthen                                                                 
+BNZOAFLURAN     203338                   N    1.0  N   N     tons/yr          Benzo(a)fluoranthene                                                            
+PAH15           249                      N    1.0  N   N     tons/yr          15-PAH                                                                          
+MTHYLANTRAC     26914181                 N    1.0  N   N     tons/yr          Methylanthracene                                                                
+MTHYLCHYSEN     41637905                 N    1.0  N   N     tons/yr          Methylchrysene                                                                  
+BNZOCPHENAN     195197             864   N    1.0  N   N     tons/yr          Benzo(c)phenanthrene                                                            
+ETHENIMINE      151564                   N    1.0  N   N     tons/yr          Ethyleneimine (Aziridine)                                                       
+DIBNZOAEPYR     192654                   N    1.0  N   N     tons/yr          Dibenzo[a,e]Pyrene                                                              
+DIBNZOALPYR     191300                   N    1.0  N   N     tons/yr          Dibenzo[a,l]Pyrene                                                              
+DIBNZOAHPYR     189640                   N    1.0  N   N     tons/yr          Dibenzo[a,h]Pyrene                                                              
+DIBNZOAIPYR     189559                   N    1.0  N   N     tons/yr          Dibenzo[a,i]Pyrene                                                              
+MTHYLCHYSE5     3697243                  N    1.0  N   N     tons/yr          5-Methylchrysene                                                                
+MINFIB          383                      N    1.0  N   N     tons/yr          Fine mineral fibers, coarse PM                                                  
+PAH16           40                       N    1.0  N   N     tons/yr          16-PAH                                                                          
+TRIFLURAL       1582098            753   N    1.0  N   N     tons/yr          Trifluralin, gas                                                                
+PROPIOLACBT     57578                    N    1.0  N   N     tons/yr          Propiolactone, beta-                                                            
+EOM             284                      N    1.0  N   N     tons/yr          Extractable Organic Matter (EOM)                                                
+TRICBZ124       120821                   N    1.0  N   N     tons/yr          Trichlorobenzene, 1,2,4-                                                        
+DETHLSULFAT     64675                    N    1.0  N   N     tons/yr          Diethyl sulfate                                                                 
+MTHYLBNZPYR     65357699                 N    1.0  N   N     tons/yr          Methylbenzopyrene                                                               
+HEXCHLETHN      67721             2109   N    1.0  N   N     tons/yr          Hexachloroethane                                                                
+DIOXANE14       123911              61   N    1.0  N   N     tons/yr          Dioxane, 1, 4                                                                   
+HEXMTHPHO       680319                   N    1.0  N   N     tons/yr          Hexamethylphosphoramide                                                         
+HYDROQUIN       123319            1756   N    1.0  N   N     tons/yr          Hydroquinone                                                                    
+NNITROSURE      684935                   N    1.0  N   N     tons/yr          N-Nitroso-N-methylurea                                                          
+DIPYLHYZ12      122667                   N    1.0  N   N     tons/yr          Diphenylhydrazine, 1,2-                                                         
+PCB             1336363                  N    1.0  N   N     tons/yr          Polychlorinated biphenyls (Aroclors)                                            
+DINITOTOL24     121142                   N    1.0  N   N     tons/yr          Dinitrotoluene, 2,4-                                                            
+DICHLORVOS      62737                    N    1.0  N   N     tons/yr          Dichlorvos                                                                      
+CATECHOL        120809            1755   N    1.0  N   N     tons/yr          Catechol                                                                        
+MTHYLCHLRF      71556                4   N    1.0  N   N     tons/yr          Methyl chloroform                                                               
+METHOXYCHL      72435                    N    1.0  N   N     tons/yr          Methoxychlor, gas                                                               
+DDE             72559                    N    1.0  N   N     tons/yr          DDE                                                                             
+METHYLBROM      74839              533   N    1.0  N   N     tons/yr          Methyl bromide (Bromomethane)                                                   
+MTHYLIODIDE     74884                    N    1.0  N   N     tons/yr          Methyl iodide (Iodomethane)                                                     
+DIMTYLBZ33P     119937                   N    1.0  N   N     tons/yr          Dimethylbenzidine, 3,3'- , fine PM                                              
+DIMTYOXB33P     119904                   N    1.0  N   N     tons/yr          Dimethoxybenzidine, 3,3'-, gas                                                  
+NNDIETHANIL     121697                   N    1.0  N   N     tons/yr          N,N-Diethyl aniline                                                             
+ACETAMIDE       60355                    N    1.0  N   N     tons/yr          Acetamide                                                                       
+ASBESTOS        1332214                  N    1.0  N   N     tons/yr          Asbestos, fine PM                                                               
+CAPTAN          133062                   N    1.0  N   N     tons/yr          Captan, gas                                                                     
+CHLORDANE       57749                    N    1.0  N   N     tons/yr          Chlordane, gas                                                                  
+DIMTLBZA712     57976                    N    1.0  N   N     tons/yr          7,12-Dimethylbenz[a]Anthracene                                                  
+LINDANE         58899                    N    1.0  N   N     tons/yr          Lindane (all isomers), gas                                                      
+DIBENZOFUR      132649             873   N    1.0  N   N     tons/yr          Dibenzofuran, gas                                                               
+VINYLBROM       593602                   N    1.0  N   N     tons/yr          Vinyl bromide                                                                   
+NNITROSMPH      59892                    N    1.0  N   N     tons/yr          N-Nitrosomorpholine                                                             
+CARBARYL        63252             2024   N    1.0  N   N     tons/yr          Carbaryl, gas                                                                   
+MTHYLHYZIN      60344                    N    1.0  N   N     tons/yr          Methyl hydrazine                                                                
+DIBNZAJACRI     224420                   N    1.0  N   N     tons/yr          Dibenzo[a,j]Acridine                                                            
+NITROFLUOR2     607578                   N    1.0  N   N     tons/yr          2-Nitrofluorene                                                                 
+MINFIB          608                      N    1.0  N   N     tons/yr          Fine mineral fibers, coarse PM                                                  
+MINFIB          613                      N    1.0  N   N     tons/yr          Fine mineral fibers, coarse PM                                                  
+MINFIB          616                      N    1.0  N   N     tons/yr          Fine mineral fibers, coarse PM                                                  
+MINFIB          617                      N    1.0  N   N     tons/yr          Fine mineral fibers, coarse PM                                                  
+MTHYLISOCY      624839                   N    1.0  N   N     tons/yr          Methyl isocyanate                                                               
+PAHTOTAL        130498292                N    1.0  N   N     tons/yr          PAH, total                                                                      
+ANILINE         62533             1906   N    1.0  N   N     tons/yr          Aniline                                                                         
+HEXCHLROBZ      118741             479   N    1.0  N   N     tons/yr          Hexachlorobenzene                                                               
+DIMTHYLAMAZ     60117                    N    1.0  N   N     tons/yr          Dimethyl aminoazobenzene, 4- , fine PM                                          
+NAPHTH_72       NAPHTH_72          611   Y    1.0  Y   N     tons/yr                                                                                          !Keep set to N for MP-lite v4.71 (N3c)=LDGHG, but to Y for V4.7 N1e=HDGHG
+NAPHTH_72       91203_72           611   Y    1.0  Y   N     tons/yr          Naphthalene Exhaust from MOVES at 72 F                                          !Keep set to N for MP-lite v4.71 (N3c)=LDGHG, but to Y for V4.7 N1e=HDGHG

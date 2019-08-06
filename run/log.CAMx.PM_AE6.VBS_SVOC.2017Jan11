@@ -1,0 +1,28 @@
+Running run_sptool.pl
+Dropping camx_pm_vbs_svoc schema
+
+
+Created camx_pm_vbs_svoc schema in sptoolv4_0 database
+Granted permissions on camx_pm_vbs_svoc schema
+Set path successfully to camx_pm_vbs_svoc schema
+Input tables created in camx_pm_vbs_svoc schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = AE6
+control variables: RUN_TYPE = VBS
+control variables: AQM = CAMX
+control variables: OUTPUT = PM
+control variables: SPLITS_OUT = /proj/ie/proj/EMAQ/Platform/SpeciationTool/v4.0/11Jan2017/outputs/gspro.AE6_CAMX.VBS_SVOC.2017Jan11.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in camx_pm_vbs_svoc schema
+
+Completed PM splits calculations
+
+
+Completed output preparations
+SUMMARY:  Number of profiles generated in run camx_pm_vbs_svoc is 125 
+
+Completed writing the output files for run camx_pm_vbs_svoc 
+Finished run_sptool.pl
+
