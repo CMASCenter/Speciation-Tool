@@ -160,26 +160,31 @@ if ( $tablename eq "invtable" )
 
 	$template = "A12A4A17A6A2A2A6A2A2A2A2A4A17A41A40"; 
 }
-elsif ( $tablename eq "gas_profiles" )
+
+elsif ( $tablename eq "profiles" )
 {
-	$sql = "INSERT INTO tbl_gas_profiles \
-				(profile_id, profile_name, quality, controls, date_added, \ 
-				notes, total, master_poll, test_method, norm_basis, composite, \
-				standard, test_year, j_rating, v_rating, d_rating, \ 
-				region, old_profile, sibling, voc_to_tog, data_origin, \
-				primary_prof, description, documentation ) \ 
-	        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        $sql = "INSERT INTO tbl_profiles \
+                                (profile_id, profile_name, profile_type, master_poll, \
+                                total, norm_basis, composite, standard, incl_gas, \
+                                test_year, j_rating, v_rating, d_rating, \
+                                region, samples, lower_size, upper_size, sibling, \
+                                version, voc_to_tog, t_sample, rh_sample, p_loading, o_loading, \
+                                gen_mechanism, sec_equipment, fuel_product,  ms_poll_rate, ms_poll_unit, \
+                                om_to_oc, mass_overage_pct) \
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+
+#                CREATE TABLE tbl_pm_profiles AS\
+#                SELECT p.* FROM tbl_profiles p \
+#                WHERE (p.profile_type LIKE '%PM%' OR
+#                       p.profile_type LIKE '%PM_VBS%' OR
+#                       p.profile_type LIKE '%PM_AE6%');
+
+#                CREATE TABLE tbl_gas_profiles AS\
+#                SELECT p.* FROM tbl_profiles p\
+#                WHERE (p.profile_type LIKE '%GAS%' OR
+#                       p.profile_type LIKE '%GAS_VBS%');";
 }
-elsif ( $tablename eq "pm_profiles" )
-{
-	$sql = "INSERT INTO tbl_pm_profiles \
-				(profile_id, profile_name, quality, controls, date_added, \ 
-				notes, total, master_poll, test_method, norm_basis, composite, \
-				standard, incl_gas, test_year, j_rating, v_rating, d_rating, \ 
-				region, lower_size, upper_size, sibling, data_origin, \
-				primary_prof, description, documentation,type ) \ 
-	        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
-}
+
 elsif ( $tablename eq "mechanism" )
 {
 	#$sql = "INSERT INTO tbl_metadata (keyword, dataval) VALUES ('MECH','$file');";
@@ -210,6 +215,29 @@ elsif ( $tablename eq "species" )
                                 unassign_wt, exempt_wt, volatile_mw, num_carbons, epa_itn, comment ) \
 				VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );";
 }
+
+elsif ( $tablename eq "profile_weights" )
+{
+        $sql = "INSERT INTO tbl_metadata (keyword, dataval) VALUES ('PROFILES','$file');";
+        $sth = $conn ->prepare($sql) or die $conn->errstr;
+        $sth->execute();
+
+        $sql = "INSERT INTO tbl_profile_weights \
+                                (profile_id, specie_id, percent, uncertainty, unc_method, \
+                                analytic_method )\
+                                VALUES (?, ?, ?, ?, ?, ? );";
+
+#                INSERT INTO tbl_pm_profile_weights \
+#                SELECT s.profile_id, s.species_id, s.percent, s.uncertainty, s.unc_method, s.analytic_methos \
+#                FROM tbl_pm_profiles AS pm INNER JOIN tbl_profile_weights as s \
+#                ON pm.profile_id = s.profile_id;
+
+#                INSERT INTO tbl_gas_profile_weights \
+#                SELECT s.profile_id, s.species_id, s.percent, s.uncertainty, s.unc_method, s.analytic_methos \
+#                FROM tbl_gas_profiles AS g INNER JOIN tbl_profile_weights as s \
+#                ON g.profile_id = s.profile_id;";
+}
+
 elsif ( $tablename eq "gas_profile_weights" )
 {
 	$sql = "INSERT INTO tbl_metadata (keyword, dataval) VALUES ('GAS_PROFILES','$file');";

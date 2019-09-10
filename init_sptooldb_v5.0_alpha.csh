@@ -23,10 +23,8 @@
 #      INVTABLE			- invtable
 #      CARBONS			- carbon assignments
 #      PROFILES_STATIC		- static profiles
-#      PROFILES_GAS		- gas profile properties
-#      WEIGHTS_GAS		- gas profile weights
-#      PROFILES_PM		- pm profile properties
-#      WEIGHTS_PM		- pm profile weights
+#      PROFILES                 - gas and pm profile properties
+#      WEIGHTS                  - gas and pm profile weights
 #      SPECIES_PROPERTIES	- species properties
 #      SPECIES_RENAME		- rename species for AQM requirements
 #      CAMX_FCRS		- list of profiles where FPRM is renamed FCRS (CAMx support)
@@ -139,6 +137,11 @@ else
        echo "POSTGRES_BIN = $POSTGRES_BIN"
     endif
 endif
+
+#===========================================================================================
+#  clean import data, remove all non-printable characters
+
+./import_clean.csh
 
 #============================================================================================
 #  drop, create db, create language, create shared schema, grant permissions
@@ -398,14 +401,14 @@ else
    echo 
 endif
 
-set dataset = (gas profiles)
-if $?PROFILES_GAS then
-    echo "Importing $dataset $PROFILES_GAS"
-    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing gas profile properties"  ## log w/ EMF server
-    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB gas_profiles $PROFILES_GAS
+set dataset = (profiles)
+if $?PROFILES then
+    echo "Importing $dataset $PROFILES"
+    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing profile properties"  ## log w/ EMF server
+    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB profiles $PROFILES
     if ( $status != 0 ) then
-        echo "ERROR: perl script failed for importing $dataset file $PROFILES_GAS"
-        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing gas profile properties" -t "e"
+        echo "ERROR: perl script failed for importing $dataset file $PROFILES"
+        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing profile properties" -t "e"
         exit ( 1 )
     endif
 else
@@ -417,52 +420,14 @@ else
    echo 
 endif
 
-set dataset = (gas profile weights)
-if $?WEIGHTS_GAS then
-    echo "Importing $dataset $WEIGHTS_GAS"
-    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing gas profile weights"  ## log w/ EMF server
-    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB gas_profile_weights $WEIGHTS_GAS
+set dataset = (profile weights)
+if $?WEIGHTS then
+    echo "Importing $dataset $WEIGHTS"
+    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing profile weights"  ## log w/ EMF server
+    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB profile_weights $WEIGHTS
     if ( $status != 0 ) then
-        echo "ERROR: perl script failed for importing $dataset file $WEIGHTS_GAS"
-        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing gas profile weights" -t "e"
-        exit ( 1 )
-    endif
-else
-   echo "===>>> WARNING <<<==="
-   echo "===>>> WARNING <<<===        No $dataset file defined for import.  "
-   echo "===>>> WARNING <<<==="
-   echo 
-   echo 
-   echo 
-endif
-
-set dataset = (PM profiles)
-if $?PROFILES_PM then
-    echo "Importing $dataset $PROFILES_PM"
-    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing PM profile properties"  ## log w/ EMF server
-    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB pm_profiles $PROFILES_PM
-    if ( $status != 0 ) then
-        echo "ERROR: perl script failed for importing $dataset file $PROFILES_PM"
-        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing PM profile properties" -t "e"
-        exit ( 1 )
-    endif
-else
-   echo "===>>> WARNING <<<==="
-   echo "===>>> WARNING <<<===        No $dataset file defined for import.  "
-   echo "===>>> WARNING <<<==="
-   echo 
-   echo 
-   echo 
-endif
-
-set dataset = (PM profile weights)
-if $?WEIGHTS_PM then
-    echo "Importing $dataset $WEIGHTS_PM"
-    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing PM profile weights"  ## log w/ EMF server
-    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB pm_profile_weights $WEIGHTS_PM
-    if ( $status != 0 ) then
-        echo "ERROR: perl script failed for importing $dataset file $WEIGHTS_PM"
-        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing PM profile weights" -t "e"
+        echo "ERROR: perl script failed for importing $dataset file $WEIGHTS"
+        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing profile weights" -t "e"
         exit ( 1 )
     endif
 else

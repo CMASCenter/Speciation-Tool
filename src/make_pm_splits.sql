@@ -112,6 +112,18 @@ BEGIN
 
         RAISE NOTICE 'Type of Output is  % ', runOut;
 
+        CREATE TABLE tbl_pm_profiles AS
+        SELECT p.* FROM tbl_profiles p
+        WHERE p.profile_type LIKE '%PM%' OR
+              p.profile_type LIKE '%PM_VBS%' OR
+              p.profile_type LIKE '%PM_AE6%';
+
+        CREATE TABLE tbl_pm_profile_weights AS
+        SELECT w.profile_id, w.specie_id, w.percent, w.uncertainty, w.unc_method, w.analytic_method
+        FROM tbl_pm_profiles p INNER JOIN tbl_profile_weights w
+        ON p.profile_id = w.profile_id;
+
+
      -- Set up the temporary tables required for the calculations --
         tmpInteger := Calcs_CreateTempPMTables();
 
@@ -306,7 +318,8 @@ BEGIN
                 SELECT DISTINCT r.profile_id
                 FROM tmp_raw_profiles r
                 INNER JOIN tbl_pm_profiles p ON p.profile_id = r.profile_id
-                WHERE p.type = '';
+                WHERE p.profile_type != 'PM-AE6';
+
         RAISE NOTICE '      determined list to make AE6-ready... ';
 
         -- compute sulfate --------------------------------------------------------------

@@ -140,6 +140,17 @@ BEGIN
         RAISE NOTICE 'Type of Output is  % ', runOut;
         RAISE NOTICE 'AQM is  % ', runAQM;
 
+        CREATE TABLE tbl_gas_profiles AS
+        SELECT p.* FROM tbl_profiles p
+        WHERE p.profile_type LIKE '%GAS%' OR
+              p.profile_type LIKE '%GAS_VBS%';
+
+        CREATE TABLE tbl_gas_profile_weights AS
+        SELECT p.profile_id, w.specie_id, w.percent, w.uncertainty, w.unc_method, w.analytic_method 
+        FROM tbl_gas_profiles p INNER JOIN tbl_profile_weights w 
+        ON p.profile_id = w.profile_id;
+
+
         -- Set up the temporary tables required for the calculations --
         tmpInteger := Calcs_CreateTempTables();
 

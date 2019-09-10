@@ -126,7 +126,7 @@ SELECT DROP_TABLE('tbl_species');
 CREATE TABLE tbl_species
 (
     specie_id          VARCHAR(20)    NOT NULL,
-    specie_name        VARCHAR(100),
+    specie_name        VARCHAR(500),
     cas                VARCHAR(50),
     epaid              VARCHAR(50),
     saroad             VARCHAR(10),
@@ -148,91 +148,132 @@ CREATE TABLE tbl_species
 CREATE UNIQUE INDEX idx_specie
   ON tbl_species (specie_id);
 
-
-SELECT DROP_TABLE('tbl_gas_profiles');
-CREATE TABLE tbl_gas_profiles
+-- profiles
+SELECT DROP_TABLE('tbl_profiles');
+CREATE TABLE tbl_profiles
 (
     profile_id          VARCHAR(20)     NOT NULL,
     profile_name        VARCHAR(200),
-    quality             VARCHAR(10),
-    controls            VARCHAR(100),
-    date_added          DATE,
-    notes               VARCHAR,
-    total               NUMERIC(10,5),
+    profile_type        VARCHAR(20),
     master_poll         VARCHAR(20),
-    test_method         VARCHAR,
+    total               NUMERIC(10,5),
     norm_basis          VARCHAR(100),
     composite           VARCHAR(2),
     standard            BOOLEAN,
+    incl_gas            BOOLEAN,
     test_year           VARCHAR(50),
     j_rating            NUMERIC(10,2),
     v_rating            NUMERIC(10,2),
     d_rating            NUMERIC(10,2),
     region              VARCHAR(100),
-    old_profile         INTEGER,
-    sibling             VARCHAR(20),
+    samples             VARCHAR(100),
+    lower_size          NUMERIC(10,4),
+    upper_size          NUMERIC(10,4),
+    sibling             VARCHAR(100),
+    version             VARCHAR(5),
     voc_to_tog          NUMERIC(12,7),
-    data_origin         VARCHAR(50),
-    primary_prof        BOOLEAN,
-    description         VARCHAR,
-    documentation       VARCHAR
+    t_sample            NUMERIC(10,2),
+    rh_sample           NUMERIC(10,2),
+    p_loading           NUMERIC(10,2),
+    o_loading           NUMERIC(10,2),
+    gen_mechanism       VARCHAR(100),
+    sec_equipment       VARCHAR(100),
+    fuel_product        VARCHAR(100),
+    ms_poll_rate        NUMERIC(10,2),
+    ms_poll_unit        VARCHAR(10),
+    om_to_oc            NUMERIC(10,2),
+    mass_overage_pct    NUMERIC(15,12)
+
 ) WITHOUT OIDS;
 
-CREATE UNIQUE INDEX idx_gas_profiles
-  ON tbl_gas_profiles(profile_id);
+CREATE UNIQUE INDEX idx_profiles
+  ON tbl_profiles(profile_id);
 
-SELECT DROP_TABLE('tbl_pm_profiles');
-CREATE TABLE tbl_pm_profiles
-(
-    profile_id          VARCHAR(20)     NOT NULL,
-    profile_name        VARCHAR(255),
-    quality             VARCHAR(10),
-    controls            VARCHAR(150),
-    date_added          DATE,
-    notes               VARCHAR,
-    total               NUMERIC(10,5),
-    master_poll         VARCHAR(20),
-    test_method         VARCHAR,
-    norm_basis          VARCHAR(100),
-    composite           VARCHAR(2),
-    standard            BOOLEAN,
-    incl_gas		BOOLEAN,
-    test_year           VARCHAR(50),
-    j_rating            NUMERIC(10,2),
-    v_rating            NUMERIC(10,2),
-    d_rating            NUMERIC(10,2),
-    region              VARCHAR(100),
-    lower_size		NUMERIC(10,4),
-    upper_size		NUMERIC(10,4),
-    sibling             VARCHAR(20),
-    data_origin         VARCHAR(50),
-    primary_prof        BOOLEAN,
-    description         VARCHAR,
-    documentation       VARCHAR,
-    type                VARCHAR(20)
-) WITHOUT OIDS;
+-- pm profiles
+-- SELECT DROP_TABLE('tbl_pm_profiles');
+-- CREATE TABLE tbl_pm_profiles
+-- (
+--     profile_id          VARCHAR(20)     NOT NULL,
+--     profile_name        VARCHAR(200),
+--     profile_type        VARCHAR(20),
+--     master_poll         VARCHAR(20),
+--     total               NUMERIC(10,5),
+--     norm_basis          VARCHAR(100),
+--     composite           VARCHAR(2),
+--     standard            BOOLEAN,
+--     incl_gas            BOOLEAN,
+--     test_year           VARCHAR(50),
+--     j_rating            NUMERIC(10,2),
+--     v_rating            NUMERIC(10,2),
+--     d_rating            NUMERIC(10,2),
+--     region              VARCHAR(100),
+--     samples             VARCHAR(100),
+--     lower_size          NUMERIC(10,4),
+--     upper_size          NUMERIC(10,4),
+--     sibling             VARCHAR(20),
+--     version             VARCHAR(5),
+--     voc_to_tog          NUMERIC(12,7),
+--     t_sample            NUMERIC(10,2),
+--     rh_sample           NUMERIC(10,2),
+--     p_loading           NUMERIC(10,2),
+--     o_loading           NUMERIC(10,2),
+--     gen_mechanism       VARCHAR(50),
+--     sec_equipment       VARCHAR(100),
+--     fuel_product        VARCHAR(100),
+--     ms_poll_rate        NUMERIC(10,2),
+--     ms_poll_unit        VARCHAR(10),
+--     om_to_oc            NUMERIC(10,2),
+--     mass_overage_pct    NUMERIC(15,12)
+-- 
+-- ) WITHOUT OIDS;
+-- 
+-- CREATE UNIQUE INDEX idx_pm_profiles
+--   ON tbl_pm_profiles(profile_id);
+-- 
+-- -- gas profiles
+-- SELECT DROP_TABLE('tbl_gas_profiles');
+-- CREATE TABLE tbl_gas_profiles
+-- (
+--     profile_id          VARCHAR(20)     NOT NULL,
+--     profile_name        VARCHAR(200),
+--     profile_type        VARCHAR(20),
+--     master_poll         VARCHAR(20),
+--     total               NUMERIC(10,5),
+--     norm_basis          VARCHAR(100),
+--     composite           VARCHAR(2),
+--     standard            BOOLEAN,
+--     incl_gas            BOOLEAN,
+--     test_year           VARCHAR(50),
+--     j_rating            NUMERIC(10,2),
+--     v_rating            NUMERIC(10,2),
+--     d_rating            NUMERIC(10,2),
+--     region              VARCHAR(100),
+--     samples             VARCHAR(100),
+--     lower_size          NUMERIC(10,4),
+--     upper_size          NUMERIC(10,4),
+--     sibling             VARCHAR(100),
+--     version             VARCHAR(5),
+--     voc_to_tog          NUMERIC(12,7),
+--     t_sample            NUMERIC(10,2),
+--     rh_sample           NUMERIC(10,2),
+--     p_loading           NUMERIC(10,2),
+--     o_loading           NUMERIC(10,2),
+--     gen_mechanism       VARCHAR(100),
+--     sec_equipment       VARCHAR(100),
+--     fuel_product        VARCHAR(100),
+--     ms_poll_rate        NUMERIC(10,2),
+--     ms_poll_unit        VARCHAR(20),
+--     om_to_oc            NUMERIC(10,2),
+--     mass_overage_pct    NUMERIC(15,12)
+-- 
+-- ) WITHOUT OIDS;
+-- 
+-- CREATE UNIQUE INDEX idx_gas_profiles
+--   ON tbl_gas_profiles(profile_id);
 
-CREATE UNIQUE INDEX idx_pm_profiles
-  ON tbl_pm_profiles(profile_id);
-
--- gas profile weights
-SELECT DROP_TABLE('tbl_gas_profile_weights');
-CREATE TABLE tbl_gas_profile_weights
-(
-    profile_id          VARCHAR(20)     NOT NULL,
-    specie_id           VARCHAR(20)     NOT NULL,
-    percent             NUMERIC(10,6)   NOT NULL,
-    uncertainty         NUMERIC(10,6),
-    unc_method          VARCHAR(100),
-    analytic_method     VARCHAR(500)
-) WITHOUT OIDS;
-
-CREATE UNIQUE INDEX idx_gas_profile_weights
-  ON tbl_gas_profile_weights(profile_id, specie_id);
-
--- pm profile weights
-SELECT DROP_TABLE('tbl_pm_profile_weights');
-CREATE TABLE tbl_pm_profile_weights
+-- profile weights
+SELECT DROP_TABLE('tbl_profile_weights');
+CREATE TABLE tbl_profile_weights
 (
     profile_id          VARCHAR(20)     NOT NULL,
     specie_id           VARCHAR(20)     NOT NULL,
@@ -242,8 +283,39 @@ CREATE TABLE tbl_pm_profile_weights
     analytic_method     VARCHAR(500)
 ) WITHOUT OIDS;
 
-CREATE UNIQUE INDEX idx_pm_profile_weights
-  ON tbl_pm_profile_weights(profile_id, specie_id);
+CREATE UNIQUE INDEX idx_profile_weights
+  ON tbl_profile_weights(profile_id, specie_id);
+
+-- profile weights
+-- SELECT DROP_TABLE('tbl_pm_profile_weights');
+-- CREATE TABLE tbl_pm_profile_weights
+-- (
+--     profile_id          VARCHAR(20)     NOT NULL,
+--     specie_id           VARCHAR(20)     NOT NULL,
+--     percent             NUMERIC(10,6)   NOT NULL,
+--     uncertainty         NUMERIC(10,6),
+--     unc_method          VARCHAR(100),
+--     analytic_method     VARCHAR(500)
+-- ) WITHOUT OIDS;
+-- 
+-- CREATE UNIQUE INDEX idx_pm_profile_weights
+--   ON tbl_pm_profile_weights(profile_id, specie_id);
+-- 
+-- -- profile weights
+-- SELECT DROP_TABLE('tbl_gas_profile_weights');
+-- CREATE TABLE tbl_gas_profile_weights
+-- (
+--     profile_id          VARCHAR(20)     NOT NULL,
+--     specie_id           VARCHAR(20)     NOT NULL,
+--     percent             NUMERIC(10,6)   NOT NULL,
+--     uncertainty         NUMERIC(10,6),
+--     unc_method          VARCHAR(100),
+--     analytic_method     VARCHAR(500)
+-- ) WITHOUT OIDS;
+-- 
+-- CREATE UNIQUE INDEX idx_gas_profile_weights
+--   ON tbl_gas_profile_weights(profile_id, specie_id);
+-- 
 
 -- static split factors
 SELECT DROP_TABLE('tbl_static');

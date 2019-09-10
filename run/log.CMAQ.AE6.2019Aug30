@@ -1,0 +1,29 @@
+Running run_sptool.pl
+
+
+Created cmaq_ae6 schema in sptoolv5_0alpha_t0 database
+Granted permissions on cmaq_ae6 schema
+Set path successfully to cmaq_ae6 schema
+Input tables created in cmaq_ae6 schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = AE6
+control variables: RUN_TYPE = CRITERIA
+control variables: AQM = CMAQ
+control variables: OUTPUT = PM
+control variables: SPLITS_OUT = /disk43/sptool/wa5_02.2018/deliverables/Speciation-Tool/outputs/gspro.AE6.CMAQ.2019Aug30.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in cmaq_ae6 schema
+NOTICE:  ======== Speciation Tool v5.0 alpha ========
+NOTICE:    
+NOTICE:  Type of Output is  PM 
+NOTICE:  Type of run is  CRITERIA 
+NOTICE:  Mechanism basis is  AE6 
+NOTICE:  ...establishing mechanism
+NOTICE:  ...establishing profile weights
+NOTICE:        determined list to make AE6-ready... 
+NOTICE:        computed sulfate ... 
+NOTICE:        computed PH2O ... 
+DBD::Pg::st execute failed: ERROR:  duplicate key violates unique constraint "idx_tmp_raw_profiles" at /disk43/sptool/wa5_02.2018/deliverables/Speciation-Tool/src/run_sptool.pl line 283.
+ERROR generating split factors: ERROR:  duplicate key violates unique constraint "idx_tmp_raw_profiles" at /disk43/sptool/wa5_02.2018/deliverables/Speciation-Tool/src/run_sptool.pl line 283.
