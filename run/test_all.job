@@ -7,45 +7,45 @@
 # 	Run control file
 
 set TODAY = `date +%Y%b%d`
-set OUTDIR = /disk43/sptool/wa5_02.2018/deliverables/Speciation-Tool/outputs
+set OUTDIR = /disk43/sptool/wa5_02.2019/Speciation-Tool/outputs
 mkdir -p $OUTDIR
 
 
-echo "==================================================================================="
-printf "              CMAQ AE6 criteria "
-date
-
-cat > RUNCTL << IEOF
-mech_basis,AE6
-run_type,CRITERIA
-AQM,CMAQ
-output,PM
-splits_out,$OUTDIR/gspro.AE6.CMAQ.$TODAY.txt
-IEOF
-
-perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae6 RUNCTL >& log.CMAQ.AE6.$TODAY
-date
-
-
-#echo " "
 #echo "==================================================================================="
-#printf "              CAMx CB6 criteria "
+#printf "              CMAQ AE6 criteria "
 #date
 #
 #cat > RUNCTL << IEOF
-#mech_basis,CB6
+#mech_basis,AE6
 #run_type,CRITERIA
-#AQM,CAMX
-#output,VOC
-#splits_out,$OUTDIR/gspro.CB6_criteria.CAMx.$TODAY.txt
-#cnv_out,$OUTDIR/gscnv.CB6_criteria.CAMx.$TODAY.txt
+#AQM,CMAQ
+#output,PM
+#splits_out,$OUTDIR/gspro.AE6.CMAQ.$TODAY.txt
 #IEOF
 #
-#perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb6_criteria RUNCTL >& log.CAMx.CB6_criteria.$TODAY
+#perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae6 RUNCTL >& log.CMAQ.AE6.$TODAY
 #date
-#
-#
-#
+
+
+echo " "
+echo "==================================================================================="
+printf "              CAMx CB6 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6
+run_type,CRITERIA
+AQM,CAMX
+output,VOC
+splits_out,$OUTDIR/gspro.CB6_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6_criteria.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb6_criteria RUNCTL >& log.CAMx.CB6_criteria.$TODAY
+date
+
+
+
 #echo "==================================================================================="
 #printf "              CMAQ CB6 criteria "
 #date

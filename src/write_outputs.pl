@@ -283,6 +283,7 @@ else
 {
 #	die "Error - no CNV output file specified in run control table";
     $outGScnv = "../outputs/gscnv_${outExt}";
+    print($outGScnv)
 }
 $sth->finish;
 

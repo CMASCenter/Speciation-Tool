@@ -53,21 +53,22 @@ setenv PERL_DBI Pg		# Perl/Postgres interface must be set !!!!!
 # SPTOOL_HOME must be set to the location of the Speciation Tool home directory. This is the
 #             full pathname of where the Speciation Tool will be installed.
 #             (The directory where init_sptooldb_v3.2.csh resides).
-setenv SPTOOL_HOME	/disk43/sptool/wa5_02.2018/deliverables/Speciation-Tool 	# Speciation Tool top level directory
+setenv SPTOOL_HOME	/disk43/sptool/wa5_02.2019/Speciation-Tool 	# Speciation Tool top level directory
 
 setenv SPTOOL_SRC_HOME	$SPTOOL_HOME/src		# Speciation Tool source code directory
 
-setenv SPTOOL_DB	sptoolv5_0alpha_t0			# Speciation Tool Database name 
+setenv SPTOOL_DB	sptoolv5_0alpha_t1			# Speciation Tool Database name 
 
 
 # <Speciation Tool 'shared' schema input directory and default data files>
 #
 setenv IDIR		$SPTOOL_HOME/import_data	# input data directory
 #
-setenv MECHANISM		$IDIR/mechanism_forImport_IVOC-NVOL.9oct2018.csv
+#setenv MECHANISM		$IDIR/mechanism_forImport_IVOC-NVOL.9oct2018.csv
+setenv MECHANISM                $IDIR/mechanism_forImport_IVOCP6-SVOCN1.11Sep2019.csv
 setenv MECHANISMPM		$IDIR/mech_pm_ae5_ae6.txt
 setenv MECHANISM_DESCRIPTION	$IDIR/mechanism_description.29sep2017.txt
-setenv CARBONS			$IDIR/carbons_all_mechanisms_29sep2017.csv
+setenv CARBONS			$IDIR/carbons_all_mechanisms_12Oct2017.csv
 setenv INVTABLE			$IDIR/invtable_hapcap_cb05soa_25may2011_v13.txt
 setenv PROFILES_STATIC		$IDIR/static_19aug07.csv
 setenv SPECIES_RENAME		$IDIR/aqm_poll_rename.csv
