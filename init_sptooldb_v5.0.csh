@@ -142,7 +142,7 @@ endif
 #  clean import data, remove all non-printable characters
 
 source import_clean.csh
-
+#csh import_clean.csh
 #============================================================================================
 #  drop, create db, create language, create shared schema, grant permissions
 #

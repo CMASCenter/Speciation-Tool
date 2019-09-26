@@ -7,6 +7,7 @@ SOA_CB6CAMX6P2,"SOA mechanism used in CAMx v6.2",N,"Ramboll Environ created this
 SOA_CAMX45_SP99,"SOA mechanism used in CAMx v4.5",N,"ENVIRON created this mechanism assignment based on SAPRC99 ARO1 and ARO2 assignments. 09-12-2007","",""
 AE5,"PM2.5 aero v5","Y","Defined in Speciation Tool Updates for PM - FY11 provided by EPA, M Strumm","",""
 AE6,"PM2.5 aero v6","Y","Defined in Speciation Tool Updates for PM - FY11 provided by EPA, M Strumm","",""
+AE6_VBS,"PM2.5 aero v6 with VBS","Y","Defined in Speciation Tool Updates for PM - FY11 provided by EPA, M Strumm","",""
 SAPRC99B,"SAPRC99 (updated emissions asn)",Y,"Created from emitdb.xls on 12/15/2011. From Carter website.","","These assignments differ from those used for SAPRC99 prior to 2008 because of revised assignments for some compounds and mixtures and because acids are now represented explicitly. The mechanism itself and its lumping methods (other than for acids) is unchanged."
 SAPRC07,"SAPRC07 (12/31 version - CARB)",Y,"Created from emitdb.xls on 12/15/2011.  Mechanism added 2/2008","",""
 CS07,"Condensed SAPRC07 (5/27/08 version - Draft CARB report)",Y,"Created from emitdb.xls on 12/15/2011.  Mechanism added 5/27/08","",""

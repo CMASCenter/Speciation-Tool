@@ -114,15 +114,18 @@ BEGIN
 
         CREATE TABLE tbl_pm_profiles AS
         SELECT p.* FROM tbl_profiles p
-        WHERE p.profile_type LIKE '%PM%' OR
-              p.profile_type LIKE '%PM_VBS%' OR
-              p.profile_type LIKE '%PM_AE6%';
+       WHERE p.profile_type LIKE '%PM%' OR
+               p.profile_type LIKE '%PM-VBS%' OR
+               p.profile_type LIKE '%PM-AE6%';
+
+       RAISE NOTICE ' PM Profiles imported ';
 
         CREATE TABLE tbl_pm_profile_weights AS
         SELECT w.profile_id, w.specie_id, w.percent, w.uncertainty, w.unc_method, w.analytic_method
         FROM tbl_pm_profiles p INNER JOIN tbl_profile_weights w
         ON p.profile_id = w.profile_id;
 
+        RAISE NOTICE ' PM Species imported ';
 
      -- Set up the temporary tables required for the calculations --
         tmpInteger := Calcs_CreateTempPMTables();
@@ -146,8 +149,10 @@ BEGIN
 	runType := UPPER(runType);
         IF ( runType LIKE criteria ) THEN
 	    RAISE NOTICE 'Type of run is  % ', runType;
+
 	ELSIF ( runType LIKE vbs ) THEN
 	    RAISE NOTICE 'Type of run is CRITERIA with % ', runType;
+
         ELSE
 	    RAISE NOTICE 'Type of run is  % ', runType;
 	    RAISE NOTICE 'ERROR:  Only CRITERIA and VBS are supported for PM outputs.  Change run type and rerun. ';
@@ -155,6 +160,7 @@ BEGIN
                    VALUES ('error','Invalid RUN_TYPE specified in run_control for PM processing');
 	    RETURN;
         END IF;
+        
 
      -- get the mechanism basis for this run --
 	SELECT  INTO runMechanism dataval
@@ -318,7 +324,7 @@ BEGIN
                 SELECT DISTINCT r.profile_id
                 FROM tmp_raw_profiles r
                 INNER JOIN tbl_pm_profiles p ON p.profile_id = r.profile_id
-                WHERE p.profile_type != 'PM-AE6';
+                WHERE p.profile_type = 'PM';
 
         RAISE NOTICE '      determined list to make AE6-ready... ';
 
@@ -607,7 +613,7 @@ BEGIN
         INSERT INTO tmp_profile_list (profile_id)
                         SELECT DISTINCT profile_id
                         FROM tbl_pm_profiles
-                        WHERE type <> 'Simplified';
+                        WHERE profile_type <> 'PM-Simplified';
 
 	RAISE NOTICE '...calculate PCL ' ;
         TRUNCATE tmp_ion_profiles; 

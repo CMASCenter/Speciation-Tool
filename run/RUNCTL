@@ -1,6 +1,5 @@
-mech_basis,CB6
+mech_basis,AE6_VBS
 run_type,CRITERIA
-AQM,CAMX
-output,VOC
-splits_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gspro.CB6_criteria.CAMx.2019Sep20.txt
-cnv_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gscnv.CB6_criteria.CAMx.2019Sep20.txt
+AQM,CMAQ
+output,PM
+splits_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gspro.AE6.VBS.CMAQ.2019Sep26.txt
