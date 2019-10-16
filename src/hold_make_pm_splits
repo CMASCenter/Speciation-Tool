@@ -134,8 +134,10 @@ BEGIN
 	runType := UPPER(runType);
         IF ( runType LIKE criteria ) THEN
 	    RAISE NOTICE 'Type of run is  % ', runType;
+
 	ELSIF ( runType LIKE vbs ) THEN
 	    RAISE NOTICE 'Type of run is CRITERIA with % ', runType;
+
         ELSE
 	    RAISE NOTICE 'Type of run is  % ', runType;
 	    RAISE NOTICE 'ERROR:  Only CRITERIA and VBS are supported for PM outputs.  Change run type and rerun. ';
@@ -143,6 +145,7 @@ BEGIN
                    VALUES ('error','Invalid RUN_TYPE specified in run_control for PM processing');
 	    RETURN;
         END IF;
+        
 
      -- get the mechanism basis for this run --
 	SELECT  INTO runMechanism dataval
@@ -151,7 +154,7 @@ BEGIN
 	runMechanism := UPPER(runMechanism);
 	RAISE NOTICE 'Mechanism basis is  % ', runMechanism;
         
-        IF ( runMechanism = 'AE7' ) THEN
+        IF ( runMechanism LIKE '%VBS' ) THEN
             CREATE TABLE tbl_pm_profiles AS
             SELECT p.* FROM tbl_profiles p
             WHERE p.profile_type IN ('PM','PM-AE6','PM-VBS');
@@ -665,10 +668,12 @@ BEGIN
                       INNER JOIN tmp_profile_list p ON p.profile_id = w.profile_id
                       GROUP BY p.profile_id;
 
+
 	--  warning if weight profiles exceed 100 percent for the non-computed compounds --
 	SELECT INTO tmpInteger COUNT(*) 
 		FROM tmp_sums
                 WHERE TRUNC(sum_pct) > 100.
+--                  AND profile_id NOT LIKE '%VBS%';
                   AND profile_id NOT IN (SELECT w.profile_id FROM tmp_vbs_profiles w);
 
 	IF ( tmpInteger > 0 )  THEN
@@ -681,7 +686,7 @@ BEGIN
                             FROM tmp_sums t, tbl_pm_profiles p
                             WHERE t.profile_id = p.profile_id
                               AND TRUNC(sum_pct) > 100. 
-                              AND p.profile_type NOT LIKE 'PM-VBS'
+                              AND p.profile_type NOT LIKE '%PM-VBS%'
 		LOOP    
 			RAISE NOTICE 'WARNING: PROFILE  %  Percent %  %', prfRow.profile_id, prfRow.sum_pct, prfRow.profile_name;
 
@@ -694,6 +699,7 @@ BEGIN
 --	-- delete records from profile list if weight percent sums exceed 100 percent --
 	DELETE FROM tmp_sums
 		WHERE TRUNC(sum_pct,0) > 100
+--                  AND profile_id NOT LIKE '%VBS%';
                   AND profile_id NOT IN (SELECT w.profile_id FROM tmp_vbs_profiles w);
 
 	--  warning if a profile has an element with negative weight percent --
@@ -745,6 +751,12 @@ BEGIN
 		SELECT t.profile_id, 'PM2_5', pmOther, 1.0-(t.sum_pct/100.0)
 		FROM tmp_sums t
                 WHERE t.sum_pct < 100. ;
+--                  AND t.profile_id NOT LIKE '%VBS%';
+
+--        INSERT INTO tmp_pm_splits (profile_id, eminv_poll, aqm_poll, fraction)
+ --               SELECT t.profile_id, 'PM2_5', pmOther, (v.sum_pct/100)-(t.sum_pct/100.0)
+ --               FROM tmp_sums t
+ --               INNER JOIN tmp_sums_vbs v ON t.profile_id = v.profile_id;
 
   -----------------------------------------------------------------------------------------
 	-- adjust AE6 if generating CAMX PM --

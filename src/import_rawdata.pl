@@ -173,23 +173,10 @@ elsif ( $tablename eq "profiles" )
                                 om_to_oc, mass_overage_pct) \
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
-#                CREATE TABLE tbl_pm_profiles AS\
-#                SELECT p.* FROM tbl_profiles p \
-#                WHERE (p.profile_type LIKE '%PM%' OR
-#                       p.profile_type LIKE '%PM_VBS%' OR
-#                       p.profile_type LIKE '%PM_AE6%');
-
-#                CREATE TABLE tbl_gas_profiles AS\
-#                SELECT p.* FROM tbl_profiles p\
-#                WHERE (p.profile_type LIKE '%GAS%' OR
-#                       p.profile_type LIKE '%GAS_VBS%');";
 }
 
 elsif ( $tablename eq "mechanism" )
 {
-	#$sql = "INSERT INTO tbl_metadata (keyword, dataval) VALUES ('MECH','$file');";
-	#$sth = $conn ->prepare($sql) or die $conn->errstr;
-	#$sth->execute();
 
 	$sql = "INSERT INTO tbl_mechanism \
 				(mechanism, specie_id, aqm_poll, moles_per_mole ) \
@@ -227,15 +214,6 @@ elsif ( $tablename eq "profile_weights" )
                                 analytic_method )\
                                 VALUES (?, ?, ?, ?, ?, ? );";
 
-#                INSERT INTO tbl_pm_profile_weights \
-#                SELECT s.profile_id, s.species_id, s.percent, s.uncertainty, s.unc_method, s.analytic_methos \
-#                FROM tbl_pm_profiles AS pm INNER JOIN tbl_profile_weights as s \
-#                ON pm.profile_id = s.profile_id;
-
-#                INSERT INTO tbl_gas_profile_weights \
-#                SELECT s.profile_id, s.species_id, s.percent, s.uncertainty, s.unc_method, s.analytic_methos \
-#                FROM tbl_gas_profiles AS g INNER JOIN tbl_profile_weights as s \
-#                ON g.profile_id = s.profile_id;";
 }
 
 elsif ( $tablename eq "gas_profile_weights" )

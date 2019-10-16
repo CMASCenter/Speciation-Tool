@@ -1,5 +1,5 @@
-mech_basis,AE6_VBS
+mech_basis,AE7
 run_type,CRITERIA
 AQM,CMAQ
 output,PM
-splits_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gspro.AE6.VBS.CMAQ.2019Sep26.txt
+splits_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gspro.AE7.CMAQ.2019Oct16.txt

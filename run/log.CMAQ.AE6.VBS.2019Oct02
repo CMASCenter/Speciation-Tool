@@ -1,0 +1,255 @@
+Running run_sptool.pl
+
+
+Created cmaq_ae6 schema in sptoolv5_0alpha_t1 database
+Granted permissions on cmaq_ae6 schema
+Set path successfully to cmaq_ae6 schema
+Input tables created in cmaq_ae6 schema
+Starting run_control file import
+Getting control values from control file
+control variables: MECH_BASIS = AE6_VBS
+control variables: RUN_TYPE = CRITERIA
+control variables: AQM = CMAQ
+control variables: OUTPUT = PM
+control variables: SPLITS_OUT = /disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gspro.AE6.VBS.CMAQ.2019Oct02.txt
+Completed run_control file import
+
+Imported run control file RUNCTL in cmaq_ae6 schema
+NOTICE:  ======== Speciation Tool v5.0 alpha ========
+NOTICE:    
+NOTICE:  Type of Output is  PM 
+NOTICE:  Type of run is  CRITERIA 
+NOTICE:  Mechanism basis is  AE6_VBS 
+NOTICE:   PM Profiles imported 
+NOTICE:   PM Species imported 
+NOTICE:  ...establishing mechanism
+NOTICE:  ...establishing profile weights
+NOTICE:        determined list to make AE6-ready... 
+NOTICE:        computed sulfate ... 
+NOTICE:        computed PH2O ... 
+NOTICE:        computed MO ... 
+NOTICE:        computed PNCOM ... 
+NOTICE:  ... WARNING entire profile renormalized 112012.5
+NOTICE:  ... WARNING entire profile renormalized 112022.5
+NOTICE:  ... WARNING entire profile renormalized 112032.5
+NOTICE:  ... WARNING entire profile renormalized 112042.5
+NOTICE:  ... WARNING entire profile renormalized 113012.5
+NOTICE:  ... WARNING entire profile renormalized 141022.5
+NOTICE:  ... WARNING entire profile renormalized 171232.5
+NOTICE:  ... WARNING entire profile renormalized 201012.5
+NOTICE:  ... WARNING entire profile renormalized 205012.5
+NOTICE:  ... WARNING entire profile renormalized 205022.5
+NOTICE:  ... WARNING entire profile renormalized 211032.5
+NOTICE:  ... WARNING entire profile renormalized 212052.5
+NOTICE:  ... WARNING entire profile renormalized 213012.5
+NOTICE:  ... WARNING entire profile renormalized 213022.5
+NOTICE:  ... WARNING entire profile renormalized 213032.5
+NOTICE:  ... WARNING entire profile renormalized 213042.5
+NOTICE:  ... WARNING entire profile renormalized 213202.5
+NOTICE:  ... WARNING entire profile renormalized 213402.5
+NOTICE:  ... WARNING entire profile renormalized 215012.5
+NOTICE:  ... WARNING entire profile renormalized 241012.5
+NOTICE:  ... WARNING entire profile renormalized 254122.5
+NOTICE:  ... WARNING entire profile renormalized 254172.5
+NOTICE:  ... WARNING entire profile renormalized 257022.5
+NOTICE:  ... WARNING entire profile renormalized 262042.5
+NOTICE:  ... WARNING entire profile renormalized 283012.5
+NOTICE:  ... WARNING entire profile renormalized 283032.5
+NOTICE:  ... WARNING entire profile renormalized 283052.5
+NOTICE:  ... WARNING entire profile renormalized 292022.5
+NOTICE:  ... WARNING entire profile renormalized 292092.5
+NOTICE:  ... WARNING entire profile renormalized 293022.5
+NOTICE:  ... WARNING entire profile renormalized 293042.5
+NOTICE:  ... WARNING entire profile renormalized 293052.5
+NOTICE:  ... WARNING entire profile renormalized 293062.5
+NOTICE:  ... WARNING entire profile renormalized 293072.5
+NOTICE:  ... WARNING entire profile renormalized 293102.5
+NOTICE:  ... WARNING entire profile renormalized 293302.5
+NOTICE:  ... WARNING entire profile renormalized 3283
+NOTICE:  ... WARNING entire profile renormalized 3363
+NOTICE:  ... WARNING entire profile renormalized 3428
+NOTICE:  ... WARNING entire profile renormalized 3433
+NOTICE:  ... WARNING entire profile renormalized 3721
+NOTICE:  ... WARNING entire profile renormalized 3722
+NOTICE:  ... WARNING entire profile renormalized 3723
+NOTICE:  ... WARNING entire profile renormalized 3724
+NOTICE:  ... WARNING entire profile renormalized 3867
+NOTICE:  ... WARNING entire profile renormalized 3873
+NOTICE:  ... WARNING entire profile renormalized 3881
+NOTICE:  ... WARNING entire profile renormalized 3885
+NOTICE:  ... WARNING entire profile renormalized 3894
+NOTICE:  ... WARNING entire profile renormalized 3895
+NOTICE:  ... WARNING entire profile renormalized 3896
+NOTICE:  ... WARNING entire profile renormalized 3932
+NOTICE:  ... WARNING entire profile renormalized 3987
+NOTICE:  ... WARNING entire profile renormalized 3993
+NOTICE:  ... WARNING entire profile renormalized 3995
+NOTICE:  ... WARNING entire profile renormalized 4077
+NOTICE:  ... WARNING entire profile renormalized 411022.5
+NOTICE:  ... WARNING entire profile renormalized 411032.5
+NOTICE:  ... WARNING entire profile renormalized 411042.5
+NOTICE:  ... WARNING entire profile renormalized 411052.5
+NOTICE:  ... WARNING entire profile renormalized 412012.5
+NOTICE:  ... WARNING entire profile renormalized 412032.5
+NOTICE:  ... WARNING entire profile renormalized 412042.5
+NOTICE:  ... WARNING entire profile renormalized 412202.5
+NOTICE:  ... WARNING entire profile renormalized 413042.5
+NOTICE:  ... WARNING entire profile renormalized 413062.5
+NOTICE:  ... WARNING entire profile renormalized 413072.5
+NOTICE:  ... WARNING entire profile renormalized 414012.5
+NOTICE:  ... WARNING entire profile renormalized 4202
+NOTICE:  ... WARNING entire profile renormalized 4241
+NOTICE:  ... WARNING entire profile renormalized 4242
+NOTICE:  ... WARNING entire profile renormalized 4243
+NOTICE:  ... WARNING entire profile renormalized 4244
+NOTICE:  ... WARNING entire profile renormalized 4298
+NOTICE:  ... WARNING entire profile renormalized 4299
+NOTICE:  ... WARNING entire profile renormalized 4300
+NOTICE:  ... WARNING entire profile renormalized 4301
+NOTICE:  ... WARNING entire profile renormalized 4302
+NOTICE:  ... WARNING entire profile renormalized 4303
+NOTICE:  ... WARNING entire profile renormalized 4304
+NOTICE:  ... WARNING entire profile renormalized 4305
+NOTICE:  ... WARNING entire profile renormalized 4306
+NOTICE:  ... WARNING entire profile renormalized 4307
+NOTICE:  ... WARNING entire profile renormalized 4308
+NOTICE:  ... WARNING entire profile renormalized 4309
+NOTICE:  ... WARNING entire profile renormalized 4310
+NOTICE:  ... WARNING entire profile renormalized 431012.5
+NOTICE:  ... WARNING entire profile renormalized 4311
+NOTICE:  ... WARNING entire profile renormalized 4312
+NOTICE:  ... WARNING entire profile renormalized 4313
+NOTICE:  ... WARNING entire profile renormalized 4314
+NOTICE:  ... WARNING entire profile renormalized 4318
+NOTICE:  ... WARNING entire profile renormalized 4319
+NOTICE:  ... WARNING entire profile renormalized 4320
+NOTICE:  ... WARNING entire profile renormalized 4321
+NOTICE:  ... WARNING entire profile renormalized 4322
+NOTICE:  ... WARNING entire profile renormalized 4323
+NOTICE:  ... WARNING entire profile renormalized 4324
+NOTICE:  ... WARNING entire profile renormalized 4325
+NOTICE:  ... WARNING entire profile renormalized 4326
+NOTICE:  ... WARNING entire profile renormalized 4327
+NOTICE:  ... WARNING entire profile renormalized 4328
+NOTICE:  ... WARNING entire profile renormalized 4329
+NOTICE:  ... WARNING entire profile renormalized 4330
+NOTICE:  ... WARNING entire profile renormalized 4331
+NOTICE:  ... WARNING entire profile renormalized 4332
+NOTICE:  ... WARNING entire profile renormalized 4333
+NOTICE:  ... WARNING entire profile renormalized 4351
+NOTICE:  ... WARNING entire profile renormalized 4369
+NOTICE:  ... WARNING entire profile renormalized 4370
+NOTICE:  ... WARNING entire profile renormalized 4371
+NOTICE:  ... WARNING entire profile renormalized 4373
+NOTICE:  ... WARNING entire profile renormalized 4375
+NOTICE:  ... WARNING entire profile renormalized 4376
+NOTICE:  ... WARNING entire profile renormalized 4377
+NOTICE:  ... WARNING entire profile renormalized 4378
+NOTICE:  ... WARNING entire profile renormalized 4394
+NOTICE:  ... WARNING entire profile renormalized 4395
+NOTICE:  ... WARNING entire profile renormalized 4397
+NOTICE:  ... WARNING entire profile renormalized 4398
+NOTICE:  ... WARNING entire profile renormalized 4402
+NOTICE:  ... WARNING entire profile renormalized 4408
+NOTICE:  ... WARNING entire profile renormalized 4409
+NOTICE:  ... WARNING entire profile renormalized 441032.5
+NOTICE:  ... WARNING entire profile renormalized 4411
+NOTICE:  ... WARNING entire profile renormalized 4414
+NOTICE:  ... WARNING entire profile renormalized 4746
+NOTICE:  ... WARNING entire profile renormalized 4747
+NOTICE:  ... WARNING entire profile renormalized 4840
+NOTICE:  ... WARNING entire profile renormalized 4859
+NOTICE:  ... WARNING entire profile renormalized 4899
+NOTICE:  ... WARNING entire profile renormalized 4900
+NOTICE:  ... WARNING entire profile renormalized 4901
+NOTICE:  ... WARNING entire profile renormalized 4909
+NOTICE:  ... WARNING entire profile renormalized 4913
+NOTICE:  ... WARNING entire profile renormalized 4916
+NOTICE:  ... WARNING entire profile renormalized 4922
+NOTICE:  ... WARNING entire profile renormalized 4924
+NOTICE:  ... WARNING entire profile renormalized 4925
+NOTICE:  ... WARNING entire profile renormalized 4928
+NOTICE:  ... WARNING entire profile renormalized 4932
+NOTICE:  ... WARNING entire profile renormalized 4938
+NOTICE:  ... WARNING entire profile renormalized 4942
+NOTICE:  ... WARNING entire profile renormalized 4981
+NOTICE:  ... WARNING entire profile renormalized 4982
+NOTICE:  ... WARNING entire profile renormalized 4983
+NOTICE:  ... WARNING entire profile renormalized 4986
+NOTICE:  ... WARNING entire profile renormalized 4987
+NOTICE:  ... WARNING entire profile renormalized 4998
+NOTICE:  ... WARNING entire profile renormalized 4999
+NOTICE:  ... WARNING entire profile renormalized 5566
+NOTICE:  ... WARNING entire profile renormalized 5567
+NOTICE:  ... WARNING entire profile renormalized 5569
+NOTICE:  ... WARNING entire profile renormalized 5571
+NOTICE:  ... WARNING entire profile renormalized 5572
+NOTICE:  ... WARNING entire profile renormalized 5573
+NOTICE:  ... WARNING entire profile renormalized 5574
+NOTICE:  ... WARNING entire profile renormalized 5575
+NOTICE:  ... WARNING entire profile renormalized 5576
+NOTICE:  ... WARNING entire profile renormalized 5577
+NOTICE:  ... WARNING entire profile renormalized 5578
+NOTICE:  ... WARNING entire profile renormalized 5579
+NOTICE:  ... WARNING entire profile renormalized 5580
+NOTICE:  ... WARNING entire profile renormalized 5581
+NOTICE:  ... WARNING entire profile renormalized 5582
+NOTICE:  ... WARNING entire profile renormalized 5583
+NOTICE:  ... WARNING entire profile renormalized 5584
+NOTICE:  ... WARNING entire profile renormalized 5585
+NOTICE:  ... WARNING entire profile renormalized 5586
+NOTICE:  ... WARNING entire profile renormalized 5587
+NOTICE:  ... WARNING entire profile renormalized 5588
+NOTICE:  ... WARNING entire profile renormalized 5589
+NOTICE:  ... WARNING entire profile renormalized 5590
+NOTICE:  ... WARNING entire profile renormalized 5591
+NOTICE:  ... WARNING entire profile renormalized 5593
+NOTICE:  ... WARNING entire profile renormalized 5594
+NOTICE:  ... WARNING entire profile renormalized 5595
+NOTICE:  ... WARNING entire profile renormalized 5596
+NOTICE:  ... WARNING entire profile renormalized 5597
+NOTICE:  ... WARNING entire profile renormalized 5599
+NOTICE:  ... WARNING entire profile renormalized 5600
+NOTICE:  ... WARNING entire profile renormalized 5601
+NOTICE:  ... WARNING entire profile renormalized 5602
+NOTICE:  ... WARNING entire profile renormalized 5603
+NOTICE:  ... WARNING entire profile renormalized 5604
+NOTICE:  ... WARNING entire profile renormalized 5605
+NOTICE:  ... WARNING entire profile renormalized 5607
+NOTICE:  ... WARNING entire profile renormalized 5608
+NOTICE:  ... WARNING entire profile renormalized 5610
+NOTICE:  ... WARNING entire profile renormalized 5611
+NOTICE:  ... WARNING entire profile renormalized 5612
+NOTICE:  ... WARNING entire profile renormalized 5613
+NOTICE:  ... WARNING entire profile renormalized 5614
+NOTICE:  ... WARNING entire profile renormalized 5615
+NOTICE:  ... WARNING entire profile renormalized 5617
+NOTICE:  ... WARNING entire profile renormalized 5672
+NOTICE:  ... WARNING entire profile renormalized 5681
+NOTICE:  ... WARNING entire profile renormalized 900052.5
+NOTICE:  ... WARNING entire profile renormalized 900062.5
+NOTICE:  ... WARNING entire profile renormalized 91003
+NOTICE:  ... WARNING entire profile renormalized 91018
+NOTICE:  ... WARNING entire profile renormalized 95019
+NOTICE:  ... WARNING entire profile renormalized 95072
+NOTICE:  ... WARNING entire profile renormalized 95167
+NOTICE:  ... WARNING entire profile renormalized 95171
+NOTICE:  ... WARNING entire profile renormalized 95175
+NOTICE:  ... WARNING entire profile renormalized 95196
+NOTICE:        renormalized profiles not AE6-ready ... 
+NOTICE:  ...completed make AE6-ready 
+NOTICE:  ...calculating weight percent sum of mechanism compounds
+NOTICE:  ...calculate PCL 
+NOTICE:  ...completed generating PM profiles
+
+Completed PM splits calculations
+
+NOTICE:   Preparing output tables ... 
+NOTICE:      ...rename output AQM pollutants 
+
+Completed output preparations
+SUMMARY:  Number of profiles generated in run cmaq_ae6 is 1568 
+
+Completed writing the output files for run cmaq_ae6 
+Finished run_sptool.pl
+

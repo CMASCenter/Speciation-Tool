@@ -142,9 +142,8 @@ BEGIN
 
         CREATE TABLE tbl_gas_profiles AS
         SELECT p.* FROM tbl_profiles p
---        WHERE p.profile_type LIKE '%GAS%' OR
---              p.profile_type LIKE '%GAS_VBS%';
-        WHERE p.profile_type LIKE '%GAS_VBS%';
+        WHERE p.profile_type IN ('GAS','GAS-VBS');
+        RAISE NOTICE ' PM Profiles imported ';
 
         CREATE TABLE tbl_gas_profile_weights AS
         SELECT p.profile_id, w.specie_id, w.percent, w.uncertainty, w.unc_method, w.analytic_method 
