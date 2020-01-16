@@ -1,0 +1,3 @@
+CB6R3_CF22,"Carbon Bond version 6 for CAMx CF2.2",Y,"ENVIRON Greg Yarwood provided mechanism per spreadsheet Mechanism_mapping_for_SPECIATE5_10Jan2020.xlsx on 10Jan2020","",""
+CB6R3_AE7,"Carbon Bond version 6 for CMAQ AE7",Y,"ENVIRON Greg Yarwood provided mechanism per spreadsheet Mechanism_mapping_for_SPECIATE5_15Jan2020.xlsx on 10Jan2020","",""
+CB05_CF22,"Carbon Bond version 5 for CAMx CF2.2",Y,"ENVIRON Greg Yarwood provided mechanism per spreadsheet Mechanism_mapping_for_SPECIATE5_10Jan2020.xlsx on 10Jan2020","",""
