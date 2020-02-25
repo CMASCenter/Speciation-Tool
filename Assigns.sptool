@@ -64,10 +64,10 @@ setenv SPTOOL_DB	sptoolv5_0alpha_t1			# Speciation Tool Database name
 #
 setenv IDIR		$SPTOOL_HOME/import_data	# input data directory
 #
-setenv MECHANISM                $IDIR/mechanism_forImport.16Jan2020.csv
+setenv MECHANISM                $IDIR/mechanism_forImport.11Feb2020.csv
 setenv MECHANISMPM		$IDIR/mech_pm_ae5_ae6.txt
-setenv MECHANISM_DESCRIPTION	$IDIR/mechanism_description.16Jan2020.txt
-setenv CARBONS			$IDIR/carbons_all_mechanisms_16Jan2020.csv
+setenv MECHANISM_DESCRIPTION	$IDIR/mechanism_description.7Feb2020.txt
+setenv CARBONS			$IDIR/carbons_all_mechanisms_7Feb2020.csv
 setenv INVTABLE			$IDIR/invtable_hapcap_cb05soa_25may2011_v13.txt
 setenv PROFILES_STATIC		$IDIR/static_19aug07.csv
 setenv SPECIES_RENAME		$IDIR/aqm_poll_rename.csv
