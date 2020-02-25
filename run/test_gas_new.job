@@ -1,0 +1,168 @@
+#!/bin/csh -f
+
+# Run the Speciation Tool
+# Perl input arguements:
+# 	SPTOOL_DB - Postgres database name
+# 	Scenario Name
+# 	Run control file
+
+set TODAY = `date +%Y%b%d`
+set OUTDIR = /disk43/sptool/wa5_02.2019/Speciation-Tool/outputs
+mkdir -p $OUTDIR
+
+
+
+#
+#
+echo "==================================================================================="
+printf "              CMAQ CB6r4_cf2 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6R4_CF2
+run_type,CRITERIA
+AQM,CAMx
+output,VOC
+splits_out,$OUTDIR/gspro.CB6r4_cf2_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6r4_cf2_criteria.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb6r4_cf2_criteria RUNCTL >& log.CAMx.CB6r4_cf2_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ CB6r3_ae7 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6R3_AE7
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.CB6r3_ae7_criteria.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6r3_ae7_criteria.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_cb6r3_ae7_criteria RUNCTL >& log.CMAQ.CB6r3_ae7_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ CB05_cf2 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB05_CF2
+run_type,CRITERIA
+AQM,CAMx
+output,VOC
+splits_out,$OUTDIR/gspro.CB05_cf2_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB05_cf2_criteria.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb05_cf2_criteria RUNCTL >& log.CAMx.CB05_cf2_criteria.$TODAY
+date
+
+echo "==================================================================================="
+printf "              CMAQ SAPRC07_cf2 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,SAPRC07_CF2
+run_type,CRITERIA
+AQM,CAMx
+output,VOC
+splits_out,$OUTDIR/gspro.SAPRC07_cf2_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.SAPRC07_cf2_criteria.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_SAPRC07_cf2_criteria RUNCTL >& log.CAMx.SAPRC07_cf2_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ CRI_ae7 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CRI_AE7
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.CRI_ae7_criteria.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CRI_ae7_criteria.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_CRI_ae7_criteria RUNCTL >& log.CMAQ.CRI_ae7_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ SAPRC07TC_ae7 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,SAPRC07TC_AE7
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.SAPRC07TC_ae7_criteria.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.SAPRC07TC_ae7_criteria.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_SAPRC07TC_ae7_criteria RUNCTL >& log.CMAQ.SAPRC07TC_ae7_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ CB6r3_ae8 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6R3_AE8
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.CB6r3_ae8_criteria.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6r3_ae8_criteria.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_cb6r3_ae8_criteria RUNCTL >& log.CMAQ.CB6r3_ae8_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ CRI_ae8 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CRI_AE8
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.CRI_ae8_criteria.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CRI_ae8_criteria.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_CRI_ae8_criteria RUNCTL >& log.CMAQ.CRI_ae8_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CMAQ SAPRC07TC_ae8 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,SAPRC07TC_AE8
+run_type,CRITERIA
+AQM,CMAQ
+output,VOC
+splits_out,$OUTDIR/gspro.SAPRC07TC_ae8_criteria.CMAQ.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.SAPRC07TC_ae8_criteria.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_SAPRC07TC_ae8_criteria RUNCTL >& log.CMAQ.SAPRC07TC_ae8_criteria.$TODAY
+date
+
+
