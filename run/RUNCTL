@@ -1,5 +1,6 @@
-mech_basis,AE7
+mech_basis,SAPRC07TC_AE8
 run_type,CRITERIA
 AQM,CMAQ
-output,PM
-splits_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gspro.AE7.CMAQ.2019Oct16.txt
+output,VOC
+splits_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gspro.SAPRC07TC_ae8_criteria.CMAQ.2020Feb25.txt
+cnv_out,/disk43/sptool/wa5_02.2019/Speciation-Tool/outputs/gscnv.SAPRC07TC_ae8_criteria.CMAQ.2020Feb25.txt
