@@ -143,7 +143,7 @@ BEGIN
         CREATE TABLE tbl_gas_profiles AS
         SELECT p.* FROM tbl_profiles p
         WHERE p.profile_type IN ('GAS','GAS-VBS');
-        RAISE NOTICE ' PM Profiles imported ';
+        RAISE NOTICE ' GAS Profiles imported ';
 
         CREATE TABLE tbl_gas_profile_weights AS
         SELECT p.profile_id, w.specie_id, w.percent, w.uncertainty, w.unc_method, w.analytic_method 
@@ -352,13 +352,13 @@ BEGIN
 
         END IF;  -- non Criteria run
   -----------------------------------------------------------------------------------------
+
         -- check that number of carbons have been defined for each mechanism aqm compound
         FOR aqmRow IN
           SELECT DISTINCT aqm_poll
           FROM tbl_mechanism
           WHERE tbl_mechanism.mechanism = runMechanism
         LOOP
-
           SELECT INTO tmpInteger COUNT(*)
           FROM tbl_carbons
           WHERE aqmRow.aqm_poll = tbl_carbons.aqm_poll
@@ -513,6 +513,7 @@ BEGIN
         -- Establish the mechanism ------------------------------------------------------
         -- set up the temporary mechanism table, incorporate active and tracer toxics
         -- first, include base mechanism
+
         RAISE NOTICE '... establishing mechanism' ;
         INSERT INTO tmp_mechanism
               (mechanism, specie_id, aqm_poll, moles_per_mole)
@@ -520,6 +521,7 @@ BEGIN
         FROM tbl_mechanism
         WHERE tbl_mechanism.mechanism = runMechanism
           AND tbl_mechanism.moles_per_mole > 0.0;
+
 
         -- add records for species with no mechanism definition --
          INSERT INTO tmp_mechanism
