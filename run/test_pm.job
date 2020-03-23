@@ -1,0 +1,58 @@
+#!/bin/csh -f
+
+# Run the Speciation Tool
+# Perl input arguements:
+# 	SPTOOL_DB - Postgres database name
+# 	Scenario Name
+# 	Run control file
+
+set TODAY = `date +%Y%b%d`
+set OUTDIR = /disk43/sptool/wa5_02.2019/Speciation-Tool/outputs
+mkdir -p $OUTDIR
+
+echo "==================================================================================="
+printf "              CMAQ AE7 "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,AE7
+run_type,CRITERIA
+AQM,CMAQ
+output,PM
+splits_out,$OUTDIR/gspro.AE7.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae7 RUNCTL >& log.CMAQ.AE7.$TODAY
+date
+
+
+
+echo "==================================================================================="
+printf "              CMAQ AE6 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,AE6
+run_type,CRITERIA
+AQM,CMAQ
+output,PM
+splits_out,$OUTDIR/gspro.AE6.CMAQ.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae6 RUNCTL >& log.CMAQ.AE6.$TODAY
+date
+
+echo "==================================================================================="
+printf "              CAMx AE6 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,AE6
+run_type,CRITERIA
+AQM,CAMx
+output,PM
+splits_out,$OUTDIR/gspro.AE6.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae6 RUNCTL >& log.CAMx.AE6.$TODAY
+date
