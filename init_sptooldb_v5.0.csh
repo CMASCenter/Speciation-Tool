@@ -477,44 +477,6 @@ else
    echo 
 endif
 
-set dataset = ( ZERO PH2O )
-if $?ZERO_PH2O then
-    echo "Importing $dataset $ZERO_PH2O"
-    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing ZERO PH2O"  ## log w/ EMF server
-    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB  zero_ph2o $ZERO_PH2O
-    if ( $status != 0 ) then
-        echo "ERROR: perl script failed for importing $dataset file $ZERO_PH2O"
-        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing ZERO PH2O profiles" -t "e"
-        exit ( 1 )
-    endif
-else
-   echo "===>>> WARNING <<<==="
-   echo "===>>> WARNING <<<===        No $dataset file defined for import.  "
-   echo "===>>> WARNING <<<==="
-   echo 
-   echo 
-   echo 
-endif
-
-set dataset = ( PNCOM FACS )
-if $?PNCOM_FACS then
-    echo "Importing $dataset $PNCOM_FACS"
-    #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "Importing PNCOM FACS "  ## log w/ EMF server
-    $PERL_BIN/perl $SPTOOL_SRC_HOME/import_rawdata.pl $SPTOOL_DB  pncom_facs $PNCOM_FACS
-    if ( $status != 0 ) then
-        echo "ERROR: perl script failed for importing $dataset file $PNCOM_FACS"
-        #emf#	$EMF_CLIENT -k $EMF_JOBKEY -m "ERROR: perl script failed for importing PNCOM FACS profiles" -t "e"
-        exit ( 1 )
-    endif
-else
-   echo "===>>> WARNING <<<==="
-   echo "===>>> WARNING <<<===        No $dataset file defined for import.  "
-   echo "===>>> WARNING <<<==="
-   echo 
-   echo 
-   echo 
-endif
-
 set dataset = ( O2M RATIOS )
 if $?O2M_RATIOS then
     echo "Importing $dataset $O2M_RATIOS"
