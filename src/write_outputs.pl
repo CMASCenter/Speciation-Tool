@@ -69,7 +69,7 @@ my ($userName, $pwd);
 my ($conn, $sql, $sth, @data);
 
 # run control variables
-my ($outGSpro, $outGScnv);
+my ($outGSpro, $outGScnv, $outvoc);
 my ( $retField );
 # table fields
 my ($profileId, $eminvPoll, $aqmPoll, $splitFactor, $divisor, $massFraction );
@@ -79,6 +79,7 @@ my ($keyword, $dataval, $version);
 my ($tmpInteger);
 my ($runout, $runtype,$runpmtype,$runmech,$runaqm,$runDate,$outExt);
 my ($lDate,$wday,$mon,$mday,$time,$year);
+my ($SpecieID,$SpecieName,$VOCbin);
 
 ($#ARGV == 1) or die "Usage: write_outputs.pl project scenario \n";
 
@@ -154,7 +155,8 @@ while (@data = $sth->fetchrow_array())
 
 $lDate=scalar(localtime);
 ($wday,$mon,$mday,$time,$year) = split(/\s+/,$lDate);
-$runDate=sprintf("%s%s%s",$mday,$mon,$year);
+#$runDate=sprintf("%s%s%s",$mday,$mon,$year);
+$runDate=sprintf("%s%s%s",$year,$mon,$mday);
 
 if ( $runout eq "PM" )
    { $outExt = "PM_${runmech}_${runtype}_${runaqm}_$runDate"; }
@@ -335,5 +337,34 @@ close(CNVFILE);
 #emf# output_emf($outGScnv,"Pollutant to Pollutant Conversion (GSCNV)");
 
 }
+
+if ( $runout eq "" || $runout eq "VOC" && $runtype ne "HAPLIST" )
+{
+$outvoc = "../outputs/SPECIATE5_VP.IVOCP6-SVOCN1.$runDate.txt";
+open(VOCFILE, ">$outvoc") or die "Unable to open SPECIATE VP output file for writing: $outvoc\n";
+$tmpInteger = 0;
+$sql = "SELECT * FROM  $scenario.tmp_species_vp";
+$sth = $conn->prepare($sql);
+$sth->execute() or die "Error executing query: " . $sth->errstr;
+while (@data = $sth->fetchrow_array())
+{
+        ++$tmpInteger;
+        $SpecieID = $data[0];
+        $SpecieName   = $data[1];
+        $VOCbin   = $data[2];
+
+        printf VOCFILE "%i	%s	%s\n",
+                $SpecieID, $SpecieName, $VOCbin;
+}
+if ($tmpInteger == 0)
+{
+        die "Error - no data in SPECIATE VOC table";
+}
+$sth->finish;
+
+close(VOCFILE);
+
+}
+
 $conn->disconnect();
 

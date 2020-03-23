@@ -11,6 +11,10 @@
 --              Sep 2016	Add VBS (Volatility Basis Set) SVOC option
 --              Sep 2018        Process all PM2.5 profiles - make AE6-ready
 --                              if necessary
+--              Mar 2020        Accommodate new SPECIATE5.0 data structure
+--                              Change the order of priorities within species gap filling
+--                              Add functionality to determine OM/OC ratio and PH2O values without external files
+--                                 
 --
 --ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 --c Copyright (C) 2016  Ramboll Environ
@@ -76,6 +80,7 @@ DECLARE
     pncom                    VARCHAR(20);
     ion                      VARCHAR(20);
     atom                     VARCHAR(20);
+    oxide                    VARCHAR(20);
     MO_unadjusted            FLOAT;
     N_sulfate                FLOAT;
     nonN_sulfate             FLOAT;
@@ -166,7 +171,7 @@ BEGIN
         ELSE
             CREATE TABLE tbl_pm_profiles AS
             SELECT p.* FROM tbl_profiles p
-            WHERE p.profile_type IN ('PM','PM-AE6');
+            WHERE p.profile_type IN ('PM','PM-AE6'); 
             RAISE NOTICE ' PM Profiles imported ';
 
         END IF;   
@@ -242,7 +247,7 @@ BEGIN
 
       -- determine if the mechanism definition does not contain one and only one pollutant to be computed --
                 SELECT INTO tmpInteger COUNT(*) 
-                FROM tmp_pm_mechanism m
+               FROM tmp_pm_mechanism m
                 WHERE m.compute
                   AND NOT m.aqm_poll IsNull
                   AND (m.specie_id Is Null OR m.specie_id = '');
@@ -324,6 +329,12 @@ BEGIN
 	END IF;
 
 -----------------------------------------------------------------------------------------
+        INSERT INTO tmp_profile_list (profile_id)
+                        SELECT DISTINCT profile_id
+                        FROM tbl_pm_profiles
+                        WHERE profile_type <> 'PM-Simplified';
+
+
 --  Make AE6-ready
 --  Select all PM2.5 profiles that are NOT AE6-ready and compute
 --  compounds required for AE6 processing.
@@ -343,13 +354,13 @@ BEGIN
 
         INSERT INTO tmp_so4_profiles (profile_id)
                 SELECT p.profile_id
-                FROM tmp_makeae6_list p
+                FROM tmp_profile_list p
                 INNER JOIN tmp_raw_profiles r ON p.profile_id = r.profile_id
                 WHERE r.specie_id = sulfate;
 
         INSERT INTO tmp_s_profiles (profile_id, wtpct)
                 SELECT p.profile_id, r.percent
-                FROM tmp_makeae6_list p
+                FROM tmp_profile_list p
                 INNER JOIN tmp_raw_profiles r ON p.profile_id = r.profile_id
                 WHERE r.specie_id = sulfur;
 
@@ -370,6 +381,10 @@ BEGIN
 
         -- compute H2O -----------------------------------------------
 
+        INSERT INTO tbl_zero_ph2o (profile_id)
+                SELECT p.profile_id
+                FROM tbl_pm_profiles p
+                WHERE p.gen_mechanism = 'Combustion';
         INSERT INTO tmp_h2o (profile_id, ph2o)
                 SELECT m.profile_id, SUM(p.percent)*.24
                 FROM tmp_makeae6_list m
@@ -415,7 +430,7 @@ BEGIN
               MO_unadjusted := 0.0;
            END IF;
 
-           SELECT INTO N_sulfate ((.5 * 96) / 18 * percent )
+           SELECT INTO N_sulfate ((0.5 * 96) / 18 * percent )
            FROM tmp_raw_profiles
            WHERE tmp_raw_profiles.profile_id = prfRow.profile_id
              AND tmp_raw_profiles.specie_id = ammonium;
@@ -439,7 +454,7 @@ BEGIN
            IF ( MO_adjust < 0.0 )  THEN
                 MO_adjust = 0.0;
            END IF;
-
+           
            INSERT INTO tmp_mo ( profile_id, unadjusted_mo, sulfate_n,
                                             sulfate_nonn, adjusted_mo )
            VALUES (prfRow.profile_id,MO_unadjusted,N_sulfate,nonN_sulfate,MO_adjust);
@@ -452,6 +467,19 @@ BEGIN
         RAISE NOTICE '      computed MO ... ';
 
         -- compute NCOM -----------------------------------------------
+        INSERT INTO tbl_pncom_facs (profile_id, gen_mechanism, sec_equipment, fuel_product,pncom_fac)
+               SELECT p.profile_id, p.gen_mechanism, p.sec_equipment, p.fuel_product, .4
+               FROM tbl_pm_profiles p;
+        UPDATE tbl_pncom_facs
+           SET pncom_fac = .25
+        WHERE  tbl_pncom_facs.gen_mechanism = 'Combustion'
+          AND  tbl_pncom_facs.sec_equipment LIKE '%Mobile%' ;
+
+        UPDATE tbl_pncom_facs
+           SET pncom_fac = .7
+        WHERE  tbl_pncom_facs.sec_equipment LIKE '%biomass burning%'
+          AND  tbl_pncom_facs.sec_equipment NOT LIKE '%boiler%';
+
 
         CREATE TABLE tmp_pncom AS
         SELECT m.profile_id, p.percent, 0.0 AS factor
@@ -461,7 +489,7 @@ BEGIN
         WHERE p.specie_id = poc;
 
         UPDATE tmp_pncom
-           SET factor = tbl_pncom_facs.pncom_frac
+           SET factor = tbl_pncom_facs.pncom_fac
         FROM tbl_pncom_facs
         WHERE tmp_pncom.profile_id = tbl_pncom_facs.profile_id;
 
@@ -483,86 +511,191 @@ BEGIN
         DELETE FROM tmp_raw_profiles
         WHERE specie_id IN (SELECT d.specie_id FROM tmp_dropspecies d);
 
-        -- drop ion if atom exists > 0. | reassign ion to atom specie_id if ion >0 and not atom ------
+        -- drop atom if ion exists > 0. | reassign atom to ion specie_id if atom >0 and not ion ------
         -- for the pairs K/K ion, NA/NA ion, CL/ CL ion --
         -- potassium pair --
         ion := '2302';
-        atom = '669';
+        atom := '669';
         DELETE FROM tmp_raw_profiles WHERE specie_id = ion and percent = 0;
         DELETE FROM tmp_raw_profiles WHERE specie_id = atom and percent = 0;
         TRUNCATE tmp_ion_profiles; 
         TRUNCATE tmp_atom_profiles; 
         INSERT INTO tmp_ion_profiles (profile_id) 
-               SELECT p.profile_id FROM tmp_makeae6_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
         INSERT INTO tmp_atom_profiles (profile_id) 
-               SELECT p.profile_id FROM tmp_makeae6_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
 
-        DELETE FROM tmp_ion_profiles
-        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_atom_profiles w );
+        DELETE FROM tmp_atom_profiles
+        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_ion_profiles w );
 	FOR prfRow IN
 		SELECT p.profile_id
-		FROM tmp_ion_profiles p
+		FROM tmp_atom_profiles p
 	LOOP
+
 		UPDATE tmp_raw_profiles
-		SET specie_id = atom
+		SET specie_id = ion
 		WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
-		AND tmp_raw_profiles.specie_id = ion;
+		AND tmp_raw_profiles.specie_id = atom;
 	END LOOP;
+        
+        RAISE NOTICE '      computed K ... ';
+
+
         -- sodium pair --
         ion := '785';
-        atom = '696';
+        atom := '696';
         DELETE FROM tmp_raw_profiles WHERE specie_id = ion and percent = 0;
         DELETE FROM tmp_raw_profiles WHERE specie_id = atom and percent = 0;
         TRUNCATE tmp_ion_profiles; 
         TRUNCATE tmp_atom_profiles; 
         INSERT INTO tmp_ion_profiles (profile_id) 
-               SELECT p.profile_id FROM tmp_makeae6_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
         INSERT INTO tmp_atom_profiles (profile_id) 
-               SELECT p.profile_id FROM tmp_makeae6_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
 
-        DELETE FROM tmp_ion_profiles
-        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_atom_profiles w );
-	FOR prfRow IN
-		SELECT p.profile_id
-		FROM tmp_ion_profiles p
-	LOOP
-		UPDATE tmp_raw_profiles
-		SET specie_id = atom
-		WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
-		AND tmp_raw_profiles.specie_id = ion;
-	END LOOP;
+        DELETE FROM tmp_atom_profiles
+        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_ion_profiles w );
+
+        FOR prfRow IN
+                SELECT p.profile_id
+                FROM tmp_atom_profiles p
+        LOOP
+
+                UPDATE tmp_raw_profiles
+                SET specie_id = ion
+                WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
+                AND tmp_raw_profiles.specie_id = atom;
+        END LOOP;
+
+        RAISE NOTICE '      computed Na ... ';
+
+
         -- chlorine pair --
         ion := '337';
-        atom = '795';
+        atom := '795';
         DELETE FROM tmp_raw_profiles WHERE specie_id = ion and percent = 0;
         DELETE FROM tmp_raw_profiles WHERE specie_id = atom and percent = 0;
         TRUNCATE tmp_ion_profiles; 
         TRUNCATE tmp_atom_profiles; 
         INSERT INTO tmp_ion_profiles (profile_id) 
-               SELECT p.profile_id FROM tmp_makeae6_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
         INSERT INTO tmp_atom_profiles (profile_id) 
-               SELECT p.profile_id FROM tmp_makeae6_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
 
-        DELETE FROM tmp_ion_profiles
-        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_atom_profiles w );
-	FOR prfRow IN
-		SELECT p.profile_id
-		FROM tmp_ion_profiles p
-	LOOP
-		UPDATE tmp_raw_profiles
-		SET specie_id = atom
-		WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
-		AND tmp_raw_profiles.specie_id = ion;
-	END LOOP;
+        DELETE FROM tmp_atom_profiles
+        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_ion_profiles w );
 
-        -- delete ions to avoid double counting in 
+        FOR prfRow IN
+                SELECT p.profile_id
+                FROM tmp_atom_profiles p
+        LOOP
+
+                UPDATE tmp_raw_profiles
+                SET specie_id = ion
+                WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
+                AND tmp_raw_profiles.specie_id = atom;
+        END LOOP;
+
+        RAISE NOTICE '      computed Cl ... ';
+
+
+        -- drop atom if ion exists > 0. | reassign ion to atom specie_id | use atom if atom >0 and not ion ------
+        -- If neither atom nor ion exists, but metal oxide exists >1, calculate based on fraction ----
+        -- for the pairs Ca/Ca ion/CaO, Mg/Mg ion/MgO --
+
+        -- Calcium pair --
+        ion := '2303';
+        atom := '329';
+        oxide := '2847';
+        RAISE NOTICE '      Ca oxide ... ';
+
+        DELETE FROM tmp_raw_profiles WHERE specie_id = ion and percent = 0;
+        DELETE FROM tmp_raw_profiles WHERE specie_id = atom and percent = 0;
+        DELETE FROM tmp_raw_profiles WHERE specie_id = oxide and percent = 0;
+        RAISE NOTICE '      Ca percent=0 removed ... ';
+
+        TRUNCATE tmp_ion_profiles;
+        TRUNCATE tmp_atom_profiles;
+        INSERT INTO tmp_ion_profiles (profile_id)
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
+        INSERT INTO tmp_atom_profiles (profile_id)
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
+        INSERT INTO tmp_oxide_profiles (profile_id, wtpct)
+               SELECT p.profile_id, p.percent FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = oxide and p.percent > 0.0;
+        RAISE NOTICE '      Ca tmp profiles created ... ';
+
+        DELETE FROM tmp_atom_profiles
+        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_ion_profiles w );
+        FOR prfRow IN
+                SELECT p.profile_id
+                FROM tmp_atom_profiles p
+        LOOP
+
+                UPDATE tmp_raw_profiles
+                SET specie_id = ion
+                WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
+                AND tmp_raw_profiles.specie_id = atom;
+        END LOOP;
+
+        RAISE NOTICE '      Ca atom duplicates removed ... ';
+
+        DELETE FROM tmp_oxide_profiles
+        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_ion_profiles w )
+        OR    profile_id IN ( SELECT a.profile_id FROM tmp_atom_profiles a );
+        RAISE NOTICE '      Ca oxide duplicates removed ... ';
+
+        INSERT INTO tmp_raw_profiles (profile_id,specie_id,percent)
+                SELECT s.profile_id, ion, s.wtpct * (40./56.)
+                FROM tmp_oxide_profiles s;
+        RAISE NOTICE '      computed Ca ... ';
+
+        -- Magnesium pair --
+        ion := '2772';
+        atom := '525';
+        oxide := '2852';
+        DELETE FROM tmp_raw_profiles WHERE specie_id = ion and percent = 0;
+        DELETE FROM tmp_raw_profiles WHERE specie_id = atom and percent = 0;
+        DELETE FROM tmp_raw_profiles WHERE specie_id = oxide and percent = 0;
+        TRUNCATE tmp_ion_profiles;
+        TRUNCATE tmp_atom_profiles;
+        TRUNCATE tmp_oxide_profiles;
+        INSERT INTO tmp_ion_profiles (profile_id)
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = ion and p.percent > 0.0;
+        INSERT INTO tmp_atom_profiles (profile_id)
+               SELECT p.profile_id FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = atom and p.percent > 0.0;
+        INSERT INTO tmp_oxide_profiles (profile_id, wtpct)
+               SELECT p.profile_id, p.percent FROM tmp_profile_list m INNER JOIN tmp_raw_profiles p ON m.profile_id = p.profile_id where p.specie_id = oxide and p.percent > 0.0;
+
+        DELETE FROM tmp_atom_profiles
+        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_ion_profiles w );
+
+        FOR prfRow IN
+                SELECT p.profile_id
+                FROM tmp_atom_profiles p
+        LOOP
+                UPDATE tmp_raw_profiles
+                SET specie_id = ion
+                WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
+                AND tmp_raw_profiles.specie_id = atom;
+        END LOOP;
+
+        DELETE FROM tmp_oxide_profiles
+        WHERE profile_id IN ( SELECT w.profile_id FROM tmp_ion_profiles w )
+        OR    profile_id IN ( SELECT a.profile_id FROM tmp_atom_profiles a );
+
+        INSERT INTO tmp_raw_profiles (profile_id,specie_id,percent)
+                SELECT s.profile_id, ion, s.wtpct * (24./40.)
+                FROM tmp_oxide_profiles s;
+
+
+        -- delete atoms to avoid double counting in 
         FOR prfRow IN
            SELECT profile_id
-           FROM tmp_makeae6_list
+           FROM tmp_profile_list
         LOOP
             DELETE FROM tmp_raw_profiles 
             WHERE tmp_raw_profiles.profile_id = prfRow.profile_id
-             AND tmp_raw_profiles.specie_id IN ('337','785','2302');
+             AND tmp_raw_profiles.specie_id IN ('329','525','669','696','795','2847','2852');
 	END LOOP;
         -- end of atom/ion selections and reassignments                                         ------
 
@@ -619,52 +752,13 @@ BEGIN
 	-- determine the unique set of profiles to process --
         -- and the weight percent sum of each profile for all non-computed mechanism compounds -- 
 	RAISE NOTICE '...calculating weight percent sum of mechanism compounds' ;
-
-        INSERT INTO tmp_profile_list (profile_id)
-                        SELECT DISTINCT profile_id
-                        FROM tbl_pm_profiles
-                        WHERE profile_type <> 'PM-Simplified';
-
-	RAISE NOTICE '...calculate PCL ' ;
-        TRUNCATE tmp_ion_profiles; 
-        TRUNCATE tmp_atom_profiles; 
-	INSERT INTO tmp_atom_profiles (profile_id)
-		SELECT p.profile_id
-		FROM tmp_profile_list p
-		INNER JOIN tmp_raw_profiles r ON p.profile_id = r.profile_id
-                WHERE r.specie_id = 795;
-
-	INSERT INTO tmp_ion_profiles (profile_id)
-		SELECT p.profile_id
-		FROM tmp_profile_list p
-		INNER JOIN tmp_raw_profiles r ON p.profile_id = r.profile_id
-                WHERE r.specie_id = 337;
-
-	FOR prfRow IN
-		SELECT p.profile_id
-		FROM tmp_atom_profiles p
-	LOOP
-		DELETE 
-		FROM tmp_ion_profiles
-		WHERE prfRow.profile_id = tmp_ion_profiles.profile_id;
-	END LOOP;
-	FOR prfRow IN
-		SELECT p.profile_id
-		FROM tmp_ion_profiles p
-	LOOP
-		UPDATE tmp_raw_profiles
-		SET specie_id = 795
-		WHERE prfRow.profile_id = tmp_raw_profiles.profile_id
-		AND tmp_raw_profiles.specie_id = 337;
-	END LOOP;
-
         INSERT INTO tmp_sums (profile_id, sum_pct)
                       SELECT DISTINCT  p.profile_id, SUM(w.percent)
                       FROM tmp_mechanism m
                       INNER JOIN tmp_raw_profiles w ON m.specie_id = w.specie_id
                       INNER JOIN tmp_profile_list p ON p.profile_id = w.profile_id
                       GROUP BY p.profile_id;
-
+--
 	--  warning if weight profiles exceed 100 percent for the non-computed compounds --
 	SELECT INTO tmpInteger COUNT(*) 
 		FROM tmp_sums
@@ -687,8 +781,8 @@ BEGIN
 
 		END LOOP;
 		RAISE NOTICE 'WARNING review and correct   vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ' ;
-                INSERT INTO tmp_error(error,description)
-                       VALUES ('warning','Profiles dropped with total weight percent > 100.');
+--                INSERT INTO tmp_error(error,description)
+--                       VALUES ('warning','Profiles dropped with total weight percent > 100.');
 	END IF;
 
 --	-- delete records from profile list if weight percent sums exceed 100 percent --
@@ -718,8 +812,8 @@ BEGIN
 
 		END LOOP;
 		RAISE NOTICE 'WARNING review and correct   vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv ' ;
-                INSERT INTO tmp_error(error,description)
-                       VALUES ('warning','Profiles dropped containing a component with a negative weight percent.');
+--                INSERT INTO tmp_error(error,description)
+--                       VALUES ('warning','Profiles dropped containing a component with a negative weight percent.');
 	END IF;
 
 	-- delete records from profile list if weight percent sums are negative --
@@ -1104,6 +1198,20 @@ BEGIN
     CREATE UNIQUE INDEX idx_tmp_ion_profiles
            ON tmp_ion_profiles (profile_id);
 
+    -- Table tmp_oxide_profiles
+    IF ((SELECT COUNT(*) FROM pg_tables WHERE tablename = 'tmp_oxide_profiles'
+                                                AND schemaname = runName) > 0) THEN
+        DROP TABLE tmp_oxide_profiles;
+    END IF;
+    CREATE TABLE tmp_oxide_profiles
+    (
+        profile_id         VARCHAR(20),
+        wtpct              NUMERIC(15,8)
+    );
+    CREATE UNIQUE INDEX idx_tmp_oxide_profiles
+           ON tmp_oxide_profiles (profile_id);
+
+
     CREATE TABLE tmp_error (error VARCHAR(20),description VARCHAR(200));
 
     -- Table tmp_makeae6_list
@@ -1156,6 +1264,36 @@ BEGIN
     );
     CREATE UNIQUE INDEX idx_tmp_h2o
            ON tmp_h2o (profile_id);
+
+-- List of profile ids where PH2O is set to zero when creating AE6-ready
+    IF ((SELECT COUNT(*) FROM pg_tables WHERE tablename = 'tbl_zero_ph2o'
+                                                AND schemaname = runName) > 0) THEN
+        DROP TABLE tbl_zero_ph2o;
+    END IF;
+    CREATE TABLE tbl_zero_ph2o
+    (
+            profile_id          VARCHAR(20)     
+    );
+    CREATE UNIQUE INDEX idx_zero_ph2o
+           ON tbl_zero_ph2o(profile_id);
+
+-- Table tbl_pncom_facs
+    IF ((SELECT COUNT(*) FROM pg_tables WHERE tablename = 'tbl_pncom_facs'
+                                                AND schemaname = runName) > 0) THEN
+        DROP TABLE tbl_pncom_facs;
+    END IF;
+    CREATE TABLE tbl_pncom_facs
+    (
+            profile_id          VARCHAR(20),
+            gen_mechanism       VARCHAR(100),
+            sec_equipment       VARCHAR(100),
+            fuel_product        VARCHAR(100),
+            pncom_fac           NUMERIC(10,6)
+    );
+    CREATE UNIQUE INDEX idx_pncom_facs
+           ON tbl_pncom_facs(profile_id);
+
+
 
     -- Table tmp_mo
     IF ((SELECT COUNT(*) FROM pg_tables WHERE tablename = 'tmp_mo'

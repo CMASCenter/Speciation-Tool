@@ -200,8 +200,8 @@ elsif ( $tablename eq "species" )
 				( specie_id, specie_name, cas, epaid, saroad, pams, haps, \         
 				symbol, molecular_weight, non_voctog, non_vol_wt, unknown_wt, \
                                 unassign_wt, exempt_wt, volatile_mw, num_carbons, epa_itn, \ 
-                                comment ) \
-				VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );";
+                                comment , vp_epi, vp_um) \
+				VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );";
 }
 
 elsif ( $tablename eq "profile_weights" )
@@ -266,18 +266,6 @@ elsif ( $tablename eq "rename_species" )
 				( aq_model, mechanism, eminv_poll, aqm_poll ) \
 				VALUES ( ?, ?, ?, ? );";
 }
-#elsif ( $tablename eq "zero_ph2o" )
-#{
-#	$sql = "INSERT INTO tbl_zero_ph2o \
-#				( profile_id, profile_name ) \
-#				VALUES ( ?, ? );";
-#}
-#elsif ( $tablename eq "pncom_facs" )
-#{
-#	$sql = "INSERT INTO tbl_pncom_facs \
-#				( profile_id, profile_name, pncom_frac ) \
-#				VALUES ( ?, ?, ? );";
-#}
 elsif ( $tablename eq "o2m_ratios" )
 {
 	$sql = "INSERT INTO tbl_o2m_ratios \

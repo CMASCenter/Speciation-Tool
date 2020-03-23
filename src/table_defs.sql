@@ -142,7 +142,9 @@ CREATE TABLE tbl_species
     volatile_mw        NUMERIC(20,12),
     num_carbons        NUMERIC(20,12),
     epa_itn            VARCHAR(20),
-    comment            VARCHAR(50) 
+    comment            VARCHAR(50),
+    vp_epi             NUMERIC(20,12),
+    vp_um              NUMERIC(20,12)
 ) WITHOUT OIDS;
 
 CREATE UNIQUE INDEX idx_specie
@@ -235,28 +237,6 @@ CREATE TABLE tbl_rename_species
 CREATE UNIQUE INDEX idx_rename_species
   ON tbl_rename_species(aq_model, mechanism, eminv_poll, aqm_poll);
 
--- List of profile ids where PH2O is set to zero when creating AE6-ready
-SELECT DROP_TABLE('tbl_zero_ph2o');
-CREATE TABLE tbl_zero_ph2o
-(
-	profile_id          VARCHAR(20)     NOT NULL,
-        profile_name        VARCHAR(255)
-) WITHOUT OIDS;
-CREATE UNIQUE INDEX idx_zero_ph2o
-  ON tbl_zero_ph2o(profile_id);
-
--- List of profile ids and factors for computing PNCOM when creating AE6-ready
-SELECT DROP_TABLE('tbl_pncom_facs');
-CREATE TABLE tbl_pncom_facs
-(
-	profile_id          VARCHAR(20)     NOT NULL,
-        profile_name        VARCHAR(255),
-	pncom_frac          NUMERIC(10,6)   NOT NULL
-) WITHOUT OIDS;
-CREATE UNIQUE INDEX idx_pncom_facs
-  ON tbl_pncom_facs(profile_id);
-
--- List of species with oxygen to metal ratios
 SELECT DROP_TABLE('tbl_o2m_ratios');
 CREATE TABLE tbl_o2m_ratios
 (
