@@ -65,7 +65,7 @@ setenv SPTOOL_DB	sptoolv5_0alpha_t1			# Speciation Tool Database name
 setenv IDIR		$SPTOOL_HOME/import_data	# input data directory
 #
 setenv MECHANISM                $IDIR/mechanism_forImport.11Feb2020.csv
-setenv MECHANISMPM		$IDIR/mech_pm_ae5_ae6.txt
+setenv MECHANISMPM		$IDIR/mech_pm_ae5_ae6_ae7.txt
 setenv MECHANISM_DESCRIPTION	$IDIR/mechanism_description.7Feb2020.txt
 setenv CARBONS			$IDIR/carbons_all_mechanisms_7Feb2020.csv
 setenv INVTABLE			$IDIR/invtable_hapcap_cb05soa_25may2011_v13.txt
@@ -75,12 +75,9 @@ setenv CAMX_FCRS                $IDIR/camx_fcrs.profile.lst
 setenv VBS_SVOC_FACTORS         $IDIR/vbs_svoc.profile.26sep2016.csv
 setenv VBS_IVOC_FACTORS         $IDIR/vbs_ivoc.profile.30aug2016.csv 
 setenv IVOC_SPECIES             $IDIR/ivoc_species.csv
-setenv ZERO_PH2O		$IDIR/PM_Profiles_wo_PH2O.csv		# added Sep 2018
-setenv PNCOM_FACS		$IDIR/PNCOM_multipliers.csv      	# added Sep 2018
 setenv O2M_RATIOS		$IDIR/oxygen_metal_Ratios.csv		# added Sep 2018
-#setenv O2M_RATIOS               $IDIR/oxygen_metal_Ratios_11Nov2019.csv           # added Sep 2018
 
 # updated with SPECIATE 5.0
 setenv PROFILES_RAW  $IDIR/speciate5.0_exports/export_profiles_2019_0826.txt
 setenv WEIGHTS_RAW  $IDIR/speciate5.0_exports/export_species_2019_0826.txt
-setenv SPECIES_PROPERTIES_RAW  $IDIR/speciate5.0_exports/export_species_properties_2019_0826.txt
+setenv SPECIES_PROPERTIES_RAW  $IDIR/speciate5.0_exports/export_species_properties_2020_0313.txt
