@@ -156,7 +156,7 @@ BEGIN
 	runMechanism := UPPER(runMechanism);
 	RAISE NOTICE 'Mechanism basis is  % ', runMechanism;
         
-        IF ( runMechanism = 'AE7' ) THEN
+        IF ( runMechanism = 'AE8' ) THEN
             CREATE TABLE tbl_pm_profiles AS
             SELECT p.* FROM tbl_profiles p
             WHERE p.profile_type IN ('PM','PM-AE6','PM-VBS');

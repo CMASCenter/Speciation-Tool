@@ -111,6 +111,8 @@ DECLARE
     tmpInteger               INTEGER;
     tmpChar                  TEXT;
     tmpText                  TEXT;
+    conc                     FLOAT;
+    logc                     FLOAT;
 
 ----------------------------------------------------------------------------------
 
@@ -1097,6 +1099,53 @@ BEGIN
 
         END IF;   -- insert HAPS for haplist 
 
+        -- start VOC speciation
+        FOR spcRow IN 
+            SELECT * FROM tbl_species
+        LOOP
+           IF (spcRow.vp_epi > 0) THEN
+      
+                SELECT INTO conc spcRow.molecular_weight*spcRow.vp_epi*1000000/133.3223684/760/0.0000821/298.15;
+                SELECT INTO logc log(conc);
+                IF (logc<-0.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'SVOCN1');
+                ELSIF (logc>=-0.5 AND logc < 0.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'SVOCP0');
+                ELSIF (logc>=0.5 AND logc < 1.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'SVOCP1');
+                ELSIF (logc>=1.5 AND logc < 2.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'SVOCP2');
+                ELSIF (logc>=2.5 AND logc < 3.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'IVOCP3');
+                ELSIF (logc>=3.5 AND logc < 4.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'IVOCP4');
+                ELSIF (logc>=4.5 AND logc < 5.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'IVOCP5');
+                ELSIF (logc>=5.5 AND logc < 6.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'IVOCP6');
+                ELSE-- (logc>=6.5) THEN
+                    INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                    VALUES (spcRow.specie_id, spcRow.specie_name, 'VOC');
+                END IF;
+
+           ELSIF (spcRow.vp_epi = 0) THEN 
+                INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                VALUES (spcRow.specie_id, spcRow.specie_name, 'SVOCN1');
+           ELSE
+                INSERT INTO tmp_species_vp (specie_id, specie_name, voc_class)
+                VALUES (spcRow.specie_id, spcRow.specie_name, ' ');
+           END IF;
+        END LOOP;
+
+
     END IF;  -- voc case
 RETURN;
 END;
@@ -1339,6 +1388,23 @@ BEGIN
 
      CREATE TABLE tmp_error (error VARCHAR(20));
      CREATE TABLE tmp_spcinp (specie_id VARCHAR(20), mw VARCHAR(20));
+
+     --tmp.species_vp (specie_id, c, logc, voc_class)
+     -- Table tmp_species_vp
+     IF ((SELECT COUNT(*) FROM pg_tables WHERE tablename = 'tmp_species_vp'
+                                                AND schemaname = runName) > 0) THEN
+        DROP TABLE tmp_species_vp;
+    END IF;
+    CREATE TABLE tmp_species_vp
+    (
+        specie_id          VARCHAR(20),
+        specie_name        VARCHAR(120),
+        voc_class          VARCHAR(20)
+    );
+    CREATE UNIQUE INDEX idx_tmp_species_vp
+           ON tmp_species_vp (specie_id);
+
+
     RETURN 0;
 END;
 $$
