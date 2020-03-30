@@ -11,18 +11,18 @@ set OUTDIR = /disk43/sptool/wa5_02.2019/Speciation-Tool/outputs
 mkdir -p $OUTDIR
 
 echo "==================================================================================="
-printf "              CMAQ AE7 "
+printf "              CMAQ AE8 "
 date
 
 cat > RUNCTL << IEOF
-mech_basis,AE7
+mech_basis,AE8
 run_type,CRITERIA
 AQM,CMAQ
 output,PM
-splits_out,$OUTDIR/gspro.AE7.CMAQ.$TODAY.txt
+splits_out,$OUTDIR/gspro.AE8.CMAQ.$TODAY.txt
 IEOF
 
-perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae7 RUNCTL >& log.CMAQ.AE7.$TODAY
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae8 RUNCTL >& log.CMAQ.AE8.$TODAY
 date
 
 
