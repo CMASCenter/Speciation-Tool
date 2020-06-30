@@ -1,0 +1,1 @@
+The User’s Guide for the Speciation Tool 5.0 is provided in MS Word and PDF format. The PDF version has Appendix F which is missing from the Word version.
