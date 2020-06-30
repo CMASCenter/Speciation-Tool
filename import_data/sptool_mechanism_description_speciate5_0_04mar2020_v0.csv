@@ -8,3 +8,6 @@
 "CRI_ae8","Common Representative Intermediates (CRI) mechanism, version 2 for CMAQ AERO8 scheme","Y","Ramboll Greg Yarwood provided mechanism per spreadsheet Mechanism_mappings_for_SPECIATE5_7Feb2020.xlsx on 7Feb2020","",""
 "SAPRC07TC_ae7","Toxics version of SAPRC07 for CMAQ AERO7 aerosol scheme","Y","Ramboll Greg Yarwood provided mechanism per spreadsheet Mechanism_mappings_for_SPECIATE5_7Feb2020.xlsx on 7Feb2020","",""
 "SAPRC07TC_ae8","Toxics version of SAPRC07 for CMAQ AERO8 aerosol scheme","Y","Ramboll Greg Yarwood provided mechanism per spreadsheet Mechanism_mappings_for_SPECIATE5_7Feb2020.xlsx on 7Feb2020","",""
+"RACM2_AE7", “Regional Atmospheric Chemistry Mechanism version 2 (RACM2) for CMAQ AERO7 aerosol scheme”, Y,"Ramboll Greg Yarwood provided mechanism per spreadsheet Mechanism_mappings_for_SPECIATE5_25June2020.xlsx on 29Jun2020","",""
+"RACM2_AE8", “Regional Atmospheric Chemistry Mechanism version 2 (RACM2) for CMAQ AERO7 aerosol scheme”, Y,"Ramboll Greg Yarwood provided mechanism per spreadsheet Mechanism_mappings_for_SPECIATE5_25June2020.xlsx on 29Jun2020","",""
+
