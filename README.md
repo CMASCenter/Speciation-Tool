@@ -12,40 +12,24 @@ The split factors output by the Speciation Tool are input data needed by emissio
 
 Generally, CTM emission inputs are created from emission inventories of criteria air pollutant (CAPS) such as the EPA’s National Emissions Inventory (NEI). However, the NEI also contains toxic air pollutants, also known as hazardous air pollutants (HAPS). It can be advantageous to combine information from CAPS and HAPS into a unified modeling emission inventory of toxic and other species. Taking formaldehyde as an example, processing the NEI VOC emission estimates for modelling will produce formaldehyde emissions estimates that could then be replaced by explicit estimates of formaldehyde emissions from the NEI. Implementing this strategy, named integration, requires coordinating the generation of split factors (by the Speciation Tool) with the emission processing (by SMOKE). The Speciation Tool supports the integration CAPS and HAPS emission estimates as an option.
 
+## What is in the Speciation Tool GitHub repository
+
+The Speciation Tool can be downloaded from this public GitHub repository. It stores source code, documentation, and tool inputs which enables version control and quick updates to the tool.
+
+In the master branch the following folders/files are provided, and their descriptions are in parentheses:
+• docs (folder contains documentation)
+• import_data (folder contains Speciation Tool input files)
+• outputs (folder contains Speciation Tool outputs)
+• run (folder contains run scripts)
+• src (folder contains source code)
+• Assigns.sptool (data file of environment variables described in 3.4.1)
+• README.md (GitHub file – not a Speciation Tool file)
+• _config.yml (GitHub file – not a Speciation Tool file)
+• import_clean.csh (script described in Table 2)
+• init_sptooldb_v5.0.csh (script described in Table 2)
+• sptool_reqd_checks.sh (script described in Table 2)
 
 
-You can use the [editor on GitHub](https://github.com/CMASCenter/Speciation-Tool/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Community Support
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CMASCenter/Speciation-Tool/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with installing and running the tool? Check out the CMAS community user's support forum: https://forum.cmascenter.org
