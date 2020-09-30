@@ -8,7 +8,9 @@ The purpose of the Speciation Tool is to translate from emission inventory pollu
 - Creating “split factors” that allocate inventory pollutants (e.g., VOC, PM2.5) to model species (e.g., formaldehyde as part of VOC, elemental carbon as part of PM2.5)
 - Naming model species correctly (e.g., formaldehyde as HCHO or FORM) to be recognized by the CTM
 
+The split factors output by the Speciation Tool are input data needed by emission processing software such as the Sparse-Matrix Operating Kernel for Emissions (SMOKE).
 
+Generally, CTM emission inputs are created from emission inventories of criteria air pollutant (CAPS) such as the EPA’s National Emissions Inventory (NEI). However, the NEI also contains toxic air pollutants, also known as hazardous air pollutants (HAPS). It can be advantageous to combine information from CAPS and HAPS into a unified modeling emission inventory of toxic and other species. Taking formaldehyde as an example, processing the NEI VOC emission estimates for modelling will produce formaldehyde emissions estimates that could then be replaced by explicit estimates of formaldehyde emissions from the NEI. Implementing this strategy, named integration, requires coordinating the generation of split factors (by the Speciation Tool) with the emission processing (by SMOKE). The Speciation Tool supports the integration CAPS and HAPS emission estimates as an option.
 
 
 
