@@ -1,5 +1,17 @@
 ## Welcome to Speciation Tool GitHub Repository
 
+Chemical Transport Models (CTMs) account for chemistry occurring in the atmosphere by using a chemical mechanism with multiple chemical reactions and species.  Gas-phase chemical mechanisms that are widely used in CTMs include the Carbon Bond mechanisms (CB05, CB6) and Statewide Air Pollution Research Center mechanisms (SAPRC07, SAPRC11). Aerosol- phase chemistry schemes tend to be specific to individual CTMs. The Community Multiscale Air Quality Model (CMAQ) has aerosol schemes named AE6 and AE7 whereas the Comprehensive Air quality Model with extensions (CAMx) has aerosol schemes named CF2 and CMU.
+
+Emission rates are an essential CTM input, and chemical species provided in the inputs must exactly match the model species of the CTM, although some CTMs like CMAQ allow for chemical mapping online. Emission input files are generated from data provided by emission inventories. However, emission inventories are prepared in terms of regulated pollutants such as carbon monoxide (CO), nitrogen oxides (NOx), volatile organic compounds (VOC), and particulate matter (PM). Some inventory pollutants exactly correspond to a single model species (e.g., CO) but most inventory pollutants correspond to several model species, e.g., inventory pollutant NOx corresponds to model species NO and NO2. Another potential complication is that chemical mechanisms tend to have different model species, especially for VOC, and so a CTM requires emission inputs with different model species for a simulation using the CB6 vs. SAPRC07 chemical mechanism.
+
+The purpose of the Speciation Tool is to translate from emission inventory pollutants to CTM emission input species by:
+- Creating “split factors” that allocate inventory pollutants (e.g., VOC, PM2.5) to model species (e.g., formaldehyde as part of VOC, elemental carbon as part of PM2.5)
+- Naming model species correctly (e.g., formaldehyde as HCHO or FORM) to be recognized by the CTM
+
+
+
+
+
 You can use the [editor on GitHub](https://github.com/CMASCenter/Speciation-Tool/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
