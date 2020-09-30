@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Speciation Tool GitHub Repository
 
 You can use the [editor on GitHub](https://github.com/CMASCenter/Speciation-Tool/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
