@@ -182,7 +182,7 @@ CREATE TABLE tbl_profiles
     sec_equipment       VARCHAR(100),
     fuel_product        VARCHAR(100),
     ms_poll_rate        NUMERIC(10,2),
-    ms_poll_unit        VARCHAR(10),
+    ms_poll_unit        VARCHAR(20),
     om_to_oc            NUMERIC(10,2),
     mass_overage_pct    NUMERIC(15,12)
 
