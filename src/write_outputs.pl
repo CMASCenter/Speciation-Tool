@@ -243,18 +243,18 @@ while (@data = $sth->fetchrow_array())
 	## depending on size of split factor, potentially use scientific notation
  	if ( $splitFactor >= 0.0099 )
 	{
-		printf SPLFILE "%-20s %-20s %-10s %12.4f %12.4f %12.4f\n", 
+		printf SPLFILE "%-20s %-20s %-10s %12.6f %12.6f %12.6f\n", 
 			$profileId, $eminvPoll, $aqmPoll, $splitFactor, $divisor, $massFraction;
 	}
 	elsif ( $splitFactor < 0.0099 && $splitFactor >= 0.00000001 )
 	{
 
- 		printf SPLFILE "%-20s %-20s %-10s %.4e %12.4f %.4e\n", 
+ 		printf SPLFILE "%-20s %-20s %-10s %.6e %12.6f %.6e\n", 
 			$profileId, $eminvPoll, $aqmPoll, $splitFactor, $divisor, $massFraction;
 	}
 	else
 	{
-		printf SPLFILE "%-20s %-20s %-10s %.4e %12.4f %.4e\n", 
+		printf SPLFILE "%-20s %-20s %-10s %.6e %12.6f %.6e\n", 
 			$profileId, $eminvPoll, $aqmPoll, $splitFactor, $divisor, $massFraction;
 	}
 }
@@ -367,4 +367,3 @@ close(VOCFILE);
 }
 
 $conn->disconnect();
-
