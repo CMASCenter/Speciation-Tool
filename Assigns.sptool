@@ -67,7 +67,7 @@ setenv IDIR		$SPTOOL_HOME/import_data	# input data directory
 setenv MECHANISM                $IDIR/mechanism_forImport_11Feb2020_speciate5_0_withSOAALK_13mar2020_v0.csv
 setenv MECHANISMPM		$IDIR/mech_pm_ae5_ae6_ae8.txt
 setenv MECHANISM_DESCRIPTION    $IDIR/sptool_mechanism_description_speciate5_0_04mar2020_v0.csv
-setenv CARBONS			$IDIR/carbons_all_mechanisms_28Jun2020.csv
+setenv CARBONS			$IDIR/carbons_all_mechanisms_speciate5_0_04mar2020_v0.csv
 setenv INVTABLE			$IDIR/invtable_hapcap_cb05soa_25may2011_v13.txt
 setenv PROFILES_STATIC		$IDIR/static_19aug07.csv
 setenv SPECIES_RENAME		$IDIR/aqm_poll_rename.csv
