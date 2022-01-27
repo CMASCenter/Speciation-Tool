@@ -212,8 +212,9 @@ elsif ( $tablename eq "profile_weights" )
 
         $sql = "INSERT INTO tbl_profile_weights \
                                 (profile_id, specie_id, percent, uncertainty, unc_method, \
-                                analytic_method )\
-                                VALUES (?, ?, ?, ?, ?, ? );";
+                                analytic_method, \
+                                include_in_sum )\
+                                VALUES (?, ?, ?, ?, ?, ?, ? );";
 
 }
 
@@ -417,4 +418,3 @@ close DATAFILE;
 $conn->disconnect;
 
 print "...finished, imported $nlines lines.\n\n";
-

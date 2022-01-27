@@ -200,7 +200,8 @@ CREATE TABLE tbl_profile_weights
     percent             NUMERIC(12,6)   NOT NULL,
     uncertainty         NUMERIC(12,6),
     unc_method          VARCHAR(100),
-    analytic_method     VARCHAR(500)
+    analytic_method     VARCHAR(500),
+    include_in_sum      VARCHAR(3)
 ) WITHOUT OIDS;
 
 CREATE UNIQUE INDEX idx_profile_weights

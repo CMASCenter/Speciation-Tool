@@ -77,8 +77,7 @@ setenv VBS_IVOC_FACTORS         $IDIR/vbs_ivoc.profile.30aug2016.csv
 setenv IVOC_SPECIES             $IDIR/ivoc_species.csv
 setenv O2M_RATIOS		$IDIR/oxygen_metal_Ratios.csv		# added Sep 2018
 
-# updated with SPECIATE 5.0
-setenv PROFILES_RAW  $IDIR/speciate5.0_exports/export_profiles_2019_0826.txt
-#setenv PROFILES_RAW  $IDIR/speciate5.0_exports/export_profiles_test_24Feb2020.txt
-setenv WEIGHTS_RAW  $IDIR/speciate5.0_exports/export_species_2019_0826.txt
-setenv SPECIES_PROPERTIES_RAW  $IDIR/speciate5.0_exports/export_species_properties_2020_0313.txt
+# updated with SPECIATE 5.1
+setenv PROFILES_RAW  $IDIR/speciate5.1_exports/export_profiles.txt
+setenv WEIGHTS_RAW  $IDIR/speciate5.1_exports/export_species.txt
+setenv SPECIES_PROPERTIES_RAW  $IDIR/speciate5.1_exports/export_species_properties.txt
