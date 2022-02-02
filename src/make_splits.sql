@@ -1398,7 +1398,7 @@ BEGIN
     CREATE TABLE tmp_species_vp
     (
         specie_id          VARCHAR(20),
-        specie_name        VARCHAR(120),
+        specie_name        VARCHAR(500),
         voc_class          VARCHAR(20)
     );
     CREATE UNIQUE INDEX idx_tmp_species_vp
@@ -1409,4 +1409,3 @@ BEGIN
 END;
 $$
 LANGUAGE plpgsql;
-
