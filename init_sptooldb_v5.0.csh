@@ -144,7 +144,7 @@ endif
 source import_clean.csh
 #csh import_clean.csh
 #============================================================================================
-#  drop, create db, create language, create shared schema, grant permissions
+#  drop, create db, create shared schema, grant permissions
 #
 #$POSTGRES_BIN/dropdb -U $SPTOOL_USER $SPTOOL_DB  ! Force user to dropdb to protect existing dbs
 	#emf#    $EMF_CLIENT -k $EMF_JOBKEY -m "Creating database $SPTOOL_DB"  ## log w/ EMF server
@@ -158,19 +158,6 @@ if ( $status != 0 ) then
     exit ( 1 )
 else
     echo "Database $SPTOOL_DB created"
-endif
-# check to see if language exists before create
-set list = `$POSTGRES_BIN/createlang -l -U $SPTOOL_USER $SPTOOL_DB | grep plpgsql`
-if ( "$list" =~ *plpgsql* ) then
-   echo "NOTICE: plpgsql language exists."
-else
-   $POSTGRES_BIN/createlang -U $SPTOOL_USER plpgsql $SPTOOL_DB
-   if ( $status != 0 ) then
-       set errMsg = "ERROR: psql failed to create plpgsql language in database"
-       echo $errMsg
-       #emf#       $EMF_CLIENT -k $EMF_JOBKEY -m "$errMsg" -t "e" 
-       exit ( 1 ) 
-   endif
 endif
 $POSTGRES_BIN/psql -U $SPTOOL_USER -c "create schema shared" $SPTOOL_DB
 if ( $status != 0 ) then

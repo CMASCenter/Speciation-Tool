@@ -159,28 +159,12 @@ if $POSTGRES_BIN/psql --version < /dev/null > /dev/null 2>&1 ; then
 
 	fi
 
-	# CREATE NEW DB TO TEST CAPABILITIES AND LANGUAGES
+	# CREATE NEW DB TO TEST CAPABILITIES
 	if [ "$psqlState" -eq 2 ] ; then
 		#
 		if $POSTGRES_BIN/createdb $(whoami)_test_$dateTime < /dev/null > /dev/null 2>&1 ; then
 			# SUCCESSFULLY CREATED NEW TESTER DATABASE
 			#echo "created new tester database"
-			# check to see if language exists before create
-			list=`$POSTGRES_BIN/createlang -l -d $(whoami)_test_$dateTime | grep plpgsql`
-			if [ -n "$list" ] 
-			then
-				echo -e "[x]    -PL/pgSQL"
-			else
-			  if $POSTGRES_BIN/createlang plpgsql -d $(whoami)_test_$dateTime < /dev/null > /dev/null 2>&1 ; then
-				# LOOKS LIKE IT SUCCESSFULLY PERFORMED THE OPERATION, SO PL/pgSQL IS INSTALLED
-				#echo created plpgsql
-				echo -e "[x]    -PL/pgSQL"
-			  else
-				# COULDN'T PERFORM THE OPERATION SO PL/pgSQL IS PROBABLY NOT INSTALLED
-				#echo "Can't find plpgsql"
-				echo -e "[ ]    -PL/pgSQL"
-			  fi
-			fi
 			$POSTGRES_BIN/dropdb $(whoami)_test_$dateTime < /dev/null > /dev/null 2>&1
 		else
 			#echo "couldn't create new tester database (might already exist?)"
@@ -190,55 +174,13 @@ if $POSTGRES_BIN/psql --version < /dev/null > /dev/null 2>&1 ; then
 				if $POSTGRES_BIN/createdb $(whoami)_test_$dateTime < /dev/null > /dev/null 2>&1 ; then
 					#echo "and was able to create a new tester database"
 					# SUCCESSFULLY CREATED NEW TESTER DATABASE
-					# check to see if language exists before create
-					list=`$POSTGRES_BIN/createlang -l -d $(whoami)_test_$dateTime | grep plpgsql`
-					if [ -n "$list" ] 
-					then
-						echo -e "[x]    -PL/pgSQL"
-					else
-					  if $POSTGRES_BIN/createlang plpgsql $(whoami)_test_$dateTime < /dev/null > /dev/null 2>&1 ; then
-						# LOOKS LIKE IT SUCCESSFULLY PERFORMED THE OPERATION, SO PL/pgSQL IS INSTALLED
-						#echo created plpgsql
-						echo -e "[x]    -PL/pgSQL"
-					  else
-						# COULDN'T ADD PL/pgSQL, BUT MIGHT BE ADDED AUTOMATICALLY FROM TEMPLATE1
-						if $POSTGRES_BIN/droplang plpgsql -d postgres < /dev/null > /dev/null 2>&1 ; then
-							# LOOKS LIKE PL/pgSQL IS ADDED AUTOMATICALLY
-							$POSTGRES_BIN/createlang plpgsql -d postgres < /dev/null > /dev/null 2>&1
-							#echo PL/pgSQL is automatically added to new databases
-							echo -e "[x]    -PL/pgSQL"
-						else
-							# COULDN'T PERFORM THE OPERATION SO PL/pgSQL IS PROBABLY NOT INSTALLED
-							#echo "Can't find plpgsql"
-							echo -e "[ ]    -PL/pgSQL"
-						fi
-					  fi
-					fi
 					$POSTGRES_BIN/dropdb $(whoami)_test_$dateTime < /dev/null > /dev/null 2>&1
 				else
 					echo "was not able to create a new tester database"
-					if $POSTGRES_BIN/droplang plpgsql -d postgres < /dev/null > /dev/null 2>&1 ; then
-						$POSTGRES_BIN/createlang plpgsql -d postgres < /dev/null > /dev/null 2>&1
-						#echo dropped and created plpgsql
-						echo -e "[x]    -PL/pgSQL"
-					else
-						# COULDN'T DROP BUT IT COULD JUST NOT BE ADDED TO THAT DATABASE, LET'S TRY ADDING IT.
-						echo "couldn't drop plpgsql language from old database?"
-						if $POSTGRES_BIN/createlang plpgsql -U postgres -d postgres < /dev/null > /dev/null 2>&1 ; then
-							# LOOKS LIKE IT SUCCESSFULLY PERFORMED THE OPERATION, SO PL/pgSQL IS INSTALLED
-							#echo created plpgsql
-							echo -e "[x]    -PL/pgSQL"
-						else
-							# COULDN'T PERFORM THE OPERATION SO PL/pgSQL IS PROBABLY NOT INSTALLED
-							#echo "Can't find plpgsql"
-							echo -e "[ ]    -PL/pgSQL"
-						fi
-					fi
 						
 				fi
 			else
 				# COULDN'T CREATE NOR DROP THE TESTER DB, SO USER DOESN'T HAVE PRIVELEDGES
-				echo -e "[?]    -PL/pgSQL"
 				echo
 				echo Warning:
 				echo PostgreSQL user $(whoami) does not have the required privileges to CREATEDB 
@@ -250,7 +192,6 @@ if $POSTGRES_BIN/psql --version < /dev/null > /dev/null 2>&1 ; then
 	else
 		if [ "$psqlState" -eq 1 ] ; then
 			# NO POSTGRES USER AND WAS UNABLE TO CREATE ONE
-			echo -e "[?]    -PL/pgSQL"
 			echo
 			echo Warning:
 			echo User $(whoami) does not have a PostgreSQL user account.
@@ -266,7 +207,6 @@ if $POSTGRES_BIN/psql --version < /dev/null > /dev/null 2>&1 ; then
 else
 	# POSTGRESQL DOES NOT APPEAR TO BE INSTALLED
 	echo -e "[ ] PostgreSQL"
-	echo -e "[ ]	-PL/pgSQL"
 	echo
 	echo Warning:
 	echo PostgreSQL and PL/pgSQL were not found.  These need to be installed to run the Speciation Tool.
@@ -278,6 +218,3 @@ fi
 echo
 echo Refer to the Speciation Tool User Guide Appendix A for installation procedures of the required software.
 echo
-
-
-
