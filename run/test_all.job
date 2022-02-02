@@ -1,0 +1,4 @@
+#!/bin/csh -f
+
+./test_gas_new.job
+./test_pm.job

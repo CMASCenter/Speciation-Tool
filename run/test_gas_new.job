@@ -7,7 +7,7 @@
 # 	Run control file
 
 set TODAY = `date +%Y%b%d`
-set OUTDIR = /disk43/sptool/wa5_02.2019/Speciation-Tool/outputs
+set OUTDIR = $SPTOOL_HOME/outputs
 mkdir -p $OUTDIR
 
 
@@ -15,7 +15,7 @@ mkdir -p $OUTDIR
 #
 #
 echo "==================================================================================="
-printf "              CMAQ CB6r4_cf2 criteria "
+printf "              CAMx CB6r4_cf2 criteria "
 date
 
 cat > RUNCTL << IEOF
@@ -49,7 +49,7 @@ date
 
 
 echo "==================================================================================="
-printf "              CMAQ CB05_cf2 criteria "
+printf "              CAMx CB05_cf2 criteria "
 date
 
 cat > RUNCTL << IEOF
@@ -65,7 +65,7 @@ perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb05_cf2_criteria RUNCTL >& 
 date
 
 echo "==================================================================================="
-printf "              CMAQ SAPRC07_cf2 criteria "
+printf "              CAMx SAPRC07_cf2 criteria "
 date
 
 cat > RUNCTL << IEOF
@@ -164,5 +164,3 @@ IEOF
 
 perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_SAPRC07TC_ae8_criteria RUNCTL >& log.CMAQ.SAPRC07TC_ae8_criteria.$TODAY
 date
-
-

@@ -7,7 +7,7 @@
 # 	Run control file
 
 set TODAY = `date +%Y%b%d`
-set OUTDIR = /disk43/sptool/wa5_02.2019/Speciation-Tool/outputs
+set OUTDIR = $SPTOOL_HOME/outputs
 mkdir -p $OUTDIR
 
 echo "==================================================================================="
@@ -54,5 +54,5 @@ output,PM
 splits_out,$OUTDIR/gspro.AE6.CAMx.$TODAY.txt
 IEOF
 
-perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB cmaq_ae6 RUNCTL >& log.CAMx.AE6.$TODAY
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_ae6 RUNCTL >& log.CAMx.AE6.$TODAY
 date
