@@ -53,11 +53,11 @@ setenv PERL_DBI Pg		# Perl/Postgres interface must be set !!!!!
 # SPTOOL_HOME must be set to the location of the Speciation Tool home directory. This is the
 #             full pathname of where the Speciation Tool will be installed.
 #             (The directory where init_sptooldb_v3.2.csh resides).
-setenv SPTOOL_HOME	/disk43/sptool/wa5_02.2019/Speciation-Tool 	# Speciation Tool top level directory
+setenv SPTOOL_HOME	/opt/sptool			# Speciation Tool top level directory
 
 setenv SPTOOL_SRC_HOME	$SPTOOL_HOME/src		# Speciation Tool source code directory
 
-setenv SPTOOL_DB	sptoolv5_0alpha_t1			# Speciation Tool Database name 
+setenv SPTOOL_DB	sptoolv5_1			# Speciation Tool Database name 
 
 
 # <Speciation Tool 'shared' schema input directory and default data files>

@@ -118,7 +118,7 @@ DECLARE
 
 BEGIN
 
-    version := 'Speciation Tool v4.5';
+    version := 'Speciation Tool v5.1';
 
  -- check to proceed VOC speciation -- 
     -- get the list of output requirements from the control table --

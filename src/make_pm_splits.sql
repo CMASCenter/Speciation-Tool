@@ -92,7 +92,7 @@ DECLARE
 
 BEGIN
 
-        version := 'Speciation Tool v5.0 alpha';
+        version := 'Speciation Tool v5.1';
 
  -- check to proceed PM speciation -- 
      -- get the list of output requirements from the control table --
