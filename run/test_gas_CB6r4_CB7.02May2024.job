@@ -1,0 +1,68 @@
+#!/bin/csh -f
+
+# Run the Speciation Tool
+# Perl input arguements:
+# 	SPTOOL_DB - Postgres database name
+# 	Scenario Name
+# 	Run control file
+
+set TODAY = `date +%Y%b%d`
+set OUTDIR = /Speciaton_Tool/sptool.v5.0/outputs
+mkdir -p $OUTDIR
+
+
+
+#
+#
+
+echo "==================================================================================="
+printf "              CAMx CB7VCP_cf2 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB7VCP_CF2
+run_type,CRITERIA
+AQM,CAMx
+output,VOC
+splits_out,$OUTDIR/gspro.CB7VCP_cf2_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB7VCP_cf2_criteria.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb7vcp_cf2_criteria RUNCTL >& log.CAMx.CB7VCP_cf2_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CAMx CB7_cf2 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB7_CF2
+run_type,CRITERIA
+AQM,CAMx
+output,VOC
+splits_out,$OUTDIR/gspro.CB7_cf2_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB7_cf2_criteria.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb7_cf2_criteria RUNCTL >& log.CAMx.CB7_cf2_criteria.$TODAY
+date
+
+
+echo "==================================================================================="
+printf "              CAMx CB6r4_cf2 criteria "
+date
+
+cat > RUNCTL << IEOF
+mech_basis,CB6R4_CF2
+run_type,CRITERIA
+AQM,CAMx
+output,VOC
+splits_out,$OUTDIR/gspro.CB6r4_cf2_criteria.CAMx.$TODAY.txt
+cnv_out,$OUTDIR/gscnv.CB6r4_cf2_criteria.CAMx.$TODAY.txt
+IEOF
+
+perl $SPTOOL_SRC_HOME/run_sptool.pl $SPTOOL_DB camx_cb6r4_cf2_criteria RUNCTL >& log.CAMx.CB6r4_cf2_criteria.$TODAY
+date
+
+
